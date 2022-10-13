@@ -9,6 +9,6 @@ namespace Fisharebest\Localization\Locale;
  * @copyright (c) 2022 Greg Roach
  * @license   GPL-3.0-or-later
  */
-class LocaleZhHansCn extends LocaleZhHans
+class LocaleZhHansCn extends LocaleZh
 {
 }

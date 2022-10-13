@@ -11,7 +11,7 @@ use Fisharebest\Localization\Territory\TerritoryHk;
  * @copyright (c) 2022 Greg Roach
  * @license   GPL-3.0-or-later
  */
-class LocaleZhHansHk extends LocaleZhHans
+class LocaleZhHansHk extends LocaleZh
 {
     public function territory()
     {
