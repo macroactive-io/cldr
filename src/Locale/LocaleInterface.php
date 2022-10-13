@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageInterface;
@@ -10,10 +12,6 @@ use Fisharebest\Localization\Variant\VariantInterface;
 
 /**
  * Interface LocaleInterface - Locale.
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 interface LocaleInterface
 {
@@ -29,7 +27,8 @@ interface LocaleInterface
      * Which collation sequence should be used for this locale?
      * “unicode_ci” would mean use “utf8_unicode_ci”, “utf8mb4_unicode_ci”, etc.
      *
-     * @link http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
+     * @website http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
+     *
      * @return string
      */
     public function collation();
@@ -94,7 +93,7 @@ interface LocaleInterface
     /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
-     * @param string|float|integer $number The number to be localized
+     * @param string|float|int $number The number to be localized
      *
      * @return string
      */
@@ -103,7 +102,7 @@ interface LocaleInterface
     /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
-     * @param string|float|integer $number The number to be localized
+     * @param string|float|int $number The number to be localized
      *
      * @return string
      */

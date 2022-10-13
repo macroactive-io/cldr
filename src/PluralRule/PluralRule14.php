@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\PluralRule;
 
 /**
  * Class PluralRule14 - Select a plural form for a specified number.
  * Families:
  * Slavic (Macedonian)
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class PluralRule14 implements PluralRuleInterface
 {

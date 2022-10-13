@@ -1,23 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageUr;
 
 /**
  * Class LocaleUr - Urdu
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class LocaleUr extends AbstractLocale implements LocaleInterface
 {
-    protected function digitsGroup()
-    {
-        return 2;
-    }
-
     public function endonym()
     {
         return 'اردو';
@@ -30,8 +23,13 @@ class LocaleUr extends AbstractLocale implements LocaleInterface
 
     public function numberSymbols()
     {
-        return array(
+        return [
             self::NEGATIVE => self::LTR_MARK . self::HYPHEN,
-        );
+        ];
+    }
+
+    protected function digitsGroup()
+    {
+        return 2;
     }
 }

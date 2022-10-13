@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageMfe;
 
 /**
  * Class LocaleMfe - Morisyen
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class LocaleMfe extends AbstractLocale implements LocaleInterface
 {
@@ -30,8 +28,8 @@ class LocaleMfe extends AbstractLocale implements LocaleInterface
 
     public function numberSymbols()
     {
-        return array(
+        return [
             self::GROUP => self::NBSP,
-        );
+        ];
     }
 }

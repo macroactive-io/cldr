@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageAr;
 
 /**
  * Class LocaleAr - Arabic
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class LocaleAr extends AbstractLocale implements LocaleInterface
 {
@@ -25,11 +23,11 @@ class LocaleAr extends AbstractLocale implements LocaleInterface
 
     public function numberSymbols()
     {
-        return array(
+        return [
             self::GROUP    => self::ARAB_GROUP,
             self::DECIMAL  => self::ARAB_DECIMAL,
             self::NEGATIVE => self::ALM . self::HYPHEN,
-        );
+        ];
     }
 
     protected function percentFormat()

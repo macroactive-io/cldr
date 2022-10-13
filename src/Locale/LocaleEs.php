@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageEs;
@@ -7,10 +9,6 @@ use Fisharebest\Localization\Territory\TerritoryEs;
 
 /**
  * Class LocaleEs - Spanish
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class LocaleEs extends AbstractLocale implements LocaleInterface
 {
@@ -34,11 +32,6 @@ class LocaleEs extends AbstractLocale implements LocaleInterface
         return new LanguageEs();
     }
 
-    protected function percentFormat()
-    {
-        return self::PLACEHOLDER . self::NBSP . self::PERCENT;
-    }
-
     public function territory()
     {
         return new TerritoryEs();
@@ -46,9 +39,14 @@ class LocaleEs extends AbstractLocale implements LocaleInterface
 
     public function numberSymbols()
     {
-        return array(
+        return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
-        );
+        ];
+    }
+
+    protected function percentFormat()
+    {
+        return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }
 }

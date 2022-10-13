@@ -1,47 +1,43 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\PluralRule\PluralRuleInterface;
 use Fisharebest\Localization\Script\ScriptInterface;
 use Fisharebest\Localization\Territory\TerritoryInterface;
-use Fisharebest\Localization\Variant\VariantInterface;
 
 /**
  * Class AbstractLocale - The “root” locale, from which all others are derived.
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 abstract class AbstractLocale
 {
     // "Source" strings, when translating numbers
-    const DECIMAL  = '.'; // The default decimal mark
-    const GROUP    = ','; // The digit group separator
-    const NEGATIVE = '-'; // Negative numbers
+    public const DECIMAL  = '.'; // The default decimal mark
+    public const GROUP    = ','; // The digit group separator
+    public const NEGATIVE = '-'; // Negative numbers
 
     // "Target" strings, when translating numbers
-    const ALM          = "\xD8\x9C"; // Arabic Letter Mark
-    const APOSTROPHE   = '’';
-    const ARAB_DECIMAL = "\xD9\xAB";
-    const ARAB_GROUP   = "\xD9\xAC";
-    const ARAB_MINUS   = "\xE2\x88\x92";
-    const ARAB_PERCENT = "\xD9\xAA";
-    const COMMA        = ',';
-    const DOT          = '.';
-    const HYPHEN       = '-';
-    const LTR_MARK     = "\xE2\x80\x8E"; // Left-to-right marker
-    const MINUS_SIGN   = "\xE2\x88\x92";
-    const NARROW_NBSP  = "\xE2\x80\xAF"; // Narrow non-breaking space
-    const NBSP         = "\xC2\xA0"; // Non-breaking space
-    const PRIME        = '\'';
-    const RTL_MARK     = "\xE2\x80\x8F"; // Right-to-left marker
+    public const ALM          = "\xD8\x9C"; // Arabic Letter Mark
+    public const APOSTROPHE   = '’';
+    public const ARAB_DECIMAL = "\xD9\xAB";
+    public const ARAB_GROUP   = "\xD9\xAC";
+    public const ARAB_MINUS   = "\xE2\x88\x92";
+    public const ARAB_PERCENT = "\xD9\xAA";
+    public const COMMA        = ',';
+    public const DOT          = '.';
+    public const HYPHEN       = '-';
+    public const LTR_MARK     = "\xE2\x80\x8E"; // Left-to-right marker
+    public const MINUS_SIGN   = "\xE2\x88\x92";
+    public const NARROW_NBSP  = "\xE2\x80\xAF"; // Narrow non-breaking space
+    public const NBSP         = "\xC2\xA0"; // Non-breaking space
+    public const PRIME        = '\'';
+    public const RTL_MARK     = "\xE2\x80\x8F"; // Right-to-left marker
 
     // For formatting percentages
-    const PERCENT     = '%%';
-    const PLACEHOLDER = '%s';
+    public const PERCENT     = '%%';
+    public const PLACEHOLDER = '%s';
 
     /**
      * Convert (Hindu-Arabic) digits into a localized form
@@ -53,26 +49,6 @@ abstract class AbstractLocale
     public function digits($string)
     {
         return strtr($string, $this->numberSymbols() + $this->numerals());
-    }
-
-    /**
-     * When writing large numbers place a separator after this number of digits.
-     *
-     * @return int
-     */
-    protected function digitsFirstGroup(): int
-    {
-        return 3;
-    }
-
-    /**
-     * When writing large numbers place a separator after this number of digits.
-     *
-     * @return int
-     */
-    protected function digitsGroup()
-    {
-        return 3;
     }
 
     /**
@@ -111,27 +87,20 @@ abstract class AbstractLocale
     public function languageTag()
     {
         $language_tag = $this->language()->code();
-        if ($this->script() != $this->language()->defaultScript()) {
+
+        if ($this->script() !== $this->language()->defaultScript()) {
             $language_tag .= '-' . $this->script()->code();
         }
-        if ($this->territory() != $this->language()->defaultTerritory()) {
+
+        if ($this->territory() !== $this->language()->defaultTerritory()) {
             $language_tag .= '-' . $this->territory()->code();
         }
+
         if ($this->variant()) {
             $language_tag .= '-' . $this->variant()->code();
         }
 
         return $language_tag;
-    }
-
-    /**
-     * When using grouping digits in numbers, keep this many of digits together.
-     *
-     * @return int
-     */
-    protected function minimumGroupingDigits()
-    {
-        return 1;
     }
 
     /**
@@ -151,6 +120,7 @@ abstract class AbstractLocale
         }
         $parts    = explode(self::DECIMAL, (string) $number, 2);
         $integers = $parts[0];
+
         if (strlen($integers) >= $this->digitsFirstGroup() + $this->minimumGroupingDigits()) {
             $todo     = substr($integers, 0, -$this->digitsFirstGroup());
             $integers = self::GROUP . substr($integers, -$this->digitsFirstGroup());
@@ -160,6 +130,7 @@ abstract class AbstractLocale
             }
             $integers = $todo . $integers;
         }
+
         if (count($parts) > 1) {
             $decimals = self::DECIMAL . $parts[1];
         } else {
@@ -167,36 +138,6 @@ abstract class AbstractLocale
         }
 
         return $this->digits($negative . $integers . $decimals);
-    }
-
-    /**
-     * The symbols used to format numbers.
-     *
-     * @return array
-     */
-    protected function numberSymbols()
-    {
-        return array();
-    }
-
-    /**
-     * The numerals (0123456789) used by this locale.
-     *
-     * @return string[]
-     */
-    protected function numerals()
-    {
-        return $this->script()->numerals();
-    }
-
-    /**
-     * How to format a floating point number (%s) as a percentage.
-     *
-     * @return string
-     */
-    protected function percentFormat()
-    {
-        return self::PLACEHOLDER . self::PERCENT;
     }
 
     /**
@@ -227,5 +168,63 @@ abstract class AbstractLocale
     public function variant()
     {
         return null;
+    }
+
+    /**
+     * When writing large numbers place a separator after this number of digits.
+     */
+    protected function digitsFirstGroup(): int
+    {
+        return 3;
+    }
+
+    /**
+     * When writing large numbers place a separator after this number of digits.
+     *
+     * @return int
+     */
+    protected function digitsGroup()
+    {
+        return 3;
+    }
+
+    /**
+     * When using grouping digits in numbers, keep this many of digits together.
+     *
+     * @return int
+     */
+    protected function minimumGroupingDigits()
+    {
+        return 1;
+    }
+
+    /**
+     * The symbols used to format numbers.
+     *
+     * @return array
+     */
+    protected function numberSymbols()
+    {
+        return [];
+    }
+
+    /**
+     * The numerals (0123456789) used by this locale.
+     *
+     * @return string[]
+     */
+    protected function numerals()
+    {
+        return $this->script()->numerals();
+    }
+
+    /**
+     * How to format a floating point number (%s) as a percentage.
+     *
+     * @return string
+     */
+    protected function percentFormat()
+    {
+        return self::PLACEHOLDER . self::PERCENT;
     }
 }

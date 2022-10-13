@@ -1,13 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptBeng - Representation of the Bengali script.
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class ScriptBeng extends AbstractScript implements ScriptInterface
 {
@@ -18,7 +16,7 @@ class ScriptBeng extends AbstractScript implements ScriptInterface
 
     public function numerals()
     {
-        return array('০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯');
+        return ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
     }
 
     public function number()

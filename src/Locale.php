@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization;
 
 use DomainException;
@@ -7,23 +9,17 @@ use Fisharebest\Localization\Locale\LocaleInterface;
 
 /**
  * Class Locale - Static functions to generate and compare locales.
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 final class Locale
 {
-    /**
-     * Some browsers let the user choose "Chinese, Traditional", but add headers for "zh-HK"...
-     */
-    private static array $http_accept_chinese = array(
+    /** Some browsers let the user choose "Chinese, Traditional", but add headers for "zh-HK"... */
+    private static array $http_accept_chinese = [
         'zh-cn' => 'zh-hans-cn',
         'zh-sg' => 'zh-hans-sg',
         'zh-hk' => 'zh-hant-hk',
         'zh-mo' => 'zh-hant-mo',
         'zh-tw' => 'zh-hant-tw',
-    );
+    ];
 
     /**
      * Callback for PHP sort functions - allows lists of locales to be sorted.
@@ -41,9 +37,7 @@ final class Locale
      */
     public static function create(string $code): LocaleInterface
     {
-        $class = __NAMESPACE__ . '\Locale\Locale' . implode(array_map(function ($x) {
-            return ucfirst(strtolower($x));
-        }, preg_split('/[^a-zA-Z0-9]+/', $code)));
+        $class = __NAMESPACE__ . '\Locale\Locale' . implode('', array_map(fn ($x) => ucfirst(strtolower($x)), preg_split('/[^a-zA-Z0-9]+/', $code)));
 
         if (class_exists($class)) {
             return new $class();
@@ -66,9 +60,7 @@ final class Locale
         if (!empty($server['HTTP_ACCEPT_LANGUAGE'])) {
             $http_accept_language = strtolower(str_replace(' ', '', $server['HTTP_ACCEPT_LANGUAGE']));
             preg_match_all('/(?:([a-z][a-z0-9_-]+)(?:;q=([0-9.]+))?)/', $http_accept_language, $match);
-            $preferences = array_map(function ($x) {
-                return $x === '' ? 1.0 : (float) $x;
-            }, array_combine($match[1], $match[2]));
+            $preferences = array_map(fn ($x) => $x === '' ? 1.0 : (float) $x, array_combine($match[1], $match[2]));
 
             // "Common sense" logic for badly configured clients.
             $preferences = self::httpAcceptChinese($preferences);
@@ -78,16 +70,15 @@ final class Locale
             $preferences = array_map(function ($x) {
                 static $n = 0;
 
-                return array($x, --$n);
+                return [$x, --$n];
             }, $preferences);
             arsort($preferences);
-            $preferences = array_map(function ($x) {
-                return $x[0];
-            }, $preferences);
+            $preferences = array_map(fn ($x) => $x[0], $preferences);
 
             foreach (array_keys($preferences) as $code) {
                 try {
                     $locale = self::create($code);
+
                     if (in_array($locale, $available, false)) {
                         return $locale;
                     }
@@ -103,7 +94,6 @@ final class Locale
     /**
      * If a client requests "de-DE" (but not "de"), then add "de" as a lower-priority fallback.
      *
-     * @param $preferences
      * @param int[] $preferences
      *
      * @return int[]
@@ -118,6 +108,7 @@ final class Locale
                 if (!array_key_exists($match[2], $preferences)) {
                     $preferences[$match[2]] = $priority * 0.95;
                 }
+
                 if (!array_key_exists($match[1], $preferences)) {
                     $preferences[$match[1]] = $priority * 0.95;
                 }

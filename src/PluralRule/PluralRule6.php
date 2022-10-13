@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\PluralRule;
 
 /**
@@ -7,10 +9,6 @@ namespace Fisharebest\Localization\PluralRule;
  * Families:
  * Baltic (Lithuanian)
  * nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class PluralRule6 implements PluralRuleInterface
 {

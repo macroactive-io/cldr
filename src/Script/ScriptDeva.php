@@ -1,13 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptDeva - Representation of the Devanagari script.
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class ScriptDeva extends AbstractScript implements ScriptInterface
 {
@@ -18,7 +16,7 @@ class ScriptDeva extends AbstractScript implements ScriptInterface
 
     public function numerals()
     {
-        return array('०', '१', '२', '३', '४', '५', '६', '७', '८', '९');
+        return ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
     }
 
     public function number()

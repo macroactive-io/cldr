@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LocaleUrIn
- *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
  */
 class LocaleUrIn extends LocaleUr
 {
@@ -20,10 +18,10 @@ class LocaleUrIn extends LocaleUr
 
     public function numberSymbols()
     {
-        return array(
+        return [
             self::DECIMAL  => self::ARAB_DECIMAL,
             self::GROUP    => self::ARAB_GROUP,
             self::NEGATIVE => self::LTR_MARK . self::HYPHEN . self::LTR_MARK,
-        );
+        ];
     }
 }

@@ -5,6 +5,7 @@ return (new PhpCsFixer\Config())
     ->setRules([
                    '@Symfony'                   => true,
                    '@PHP81Migration'            => true,
+                   '@PHP80Migration:risky'      => true,
                    'array_syntax'               => ['syntax' => 'short'],
                    'combine_consecutive_unsets' => true,
                    // one should use PHPUnit methods to set up expected exception instead of annotations
@@ -51,12 +52,16 @@ return (new PhpCsFixer\Config())
                            'param', 'return', 'throws', 'type', 'var'
                        ],
                    ],
+                   'strict_comparison'                   => true,
+                   'strict_param'                        => true,
+                   'self_accessor'                       => true,
                    'phpdoc_add_missing_param_annotation' => true,
                    'phpdoc_order'                        => true,
                    'phpdoc_no_alias_tag'                 => ['replacements' => ['link' => 'website']],
                    'phpdoc_summary'                      => false,
                    'phpdoc_to_comment'                   => false,
-                   'phpdoc_types_order'                  => false, // breaks psalm-specific notation sometimes!
+                   'phpdoc_types_order'                  => false,
+                   // breaks psalm-specific notation sometimes!
                    'semicolon_after_instruction'         => true,
                    'single_blank_line_at_eof'            => true,
                    'single_line_throw'                   => false,

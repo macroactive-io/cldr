@@ -1,15 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\PluralRule;
 
 /**
  * Interface PluralRuleInterface - Select a plural form for a specified number.
  *
- * @link          https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals
- * @link          http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @website          https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals
+ * @website          http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
  */
 interface PluralRuleInterface
 {
