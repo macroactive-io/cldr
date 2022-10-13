@@ -9,9 +9,16 @@ use Fisharebest\Localization\PluralRule\PluralRuleInterface;
 use Fisharebest\Localization\Script\ScriptInterface;
 use Fisharebest\Localization\Territory\TerritoryInterface;
 use Fisharebest\Localization\Variant\VariantInterface;
+use function assert;
+use function count;
+use function explode;
+use function sprintf;
+use function strlen;
+use function substr;
 
 /**
  * Class AbstractLocale - The “root” locale, from which all others are derived.
+ * @psalm-immutable
  */
 abstract class AbstractLocale implements LocaleInterface
 {
@@ -41,17 +48,12 @@ abstract class AbstractLocale implements LocaleInterface
     public const PERCENT     = '%%';
     public const PLACEHOLDER = '%s';
 
-    /**
-     * Generate a linux locale code for this locale.  Examples include
-     * "fr", “en_GB”, “ca_ES@valencia” and “sr@latin”.
-     *
-     * @return string
-     */
-    public function code()
+    public function code(): string
     {
         $code = $this->language()->code() . '_' . $this->territory()->code();
 
         if ($this->script()->code() !== $this->language()->defaultScript()->code()) {
+            assert(null !== $this->script()->unicodeName());
             $code .= '@' . strtolower($this->script()->unicodeName());
         }
 
@@ -66,70 +68,32 @@ abstract class AbstractLocale implements LocaleInterface
         return $code;
     }
 
-    /**
-     * Which collation sequence should be used for this locale?
-     * “unicode_ci” would mean use “utf8_unicode_ci”, “utf8mb4_unicode_ci”, etc.
-     *
-     * @website http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
-     *
-     * @return string
-     */
-    public function collation()
+    public function collation(): string
     {
         return 'unicode_ci';
     }
 
-    /**
-     * Convert (Hindu-Arabic) digits into a localized form
-     *
-     * @param string $string e.g. "123.45"
-     *
-     * @return string
-     */
-    public function digits($string)
+    public function digits(string $string): string
     {
-        return strtr($string, $this->numberSymbols() + $this->numerals());
+        $result = strtr($string, $this->numberSymbols() + $this->numerals());
+        assert('' !== $result);
+
+        return $result;
     }
 
-    /**
-     * Is text written left-to-right “ltr” or right-to-left “rtl”.
-     * Most scripts are only written in one direction, but there are a few that
-     * can be written in either direction.
-     *
-     * @return string “ltr” or “rtl”
-     */
-    public function direction()
+    public function direction(): string
     {
         return $this->script()->direction();
     }
 
-    /**
-     * The name of this locale, in its own language/script, and with the
-     * customary capitalization of the locale.
-     *
-     * @return string
-     */
-    abstract public function endonym();
+    abstract public function endonym(): string;
 
-    /**
-     * A sortable version of the locale name.  For example, “British English”
-     * might sort as “ENGLISH, BRITISH” to keep all the variants of English together.
-     *
-     * All-capitals makes sorting easier, as we can use a simple strcmp().
-     *
-     * @return string
-     */
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return $this->endonym();
     }
 
-    /**
-     * Markup for an HTML element
-     *
-     * @return string e.g. lang="ar" dir="rtl"
-     */
-    public function htmlAttributes()
+    public function htmlAttributes(): string
     {
         $direction = $this->direction();
 
@@ -142,18 +106,10 @@ abstract class AbstractLocale implements LocaleInterface
 
     /**
      * The language used by this locale.
-     *
-     * @return LanguageInterface
      */
-    abstract public function language();
+    abstract public function language(): LanguageInterface;
 
-    /**
-     * The IETF language tag for the locale.  Examples include
-     * “fr, “en-GB”, “ca-ES-valencia” and “sr-Latn”.
-     *
-     * @return string
-     */
-    public function languageTag()
+    public function languageTag(): string
     {
         $language_tag = $this->language()->code();
 
@@ -172,14 +128,7 @@ abstract class AbstractLocale implements LocaleInterface
         return $language_tag;
     }
 
-    /**
-     * Convert (Hindu-Arabic) digits into a localized form
-     *
-     * @param int|float $number The number to be localized
-     *
-     * @return string
-     */
-    public function number($number)
+    public function number(int|float $number): string
     {
         if ($number < 0) {
             $number   = -$number;
@@ -206,87 +155,57 @@ abstract class AbstractLocale implements LocaleInterface
             $decimals = '';
         }
 
-        return $this->digits($negative . $integers . $decimals);
+        $result = $negative . $integers . $decimals;
+        assert('' !== $result);
+
+        return $this->digits($result);
     }
 
-    /**
-     * Convert (Hindu-Arabic) digits into a localized form
-     *
-     * @param float $number The number to be localized
-     *
-     * @return string
-     */
-    public function percent($number)
+    public function percent(int|float $number): string
     {
-        return sprintf($this->percentFormat(), $this->number($number * 100.0));
+        $result = sprintf($this->percentFormat(), $this->number($number * 100.0));
+        assert('' !== $result);
+
+        return $result;
     }
 
-    /**
-     * Which plural rule is used in this locale
-     *
-     * @return PluralRuleInterface
-     */
-    public function pluralRule()
+    public function pluralRule(): PluralRuleInterface
     {
         return $this->language()->pluralRule();
     }
 
-    /**
-     * The script used by this locale.
-     *
-     * @return ScriptInterface
-     */
-    public function script()
+    public function script(): ScriptInterface
     {
         return $this->language()->defaultScript();
     }
 
-    /**
-     * The territory used by this locale.
-     *
-     * @return TerritoryInterface
-     */
-    public function territory()
+    public function territory(): TerritoryInterface
     {
         return $this->language()->defaultTerritory();
     }
 
-    /**
-     * The variant, if any of this locale.
-     *
-     * @return VariantInterface|null
-     */
-    public function variant()
+    public function variant(): ?VariantInterface
     {
         return null;
     }
 
-    /**
-     * When writing large numbers place a separator after this number of digits.
-     *
-     * @return int
-     */
-    protected function digitsFirstGroup()
+    protected function digitsFirstGroup(): int
     {
         return 3;
     }
 
     /**
      * When writing large numbers place a separator after this number of digits.
-     *
-     * @return int
      */
-    protected function digitsGroup()
+    protected function digitsGroup(): int
     {
         return 3;
     }
 
     /**
      * When using grouping digits in numbers, keep this many of digits together.
-     *
-     * @return int
      */
-    protected function minimumGroupingDigits()
+    protected function minimumGroupingDigits(): int
     {
         return 1;
     }
@@ -294,9 +213,9 @@ abstract class AbstractLocale implements LocaleInterface
     /**
      * The symbols used to format numbers.
      *
-     * @return string[]
+     * @return array<string, string>
      */
-    protected function numberSymbols()
+    protected function numberSymbols(): array
     {
         return [];
     }
@@ -306,17 +225,16 @@ abstract class AbstractLocale implements LocaleInterface
      *
      * @return string[]
      */
-    protected function numerals()
+    protected function numerals(): array
     {
         return $this->script()->numerals();
     }
 
     /**
      * How to format a floating point number (%s) as a percentage.
-     *
-     * @return string
+     * @return non-empty-string
      */
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::PERCENT;
     }

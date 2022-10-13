@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LocaleUrIn
+ * @psalm-immutable
  */
 class LocaleUrIn extends LocaleUr
 {
-    public function territory()
+    public function territory(): TerritoryIn
     {
         return new TerritoryIn();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::DECIMAL  => self::ARAB_DECIMAL,

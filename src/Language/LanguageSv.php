@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritorySe;
 
 /**
  * Class LanguageSv - Representation of the Swedish language.
+ * @psalm-immutable
  */
 class LanguageSv extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'sv';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritorySe
     {
         return new TerritorySe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

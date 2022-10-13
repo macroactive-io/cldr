@@ -5,33 +5,35 @@ declare(strict_types=1);
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageEt;
+use Fisharebest\Localization\Language\LanguageInterface;
 
 /**
  * Class LocaleEt - Estonian
+ * @psalm-immutable
  */
 class LocaleEt extends AbstractLocale implements LocaleInterface
 {
-    public function collation()
+    public function collation(): string
     {
         return 'estonian_ci';
     }
 
-    public function endonym()
+    public function endonym(): string
     {
         return 'eesti';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'EESTI';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageEt();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,
@@ -40,7 +42,7 @@ class LocaleEt extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    protected function minimumGroupingDigits()
+    protected function minimumGroupingDigits(): int
     {
         return 3;
     }

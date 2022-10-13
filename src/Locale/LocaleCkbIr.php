@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryIr;
 
 /**
  * Class LocaleCkbIr - Sorani
+ * @psalm-immutable
  */
 class LocaleCkbIr extends LocaleCkb
 {
-    public function territory()
+    public function territory(): TerritoryIr
     {
         return new TerritoryIr();
     }

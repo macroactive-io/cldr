@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleGuzKe
+ * @psalm-immutable
  */
 class LocaleGuzKe extends LocaleGuz
 {

@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryCg;
 
 /**
  * Class LocaleFrCg
+ * @psalm-immutable
  */
 class LocaleFrCg extends LocaleFr
 {
-    public function territory()
+    public function territory(): TerritoryCg
     {
         return new TerritoryCg();
     }

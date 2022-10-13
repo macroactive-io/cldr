@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryPl;
 
 /**
  * Class LanguagePl - Representation of the Polish language.
+ * @psalm-immutable
  */
 class LanguagePl extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'pl';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryPl
     {
         return new TerritoryPl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule9
     {
         return new PluralRule9();
     }

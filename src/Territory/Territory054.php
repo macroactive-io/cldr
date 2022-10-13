@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory 054 - Melanesia.
+ * @psalm-immutable
  */
 class Territory054 extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return '054';
     }

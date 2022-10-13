@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleSmnFi
+ * @psalm-immutable
  */
 class LocaleSmnFi extends LocaleSmn
 {

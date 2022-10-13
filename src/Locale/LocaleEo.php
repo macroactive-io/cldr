@@ -5,33 +5,35 @@ declare(strict_types=1);
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageEo;
+use Fisharebest\Localization\Language\LanguageInterface;
 
 /**
  * Class LocaleEo - Esperanto
+ * @psalm-immutable
  */
 class LocaleEo extends AbstractLocale implements LocaleInterface
 {
-    public function collation()
+    public function collation(): string
     {
         return 'esperanto_ci';
     }
 
-    public function endonym()
+    public function endonym(): string
     {
         return 'esperanto';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ESPERANTO';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageEo();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,

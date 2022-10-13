@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryRw;
 
 /**
  * Class LanguageRw - Representation of the Kinyarwanda language.
+ * @psalm-immutable
  */
 class LanguageRw extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'rw';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryRw
     {
         return new TerritoryRw();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

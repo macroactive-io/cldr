@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory CW - Curaçao.
+ * @psalm-immutable
  */
 class TerritoryCw extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'CW';
     }

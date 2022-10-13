@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleCeRu - Chechen
+ * @psalm-immutable
  */
 class LocaleCeRu extends LocaleCe
 {

@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory BB - Barbados.
+ * @psalm-immutable
  */
 class TerritoryBb extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'BB';
     }

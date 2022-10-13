@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LocaleCcpIn - Chakma
+ * @psalm-immutable
  */
 class LocaleCcpIn extends LocaleCcp
 {
-    public function territory()
+    public function territory(): TerritoryIn
     {
         return new TerritoryIn();
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleVaiVaii
+ * @psalm-immutable
  */
 class LocaleVaiVaii extends LocaleVai
 {

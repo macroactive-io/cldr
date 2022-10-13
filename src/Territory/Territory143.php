@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory 143 - Central Asia.
+ * @psalm-immutable
  */
 class Territory143 extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return '143';
     }

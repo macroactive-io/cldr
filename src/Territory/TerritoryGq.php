@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory GQ - Equatorial Guinea.
+ * @psalm-immutable
  */
 class TerritoryGq extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'GQ';
     }

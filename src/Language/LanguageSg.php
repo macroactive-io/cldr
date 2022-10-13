@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCf;
 
 /**
  * Class LanguageSg - Representation of the Sango language.
+ * @psalm-immutable
  */
 class LanguageSg extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'sg';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCf
     {
         return new TerritoryCf();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

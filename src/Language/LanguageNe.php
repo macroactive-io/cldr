@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryNp;
 
 /**
  * Class LanguageNe - Representation of the Nepali language.
+ * @psalm-immutable
  */
 class LanguageNe extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ne';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptDeva
     {
         return new ScriptDeva();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNp
     {
         return new TerritoryNp();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryMv;
 
 /**
  * Class LanguageDv - Representation of the Divehi language.
+ * @psalm-immutable
  */
 class LanguageDv extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'dv';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptThaa
     {
         return new ScriptThaa();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMv
     {
         return new TerritoryMv();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

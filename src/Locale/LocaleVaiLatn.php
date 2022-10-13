@@ -8,10 +8,11 @@ use Fisharebest\Localization\Script\ScriptLatn;
 
 /**
  * Class LocaleVaiLatn
+ * @psalm-immutable
  */
 class LocaleVaiLatn extends LocaleVai
 {
-    public function script()
+    public function script(): ScriptLatn
     {
         return new ScriptLatn();
     }

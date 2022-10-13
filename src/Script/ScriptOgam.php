@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptOgam - Representation of the Ogham script.
+ * @psalm-immutable
  */
 class ScriptOgam extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Ogam';
     }
 
-    public function number()
+    public function number(): string
     {
         return '212';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Ogham';
     }

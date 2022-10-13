@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LanguageTe - Representation of the Telugu language.
+ * @psalm-immutable
  */
 class LanguageTe extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'te';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptTelu
     {
         return new ScriptTelu();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIn
     {
         return new TerritoryIn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

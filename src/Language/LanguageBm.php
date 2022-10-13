@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryMl;
 
 /**
  * Class LanguageBm - Representation of the Bambara language.
+ * @psalm-immutable
  */
 class LanguageBm extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'bm';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMl
     {
         return new TerritoryMl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

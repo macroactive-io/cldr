@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleGvIm
+ * @psalm-immutable
  */
 class LocaleGvIm extends LocaleGv
 {

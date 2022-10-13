@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryLa;
 
 /**
  * Class LanguageLo - Representation of the Lao language.
+ * @psalm-immutable
  */
 class LanguageLo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'lo';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptLaoo
     {
         return new ScriptLaoo();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLa
     {
         return new TerritoryLa();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritorySk;
 
 /**
  * Class LanguageSk - Representation of the Slovak language.
+ * @psalm-immutable
  */
 class LanguageSk extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'sk';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritorySk
     {
         return new TerritorySk();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule8
     {
         return new PluralRule8();
     }

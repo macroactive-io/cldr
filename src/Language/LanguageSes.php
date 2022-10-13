@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryMl;
 
 /**
  * Class LanguageSes - Representation of the Koyraboro Senni Songhai language.
+ * @psalm-immutable
  */
 class LanguageSes extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ses';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMl
     {
         return new TerritoryMl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

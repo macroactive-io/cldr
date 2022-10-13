@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryAl;
 
 /**
  * Class LanguageSq - Representation of the Albanian language.
+ * @psalm-immutable
  */
 class LanguageSq extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'sq';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryAl
     {
         return new TerritoryAl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

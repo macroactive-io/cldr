@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryAx;
 
 /**
  * Class LocaleSvAx
+ * @psalm-immutable
  */
 class LocaleSvAx extends LocaleSv
 {
-    public function territory()
+    public function territory(): TerritoryAx
     {
         return new TerritoryAx();
     }

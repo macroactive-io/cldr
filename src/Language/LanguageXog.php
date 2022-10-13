@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryUg;
 
 /**
  * Class LanguageXog - Representation of the Soga language.
+ * @psalm-immutable
  */
 class LanguageXog extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'xog';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryUg
     {
         return new TerritoryUg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

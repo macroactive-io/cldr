@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryAm;
 
 /**
  * Class LanguageHy - Representation of the Armenian language.
+ * @psalm-immutable
  */
 class LanguageHy extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'hy';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArmn
     {
         return new ScriptArmn();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryAm
     {
         return new TerritoryAm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

@@ -8,20 +8,21 @@ use Fisharebest\Localization\Script\ScriptLatn;
 
 /**
  * Class LocaleShiLatn
+ * @psalm-immutable
  */
 class LocaleShiLatn extends LocaleShi
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'tamazight';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'TAMAZIGHT';
     }
 
-    public function script()
+    public function script(): ScriptLatn
     {
         return new ScriptLatn();
     }

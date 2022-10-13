@@ -4,34 +4,36 @@ declare(strict_types=1);
 
 namespace Fisharebest\Localization\Locale;
 
+use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageTr;
 
 /**
  * Class LocaleTr - Turkish
+ * @psalm-immutable
  */
 class LocaleTr extends AbstractLocale implements LocaleInterface
 {
-    public function collation()
+    public function collation(): string
     {
         return 'turkish_ci';
     }
 
-    public function endonym()
+    public function endonym(): string
     {
         return 'Türkçe';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'TURKCE';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageTr();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
@@ -39,7 +41,7 @@ class LocaleTr extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PERCENT . '%s';
     }

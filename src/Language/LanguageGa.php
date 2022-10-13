@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryIe;
 
 /**
  * Class LanguageGa - Representation of the Irish language.
+ * @psalm-immutable
  */
 class LanguageGa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ga';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIe
     {
         return new TerritoryIe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule11
     {
         return new PluralRule11();
     }

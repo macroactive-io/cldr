@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCm;
 
 /**
  * Class LanguageNnh - Representation of the Ngiemboon language.
+ * @psalm-immutable
  */
 class LanguageNnh extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nnh';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCm
     {
         return new TerritoryCm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

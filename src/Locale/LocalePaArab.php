@@ -8,22 +8,23 @@ use Fisharebest\Localization\Script\ScriptArab;
 
 /**
  * Class LocalePaArab
+ * @psalm-immutable
  */
 class LocalePaArab extends LocalePa
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::ARAB_DECIMAL,
         ];
     }
 
-    public function script()
+    public function script(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::ARAB_PERCENT;
     }

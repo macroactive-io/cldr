@@ -9,10 +9,11 @@ use Fisharebest\Localization\Territory\TerritoryTn;
 
 /**
  * Class LocaleArTn
+ * @psalm-immutable
  */
 class LocaleArTn extends LocaleAr
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,
@@ -21,19 +22,19 @@ class LocaleArTn extends LocaleAr
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryTn
     {
         return new TerritoryTn();
     }
 
-    protected function numerals()
+    protected function numerals(): array
     {
         $latin = new ScriptLatn();
 
         return $latin->numerals();
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::LTR_MARK . self::PERCENT . self::LTR_MARK;
     }

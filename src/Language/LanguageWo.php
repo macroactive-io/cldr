@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritorySn;
 
 /**
  * Class LanguageXh - Representation of the Wolof language.
+ * @psalm-immutable
  */
 class LanguageWo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'wo';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritorySn
     {
         return new TerritorySn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

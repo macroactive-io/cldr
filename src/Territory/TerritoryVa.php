@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory VA - Holy See (Vatican City State).
+ * @psalm-immutable
  */
 class TerritoryVa extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'VA';
     }

@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory LR - Liberia.
+ * @psalm-immutable
  */
 class TerritoryLr extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'LR';
     }
 
-    public function measurementSystem()
+    public function measurementSystem(): string
     {
         return 'US';
     }

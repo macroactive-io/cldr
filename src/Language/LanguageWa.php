@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryBe;
 
 /**
  * Class LanguageXh - Representation of the Walloon language.
+ * @psalm-immutable
  */
 class LanguageWa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'wa';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryBe
     {
         return new TerritoryBe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

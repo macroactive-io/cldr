@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryZa;
 
 /**
  * Class LocaleEnZa
+ * @psalm-immutable
  */
 class LocaleEnZa extends LocaleEn
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -19,7 +20,7 @@ class LocaleEnZa extends LocaleEn
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryZa
     {
         return new TerritoryZa();
     }

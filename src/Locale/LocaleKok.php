@@ -4,24 +4,26 @@ declare(strict_types=1);
 
 namespace Fisharebest\Localization\Locale;
 
+use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageKok;
 
 /**
  * Class LocaleKok - Konkani
+ * @psalm-immutable
  */
 class LocaleKok extends AbstractLocale implements LocaleInterface
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'कोंकणी';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageKok();
     }
 
-    protected function digitsGroup()
+    protected function digitsGroup(): int
     {
         return 2;
     }

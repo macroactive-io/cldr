@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryLs;
 
 /**
  * Class LanguageEn - Representation of the Sotho language.
+ * @psalm-immutable
  */
 class LanguageSt extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'st';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLs
     {
         return new TerritoryLs();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

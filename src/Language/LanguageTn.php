@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryBw;
 
 /**
  * Class LanguageTn - Representation of the Tswana language.
+ * @psalm-immutable
  */
 class LanguageTn extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'tn';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryBw
     {
         return new TerritoryBw();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

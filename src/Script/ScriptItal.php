@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptItal - Representation of the Old Italic (Etruscan, Oscan, etc.) script.
+ * @psalm-immutable
  */
 class ScriptItal extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Ital';
     }
 
-    public function number()
+    public function number(): string
     {
         return '210';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Old_Italic';
     }

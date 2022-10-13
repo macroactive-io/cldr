@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryFr;
 
 /**
  * Class LanguageFr - Representation of the French language.
+ * @psalm-immutable
  */
 class LanguageFr extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fr';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryFr
     {
         return new TerritoryFr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

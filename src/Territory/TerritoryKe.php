@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory KE - Kenya.
+ * @psalm-immutable
  */
 class TerritoryKe extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'KE';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

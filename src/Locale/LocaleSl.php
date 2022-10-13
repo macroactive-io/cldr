@@ -4,34 +4,36 @@ declare(strict_types=1);
 
 namespace Fisharebest\Localization\Locale;
 
+use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageSl;
 
 /**
  * Class LocaleSl - Slovenian
+ * @psalm-immutable
  */
 class LocaleSl extends AbstractLocale implements LocaleInterface
 {
-    public function collation()
+    public function collation(): string
     {
         return 'slovenian_ci';
     }
 
-    public function endonym()
+    public function endonym(): string
     {
         return 'slovenščina';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'SLOVENSCINA';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageSl();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,
@@ -40,7 +42,7 @@ class LocaleSl extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    public function percentFormat()
+    public function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

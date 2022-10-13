@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritorySa;
 
 /**
  * Class LocaleArSa
+ * @psalm-immutable
  */
 class LocaleArSa extends LocaleAr
 {
-    public function territory()
+    public function territory(): TerritorySa
     {
         return new TerritorySa();
     }

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryBy;
 
 /**
  * Class LanguageBe - Representation of the Belarusian language.
+ * @psalm-immutable
  */
 class LanguageBe extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'be';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptCyrl
     {
         return new ScriptCyrl();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryBy
     {
         return new TerritoryBy();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule7
     {
         return new PluralRule7();
     }

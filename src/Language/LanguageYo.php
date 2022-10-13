@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryNg;
 
 /**
  * Class LanguageYo - Representation of the Yoruba language.
+ * @psalm-immutable
  */
 class LanguageYo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'yo';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNg
     {
         return new TerritoryNg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

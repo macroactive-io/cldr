@@ -6,25 +6,26 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptThai - Representation of the Thai script.
+ * @psalm-immutable
  */
 class ScriptThai extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Thai';
     }
 
-    public function numerals()
+    public function numerals(): array
     {
         return ['๐', '๑', '๒', '๓', '๔', '๕', '๖', '๗', '๘', '๙'];
     }
 
-    public function number()
+    public function number(): string
     {
         return '352';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Thai';
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleChrUs
+ * @psalm-immutable
  */
 class LocaleChrUs extends LocaleChr
 {

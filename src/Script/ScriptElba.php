@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptElba - Representation of the Elbasan script.
+ * @psalm-immutable
  */
 class ScriptElba extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Elba';
     }
 
-    public function number()
+    public function number(): string
     {
         return '226';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Elbasan';
     }

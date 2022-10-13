@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleEsEs - European Spanish
+ * @psalm-immutable
  */
 class LocaleEsEs extends LocaleEs
 {

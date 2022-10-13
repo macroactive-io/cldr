@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleNusSd
+ * @psalm-immutable
  */
 class LocaleNusSd extends LocaleNus
 {

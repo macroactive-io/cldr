@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory AR - Argentina.
+ * @psalm-immutable
  */
 class TerritoryAr extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'AR';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

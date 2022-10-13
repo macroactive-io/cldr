@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryHu;
 
 /**
  * Class LanguageHu - Representation of the Hungarian language.
+ * @psalm-immutable
  */
 class LanguageHu extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'hu';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryHu
     {
         return new TerritoryHu();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

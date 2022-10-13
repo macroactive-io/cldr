@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptWole - Representation of the Woleai script.
+ * @psalm-immutable
  */
 class ScriptWole extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Wole';
     }
 
-    public function number()
+    public function number(): string
     {
         return '480';
     }

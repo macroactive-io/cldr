@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryUg;
 
 /**
  * Class LanguageCgg - Representation of the Chiga language.
+ * @psalm-immutable
  */
 class LanguageCgg extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'cgg';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryUg
     {
         return new TerritoryUg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

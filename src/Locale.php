@@ -6,6 +6,19 @@ namespace Fisharebest\Localization;
 
 use DomainException;
 use Fisharebest\Localization\Locale\LocaleInterface;
+use function array_combine;
+use function array_key_exists;
+use function array_keys;
+use function array_map;
+use function arsort;
+use function implode;
+use function in_array;
+use function preg_match_all;
+use function preg_split;
+use function str_replace;
+use function strcmp;
+use function strtolower;
+use function ucfirst;
 
 /**
  * Class Locale - Static functions to generate and compare locales.
@@ -37,7 +50,13 @@ final class Locale
      */
     public static function create(string $code): LocaleInterface
     {
-        $class = __NAMESPACE__ . '\Locale\Locale' . implode('', array_map(fn ($x) => ucfirst(strtolower($x)), preg_split('/[^a-zA-Z0-9]+/', $code)));
+        $class = __NAMESPACE__ . '\Locale\Locale' . implode(
+            '',
+            array_map(
+                static fn (string $x): string => ucfirst(strtolower($x)),
+                preg_split('/[^a-zA-Z0-9]+/', $code)
+            )
+        );
 
         if (class_exists($class)) {
             return new $class();
@@ -52,39 +71,39 @@ final class Locale
      * @param string[]          $server    The $_SERVER array
      * @param LocaleInterface[] $available All locales supported by the application
      * @param LocaleInterface   $default   Locale to show in no matching locales
-     *
-     * @return LocaleInterface
      */
-    public static function httpAcceptLanguage(array $server, array $available, LocaleInterface $default)
+    public static function httpAcceptLanguage(array $server, array $available, LocaleInterface $default): LocaleInterface
     {
-        if (!empty($server['HTTP_ACCEPT_LANGUAGE'])) {
-            $http_accept_language = strtolower(str_replace(' ', '', $server['HTTP_ACCEPT_LANGUAGE']));
-            preg_match_all('/(?:([a-z][a-z0-9_-]+)(?:;q=([0-9.]+))?)/', $http_accept_language, $match);
-            $preferences = array_map(fn ($x) => $x === '' ? 1.0 : (float) $x, array_combine($match[1], $match[2]));
+        if (!isset($server['HTTP_ACCEPT_LANGUAGE'])) {
+            return $default;
+        }
 
-            // "Common sense" logic for badly configured clients.
-            $preferences = self::httpAcceptChinese($preferences);
-            $preferences = self::httpAcceptDowngrade($preferences);
+        $http_accept_language = strtolower(str_replace(' ', '', $server['HTTP_ACCEPT_LANGUAGE']));
+        preg_match_all('/(?:([a-z][a-z0-9_-]+)(?:;q=([0-9.]+))?)/', $http_accept_language, $match);
+        $preferences = array_map(static fn ($x): float => $x === '' ? 1.0 : (float) $x, array_combine($match[1], $match[2]));
 
-            // Need a stable sort, as the original order is significant
-            $preferences = array_map(function ($x) {
-                static $n = 0;
+        // "Common sense" logic for badly configured clients.
+        $preferences = self::httpAcceptChinese($preferences);
+        $preferences = self::httpAcceptDowngrade($preferences);
 
-                return [$x, --$n];
-            }, $preferences);
-            arsort($preferences);
-            $preferences = array_map(fn ($x) => $x[0], $preferences);
+        // Need a stable sort, as the original order is significant
+        $preferences = array_map(static function (int|float $x): array {
+            static $n = 0;
 
-            foreach (array_keys($preferences) as $code) {
-                try {
-                    $locale = self::create($code);
+            return [$x, --$n];
+        }, $preferences);
+        arsort($preferences);
+        $preferences = array_map(static fn ($x) => $x[0], $preferences);
 
-                    if (in_array($locale, $available, false)) {
-                        return $locale;
-                    }
-                } catch (DomainException $ex) {
-                    // An unknown locale?  Ignore it.
+        foreach (array_keys($preferences) as $code) {
+            try {
+                $locale = self::create($code);
+
+                if (in_array($locale, $available, false)) {
+                    return $locale;
                 }
+            } catch (DomainException $ex) {
+                // An unknown locale?  Ignore it.
             }
         }
 
@@ -94,13 +113,11 @@ final class Locale
     /**
      * If a client requests "de-DE" (but not "de"), then add "de" as a lower-priority fallback.
      *
-     * @param int[] $preferences
+     * @param array<string, int|float> $preferences
      *
-     * @return int[]
-     *
-     * @psalm-param array<int> $preferences
+     * @return array<string, int|float>
      */
-    private static function httpAcceptDowngrade(array $preferences)
+    private static function httpAcceptDowngrade(array $preferences): array
     {
         foreach ($preferences as $code => $priority) {
             // Three parts: "zh-hans-cn" => "zh-hans" and "zh"
@@ -126,13 +143,11 @@ final class Locale
      * Some browsers allow the user to select "Chinese (simplified)", but then use zh-CN instead of zh-Hans.
      * This goes against the advice of w3.org.
      *
-     * @param int[] $preferences
+     * @param array<string, int|float> $preferences
      *
-     * @return (float|int)[]
-     *
-     * @psalm-return array<float|int>
+     * @return array<string, int|float>
      */
-    private static function httpAcceptChinese($preferences): array
+    private static function httpAcceptChinese(array $preferences): array
     {
         foreach (self::$http_accept_chinese as $old => $new) {
             if (array_key_exists($old, $preferences) && !array_key_exists($new, $preferences)) {

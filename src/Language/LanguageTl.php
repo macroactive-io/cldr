@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryPh;
 
 /**
  * Class LanguageTl - Representation of the Tagalog language.
+ * @psalm-immutable
  */
 class LanguageTl extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'tl';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryPh
     {
         return new TerritoryPh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRuleTagalog
     {
         return new PluralRuleTagalog();
     }

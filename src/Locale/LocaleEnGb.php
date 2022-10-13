@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryGb;
 
 /**
  * Class LocaleEnGb - British English
+ * @psalm-immutable
  */
 class LocaleEnGb extends LocaleEn
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'British English';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ENGLISH, BRITISH';
     }
 
-    public function territory()
+    public function territory(): TerritoryGb
     {
         return new TerritoryGb();
     }

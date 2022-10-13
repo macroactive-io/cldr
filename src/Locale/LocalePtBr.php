@@ -9,25 +9,26 @@ use Fisharebest\Localization\Territory\TerritoryBr;
 
 /**
  * Class LocalePtBr - Brazilian Portuguese
+ * @psalm-immutable
  */
 class LocalePtBr extends LocalePt
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'português do Brasil';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'PORTUGUES DO BRASIL';
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }
 
-    public function territory()
+    public function territory(): TerritoryBr
     {
         return new TerritoryBr();
     }

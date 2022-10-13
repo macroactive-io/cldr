@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptSyrc - Representation of the Shuishu script.
+ * @psalm-immutable
  */
 class ScriptShui extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Shui';
     }
 
-    public function number()
+    public function number(): string
     {
         return '530';
     }

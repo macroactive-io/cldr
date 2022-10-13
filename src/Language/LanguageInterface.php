@@ -10,38 +10,32 @@ use Fisharebest\Localization\Territory\TerritoryInterface;
 
 /**
  * Interface LanguageInterface - Representation of a language.
+ * @psalm-immutable
  */
 interface LanguageInterface
 {
     /**
      * The ISO639 code for this language.
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function code();
+    public function code(): string;
 
     /**
      * The default territory where this language is spoken, which would
      * normally be omitted from an IETF language tag.
      * For example, we would normally omit the JP subtag from ja-JP.
-     *
-     * @return TerritoryInterface
      */
-    public function defaultTerritory();
+    public function defaultTerritory(): TerritoryInterface;
 
     /**
      * The default script used to write this language, which would
      * normally be omitted from an IETF language tag.
      * For example, we would normally omit the Latn subtag from en-Latn.
-     *
-     * @return ScriptInterface
      */
-    public function defaultScript();
+    public function defaultScript(): ScriptInterface;
 
     /**
      * Which plural rule is used in this locale?
-     *
-     * @return PluralRuleInterface
      */
-    public function pluralRule();
+    public function pluralRule(): PluralRuleInterface;
 }

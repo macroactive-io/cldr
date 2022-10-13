@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleFurIt
+ * @psalm-immutable
  */
 class LocaleFurIt extends LocaleFur
 {

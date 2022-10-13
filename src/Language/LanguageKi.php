@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryKe;
 
 /**
  * Class LanguageKi - Representation of the Kikuyu language.
+ * @psalm-immutable
  */
 class LanguageKi extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ki';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKe
     {
         return new TerritoryKe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

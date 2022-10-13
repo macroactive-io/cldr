@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleZhHans - Simplified Chinese
+ * @psalm-immutable
  */
 class LocaleZhHans extends LocaleZh
 {
-    public function endonym()
+    public function endonym(): string
     {
         return '简体中文';
     }
 
-    public function languageTag()
+    public function languageTag(): string
     {
         return 'zh-Hans';
     }

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryTz;
 
 /**
  * Class LanguageAsa - Representation of the Asu (Tanzania) language.
+ * @psalm-immutable
  */
 class LanguageAsa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'asa';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryTz
     {
         return new TerritoryTz();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory CL - Chile.
+ * @psalm-immutable
  */
 class TerritoryCl extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'CL';
     }
 
-    public function paperSize()
+    public function paperSize(): string
     {
         return 'US-Letter';
     }

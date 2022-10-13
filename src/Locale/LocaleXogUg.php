@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleXogUg
+ * @psalm-immutable
  */
 class LocaleXogUg extends LocaleXog
 {

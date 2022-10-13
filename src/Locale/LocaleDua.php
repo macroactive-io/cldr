@@ -5,28 +5,30 @@ declare(strict_types=1);
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageDua;
+use Fisharebest\Localization\Language\LanguageInterface;
 
 /**
  * Class LocaleDua - Duala
+ * @psalm-immutable
  */
 class LocaleDua extends AbstractLocale implements LocaleInterface
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'duálá';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'DUALA';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageDua();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -34,7 +36,7 @@ class LocaleDua extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

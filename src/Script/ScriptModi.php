@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptModi - Representation of the Modi, Moḍī script.
+ * @psalm-immutable
  */
 class ScriptModi extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Modi';
     }
 
-    public function number()
+    public function number(): string
     {
         return '324';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Modi';
     }

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIr;
 
 /**
  * Class LanguageFa - Representation of the Persian language.
+ * @psalm-immutable
  */
 class LanguageFa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fa';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIr
     {
         return new TerritoryIr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

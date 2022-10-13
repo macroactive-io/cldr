@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory HK - Hong Kong.
+ * @psalm-immutable
  */
 class TerritoryHk extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'HK';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

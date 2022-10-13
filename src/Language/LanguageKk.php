@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryKz;
 
 /**
  * Class LanguageKk - Representation of the Kazakh language.
+ * @psalm-immutable
  */
 class LanguageKk extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'kk';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptCyrl
     {
         return new ScriptCyrl();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKz
     {
         return new TerritoryKz();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

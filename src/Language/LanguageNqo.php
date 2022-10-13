@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryGn;
 
 /**
  * Class LanguageNqo - Representation of the N’Ko language.
+ * @psalm-immutable
  */
 class LanguageNqo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nqo';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptNkoo
     {
         return new ScriptNkoo();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryGn
     {
         return new TerritoryGn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

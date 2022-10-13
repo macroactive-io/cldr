@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleCggUg
+ * @psalm-immutable
  */
 class LocaleCggUg extends LocaleCgg
 {

@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptCpmn - Representation of the Medefaidrin script.
+ * @psalm-immutable
  */
 class ScriptMedf extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Medf';
     }
 
-    public function number()
+    public function number(): string
     {
         return '265';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Medefaidrin';
     }

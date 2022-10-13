@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryFr;
 
 /**
  * Class LanguageBr - Representation of the Breton language.
+ * @psalm-immutable
  */
 class LanguageBr extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'br';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryFr
     {
         return new TerritoryFr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

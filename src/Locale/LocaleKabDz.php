@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleKabDz
+ * @psalm-immutable
  */
 class LocaleKabDz extends LocaleKab
 {

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleJaJp
+ * @psalm-immutable
  */
 class LocaleJaJp extends LocaleJa
 {

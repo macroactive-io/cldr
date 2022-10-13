@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryRu;
 
 /**
  * Class LanguageRu - Representation of the Russian language.
+ * @psalm-immutable
  */
 class LanguageRu extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ru';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptCyrl
     {
         return new ScriptCyrl();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryRu
     {
         return new TerritoryRu();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule7
     {
         return new PluralRule7();
     }

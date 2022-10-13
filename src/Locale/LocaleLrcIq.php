@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryIq;
 
 /**
  * Class LocaleLrc - Luri
+ * @psalm-immutable
  */
 class LocaleLrcIq extends LocaleLrc
 {
-    public function territory()
+    public function territory(): TerritoryIq
     {
         return new TerritoryIq();
     }

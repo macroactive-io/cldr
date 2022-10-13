@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryCn;
 
 /**
  * Class LanguageZh - Representation of the Chinese language.
+ * @psalm-immutable
  */
 class LanguageZh extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'zh';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCn
     {
         return new TerritoryCn();
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptHans
     {
         return new ScriptHans();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

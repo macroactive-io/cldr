@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCh;
 
 /**
  * Class LanguageWae - Representation of the Walser language.
+ * @psalm-immutable
  */
 class LanguageWae extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'wae';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCh
     {
         return new TerritoryCh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleRofTz
+ * @psalm-immutable
  */
 class LocaleRofTz extends LocaleRof
 {

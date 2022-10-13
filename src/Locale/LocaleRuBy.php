@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryBy;
 
 /**
  * Class LocaleRuBy
+ * @psalm-immutable
  */
 class LocaleRuBy extends LocaleRu
 {
-    public function territory()
+    public function territory(): TerritoryBy
     {
         return new TerritoryBy();
     }

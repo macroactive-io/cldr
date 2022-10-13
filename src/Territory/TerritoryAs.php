@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory AS - American Samoa.
+ * @psalm-immutable
  */
 class TerritoryAs extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'AS';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

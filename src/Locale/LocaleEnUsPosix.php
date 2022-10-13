@@ -8,17 +8,18 @@ use Fisharebest\Localization\Variant\VariantPosix;
 
 /**
  * Class LocaleEnUsPosix
+ * @psalm-immutable
  */
 class LocaleEnUsPosix extends LocaleEnUs
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP => '',
         ];
     }
 
-    public function variant()
+    public function variant(): VariantPosix
     {
         return new VariantPosix();
     }

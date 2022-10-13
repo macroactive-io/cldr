@@ -6,25 +6,26 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory IN - India.
+ * @psalm-immutable
  */
 class TerritoryIn extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'IN';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }
 
-    public function weekendStart()
+    public function weekendStart(): int
     {
         return 0;
     }
 
-    public function weekendEnd()
+    public function weekendEnd(): int
     {
         return 1;
     }

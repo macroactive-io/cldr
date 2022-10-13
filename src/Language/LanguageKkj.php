@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCm;
 
 /**
  * Class LanguageKkj - Representation of the Kako language.
+ * @psalm-immutable
  */
 class LanguageKkj extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'kkj';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCm
     {
         return new TerritoryCm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTgTj - Tajik
+ * @psalm-immutable
  */
 class LocaleTgTj extends LocaleTg
 {

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryMk;
 
 /**
  * Class LanguageMk - Representation of the Macedonian language.
+ * @psalm-immutable
  */
 class LanguageMk extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'mk';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptCyrl
     {
         return new ScriptCyrl();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMk
     {
         return new TerritoryMk();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule15
     {
         return new PluralRule15();
     }

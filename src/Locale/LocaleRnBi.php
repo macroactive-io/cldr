@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleRnBi
+ * @psalm-immutable
  */
 class LocaleRnBi extends LocaleRn
 {

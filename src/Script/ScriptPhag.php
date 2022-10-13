@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptPhag - Representation of the Phags-pa script.
+ * @psalm-immutable
  */
 class ScriptPhag extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Phag';
     }
 
-    public function number()
+    public function number(): string
     {
         return '331';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Phags_Pa';
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleVeZa
+ * @psalm-immutable
  */
 class LocaleVeZa extends LocaleVe
 {

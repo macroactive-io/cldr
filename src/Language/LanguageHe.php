@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIl;
 
 /**
  * Class LanguageHe - Representation of the Hebrew language.
+ * @psalm-immutable
  */
 class LanguageHe extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'he';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptHebr
     {
         return new ScriptHebr();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIl
     {
         return new TerritoryIl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

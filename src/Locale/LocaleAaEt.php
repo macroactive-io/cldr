@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleAaEt
+ * @psalm-immutable
  */
 class LocaleAaEt extends LocaleAa
 {

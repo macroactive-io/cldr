@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptVisp - Representation of the Visible Speech script.
+ * @psalm-immutable
  */
 class ScriptVisp extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Visp';
     }
 
-    public function number()
+    public function number(): string
     {
         return '280';
     }

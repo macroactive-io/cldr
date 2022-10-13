@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleDsbDe
+ * @psalm-immutable
  */
 class LocaleDsbDe extends LocaleDsb
 {

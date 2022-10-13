@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryFi;
 
 /**
  * Class LanguageFi - Representation of the Finnish language.
+ * @psalm-immutable
  */
 class LanguageFi extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fi';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryFi
     {
         return new TerritoryFi();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

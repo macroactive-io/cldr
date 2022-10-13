@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryIt;
 
 /**
  * Class LocaleDeCh - Swiss High German
+ * @psalm-immutable
  */
 class LocaleDeIt extends LocaleDe
 {
-    public function territory()
+    public function territory(): TerritoryIt
     {
         return new TerritoryIt();
     }

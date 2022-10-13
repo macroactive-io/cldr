@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryMx;
 
 /**
  * Class LocaleEsMx - Mexican Spanish
+ * @psalm-immutable
  */
 class LocaleEsMx extends LocaleEs
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'español de México';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ESPANOL DE MEXICO';
     }
 
-    public function territory()
+    public function territory(): TerritoryMx
     {
         return new TerritoryMx();
     }

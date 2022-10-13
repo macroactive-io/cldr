@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryTh;
 
 /**
  * Class LanguageTh - Representation of the Thai language.
+ * @psalm-immutable
  */
 class LanguageTh extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'th';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptThai
     {
         return new ScriptThai();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryTh
     {
         return new TerritoryTh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

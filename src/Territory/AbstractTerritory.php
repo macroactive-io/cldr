@@ -6,45 +6,31 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of a geographic area.
+ * @psalm-immutable
  */
-abstract class AbstractTerritory
+abstract class AbstractTerritory implements TerritoryInterface
 {
-    /**
-     * @return int
-     */
-    public function firstDay()
+    public function firstDay(): int
     {
         return 1;
     }
 
-    /**
-     * @return string
-     */
-    public function measurementSystem()
+    public function measurementSystem(): string
     {
         return 'metric';
     }
 
-    /**
-     * @return string
-     */
-    public function paperSize()
+    public function paperSize(): string
     {
         return 'A4';
     }
 
-    /**
-     * @return int
-     */
-    public function weekendStart()
+    public function weekendStart(): int
     {
         return 6;
     }
 
-    /**
-     * @return int
-     */
-    public function weekendEnd()
+    public function weekendEnd(): int
     {
         return 0;
     }

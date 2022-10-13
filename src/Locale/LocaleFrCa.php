@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryCa;
 
 /**
  * Class LocaleFrCa - Canadian French
+ * @psalm-immutable
  */
 class LocaleFrCa extends LocaleFr
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'français canadien';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'FRANCAIS CANADIEN';
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -29,7 +30,7 @@ class LocaleFrCa extends LocaleFr
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryCa
     {
         return new TerritoryCa();
     }

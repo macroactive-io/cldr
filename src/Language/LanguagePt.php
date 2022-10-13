@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryPt;
 
 /**
  * Class LanguagePt - Representation of the Portuguese language.
+ * @psalm-immutable
  */
 class LanguagePt extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'pt';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryPt
     {
         return new TerritoryPt();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

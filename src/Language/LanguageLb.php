@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryLu;
 
 /**
  * Class LanguageLb - Representation of the Luxembourgish language.
+ * @psalm-immutable
  */
 class LanguageLb extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'lb';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLu
     {
         return new TerritoryLu();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

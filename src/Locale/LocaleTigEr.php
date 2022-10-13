@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTig - Tigre
+ * @psalm-immutable
  */
 class LocaleTigEr extends LocaleTig
 {

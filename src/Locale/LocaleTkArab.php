@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTkArab
+ * @psalm-immutable
  */
 class LocaleTkArab extends LocaleTk
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'تورکمنچه';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'تورکمنچه';
     }

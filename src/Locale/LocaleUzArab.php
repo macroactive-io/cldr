@@ -8,15 +8,16 @@ use Fisharebest\Localization\Script\ScriptArab;
 
 /**
  * Class LocaleUzArab
+ * @psalm-immutable
  */
 class LocaleUzArab extends LocaleUz
 {
-    public function script()
+    public function script(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,
@@ -25,7 +26,7 @@ class LocaleUzArab extends LocaleUz
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::ARAB_PERCENT;
     }

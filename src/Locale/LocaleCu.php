@@ -5,28 +5,30 @@ declare(strict_types=1);
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageCu;
+use Fisharebest\Localization\Language\LanguageInterface;
 
 /**
  * Class LocaleCu - Old Church Slavonic
+ * @psalm-immutable
  */
 class LocaleCu extends AbstractLocale implements LocaleInterface
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'церковнослове́нскїй';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ЦЕРКОВНОСЛОВЕ́НСКЇЙ';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageCu();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -34,7 +36,7 @@ class LocaleCu extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

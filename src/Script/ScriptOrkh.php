@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptOrkh - Representation of the Old Turkic, Orkhon Runic script.
+ * @psalm-immutable
  */
 class ScriptOrkh extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Orkh';
     }
 
-    public function number()
+    public function number(): string
     {
         return '175';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Old_Turkic';
     }

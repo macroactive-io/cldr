@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory IO - British Indian Ocean AbstractTerritory.
+ * @psalm-immutable
  */
 class TerritoryIo extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'IO';
     }

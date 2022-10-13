@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryMo;
 
 /**
  * Class LocaleZhHantMo
+ * @psalm-immutable
  */
 class LocaleZhHantMo extends LocaleZhHant
 {
-    public function territory()
+    public function territory(): TerritoryMo
     {
         return new TerritoryMo();
     }

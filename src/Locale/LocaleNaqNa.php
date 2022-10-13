@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleNaqNa
+ * @psalm-immutable
  */
 class LocaleNaqNa extends LocaleNaq
 {

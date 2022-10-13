@@ -8,10 +8,11 @@ use Fisharebest\Localization\Script\ScriptCyrl;
 
 /**
  * Class LocaleAzCyrl
+ * @psalm-immutable
  */
 class LocaleAzCyrl extends LocaleAz
 {
-    public function script()
+    public function script(): ScriptCyrl
     {
         return new ScriptCyrl();
     }

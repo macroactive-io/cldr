@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory GB - United Kingdom.
+ * @psalm-immutable
  */
 class TerritoryGb extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'GB';
     }
 
-    public function measurementSystem()
+    public function measurementSystem(): string
     {
         return 'UK';
     }

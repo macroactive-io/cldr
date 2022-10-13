@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptLatf - Representation of the Latin (Fraktur variant) script.
+ * @psalm-immutable
  */
 class ScriptLatf extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Latf';
     }
 
-    public function number()
+    public function number(): string
     {
         return '217';
     }

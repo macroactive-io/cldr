@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptKits - Representation of the Khitan small script.
+ * @psalm-immutable
  */
 class ScriptKits extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Kits';
     }
 
-    public function number()
+    public function number(): string
     {
         return '288';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Khitan_Small_Script';
     }

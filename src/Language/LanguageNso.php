@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryZa;
 
 /**
  * Class LanguageNso - Representation of the Pedi language.
+ * @psalm-immutable
  */
 class LanguageNso extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nso';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryZa
     {
         return new TerritoryZa();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

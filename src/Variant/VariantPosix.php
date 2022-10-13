@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Variant;
 
 /**
  * Class Posix - Representation of the Posix variant of en-US.
+ * @psalm-immutable
  */
 class VariantPosix implements VariantInterface
 {

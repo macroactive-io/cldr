@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryMg;
 
 /**
  * Class LanguageMg - Representation of the Malagasy language.
+ * @psalm-immutable
  */
 class LanguageMg extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'mg';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMg
     {
         return new TerritoryMg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

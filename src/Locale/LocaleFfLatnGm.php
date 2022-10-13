@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryGm;
 
 /**
  * Class LocaleFfLatn - Fulah
+ * @psalm-immutable
  */
 class LocaleFfLatnGm extends LocaleFfLatn
 {
-    public function territory()
+    public function territory(): TerritoryGm
     {
         return new TerritoryGm();
     }

@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryBe;
 
 /**
  * Class LocaleEnBe
+ * @psalm-immutable
  */
 class LocaleEnBe extends LocaleEn
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
@@ -19,7 +20,7 @@ class LocaleEnBe extends LocaleEn
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryBe
     {
         return new TerritoryBe();
     }

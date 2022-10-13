@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryZa;
 
 /**
  * Class LanguageXh - Representation of the Xhosa language.
+ * @psalm-immutable
  */
 class LanguageXh extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'xh';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryZa
     {
         return new TerritoryZa();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

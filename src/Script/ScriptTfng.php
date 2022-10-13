@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptTfng - Representation of the Tifinagh script.
+ * @psalm-immutable
  */
 class ScriptTfng extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Tfng';
     }
 
-    public function number()
+    public function number(): string
     {
         return '120';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Tifinagh';
     }

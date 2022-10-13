@@ -6,25 +6,26 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptLaoo - Representation of the Lao script.
+ * @psalm-immutable
  */
 class ScriptLaoo extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Laoo';
     }
 
-    public function numerals()
+    public function numerals(): array
     {
         return ['໐', '໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙'];
     }
 
-    public function number()
+    public function number(): string
     {
         return '356';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Lao';
     }

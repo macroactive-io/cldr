@@ -6,57 +6,46 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Interface TerritoryInterface - Representation of a geographic area.
+ * @psalm-immutable
  */
 interface TerritoryInterface
 {
     /**
      * The ISO639 or M.49 code for this territory.
-     *
-     * @return string
      */
-    public function code();
+    public function code(): string;
 
     /**
      * What is the first day of the week?
      * 0 = Sunday
      * 1 = Monday
      * etc.
-     *
-     * @return int
      */
-    public function firstDay();
+    public function firstDay(): int;
 
     /**
      * Does this territory prefer 'metric', 'UK' or 'US' measurements.
-     *
-     * @return string
      */
-    public function measurementSystem();
+    public function measurementSystem(): string;
 
     /**
      * Does this territory prefer 'A4' or 'US-Letter' paper.
-     *
-     * @return string
      */
-    public function paperSize();
+    public function paperSize(): string;
 
     /**
      * What is the first day of the weekend?
      * 0 = Sunday
      * 1 = Monday
      * etc.
-     *
-     * @return int
      */
-    public function weekendStart();
+    public function weekendStart(): int;
 
     /**
      * What is the last day of the weekend?
      * 0 = Sunday
      * 1 = Monday
      * etc.
-     *
-     * @return int
      */
-    public function weekendEnd();
+    public function weekendEnd(): int;
 }

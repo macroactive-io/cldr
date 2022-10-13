@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryIs;
 
 /**
  * Class LanguageIs - Representation of the Icelandic language.
+ * @psalm-immutable
  */
 class LanguageIs extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'is';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIs
     {
         return new TerritoryIs();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule15
     {
         return new PluralRule15();
     }

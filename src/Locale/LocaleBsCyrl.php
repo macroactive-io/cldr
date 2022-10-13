@@ -8,15 +8,16 @@ use Fisharebest\Localization\Script\ScriptCyrl;
 
 /**
  * Class LocaleBsCyrl
+ * @psalm-immutable
  */
 class LocaleBsCyrl extends LocaleBs
 {
-    public function script()
+    public function script(): ScriptCyrl
     {
         return new ScriptCyrl();
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::PERCENT;
     }

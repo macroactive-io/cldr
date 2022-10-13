@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCd;
 
 /**
  * Class LanguageLn - Representation of the Lingala language.
+ * @psalm-immutable
  */
 class LanguageLn extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ln';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCd
     {
         return new TerritoryCd();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

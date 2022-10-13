@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleXhZa - Xhosa
+ * @psalm-immutable
  */
 class LocaleXhZa extends LocaleXh
 {

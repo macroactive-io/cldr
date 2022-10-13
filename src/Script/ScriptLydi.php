@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptLydi - Representation of the Lydian script.
+ * @psalm-immutable
  */
 class ScriptLydi extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Lydi';
     }
 
-    public function number()
+    public function number(): string
     {
         return '116';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Lydian';
     }

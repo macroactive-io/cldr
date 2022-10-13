@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleJmcTz
+ * @psalm-immutable
  */
 class LocaleJmcTz extends LocaleJmc
 {

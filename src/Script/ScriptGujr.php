@@ -6,25 +6,26 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptGujr - Representation of the Gujarati script.
+ * @psalm-immutable
  */
 class ScriptGujr extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Gujr';
     }
 
-    public function numerals()
+    public function numerals(): array
     {
         return ['૦', '૧', '૨', '૩', '૪', '૫', '૬', '૭', '૮', '૯'];
     }
 
-    public function number()
+    public function number(): string
     {
         return '320';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Gujarati';
     }

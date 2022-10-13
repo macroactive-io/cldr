@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryLi;
 
 /**
  * Class LocaleDeLi
+ * @psalm-immutable
  */
 class LocaleDeLi extends LocaleDe
 {
-    public function territory()
+    public function territory(): TerritoryLi
     {
         return new TerritoryLi();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,
@@ -24,7 +25,7 @@ class LocaleDeLi extends LocaleDe
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::PERCENT;
     }

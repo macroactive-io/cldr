@@ -9,20 +9,21 @@ use Fisharebest\Localization\Script\ScriptArab;
 
 /**
  * Class LanguageAr - Representation of the Arabic language.
+ * @psalm-immutable
  */
 class LanguageAr extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ar';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule12
     {
         return new PluralRule12();
     }

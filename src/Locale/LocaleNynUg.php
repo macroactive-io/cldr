@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleNynUg
+ * @psalm-immutable
  */
 class LocaleNynUg extends LocaleNyn
 {

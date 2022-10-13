@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptKore - Representation of the Korean (alias for Hangul + Han) script.
+ * @psalm-immutable
  */
 class ScriptKore extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Kore';
     }
 
-    public function number()
+    public function number(): string
     {
         return '287';
     }

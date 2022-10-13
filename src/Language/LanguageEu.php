@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryEs;
 
 /**
  * Class LanguageEu - Representation of the Basque language.
+ * @psalm-immutable
  */
 class LanguageEu extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'eu';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryEs
     {
         return new TerritoryEs();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

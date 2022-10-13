@@ -8,20 +8,21 @@ use Fisharebest\Localization\Script\ScriptGlag;
 
 /**
  * Class LocaleCuGlag - Old Church Slavonic
+ * @psalm-immutable
  */
 class LocaleCuGlag extends LocaleCu
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ';
     }
 
-    public function script()
+    public function script(): ScriptGlag
     {
         return new ScriptGlag();
     }

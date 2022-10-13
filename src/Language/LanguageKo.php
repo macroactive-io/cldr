@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryKr;
 
 /**
  * Class LanguageKo - Representation of the Korean language.
+ * @psalm-immutable
  */
 class LanguageKo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ko';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptKore
     {
         return new ScriptKore();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKr
     {
         return new TerritoryKr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

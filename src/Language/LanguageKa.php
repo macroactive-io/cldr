@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryGe;
 
 /**
  * Class LanguageKa - Representation of the Georgian language.
+ * @psalm-immutable
  */
 class LanguageKa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ka';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptGeor
     {
         return new ScriptGeor();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryGe
     {
         return new TerritoryGe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

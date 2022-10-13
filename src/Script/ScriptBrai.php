@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptBrai - Representation of the Braille script.
+ * @psalm-immutable
  */
 class ScriptBrai extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Brai';
     }
 
-    public function number()
+    public function number(): string
     {
         return '570';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Braille';
     }

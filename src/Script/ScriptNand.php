@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptNand - Representation of the Nandinagari script.
+ * @psalm-immutable
  */
 class ScriptNand extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Nand';
     }
 
-    public function number()
+    public function number(): string
     {
         return '311';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Nandinagari';
     }

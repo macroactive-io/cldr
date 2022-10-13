@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCv;
 
 /**
  * Class LanguageKea - Representation of the Kabuverdianu language.
+ * @psalm-immutable
  */
 class LanguageKea extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'kea';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCv
     {
         return new TerritoryCv();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryMy;
 
 /**
  * Class LocaleTaMy
+ * @psalm-immutable
  */
 class LocaleTaMy extends LocaleTa
 {
-    public function territory()
+    public function territory(): TerritoryMy
     {
         return new TerritoryMy();
     }
 
-    protected function digitsGroup()
+    protected function digitsGroup(): int
     {
         return 3;
     }

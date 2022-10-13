@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCh;
 
 /**
  * Class LanguageRm - Representation of the Romansh language.
+ * @psalm-immutable
  */
 class LanguageRm extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'rm';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCh
     {
         return new TerritoryCh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

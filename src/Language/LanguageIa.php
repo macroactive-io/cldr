@@ -8,15 +8,16 @@ use Fisharebest\Localization\PluralRule\PluralRule1;
 
 /**
  * Class LanguageIa - Representation of the Interlingua (International Auxiliary AbstractLanguage language.
+ * @psalm-immutable
  */
 class LanguageIa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ia';
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

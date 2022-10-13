@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryCv;
 
 /**
  * Class LocalePtCv
+ * @psalm-immutable
  */
 class LocalePtCv extends LocalePt
 {
-    public function territory()
+    public function territory(): TerritoryCv
     {
         return new TerritoryCv();
     }

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIr;
 
 /**
  * Class LanguageMzn - Representation of the Mazanderani language.
+ * @psalm-immutable
  */
 class LanguageMzn extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'mzn';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIr
     {
         return new TerritoryIr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule12
     {
         return new PluralRule12();
     }

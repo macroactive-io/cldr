@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCz;
 
 /**
  * Class LanguageCs - Representation of the Czech language.
+ * @psalm-immutable
  */
 class LanguageCs extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'cs';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCz
     {
         return new TerritoryCz();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule8
     {
         return new PluralRule8();
     }

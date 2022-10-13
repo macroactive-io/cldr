@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryNo;
 
 /**
  * Class LanguageNn - Representation of the Norwegian Nynorsk language.
+ * @psalm-immutable
  */
 class LanguageNn extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nn';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNo
     {
         return new TerritoryNo();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

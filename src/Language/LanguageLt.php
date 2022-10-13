@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryLt;
 
 /**
  * Class LanguageLt - Representation of the Lithuanian language.
+ * @psalm-immutable
  */
 class LanguageLt extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'lt';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLt
     {
         return new TerritoryLt();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule6
     {
         return new PluralRule6();
     }

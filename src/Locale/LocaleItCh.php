@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryCh;
 
 /**
  * Class LocaleItCh
+ * @psalm-immutable
  */
 class LocaleItCh extends LocaleIt
 {
-    public function territory()
+    public function territory(): TerritoryCh
     {
         return new TerritoryCh();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP => self::APOSTROPHE,

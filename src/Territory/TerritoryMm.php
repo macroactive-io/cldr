@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory MM - Myanmar.
+ * @psalm-immutable
  */
 class TerritoryMm extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'MM';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }
 
-    public function measurementSystem()
+    public function measurementSystem(): string
     {
         return 'US';
     }

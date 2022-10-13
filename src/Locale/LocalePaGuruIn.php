@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocalePaGuruIn
+ * @psalm-immutable
  */
 class LocalePaGuruIn extends LocalePaGuru
 {

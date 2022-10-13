@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryNl;
 
 /**
  * Class LanguageNl - Representation of the Dutch language.
+ * @psalm-immutable
  */
 class LanguageNl extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nl';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNl
     {
         return new TerritoryNl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

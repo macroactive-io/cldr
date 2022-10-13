@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptPhnx - Representation of the Phoenician script.
+ * @psalm-immutable
  */
 class ScriptPhnx extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Phnx';
     }
 
-    public function number()
+    public function number(): string
     {
         return '115';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Phoenician';
     }

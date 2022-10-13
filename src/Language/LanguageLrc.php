@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIr;
 
 /**
  * Class LanguageLrc - Representation of the Luri language.
+ * @psalm-immutable
  */
 class LanguageLrc extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'lrc';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIr
     {
         return new TerritoryIr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule12
     {
         return new PluralRule12();
     }

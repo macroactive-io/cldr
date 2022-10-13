@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryEr;
 
 /**
  * Class LanguageSsy - Representation of the Saho language.
+ * @psalm-immutable
  */
 class LanguageSsy extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ssy';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryEr
     {
         return new TerritoryEr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

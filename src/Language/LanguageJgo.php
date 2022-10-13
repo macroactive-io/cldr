@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCm;
 
 /**
  * Class LanguageJgo - Representation of the Ngomba language.
+ * @psalm-immutable
  */
 class LanguageJgo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'jgo';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCm
     {
         return new TerritoryCm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

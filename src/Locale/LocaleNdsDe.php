@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleNdsDe - Low German
+ * @psalm-immutable
  */
 class LocaleNdsDe extends LocaleNds
 {

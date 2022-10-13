@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTeIn
+ * @psalm-immutable
  */
 class LocaleTeIn extends LocaleTe
 {

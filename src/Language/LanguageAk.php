@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryGh;
 
 /**
  * Class LanguageAk - Representation of the Akan language.
+ * @psalm-immutable
  */
 class LanguageAk extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ak';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryGh
     {
         return new TerritoryGh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule2
     {
         return new PluralRule2();
     }

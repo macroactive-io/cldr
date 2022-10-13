@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryKe;
 
 /**
  * Class LanguageSaq - Representation of the Samburu language.
+ * @psalm-immutable
  */
 class LanguageSaq extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'saq';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKe
     {
         return new TerritoryKe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

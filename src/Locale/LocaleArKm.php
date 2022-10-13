@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryKm;
 
 /**
  * Class LocaleArKm
+ * @psalm-immutable
  */
 class LocaleArKm extends LocaleAr
 {
-    public function territory()
+    public function territory(): TerritoryKm
     {
         return new TerritoryKm();
     }

@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryPk;
 
 /**
  * Class LanguageUr - Representation of the Urdu language.
+ * @psalm-immutable
  */
 class LanguageUr extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ur';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryPk
     {
         return new TerritoryPk();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptZmth - Representation of the Mathematical notation script.
+ * @psalm-immutable
  */
 class ScriptZmth extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Zmth';
     }
 
-    public function number()
+    public function number(): string
     {
         return '995';
     }

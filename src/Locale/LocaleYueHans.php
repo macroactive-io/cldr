@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleYueHans - Yue
+ * @psalm-immutable
  */
 class LocaleYueHans extends LocaleYue
 {
-    public function endonym()
+    public function endonym(): string
     {
         return '粤语';
     }

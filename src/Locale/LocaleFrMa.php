@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryMa;
 
 /**
  * Class LocaleFrMa
+ * @psalm-immutable
  */
 class LocaleFrMa extends LocaleFr
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
@@ -19,7 +20,7 @@ class LocaleFrMa extends LocaleFr
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryMa
     {
         return new TerritoryMa();
     }

@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryLu;
 
 /**
  * Class LocaleFrLu
+ * @psalm-immutable
  */
 class LocaleFrLu extends LocaleFr
 {
-    public function territory()
+    public function territory(): TerritoryLu
     {
         return new TerritoryLu();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::COMMA,

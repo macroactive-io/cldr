@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptKitl - Representation of the Khitan large script.
+ * @psalm-immutable
  */
 class ScriptKitl extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Kitl';
     }
 
-    public function number()
+    public function number(): string
     {
         return '505';
     }

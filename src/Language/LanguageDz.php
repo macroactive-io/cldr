@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryBt;
 
 /**
  * Class LanguageDz - Representation of the Dzongkha language.
+ * @psalm-immutable
  */
 class LanguageDz extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'dz';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptTibt
     {
         return new ScriptTibt();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryBt
     {
         return new TerritoryBt();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

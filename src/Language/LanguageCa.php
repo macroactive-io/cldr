@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryEs;
 
 /**
  * Class LanguageCa - Representation of the Catalan language.
+ * @psalm-immutable
  */
 class LanguageCa extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ca';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryEs
     {
         return new TerritoryEs();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

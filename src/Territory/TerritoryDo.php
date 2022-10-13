@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory DO - Dominican Republic.
+ * @psalm-immutable
  */
 class TerritoryDo extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'DO';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

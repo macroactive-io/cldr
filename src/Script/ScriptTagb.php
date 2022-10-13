@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptTagb - Representation of the Tagbanwa script.
+ * @psalm-immutable
  */
 class ScriptTagb extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Tagb';
     }
 
-    public function number()
+    public function number(): string
     {
         return '373';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Tagbanwa';
     }

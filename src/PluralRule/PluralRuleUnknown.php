@@ -13,12 +13,12 @@ use DomainException;
  */
 class PluralRuleUnknown implements PluralRuleInterface
 {
-    public function plurals(): void
+    public function plurals(): int
     {
         throw new DomainException('No plural rule defined for this language');
     }
 
-    public function plural($number): void
+    public function plural(int $number): int
     {
         throw new DomainException('No plural rule defined for this language');
     }

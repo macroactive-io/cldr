@@ -6,18 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory PT - Portugal.
+ * @psalm-immutable
  */
 class TerritoryPt extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'PT';
     }
 
-    /**
-     * @return int
-     */
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

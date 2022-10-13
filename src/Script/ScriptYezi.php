@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptYezi - Representation of the Yezidi script.
+ * @psalm-immutable
  */
 class ScriptYezi extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Yezi';
     }
 
-    public function number()
+    public function number(): string
     {
         return '192';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Yezidi';
     }

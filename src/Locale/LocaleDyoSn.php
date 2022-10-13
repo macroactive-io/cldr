@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleDyoSn
+ * @psalm-immutable
  */
 class LocaleDyoSn extends LocaleDyo
 {

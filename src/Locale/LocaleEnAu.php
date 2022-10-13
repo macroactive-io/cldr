@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryAu;
 
 /**
  * Class LocaleEnAu - Australian English
+ * @psalm-immutable
  */
 class LocaleEnAu extends LocaleEn
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Australian English';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ENGLISH, AUSTRALIAN';
     }
 
-    public function territory()
+    public function territory(): TerritoryAu
     {
         return new TerritoryAu();
     }

@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptDsrt - Representation of the Deseret (Mormon) script.
+ * @psalm-immutable
  */
 class ScriptDsrt extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Dsrt';
     }
 
-    public function number()
+    public function number(): string
     {
         return '250';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Deseret';
     }

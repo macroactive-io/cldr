@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryDe;
 
 /**
  * Class LanguageHsb - Representation of the Upper Sorbian language.
+ * @psalm-immutable
  */
 class LanguageHsb extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'hsb';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryDe
     {
         return new TerritoryDe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule10
     {
         return new PluralRule10();
     }

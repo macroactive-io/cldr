@@ -8,10 +8,11 @@ use Fisharebest\Localization\Variant\VariantValencia;
 
 /**
  * Class LocaleCaEsValencia
+ * @psalm-immutable
  */
 class LocaleCaEsValencia extends LocaleCaEs
 {
-    public function variant()
+    public function variant(): VariantValencia
     {
         return new VariantValencia();
     }

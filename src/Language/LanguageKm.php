@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryKh;
 
 /**
  * Class LanguageKm - Representation of the Central Khmer language.
+ * @psalm-immutable
  */
 class LanguageKm extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'km';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptKhmr
     {
         return new ScriptKhmr();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKh
     {
         return new TerritoryKh();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

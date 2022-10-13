@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryUz;
 
 /**
  * Class LanguageUz - Representation of the Uzbek language.
+ * @psalm-immutable
  */
 class LanguageUz extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'uz';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryUz
     {
         return new TerritoryUz();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

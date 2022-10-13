@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryPy;
 
 /**
  * Class LocaleEsPy
+ * @psalm-immutable
  */
 class LocaleEsPy extends LocaleEs
 {
-    public function territory()
+    public function territory(): TerritoryPy
     {
         return new TerritoryPy();
     }

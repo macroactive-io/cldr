@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryMa;
 
 /**
  * Class LanguageTzm - Representation of the Central Atlas Tamazight language.
+ * @psalm-immutable
  */
 class LanguageTzm extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'tzm';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMa
     {
         return new TerritoryMa();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRuleCentralAtlasTamazight
     {
         return new PluralRuleCentralAtlasTamazight();
     }

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryFo;
 
 /**
  * Class LanguageFo - Representation of the Faroese language.
+ * @psalm-immutable
  */
 class LanguageFo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fo';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryFo
     {
         return new TerritoryFo();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

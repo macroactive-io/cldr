@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleRwkTz
+ * @psalm-immutable
  */
 class LocaleRwkTz extends LocaleRwk
 {

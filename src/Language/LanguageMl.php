@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LanguageMl - Representation of the Malayalam language.
+ * @psalm-immutable
  */
 class LanguageMl extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ml';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptMlym
     {
         return new ScriptMlym();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIn
     {
         return new TerritoryIn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

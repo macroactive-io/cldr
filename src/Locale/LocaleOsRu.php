@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleOsRu
+ * @psalm-immutable
  */
 class LocaleOsRu extends LocaleOs
 {

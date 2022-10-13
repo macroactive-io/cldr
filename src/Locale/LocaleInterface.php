@@ -12,127 +12,110 @@ use Fisharebest\Localization\Variant\VariantInterface;
 
 /**
  * Interface LocaleInterface - Locale.
+ * @psalm-immutable
  */
 interface LocaleInterface
 {
     /**
      * Generate a linux locale code for this locale.  Examples include
      * "fr", “en_GB”, “ca_ES@valencia” and “sr@latin”.
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function code();
+    public function code(): string;
 
     /**
      * Which collation sequence should be used for this locale?
      * “unicode_ci” would mean use “utf8_unicode_ci”, “utf8mb4_unicode_ci”, etc.
      *
      * @website http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function collation();
+    public function collation(): string;
 
     /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
-     * @param string $string e.g. "123.45"
-     *
-     * @return string
+     * @param non-empty-string $string
+     * @return non-empty-string
      */
-    public function digits($string);
+    public function digits(string $string): string;
 
     /**
      * Is text written left-to-right “ltr” or right-to-left “rtl”.
      * Most scripts are only written in one direction, but there are a few that
      * can be written in either direction.
      *
-     * @return string “ltr” or “rtl”
+     * @return 'ltr'|'rtl'
      */
-    public function direction();
+    public function direction(): string;
 
     /**
      * The name of this locale, in its own language/script, and with the
      * customary capitalization of the locale.
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function endonym();
+    public function endonym(): string;
 
     /**
      * A sortable version of the locale name.  For example, “British English”
      * might sort as “ENGLISH, BRITISH” to keep all the variants of English together.
      * All-capitals makes sorting easier, as we can use a simple strcmp().
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function endonymSortable();
+    public function endonymSortable(): string;
 
     /**
      * Markup for an HTML element
      *
-     * @return string e.g. lang="ar" dir="rtl"
+     * @return non-empty-string e.g. lang="ar" dir="rtl"
      */
-    public function htmlAttributes();
+    public function htmlAttributes(): string;
 
     /**
      * The language used by this locale.
-     *
-     * @return LanguageInterface
      */
-    public function language();
+    public function language(): LanguageInterface;
 
     /**
      * The IETF language tag for the locale.  Examples include
      * “fr, “en-GB”, “ca-ES-valencia” and “sr-Latn”.
-     *
-     * @return string
+     * @return non-empty-string
      */
-    public function languageTag();
+    public function languageTag(): string;
 
     /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
-     * @param string|float|int $number The number to be localized
-     *
-     * @return string
+     * @param int|float $number The number to be localized
+     * @return non-empty-string
      */
-    public function number($number);
+    public function number(int|float $number): string;
 
     /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
-     * @param string|float|int $number The number to be localized
-     *
-     * @return string
+     * @param float|int $number The number to be localized
+     * @return non-empty-string
      */
-    public function percent($number);
+    public function percent(int|float $number): string;
 
     /**
      * Which plural rule is used in this locale
-     *
-     * @return PluralRuleInterface
      */
-    public function pluralRule();
+    public function pluralRule(): PluralRuleInterface;
 
     /**
      * The script used by this locale.
-     *
-     * @return ScriptInterface
      */
-    public function script();
+    public function script(): ScriptInterface;
 
     /**
      * The territory used by this locale.
-     *
-     * @return TerritoryInterface
      */
-    public function territory();
+    public function territory(): TerritoryInterface;
 
     /**
      * The variant, if any of this locale.
-     *
-     * @return VariantInterface|null
      */
-    public function variant();
+    public function variant(): ?VariantInterface;
 }

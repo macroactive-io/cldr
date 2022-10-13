@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryGr;
 
 /**
  * Class LanguageEl - Representation of the Modern Greek (1453-) language.
+ * @psalm-immutable
  */
 class LanguageEl extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'el';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptGrek
     {
         return new ScriptGrek();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryGr
     {
         return new TerritoryGr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

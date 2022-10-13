@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryKz;
 
 /**
  * Class LocaleRuKz
+ * @psalm-immutable
  */
 class LocaleRuKz extends LocaleRu
 {
-    public function territory()
+    public function territory(): TerritoryKz
     {
         return new TerritoryKz();
     }

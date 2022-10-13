@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleLrc - Luri
+ * @psalm-immutable
  */
 class LocaleLrcIr extends LocaleLrc
 {

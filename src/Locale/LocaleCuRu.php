@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleCuRu - Old Church Slavonic
+ * @psalm-immutable
  */
 class LocaleCuRu extends LocaleCu
 {

@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptAraf - Representation of the Afaka script.
+ * @psalm-immutable
  */
 class ScriptAfak extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Afak';
     }
 
-    public function number()
+    public function number(): string
     {
         return '439';
     }

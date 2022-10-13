@@ -8,20 +8,21 @@ use Fisharebest\Localization\Script\ScriptLatn;
 
 /**
  * Class LocaleJv - Javanese
+ * @psalm-immutable
  */
 class LocaleJvLatn extends LocaleJv
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Basa Jawa';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'BASA JAWA';
     }
 
-    public function script()
+    public function script(): ScriptLatn
     {
         return new ScriptLatn();
     }

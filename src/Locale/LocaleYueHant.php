@@ -8,15 +8,16 @@ use Fisharebest\Localization\Script\ScriptHant;
 
 /**
  * Class LocaleYueHant - Yue
+ * @psalm-immutable
  */
 class LocaleYueHant extends LocaleYue
 {
-    public function endonym()
+    public function endonym(): string
     {
         return '粤语';
     }
 
-    public function script()
+    public function script(): ScriptHant
     {
         return new ScriptHant();
     }

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryNl;
 
 /**
  * Class LanguageFy - Representation of the Western Frisian language.
+ * @psalm-immutable
  */
 class LanguageFy extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fy';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNl
     {
         return new TerritoryNl();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryLr;
 
 /**
  * Class LanguageVai - Representation of the Vai language.
+ * @psalm-immutable
  */
 class LanguageVai extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'vai';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptVaii
     {
         return new ScriptVaii();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLr
     {
         return new TerritoryLr();
     }

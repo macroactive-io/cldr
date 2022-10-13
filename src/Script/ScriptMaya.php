@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptMaya - Representation of the Mayan hieroglyphs script.
+ * @psalm-immutable
  */
 class ScriptMaya extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Maya';
     }
 
-    public function number()
+    public function number(): string
     {
         return '090';
     }

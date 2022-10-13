@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryEs;
 
 /**
  * Class LanguageEs - Representation of the Spanish language.
+ * @psalm-immutable
  */
 class LanguageEs extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'es';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryEs
     {
         return new TerritoryEs();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

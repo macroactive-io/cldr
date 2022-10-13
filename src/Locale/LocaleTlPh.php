@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTlPh - Tagalog
+ * @psalm-immutable
  */
 class LocaleTlPh extends LocaleTl
 {

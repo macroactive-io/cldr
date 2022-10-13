@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptCpmn - Representation of the Cypro-Minoan script.
+ * @psalm-immutable
  */
 class ScriptCpmn extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Cpmn';
     }
 
-    public function number()
+    public function number(): string
     {
         return '402';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Cypro_Minoan';
     }

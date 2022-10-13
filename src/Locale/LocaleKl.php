@@ -4,29 +4,31 @@ declare(strict_types=1);
 
 namespace Fisharebest\Localization\Locale;
 
+use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageKl;
 
 /**
  * Class LocaleKl - Kalaallisut
+ * @psalm-immutable
  */
 class LocaleKl extends AbstractLocale implements LocaleInterface
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'kalaallisut';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'KALAALLISUT';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageKl();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,
@@ -35,7 +37,7 @@ class LocaleKl extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

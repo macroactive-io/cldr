@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryZw;
 
 /**
  * Class LanguageNd - Representation of the North Ndebele language.
+ * @psalm-immutable
  */
 class LanguageNd extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nd';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryZw
     {
         return new TerritoryZw();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

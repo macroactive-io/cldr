@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryIr;
 
 /**
  * Class LanguageAz - Representation of the Azerbaijani language.
+ * @psalm-immutable
  */
 class LanguageAz extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'az';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIr
     {
         return new TerritoryIr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryPk;
 
 /**
  * Class LocaleEnPk
+ * @psalm-immutable
  */
 class LocaleEnPk extends LocaleEn
 {
-    public function territory()
+    public function territory(): TerritoryPk
     {
         return new TerritoryPk();
     }
 
-    protected function digitsGroup()
+    protected function digitsGroup(): int
     {
         return 2;
     }

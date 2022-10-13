@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryNl;
 
 /**
  * Class LocaleNdsNl - Low German
+ * @psalm-immutable
  */
 class LocaleNdsNl extends LocaleNds
 {
-    public function territory()
+    public function territory(): TerritoryNl
     {
         return new TerritoryNl();
     }

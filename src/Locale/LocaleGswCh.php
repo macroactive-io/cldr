@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleGswCh
+ * @psalm-immutable
  */
 class LocaleGswCh extends LocaleGsw
 {

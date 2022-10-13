@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryLv;
 
 /**
  * Class LanguageLv - Representation of the Latvian language.
+ * @psalm-immutable
  */
 class LanguageLv extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'lv';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryLv
     {
         return new TerritoryLv();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule3
     {
         return new PluralRule3();
     }

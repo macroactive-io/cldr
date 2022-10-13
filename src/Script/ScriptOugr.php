@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptOugr - Representation of the Old Uyghur script.
+ * @psalm-immutable
  */
 class ScriptOugr extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Ougr';
     }
 
-    public function number()
+    public function number(): string
     {
         return '143';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Old_Uyghur';
     }

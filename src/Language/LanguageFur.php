@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryIt;
 
 /**
  * Class LanguageFur - Representation of the Friulian language.
+ * @psalm-immutable
  */
 class LanguageFur extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'fur';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIt
     {
         return new TerritoryIt();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

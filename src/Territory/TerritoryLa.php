@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory LA - Lao People's Democratic Republic.
+ * @psalm-immutable
  */
 class TerritoryLa extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'LA';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }

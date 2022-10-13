@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleShiTfngMa
+ * @psalm-immutable
  */
 class LocaleShiTfngMa extends LocaleShiTfng
 {

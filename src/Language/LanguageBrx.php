@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LanguageBrx - Representation of the Bodo (India) language.
+ * @psalm-immutable
  */
 class LanguageBrx extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'brx';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIn
     {
         return new TerritoryIn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

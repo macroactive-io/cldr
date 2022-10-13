@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptGlag - Representation of the Glagolitic script.
+ * @psalm-immutable
  */
 class ScriptGlag extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Glag';
     }
 
-    public function number()
+    public function number(): string
     {
         return '225';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Glagolitic';
     }

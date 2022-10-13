@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory PH - Philippines.
+ * @psalm-immutable
  */
 class TerritoryPh extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'PH';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }
 
-    public function paperSize()
+    public function paperSize(): string
     {
         return 'US-Letter';
     }

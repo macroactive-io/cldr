@@ -8,20 +8,21 @@ use Fisharebest\Localization\Script\ScriptLatn;
 
 /**
  * Class LocaleCeLatn - Chechen
+ * @psalm-immutable
  */
 class LocaleCeLatn extends LocaleCe
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Chechen';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'CHECHEN';
     }
 
-    public function script()
+    public function script(): ScriptLatn
     {
         return new ScriptLatn();
     }

@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryCa;
 
 /**
  * Class LocaleEnCa - Canadian English
+ * @psalm-immutable
  */
 class LocaleEnCa extends LocaleEn
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Canadian English';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ENGLISH, CANADIAN';
     }
 
-    public function territory()
+    public function territory(): TerritoryCa
     {
         return new TerritoryCa();
     }

@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryKe;
 
 /**
  * Class LanguageKam - Representation of the Kamba (Kenya) language.
+ * @psalm-immutable
  */
 class LanguageKam extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'kam';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKe
     {
         return new TerritoryKe();
     }

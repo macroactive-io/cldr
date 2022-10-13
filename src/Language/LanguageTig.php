@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryEr;
 
 /**
  * Class LanguageTif - Representation of the Tigre language.
+ * @psalm-immutable
  */
 class LanguageTig extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'tig';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptEthi
     {
         return new ScriptEthi();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryEr
     {
         return new TerritoryEr();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

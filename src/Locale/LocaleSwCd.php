@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryCd;
 
 /**
  * Class LocaleSwCd
+ * @psalm-immutable
  */
 class LocaleSwCd extends LocaleSw
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
@@ -19,7 +20,7 @@ class LocaleSwCd extends LocaleSw
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryCd
     {
         return new TerritoryCd();
     }

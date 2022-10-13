@@ -8,10 +8,11 @@ use Fisharebest\Localization\Territory\TerritoryXk;
 
 /**
  * Class LocaleSqXk
+ * @psalm-immutable
  */
 class LocaleSqXk extends LocaleSq
 {
-    public function territory()
+    public function territory(): TerritoryXk
     {
         return new TerritoryXk();
     }

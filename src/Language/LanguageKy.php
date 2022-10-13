@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryKg;
 
 /**
  * Class LanguageKy - Representation of the Kirghiz language.
+ * @psalm-immutable
  */
 class LanguageKy extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ky';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryKg
     {
         return new TerritoryKg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTeoUg
+ * @psalm-immutable
  */
 class LocaleTeoUg extends LocaleTeo
 {

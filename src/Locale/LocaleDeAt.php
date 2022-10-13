@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryAt;
 
 /**
  * Class LocaleDeAt - Austrian German
+ * @psalm-immutable
  */
 class LocaleDeAt extends LocaleDe
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Österreichisches Deutsch';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'OSTERREICHISCHES DEUTSCH';
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -29,7 +30,7 @@ class LocaleDeAt extends LocaleDe
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryAt
     {
         return new TerritoryAt();
     }

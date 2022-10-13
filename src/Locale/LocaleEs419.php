@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\Territory419;
 
 /**
  * Class LocaleEs419 - Latin American Spanish
+ * @psalm-immutable
  */
 class LocaleEs419 extends LocaleEs
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'español latinoamericano';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ESPANOL LATINOAMERICANO';
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::COMMA,
@@ -29,7 +30,7 @@ class LocaleEs419 extends LocaleEs
         ];
     }
 
-    public function territory()
+    public function territory(): Territory419
     {
         return new Territory419();
     }

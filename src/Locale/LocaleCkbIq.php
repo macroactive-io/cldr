@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleCkb - Sorani
+ * @psalm-immutable
  */
 class LocaleCkbIq extends LocaleCkb
 {

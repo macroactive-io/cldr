@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIn;
 
 /**
  * Class LanguageKs - Representation of the Kashmiri language.
+ * @psalm-immutable
  */
 class LanguageKs extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ks';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIn
     {
         return new TerritoryIn();
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

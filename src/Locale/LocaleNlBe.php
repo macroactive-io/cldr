@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryBe;
 
 /**
  * Class LocaleNlBe - Flemish
+ * @psalm-immutable
  */
 class LocaleNlBe extends LocaleNl
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Vlaams';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'VLAAMS';
     }
 
-    public function territory()
+    public function territory(): TerritoryBe
     {
         return new TerritoryBe();
     }

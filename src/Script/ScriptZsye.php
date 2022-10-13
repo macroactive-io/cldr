@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptZsye - Representation of the Zsye script.
+ * @psalm-immutable
  */
 class ScriptZsye extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Zsye';
     }
 
-    public function number()
+    public function number(): string
     {
         return '993';
     }

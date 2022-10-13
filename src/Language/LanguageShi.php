@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryMa;
 
 /**
  * Class LanguageShi - Representation of the Tachelhit language.
+ * @psalm-immutable
  */
 class LanguageShi extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'shi';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptTfng
     {
         return new ScriptTfng();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMa
     {
         return new TerritoryMa();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRuleTachelhit
     {
         return new PluralRuleTachelhit();
     }

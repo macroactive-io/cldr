@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryCn;
 
 /**
  * Class LanguageIi - Representation of the Sichuan Yi language.
+ * @psalm-immutable
  */
 class LanguageIi extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ii';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryCn
     {
         return new TerritoryCn();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

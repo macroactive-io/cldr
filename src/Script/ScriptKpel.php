@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptKpel - Representation of the Kpelle script.
+ * @psalm-immutable
  */
 class ScriptKpel extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Kpel';
     }
 
-    public function number()
+    public function number(): string
     {
         return '436';
     }

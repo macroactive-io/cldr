@@ -8,15 +8,16 @@ use Fisharebest\Localization\Territory\TerritoryDe;
 
 /**
  * Class LocaleEnDe - English
+ * @psalm-immutable
  */
 class LocaleEnDe extends LocaleEn
 {
-    public function territory()
+    public function territory(): TerritoryDe
     {
         return new TerritoryDe();
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

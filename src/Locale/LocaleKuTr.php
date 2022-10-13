@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleKu - Kurdish
+ * @psalm-immutable
  */
 class LocaleKuTr extends LocaleKu
 {

@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryNg;
 
 /**
  * Class LanguageKcg - Representation of the Katab language.
+ * @psalm-immutable
  */
 class LanguageKaj extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'kaj';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryNg
     {
         return new TerritoryNg();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

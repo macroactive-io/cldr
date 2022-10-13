@@ -4,29 +4,31 @@ declare(strict_types=1);
 
 namespace Fisharebest\Localization\Locale;
 
+use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageNr;
 
 /**
  * Class LocaleNr - South Ndebele
+ * @psalm-immutable
  */
 class LocaleNr extends AbstractLocale implements LocaleInterface
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'isiNdebele';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'ISINDEBELE';
     }
 
-    public function language()
+    public function language(): LanguageInterface
     {
         return new LanguageNr();
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

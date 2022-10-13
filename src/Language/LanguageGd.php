@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryGb;
 
 /**
  * Class LanguageGd - Representation of the Scottish Gaelic language.
+ * @psalm-immutable
  */
 class LanguageGd extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'gd';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryGb
     {
         return new TerritoryGb();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule4
     {
         return new PluralRule4();
     }

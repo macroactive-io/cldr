@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryMx;
 
 /**
  * Class LanguageNah - Representation of the Nahuatl language.
+ * @psalm-immutable
  */
 class LanguageNah extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'nah';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryMx
     {
         return new TerritoryMx();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

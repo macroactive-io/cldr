@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryTm;
 
 /**
  * Class LanguageTk - Representation of the Turkmen language.
+ * @psalm-immutable
  */
 class LanguageTk extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'tk';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryTm
     {
         return new TerritoryTm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryCh;
 
 /**
  * Class LocaleDeCh - Swiss High German
+ * @psalm-immutable
  */
 class LocaleDeCh extends LocaleDe
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'Schweizer Hochdeutsch';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'SCHWEIZER HOCHDEUTSCH';
     }
 
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,
@@ -29,12 +30,12 @@ class LocaleDeCh extends LocaleDe
         ];
     }
 
-    public function territory()
+    public function territory(): TerritoryCh
     {
         return new TerritoryCh();
     }
 
-    protected function percentFormat()
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::PERCENT;
     }

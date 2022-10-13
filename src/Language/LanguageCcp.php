@@ -12,25 +12,26 @@ use Fisharebest\Localization\Territory\TerritoryBd;
  * Class LanguageCgg - Representation of the Chakma language.
  *
  * @TODO          Plural rules
+ * @psalm-immutable
  */
 class LanguageCcp extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ccp';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryBd
     {
         return new TerritoryBd();
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptCakm
     {
         return new ScriptCakm();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule0
     {
         return new PluralRule0();
     }

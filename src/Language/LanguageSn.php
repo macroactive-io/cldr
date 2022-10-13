@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryZw;
 
 /**
  * Class LanguageSn - Representation of the Shona language.
+ * @psalm-immutable
  */
 class LanguageSn extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'sn';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryZw
     {
         return new TerritoryZw();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

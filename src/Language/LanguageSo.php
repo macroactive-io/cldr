@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritorySo;
 
 /**
  * Class LanguageSo - Representation of the Somali language.
+ * @psalm-immutable
  */
 class LanguageSo extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'so';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritorySo
     {
         return new TerritorySo();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

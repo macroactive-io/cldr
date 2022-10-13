@@ -10,25 +10,26 @@ use Fisharebest\Localization\Territory\TerritoryIq;
 
 /**
  * Class LanguageKu - Representation of the Kurdish language.
+ * @psalm-immutable
  */
 class LanguageCkb extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'ckb';
     }
 
-    public function defaultScript()
+    public function defaultScript(): ScriptArab
     {
         return new ScriptArab();
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryIq
     {
         return new TerritoryIq();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

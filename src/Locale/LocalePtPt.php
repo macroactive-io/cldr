@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocalePtPt - European Portuguese
+ * @psalm-immutable
  */
 class LocalePtPt extends LocalePt
 {
-    public function numberSymbols()
+    public function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

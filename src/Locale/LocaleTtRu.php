@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleTtRu - Tatar
+ * @psalm-immutable
  */
 class LocaleTtRu extends LocaleTt
 {

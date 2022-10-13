@@ -9,20 +9,21 @@ use Fisharebest\Localization\Territory\TerritoryDe;
 
 /**
  * Class LanguageDe - Representation of the German language.
+ * @psalm-immutable
  */
 class LanguageDe extends AbstractLanguage implements LanguageInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'de';
     }
 
-    public function defaultTerritory()
+    public function defaultTerritory(): TerritoryDe
     {
         return new TerritoryDe();
     }
 
-    public function pluralRule()
+    public function pluralRule(): PluralRule1
     {
         return new PluralRule1();
     }

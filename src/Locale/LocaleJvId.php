@@ -6,10 +6,11 @@ namespace Fisharebest\Localization\Locale;
 
 /**
  * Class LocaleJv - Javanese
+ * @psalm-immutable
  */
 class LocaleJvId extends LocaleJv
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'ꦧꦱꦗꦮ';
     }

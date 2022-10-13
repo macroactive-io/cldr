@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptAghb - Representation of the Caucasian Albanian script.
+ * @psalm-immutable
  */
 class ScriptAghb extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Aghb';
     }
 
-    public function number()
+    public function number(): string
     {
         return '239';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Caucasian_Albanian';
     }

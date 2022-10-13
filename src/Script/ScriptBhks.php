@@ -6,20 +6,21 @@ namespace Fisharebest\Localization\Script;
 
 /**
  * Class ScriptBhks - Representation of the Bhaiksuki script.
+ * @psalm-immutable
  */
 class ScriptBhks extends AbstractScript implements ScriptInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'Bhks';
     }
 
-    public function number()
+    public function number(): string
     {
         return '334';
     }
 
-    public function unicodeName()
+    public function unicodeName(): string
     {
         return 'Bhaiksuki';
     }

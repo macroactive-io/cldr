@@ -8,20 +8,21 @@ use Fisharebest\Localization\Territory\TerritoryMd;
 
 /**
  * Class LocaleRoMd - Moldavian
+ * @psalm-immutable
  */
 class LocaleRoMd extends LocaleRo
 {
-    public function endonym()
+    public function endonym(): string
     {
         return 'moldovenească';
     }
 
-    public function endonymSortable()
+    public function endonymSortable(): string
     {
         return 'MOLDOVENEASCA';
     }
 
-    public function territory()
+    public function territory(): TerritoryMd
     {
         return new TerritoryMd();
     }

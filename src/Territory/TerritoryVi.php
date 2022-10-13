@@ -6,15 +6,16 @@ namespace Fisharebest\Localization\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory VI - U.S. Virgin Islands.
+ * @psalm-immutable
  */
 class TerritoryVi extends AbstractTerritory implements TerritoryInterface
 {
-    public function code()
+    public function code(): string
     {
         return 'VI';
     }
 
-    public function firstDay()
+    public function firstDay(): int
     {
         return 0;
     }
