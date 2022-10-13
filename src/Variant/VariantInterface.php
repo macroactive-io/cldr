@@ -14,7 +14,7 @@ interface VariantInterface
     /**
      * The code for this variant.
      *
-     * @return string
+     * @return non-empty-string
      */
-    public function code();
+    public function code(): string;
 }

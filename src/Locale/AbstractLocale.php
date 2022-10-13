@@ -44,43 +44,6 @@ abstract class AbstractLocale
     const PLACEHOLDER = '%s';
 
     /**
-     * Generate a linux locale code for this locale.  Examples include
-     * "fr", “en_GB”, “ca_ES@valencia” and “sr@latin”.
-     *
-     * @return string
-     */
-    public function code()
-    {
-        $code = $this->language()->code() . '_' . $this->territory()->code();
-
-        if ($this->script() != $this->language()->defaultScript()) {
-            $code .= '@' . strtolower($this->script()->unicodeName());
-        }
-
-        if ($this->variant() !== null) {
-            if ($this->variant()->code() === 'posix') {
-                $code = 'POSIX';
-            } else {
-                $code .= '@' . $this->variant()->code();
-            }
-        }
-
-        return $code;
-    }
-
-    /**
-     * Which collation sequence should be used for this locale?
-     * “unicode_ci” would mean use “utf8_unicode_ci”, “utf8mb4_unicode_ci”, etc.
-     *
-     * @link http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
-     * @return string
-     */
-    public function collation()
-    {
-        return 'unicode_ci';
-    }
-
-    /**
      * Convert (Hindu-Arabic) digits into a localized form
      *
      * @param string $string e.g. "123.45"
@@ -97,7 +60,7 @@ abstract class AbstractLocale
      *
      * @return int
      */
-    protected function digitsFirstGroup()
+    protected function digitsFirstGroup(): int
     {
         return 3;
     }
@@ -131,35 +94,6 @@ abstract class AbstractLocale
      * @return string
      */
     abstract public function endonym();
-
-    /**
-     * A sortable version of the locale name.  For example, “British English”
-     * might sort as “ENGLISH, BRITISH” to keep all the variants of English together.
-     *
-     * All-capitals makes sorting easier, as we can use a simple strcmp().
-     *
-     * @return string
-     */
-    public function endonymSortable()
-    {
-        return $this->endonym();
-    }
-
-    /**
-     * Markup for an HTML element
-     *
-     * @return string e.g. lang="ar" dir="rtl"
-     */
-    public function htmlAttributes()
-    {
-        $direction = $this->direction();
-
-        if ($direction === 'rtl' || $direction !== $this->script()->direction()) {
-            return 'lang="' . $this->languageTag() . '" dir="' . $this->direction() . '"';
-        }
-
-        return 'lang="' . $this->languageTag() . '"';
-    }
 
     /**
      * The language used by this locale.
@@ -238,7 +172,7 @@ abstract class AbstractLocale
     /**
      * The symbols used to format numbers.
      *
-     * @return string[]
+     * @return array
      */
     protected function numberSymbols()
     {
@@ -256,18 +190,6 @@ abstract class AbstractLocale
     }
 
     /**
-     * Convert (Hindu-Arabic) digits into a localized form
-     *
-     * @param float $number The number to be localized
-     *
-     * @return string
-     */
-    public function percent($number)
-    {
-        return sprintf($this->percentFormat(), $this->number($number * 100.0));
-    }
-
-    /**
      * How to format a floating point number (%s) as a percentage.
      *
      * @return string
@@ -275,16 +197,6 @@ abstract class AbstractLocale
     protected function percentFormat()
     {
         return self::PLACEHOLDER . self::PERCENT;
-    }
-
-    /**
-     * Which plural rule is used in this locale
-     *
-     * @return PluralRuleInterface
-     */
-    public function pluralRule()
-    {
-        return $this->language()->pluralRule();
     }
 
     /**
@@ -310,7 +222,7 @@ abstract class AbstractLocale
     /**
      * The variant, if any of this locale.
      *
-     * @return VariantInterface|null
+     * @return null
      */
     public function variant()
     {

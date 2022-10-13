@@ -12,14 +12,12 @@ use Fisharebest\Localization\Locale\LocaleInterface;
  * @copyright (c) 2022 Greg Roach
  * @license   GPL-3.0-or-later
  */
-class Locale
+final class Locale
 {
     /**
      * Some browsers let the user choose "Chinese, Traditional", but add headers for "zh-HK"...
-     *
-     * @var array
      */
-    private static $http_accept_chinese = array(
+    private static array $http_accept_chinese = array(
         'zh-cn' => 'zh-hans-cn',
         'zh-sg' => 'zh-hans-sg',
         'zh-hk' => 'zh-hant-hk',
@@ -30,13 +28,8 @@ class Locale
     /**
      * Callback for PHP sort functions - allows lists of locales to be sorted.
      * Diacritics are removed and text is capitalized to allow fast/simple sorting.
-     *
-     * @param LocaleInterface $x
-     * @param LocaleInterface $y
-     *
-     * @return int
      */
-    public static function compare(LocaleInterface $x, LocaleInterface $y)
+    public static function compare(LocaleInterface $x, LocaleInterface $y): int
     {
         return strcmp($x->endonymSortable(), $y->endonymSortable());
     }
@@ -44,12 +37,9 @@ class Locale
     /**
      * Create a locale from a language tag (or locale code).
      *
-     * @param string $code
-     *
-     * @return LocaleInterface
      * @throws DomainException
      */
-    public static function create($code)
+    public static function create(string $code): LocaleInterface
     {
         $class = __NAMESPACE__ . '\Locale\Locale' . implode(array_map(function ($x) {
             return ucfirst(strtolower($x));
@@ -114,10 +104,13 @@ class Locale
      * If a client requests "de-DE" (but not "de"), then add "de" as a lower-priority fallback.
      *
      * @param $preferences
+     * @param int[] $preferences
      *
      * @return int[]
+     *
+     * @psalm-param array<int> $preferences
      */
-    private static function httpAcceptDowngrade($preferences)
+    private static function httpAcceptDowngrade(array $preferences)
     {
         foreach ($preferences as $code => $priority) {
             // Three parts: "zh-hans-cn" => "zh-hans" and "zh"
@@ -144,9 +137,11 @@ class Locale
      *
      * @param int[] $preferences
      *
-     * @return int[]
+     * @return (float|int)[]
+     *
+     * @psalm-return array<float|int>
      */
-    private static function httpAcceptChinese($preferences)
+    private static function httpAcceptChinese($preferences): array
     {
         foreach (self::$http_accept_chinese as $old => $new) {
             if (array_key_exists($old, $preferences) && !array_key_exists($new, $preferences)) {
