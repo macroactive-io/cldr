@@ -20,6 +20,7 @@ return (new PhpCsFixer\Config())
                            'expectedExceptionMessageRegExp',
                        ],
                    ],
+                   'declare_strict_types'        => true,
                    'function_typehint_space'     => false,
                    'no_empty_phpdoc'             => true,
                    'no_superfluous_phpdoc_tags'  => ['allow_mixed' => false, 'allow_unused_params' => false],
@@ -52,6 +53,7 @@ return (new PhpCsFixer\Config())
                            'param', 'return', 'throws', 'type', 'var'
                        ],
                    ],
+                   'static_lambda'                       => true,
                    'strict_comparison'                   => true,
                    'strict_param'                        => true,
                    'self_accessor'                       => true,
@@ -60,11 +62,14 @@ return (new PhpCsFixer\Config())
                    'phpdoc_no_alias_tag'                 => ['replacements' => ['link' => 'website']],
                    'phpdoc_summary'                      => false,
                    'phpdoc_to_comment'                   => false,
+                   'phpdoc_to_property_type'             => true,
+                   'phpdoc_to_return_type'               => true,
                    'phpdoc_types_order'                  => false,
                    // breaks psalm-specific notation sometimes!
                    'semicolon_after_instruction'         => true,
                    'single_blank_line_at_eof'            => true,
                    'single_line_throw'                   => false,
+                   'string_line_ending'                  => true,
                    'types_spaces'                        => false,
                    'binary_operator_spaces'              => [
                        'default'   => 'single_space',
@@ -81,6 +86,9 @@ return (new PhpCsFixer\Config())
                        'spacing' => 'one',
                    ],
                    'yoda_style' => false,
+                   'void_return' => true,
+                   'get_class_to_class_keyword' => true,
+                   'no_homoglyph_names' => true,
                ])
     ->setFinder(
         PhpCsFixer\Finder::create()
