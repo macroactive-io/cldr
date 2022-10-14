@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageFr;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the LocaleFrTg class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocaleFrTgTest extends TestCase
 {
@@ -35,7 +35,7 @@ class LocaleFrTgTest extends TestCase
         self::assertSame('lang="fr-TG"', $locale->htmlAttributes());
         self::assertSame('fr-TG', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));
-        self::assertSame('12 345 678,09', $locale->number(12345678.09));
-        self::assertSame('1 234,56 %', $locale->percent(12.3456));
+        self::assertSame("12\u{202f}345\u{202f}678,09", $locale->number(12345678.09));
+        self::assertSame("1\u{202f}234,56\u{a0}%", $locale->percent(12.3456));
     }
 }

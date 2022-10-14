@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization;
 
 use Fisharebest\Localization\Script\ScriptInterface;
@@ -8,9 +10,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for ISO-15924
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class Iso15924Test extends TestCase
 {

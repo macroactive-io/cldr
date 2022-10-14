@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptPrti class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptPrtiTest extends TestCase
 {
@@ -24,6 +24,6 @@ class ScriptPrtiTest extends TestCase
         self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('130', $script->number());
         self::assertSame('Inscriptional_Parthian', $script->unicodeName());
-        self::assertSame(array(), $script->numerals());
+        self::assertSame([], $script->numerals());
     }
 }

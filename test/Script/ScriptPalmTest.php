@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptPalm class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptPalmTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptPalmTest extends TestCase
         self::assertSame('Palm', $script->code());
         self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('126', $script->number());
-        self::assertSame(array(), $script->numerals());
+        self::assertSame([], $script->numerals());
         self::assertSame('Palmyrene', $script->unicodeName());
     }
 }

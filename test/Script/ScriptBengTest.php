@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptBeng class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptBengTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptBengTest extends TestCase
         self::assertSame('Beng', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('325', $script->number());
-        self::assertSame(array('০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'), $script->numerals());
+        self::assertSame(['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'], $script->numerals());
         self::assertSame('Bengali', $script->unicodeName());
     }
 }

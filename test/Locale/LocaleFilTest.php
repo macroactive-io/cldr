@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageFil;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the LocaleFil class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocaleFilTest extends TestCase
 {

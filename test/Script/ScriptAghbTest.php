@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptAghb class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptAghbTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptAghbTest extends TestCase
         self::assertSame('Aghb', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('239', $script->number());
-        self::assertSame(array(), $script->numerals());
+        self::assertSame([], $script->numerals());
         self::assertSame('Caucasian_Albanian', $script->unicodeName());
     }
 }

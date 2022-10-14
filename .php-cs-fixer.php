@@ -70,6 +70,11 @@ return (new PhpCsFixer\Config())
                    'single_blank_line_at_eof'            => true,
                    'single_line_throw'                   => false,
                    'string_line_ending'                  => true,
+                   'global_namespace_import'             => [
+                       'import_classes'   => true,
+                       'import_constants' => true,
+                       'import_functions' => true,
+                   ],
                    'types_spaces'                        => false,
                    'binary_operator_spaces'              => [
                        'default'   => 'single_space',
@@ -82,7 +87,7 @@ return (new PhpCsFixer\Config())
                            '??=' => 'align_single_space_minimal',
                        ],
                    ],
-                   'concat_space' => [
+                   'concat_space'                        => [
                        'spacing' => 'one',
                    ],
                    'yoda_style' => false,

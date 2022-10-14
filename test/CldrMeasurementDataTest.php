@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the CLDR
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class CldrMeasurementDataTest extends TestCase
 {
@@ -23,7 +23,7 @@ class CldrMeasurementDataTest extends TestCase
         $cldr = simplexml_load_string(file_get_contents(__DIR__ . '/data/cldr-34/supplemental/supplementalData.xml'));
 
         foreach ($cldr->measurementData->measurementSystem as $xml) {
-            if ($xml->attributes()->category != 'temperature') {
+            if ('temperature' !== (string) $xml->attributes()->category) {
                 $type        = (string) $xml->attributes()->type;
                 $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
                 foreach ($territories as $code) {

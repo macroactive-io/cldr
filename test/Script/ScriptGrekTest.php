@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptGrek class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptGrekTest extends TestCase
 {
@@ -22,7 +22,7 @@ class ScriptGrekTest extends TestCase
 
         self::assertSame('Grek', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
-        self::assertSame(array(), $script->numerals());
+        self::assertSame([], $script->numerals());
         self::assertSame('Greek', $script->unicodeName());
     }
 }

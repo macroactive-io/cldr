@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\PluralRule;
 
 use PHPUnit\Framework\TestCase;
@@ -7,15 +9,10 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the PluralRuleCornish class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class PluralRuleCornishTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testNumberOfPluralForms(): void
     {
         $plural_rule = new PluralRuleCornish();
@@ -23,9 +20,6 @@ class PluralRuleCornishTest extends TestCase
         self::assertSame(4, $plural_rule->plurals());
     }
 
-    /**
-     * @return void
-     */
     public function testPluralRules(): void
     {
         $plural_rule = new PluralRuleCornish();

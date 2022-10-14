@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageTg;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the LocaleTgTj class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocaleTgTjTest extends TestCase
 {
@@ -35,8 +35,8 @@ class LocaleTgTjTest extends TestCase
         self::assertSame('тоҷикӣ', $locale->endonym());
         self::assertSame('lang="tg"', $locale->htmlAttributes());
         self::assertSame('tg', $locale->languageTag());
-        self::assertSame('12 345 678,09', $locale->number(12345678.09));
+        self::assertSame("12\u{a0}345\u{a0}678,09", $locale->number(12345678.09));
         self::assertSame('-123', $locale->number(-123));
-        self::assertSame('1 234,56%', $locale->percent(12.3456));
+        self::assertSame("1\u{a0}234,56%", $locale->percent(12.3456));
     }
 }

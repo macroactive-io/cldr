@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptKhmr class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptKhmrTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptKhmrTest extends TestCase
         self::assertSame('Khmr', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('355', $script->number());
-        self::assertSame(array('០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩'), $script->numerals());
+        self::assertSame(['០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩'], $script->numerals());
         self::assertSame('Khmer', $script->unicodeName());
     }
 }

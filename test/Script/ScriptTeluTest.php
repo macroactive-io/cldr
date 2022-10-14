@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptTelu class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptTeluTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptTeluTest extends TestCase
         self::assertSame('Telu', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('340', $script->number());
-        self::assertSame(array('౦', '౧', '౨', '౩', '౪', '౫', '౬', '౭', '౮', '౯'), $script->numerals());
+        self::assertSame(['౦', '౧', '౨', '౩', '౪', '౫', '౬', '౭', '౮', '౯'], $script->numerals());
         self::assertSame('Telugu', $script->unicodeName());
     }
 }

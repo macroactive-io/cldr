@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageDz;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the LocaleDzBt class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocaleDzBtTest extends TestCase
 {
@@ -36,6 +36,6 @@ class LocaleDzBtTest extends TestCase
         self::assertSame('dz', $locale->languageTag());
         self::assertSame('-༡༢༣', $locale->number(-123));
         self::assertSame('༡,༢༣,༤༥,༦༧༨.༠༩', $locale->number(12345678.09));
-        self::assertSame('༡,༢༣༤.༥༦ %', $locale->percent(12.3456));
+        self::assertSame("༡,༢༣༤.༥༦\u{a0}%", $locale->percent(12.3456));
     }
 }

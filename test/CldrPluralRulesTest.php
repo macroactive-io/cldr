@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the CLDR
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class CldrPluralRulesTest extends TestCase
 {
@@ -23,8 +23,7 @@ class CldrPluralRulesTest extends TestCase
         $cldr = simplexml_load_string(file_get_contents(__DIR__ . '/data/cldr-34/supplemental/plurals.xml'));
 
         foreach ($cldr->xpath("/supplementalData/plurals[@type='cardinal']/pluralRules") as $plural_rule) {
-            $tmp          = $plural_rule->attributes(); // For PHP5.3
-            $locale_codes = explode(' ', $tmp['locales']);
+            $locale_codes = explode(' ', (string) $plural_rule->attributes()->locales);
             $plurals      = $plural_rule->pluralRule;
             foreach ($locale_codes as $locale_code) {
                 // The following CLDR definitions/examples are incompatible with the accepted gettext ones.
@@ -66,25 +65,25 @@ class CldrPluralRulesTest extends TestCase
 
                 $plural_rule = 0;
                 foreach ($plurals as $plural_examples) {
-                    if (preg_match('/@integer ([^@]+)/', $plural_examples, $match)) {
+                    if (preg_match('/@integer ([^@]+)/', (string) $plural_examples, $match)) {
                         $rules = preg_split('/[^0-9~]+/', $match[1], -1, PREG_SPLIT_NO_EMPTY);
                         foreach ($rules as $rule) {
-                            if (strpos($rule, '~') !== false) {
-                                list($low, $high) = explode('~', $rule);
+                            if (str_contains($rule, '~')) {
+                                [$low, $high] = explode('~', (string) $rule);
                             } else {
                                 $low  = $rule;
                                 $high = $rule;
                             }
 
-                            $low = (int) $low;
+                            $low  = (int) $low;
                             $high = (int) $high;
 
                             for ($number = $low; $number <= $high; ++$number) {
-                                $debug = implode('|', array(
+                                $debug = implode('|', [
                                     $locale_code,
                                     $plural_rule,
                                     $rule,
-                                ));
+                                ]);
 
                                 self::assertSame($plural_rule, $locale->pluralRule()->plural($number), $debug);
                             }

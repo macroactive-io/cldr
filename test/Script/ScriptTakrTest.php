@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptTakr class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptTakrTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptTakrTest extends TestCase
         self::assertSame('Takr', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('321', $script->number());
-        self::assertSame(array('𑛀', '𑛁', '𑛂', '𑛃', '𑛄', '𑛅', '𑛆', '𑛇', '𑛈', '𑛉'), $script->numerals());
+        self::assertSame(['𑛀', '𑛁', '𑛂', '𑛃', '𑛄', '𑛅', '𑛆', '𑛇', '𑛈', '𑛉'], $script->numerals());
         self::assertSame('Takri', $script->unicodeName());
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguagePrg;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the LocalePrg class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocalePrg001Test extends TestCase
 {
@@ -35,7 +35,7 @@ class LocalePrg001Test extends TestCase
         self::assertSame('prūsiskan', $locale->endonym());
         self::assertSame('lang="prg"', $locale->htmlAttributes());
         self::assertSame('prg', $locale->languageTag());
-        self::assertSame('12345 678,09', $locale->number(12345678.09));
+        self::assertSame("12345\u{a0}678,09", $locale->number(12345678.09));
         self::assertSame('1234,56%', $locale->percent(12.3456));
     }
 }

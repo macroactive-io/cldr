@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization;
 
 use DomainException;
@@ -11,9 +13,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the AbstractLocale class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class LocaleTest extends TestCase
 {
@@ -43,7 +43,7 @@ class LocaleTest extends TestCase
      */
     public function testCompareAll(): void
     {
-        $array = array_map(function ($x) {
+        $array = array_map(static function ($x) {
             $class = __NAMESPACE__ . '\Locale\\' . basename($x, '.php');
 
             return new $class();
@@ -70,8 +70,6 @@ class LocaleTest extends TestCase
 
     /**
      * Test creating locales
-     *
-     * @return void
      */
     public function testCreateInvalidLocale(): void
     {
@@ -89,15 +87,15 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptLanguage(): void
     {
-        $available = array(
+        $available = [
             Locale::create('de'),
             Locale::create('en'),
             Locale::create('fr'),
             Locale::create('it'),
-        );
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'it;q=0.8,de,fr,ar');
-        $default   = Locale::create('en-US');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        ];
+        $server  = ['HTTP_ACCEPT_LANGUAGE' => 'it;q=0.8,de,fr,ar'];
+        $default = Locale::create('en-US');
+        $locale  = Locale::httpAcceptLanguage($server, $available, $default);
 
         self::assertEquals(Locale::create('de'), $locale);
     }
@@ -107,15 +105,15 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptLanguageNoneMatching(): void
     {
-        $available = array(
+        $available = [
             Locale::create('de'),
             Locale::create('en'),
             Locale::create('fr'),
             Locale::create('it'),
-        );
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'he;q=0.8,pl,ru,ar');
-        $default   = Locale::create('en-US');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        ];
+        $server  = ['HTTP_ACCEPT_LANGUAGE' => 'he;q=0.8,pl,ru,ar'];
+        $default = Locale::create('en-US');
+        $locale  = Locale::httpAcceptLanguage($server, $available, $default);
 
         self::assertEquals($default, $locale);
     }
@@ -125,15 +123,15 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptLanguageDowngrade(): void
     {
-        $available = array(
+        $available = [
             Locale::create('de'),
             Locale::create('en'),
             Locale::create('fr'),
             Locale::create('it'),
-        );
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'de-DE');
-        $default   = Locale::create('en-US');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        ];
+        $server  = ['HTTP_ACCEPT_LANGUAGE' => 'de-DE'];
+        $default = Locale::create('en-US');
+        $locale  = Locale::httpAcceptLanguage($server, $available, $default);
 
         self::assertEquals(Locale::create('de'), $locale);
     }
@@ -143,12 +141,12 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptLanguageDoubleDowngrade(): void
     {
-        $available = array(
+        $available = [
             Locale::create('zh'),
-        );
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-Hans-CN');
-        $default   = Locale::create('en-US');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        ];
+        $server  = ['HTTP_ACCEPT_LANGUAGE' => 'zh-Hans-CN'];
+        $default = Locale::create('en-US');
+        $locale  = Locale::httpAcceptLanguage($server, $available, $default);
 
         self::assertEquals(Locale::create('zh'), $locale);
     }
@@ -158,57 +156,57 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptChinese(): void
     {
-        $available = array(
+        $available = [
             Locale::create('zh-Hans'),
             Locale::create('zh-Hant'),
             Locale::create('en-US'),
-        );
+        ];
 
-        $default   = Locale::create('en-US');
+        $default = Locale::create('en-US');
 
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-CN');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-CN'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-SG');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-SG'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-HK');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-HK'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hant'), $locale);
 
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-MO');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-MO'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hant'), $locale);
 
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-TW');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-TW'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hant'), $locale);
 
         // google: ZH-CN，ZH; Q = 0.9
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'ZH-CN，ZH; Q = 0.9');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'ZH-CN，ZH; Q = 0.9'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
         // QQ移动浏览器: zh-CN，zh-CN; q = 0.8，zh-CN; q = 0.6
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-CN，zh-CN; q = 0.8，zh-CN; q = 0.6');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-CN，zh-CN; q = 0.8，zh-CN; q = 0.6'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
         // 华为移动浏览器: zh-CN，zh-CN ; q = 0.8，en-US; q = 0.6
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-CN，zh-CN ; q = 0.8，en-US; q = 0.6');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-CN，zh-CN ; q = 0.8，en-US; q = 0.6'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
         // UC Mobile Brower: zh-Hans-CN，en-US; q = 0.8
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-Hans-CN，en-US; q = 0.8');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-Hans-CN，en-US; q = 0.8'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
 
         // Baidu Mobile Brower: zh-CN ，EN-US; q = 0.9
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'zh-CN ，EN-US; q = 0.9');
-        $locale    = Locale::httpAcceptLanguage($server, $available, $default);
+        $server = ['HTTP_ACCEPT_LANGUAGE' => 'zh-CN ，EN-US; q = 0.9'];
+        $locale = Locale::httpAcceptLanguage($server, $available, $default);
         self::assertEquals(Locale::create('zh-Hans'), $locale);
     }
 
@@ -217,8 +215,8 @@ class LocaleTest extends TestCase
      */
     public function testHttpAcceptLanguageNoneSelected(): void
     {
-        $available = array();
-        $server    = array('HTTP_ACCEPT_LANGUAGE' => 'he;q=0.8,pl,ru,ar');
+        $available = [];
+        $server    = ['HTTP_ACCEPT_LANGUAGE' => 'he;q=0.8,pl,ru,ar'];
         $default   = Locale::create('en-US');
         $locale    = Locale::httpAcceptLanguage($server, $available, $default);
 

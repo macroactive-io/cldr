@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fisharebest\Localization\Script;
 
 use PHPUnit\Framework\TestCase;
@@ -7,9 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests for the ScriptGujr class
  *
- * @author    Greg Roach <greg@subaqua.co.uk>
- * @copyright (c) 2022 Greg Roach
- * @license   GPL-3.0-or-later
+ * @coversNothing
  */
 class ScriptGuruTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ScriptGuruTest extends TestCase
         self::assertSame('Guru', $script->code());
         self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('310', $script->number());
-        self::assertSame(array('੦', '੧', '੨', '੩', '੪', '੫', '੬', '੭', '੮', '੯'), $script->numerals());
+        self::assertSame(['੦', '੧', '੨', '੩', '੪', '੫', '੬', '੭', '੮', '੯'], $script->numerals());
         self::assertSame('Gurmukhi', $script->unicodeName());
     }
 }
