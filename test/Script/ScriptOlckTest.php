@@ -16,12 +16,12 @@ class ScriptOlckTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOlck();
 
         self::assertSame('Olck', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('261', $script->number());
         self::assertSame(array('᱐', '᱑', '᱒', '᱓', '᱔', '᱕', '᱖', '᱗', '᱘', '᱙'), $script->numerals());
         self::assertSame('Ol_Chiki', $script->unicodeName());

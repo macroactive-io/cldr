@@ -16,12 +16,12 @@ class ScriptAranTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptAran();
 
         self::assertSame('Aran', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('161', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptTavtTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptTavt();
 
         self::assertSame('Tavt', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('359', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Tai_Viet', $script->unicodeName());

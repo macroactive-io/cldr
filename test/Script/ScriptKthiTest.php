@@ -16,12 +16,12 @@ class ScriptKthiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptKthi();
 
         self::assertSame('Kthi', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('317', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Kaithi', $script->unicodeName());

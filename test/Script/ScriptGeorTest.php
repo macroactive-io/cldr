@@ -16,12 +16,12 @@ class ScriptGeorTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptGeor();
 
         self::assertSame('Geor', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('240', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Georgian', $script->unicodeName());

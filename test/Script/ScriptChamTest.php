@@ -16,12 +16,12 @@ class ScriptChamTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCham();
 
         self::assertSame('Cham', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('358', $script->number());
         self::assertSame(array('꩐', '꩑', '꩒', '꩓', '꩔', '꩕', '꩖', '꩗', '꩘', '꩙'), $script->numerals());
         self::assertSame('Cham', $script->unicodeName());

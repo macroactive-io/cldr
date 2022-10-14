@@ -18,10 +18,8 @@ interface ScriptInterface
 
     /**
      * Is the script usually written left-to-right “ltr” or right-to-left “rtl”.
-     *
-     * @return 'ltr'|'rtl'
      */
-    public function direction(): string;
+    public function direction(): ScriptDirection;
 
     /**
      * The ISO15924 number for this script.

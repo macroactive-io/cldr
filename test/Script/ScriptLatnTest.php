@@ -16,12 +16,12 @@ class ScriptLatnTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLatn();
 
         self::assertSame('Latn', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('215', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Latin', $script->unicodeName());

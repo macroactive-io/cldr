@@ -16,12 +16,12 @@ class ScriptWchoTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptWcho();
 
         self::assertSame('Wcho', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('283', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Wancho', $script->unicodeName());

@@ -20,7 +20,7 @@ class LocaleFrScTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $locale = new LocaleFrSc();
 

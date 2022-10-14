@@ -16,12 +16,12 @@ class ScriptLisuTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLisu();
 
         self::assertSame('Lisu', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('399', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Lisu', $script->unicodeName());

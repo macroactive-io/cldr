@@ -16,12 +16,12 @@ class ScriptCansTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCans();
 
         self::assertSame('Cans', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('440', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Canadian_Aboriginal', $script->unicodeName());

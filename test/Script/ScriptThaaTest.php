@@ -16,12 +16,12 @@ class ScriptThaaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptThaa();
 
         self::assertSame('Thaa', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('170', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Thaana', $script->unicodeName());

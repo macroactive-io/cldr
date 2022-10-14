@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\PluralRule\PluralRuleInterface;
+use Fisharebest\Localization\Script\ScriptDirection;
 use Fisharebest\Localization\Script\ScriptInterface;
 use Fisharebest\Localization\Territory\TerritoryInterface;
 use Fisharebest\Localization\Variant\VariantInterface;
@@ -44,10 +45,8 @@ interface LocaleInterface
      * Is text written left-to-right “ltr” or right-to-left “rtl”.
      * Most scripts are only written in one direction, but there are a few that
      * can be written in either direction.
-     *
-     * @return 'ltr'|'rtl'
      */
-    public function direction(): string;
+    public function direction(): ScriptDirection;
 
     /**
      * The name of this locale, in its own language/script, and with the

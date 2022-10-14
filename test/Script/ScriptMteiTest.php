@@ -16,12 +16,12 @@ class ScriptMteiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMtei();
 
         self::assertSame('Mtei', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('337', $script->number());
         self::assertSame(array('꯰', '꯱', '꯲', '꯳', '꯴', '꯵', '꯶', '꯷', '꯸', '꯹'), $script->numerals());
         self::assertSame('Meetei_Mayek', $script->unicodeName());

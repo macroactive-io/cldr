@@ -16,12 +16,12 @@ class ScriptRohgTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptRohg();
 
         self::assertSame('Rohg', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('167', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Hanifi_Rohingya', $script->unicodeName());

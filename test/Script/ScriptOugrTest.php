@@ -16,12 +16,12 @@ class ScriptOugrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOugr();
 
         self::assertSame('Ougr', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('143', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Old_Uyghur', $script->unicodeName());

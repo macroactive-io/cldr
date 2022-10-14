@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\PluralRule\PluralRuleInterface;
+use Fisharebest\Localization\Script\ScriptDirection;
 use Fisharebest\Localization\Script\ScriptInterface;
 use Fisharebest\Localization\Territory\TerritoryInterface;
 use Fisharebest\Localization\Variant\VariantInterface;
@@ -81,7 +82,7 @@ abstract class AbstractLocale implements LocaleInterface
         return $result;
     }
 
-    public function direction(): string
+    public function direction(): ScriptDirection
     {
         return $this->script()->direction();
     }
@@ -96,12 +97,17 @@ abstract class AbstractLocale implements LocaleInterface
     public function htmlAttributes(): string
     {
         $direction = $this->direction();
+        $directionString = '';
 
-        if ($direction === 'rtl' || $direction !== $this->script()->direction()) {
-            return 'lang="' . $this->languageTag() . '" dir="' . $this->direction() . '"';
+        if ($direction === ScriptDirection::RTL || $direction !== $this->script()->direction()) {
+            $directionString = match ($direction) {
+                ScriptDirection::RTL => 'rtl',
+                ScriptDirection::LTR => 'ltr',
+            };
+            $directionString = ' dir="' . $directionString . '"';
         }
 
-        return 'lang="' . $this->languageTag() . '"';
+        return 'lang="' . $this->languageTag() . '"' . $directionString;
     }
 
     /**

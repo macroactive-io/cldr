@@ -16,12 +16,12 @@ class ScriptBatkTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptBatk();
 
         self::assertSame('Batk', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('365', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Batak', $script->unicodeName());

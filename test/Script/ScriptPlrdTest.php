@@ -16,12 +16,12 @@ class ScriptPlrdTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPlrd();
 
         self::assertSame('Plrd', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('282', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Miao', $script->unicodeName());

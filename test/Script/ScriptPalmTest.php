@@ -16,12 +16,12 @@ class ScriptPalmTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPalm();
 
         self::assertSame('Palm', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('126', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Palmyrene', $script->unicodeName());

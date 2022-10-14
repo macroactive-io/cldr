@@ -16,12 +16,12 @@ class ScriptCpmnTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCpmn();
 
         self::assertSame('Cpmn', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('402', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Cypro_Minoan', $script->unicodeName());

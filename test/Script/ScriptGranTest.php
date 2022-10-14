@@ -16,12 +16,12 @@ class ScriptGranTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptGran();
 
         self::assertSame('Gran', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('343', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Grantha', $script->unicodeName());

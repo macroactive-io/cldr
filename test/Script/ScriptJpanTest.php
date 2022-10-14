@@ -16,12 +16,12 @@ class ScriptJpanTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptJpan();
 
         self::assertSame('Jpan', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('413', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptHanoTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptHano();
 
         self::assertSame('Hano', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('371', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Hanunoo', $script->unicodeName());

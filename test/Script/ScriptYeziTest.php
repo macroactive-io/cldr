@@ -16,12 +16,12 @@ class ScriptYeziTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptYezi();
 
         self::assertSame('Yezi', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('192', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Yezidi', $script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptZzzzTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptZzzz();
 
         self::assertSame('Zzzz', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('999', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Unknown', $script->unicodeName());

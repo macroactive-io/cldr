@@ -16,12 +16,12 @@ class ScriptOryaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOrya();
 
         self::assertSame('Orya', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('327', $script->number());
         self::assertSame(array('୦', '୧', '୨', '୩', '୪', '୫', '୬', '୭', '୮', '୯'), $script->numerals());
         self::assertSame('Oriya', $script->unicodeName());

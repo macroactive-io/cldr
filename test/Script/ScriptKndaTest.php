@@ -16,12 +16,12 @@ class ScriptKndaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptKnda();
 
         self::assertSame('Knda', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('345', $script->number());
         self::assertSame(array('೦', '೧', '೨', '೩', '೪', '೫', '೬', '೭', '೮', '೯'), $script->numerals());
         self::assertSame('Kannada', $script->unicodeName());

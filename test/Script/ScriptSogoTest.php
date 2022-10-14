@@ -16,12 +16,12 @@ class ScriptSogoTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSogo();
 
         self::assertSame('Sogo', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('142', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Old_Sogdian', $script->unicodeName());

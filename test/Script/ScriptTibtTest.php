@@ -16,12 +16,12 @@ class ScriptTibtTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptTibt();
 
         self::assertSame('Tibt', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('330', $script->number());
         self::assertSame(array('༠', '༡', '༢', '༣', '༤', '༥', '༦', '༧', '༨', '༩'), $script->numerals());
         self::assertSame('Tibetan', $script->unicodeName());

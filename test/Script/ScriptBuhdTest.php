@@ -16,12 +16,12 @@ class ScriptBuhdTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptBuhd();
 
         self::assertSame('Buhd', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('372', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Buhid', $script->unicodeName());

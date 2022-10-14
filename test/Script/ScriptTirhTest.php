@@ -16,12 +16,12 @@ class ScriptTirhTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptTirh();
 
         self::assertSame('Tirh', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('326', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Tirhuta', $script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptSindTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSind();
 
         self::assertSame('Sind', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('318', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Khudawadi', $script->unicodeName());

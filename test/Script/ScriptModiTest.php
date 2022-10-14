@@ -16,12 +16,12 @@ class ScriptModiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptModi();
 
         self::assertSame('Modi', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('324', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Modi', $script->unicodeName());

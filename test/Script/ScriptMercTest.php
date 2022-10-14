@@ -16,12 +16,12 @@ class ScriptMercTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMerc();
 
         self::assertSame('Merc', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('101', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Meroitic_Cursive', $script->unicodeName());

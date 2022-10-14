@@ -16,12 +16,12 @@ class ScriptNandTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptNand();
 
         self::assertSame('Nand', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('311', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Nandinagari', $script->unicodeName());

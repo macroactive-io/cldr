@@ -20,7 +20,7 @@ class LocaleTest extends TestCase
     /**
      * Test the comparator
      */
-    public function testCompare()
+    public function testCompare(): void
     {
         // American English, Australian English, British English
         self::assertLessThan(0, Locale::compare(new LocaleEnAU(), new LocaleEnGb()));
@@ -41,7 +41,7 @@ class LocaleTest extends TestCase
      *
      * @medium
      */
-    public function testCompareAll()
+    public function testCompareAll(): void
     {
         $array = array_map(function ($x) {
             $class = __NAMESPACE__ . '\Locale\\' . basename($x, '.php');
@@ -57,7 +57,7 @@ class LocaleTest extends TestCase
     /**
      * Test creating valid locales
      */
-    public function testCreateValidLocale()
+    public function testCreateValidLocale(): void
     {
         $locale1 = Locale::create('en-GB');
         $locale2 = Locale::create('en_GB');
@@ -73,7 +73,7 @@ class LocaleTest extends TestCase
      *
      * @return void
      */
-    public function testCreateInvalidLocale()
+    public function testCreateInvalidLocale(): void
     {
         try {
             Locale::create('xxx');
@@ -87,7 +87,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptLanguage()
+    public function testHttpAcceptLanguage(): void
     {
         $available = array(
             Locale::create('de'),
@@ -105,7 +105,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptLanguageNoneMatching()
+    public function testHttpAcceptLanguageNoneMatching(): void
     {
         $available = array(
             Locale::create('de'),
@@ -123,7 +123,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptLanguageDowngrade()
+    public function testHttpAcceptLanguageDowngrade(): void
     {
         $available = array(
             Locale::create('de'),
@@ -141,7 +141,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptLanguageDoubleDowngrade()
+    public function testHttpAcceptLanguageDoubleDowngrade(): void
     {
         $available = array(
             Locale::create('zh'),
@@ -156,7 +156,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptChinese()
+    public function testHttpAcceptChinese(): void
     {
         $available = array(
             Locale::create('zh-Hans'),
@@ -215,7 +215,7 @@ class LocaleTest extends TestCase
     /**
      * Test language negotiation
      */
-    public function testHttpAcceptLanguageNoneSelected()
+    public function testHttpAcceptLanguageNoneSelected(): void
     {
         $available = array();
         $server    = array('HTTP_ACCEPT_LANGUAGE' => 'he;q=0.8,pl,ru,ar');

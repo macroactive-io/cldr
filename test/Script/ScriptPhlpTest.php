@@ -16,12 +16,12 @@ class ScriptPhlpTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPhlp();
 
         self::assertSame('Phlp', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('132', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Psalter_Pahlavi', $script->unicodeName());

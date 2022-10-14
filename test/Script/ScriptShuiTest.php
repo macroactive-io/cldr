@@ -16,12 +16,12 @@ class ScriptShuiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptShui();
 
         self::assertSame('Shui', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('530', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

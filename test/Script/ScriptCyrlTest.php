@@ -16,12 +16,12 @@ class ScriptCyrlTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCyrl();
 
         self::assertSame('Cyrl', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('220', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Cyrillic', $script->unicodeName());

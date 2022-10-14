@@ -16,12 +16,12 @@ class ScriptElbaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptElba();
 
         self::assertSame('Elba', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('226', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Elbasan', $script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptTglgTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptTglg();
 
         self::assertSame('Tglg', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('370', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Tagalog', $script->unicodeName());

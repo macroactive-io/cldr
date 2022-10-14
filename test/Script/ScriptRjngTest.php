@@ -16,12 +16,12 @@ class ScriptRjngTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptRjng();
 
         self::assertSame('Rjng', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('363', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Rejang', $script->unicodeName());

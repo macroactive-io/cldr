@@ -16,12 +16,12 @@ class ScriptHatrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptHatr();
 
         self::assertSame('Hatr', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('127', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Hatran', $script->unicodeName());

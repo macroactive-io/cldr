@@ -16,12 +16,12 @@ class ScriptSyreTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSyre();
 
         self::assertSame('Syre', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('138', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

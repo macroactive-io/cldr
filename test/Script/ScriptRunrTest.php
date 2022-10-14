@@ -16,12 +16,12 @@ class ScriptRunrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptRunr();
 
         self::assertSame('Runr', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('211', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Runic', $script->unicodeName());

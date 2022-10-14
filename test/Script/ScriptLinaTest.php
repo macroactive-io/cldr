@@ -16,12 +16,12 @@ class ScriptLinaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLina();
 
         self::assertSame('Lina', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('400', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Linear_A', $script->unicodeName());

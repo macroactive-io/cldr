@@ -16,12 +16,12 @@ class ScriptGujrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptGujr();
 
         self::assertSame('Gujr', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('320', $script->number());
         self::assertSame(array('૦', '૧', '૨', '૩', '૪', '૫', '૬', '૭', '૮', '૯'), $script->numerals());
         self::assertSame('Gujarati', $script->unicodeName());

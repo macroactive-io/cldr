@@ -16,12 +16,12 @@ class ScriptBassTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptBass();
 
         self::assertSame('Bass', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('259', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Bassa_Vah', $script->unicodeName());

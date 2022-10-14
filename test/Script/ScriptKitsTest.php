@@ -16,12 +16,12 @@ class ScriptKitsTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptKits();
 
         self::assertSame('Kits', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('288', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Khitan_Small_Script', $script->unicodeName());

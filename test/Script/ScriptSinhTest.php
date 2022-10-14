@@ -16,12 +16,12 @@ class ScriptSinhTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSinh();
 
         self::assertSame('Sinh', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('348', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Sinhala', $script->unicodeName());

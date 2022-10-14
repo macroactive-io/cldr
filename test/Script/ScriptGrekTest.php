@@ -16,12 +16,12 @@ class ScriptGrekTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptGrek();
 
         self::assertSame('Grek', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Greek', $script->unicodeName());
     }

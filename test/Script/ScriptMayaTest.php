@@ -16,12 +16,12 @@ class ScriptMayaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMaya();
 
         self::assertSame('Maya', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('090', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

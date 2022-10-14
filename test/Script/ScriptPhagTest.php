@@ -16,12 +16,12 @@ class ScriptPhagTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPhag();
 
         self::assertSame('Phag', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('331', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Phags_Pa', $script->unicodeName());

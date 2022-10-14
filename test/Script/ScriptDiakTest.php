@@ -16,12 +16,12 @@ class ScriptDiakTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptDiak();
 
         self::assertSame('Diak', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('342', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Dives_Akuru', $script->unicodeName());

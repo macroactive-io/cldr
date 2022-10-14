@@ -16,12 +16,12 @@ class ScriptLatfTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLatf();
 
         self::assertSame('Latf', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('217', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

@@ -15,9 +15,9 @@ abstract class AbstractScript implements ScriptInterface
         return [];
     }
 
-    public function direction(): string
+    public function direction(): ScriptDirection
     {
-        return substr_compare($this->number(), '1', 0, 1) ? 'ltr' : 'rtl';
+        return substr_compare($this->number(), '1', 0, 1) ? ScriptDirection::LTR : ScriptDirection::RTL;
     }
 
     abstract public function number(): string;

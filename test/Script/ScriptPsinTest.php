@@ -16,12 +16,12 @@ class ScriptPsinTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPsin();
 
         self::assertSame('Psin', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('103', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

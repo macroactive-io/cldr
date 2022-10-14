@@ -16,12 +16,12 @@ class ScriptMakaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMaka();
 
         self::assertSame('Maka', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('366', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Makasar', $script->unicodeName());

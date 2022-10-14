@@ -16,12 +16,12 @@ class ScriptCyrsTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCyrs();
 
         self::assertSame('Cyrs', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('221', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

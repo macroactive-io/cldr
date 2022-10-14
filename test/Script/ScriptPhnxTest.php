@@ -16,12 +16,12 @@ class ScriptPhnxTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPhnx();
 
         self::assertSame('Phnx', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('115', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Phoenician', $script->unicodeName());

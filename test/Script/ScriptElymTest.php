@@ -16,12 +16,12 @@ class ScriptElymTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptElym();
 
         self::assertSame('Elym', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('128', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Elymaic', $script->unicodeName());

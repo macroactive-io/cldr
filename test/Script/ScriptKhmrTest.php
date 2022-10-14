@@ -16,12 +16,12 @@ class ScriptKhmrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptKhmr();
 
         self::assertSame('Khmr', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('355', $script->number());
         self::assertSame(array('០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩'), $script->numerals());
         self::assertSame('Khmer', $script->unicodeName());

@@ -16,12 +16,12 @@ class ScriptHiraTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptHira();
 
         self::assertSame('Hira', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('410', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Hiragana', $script->unicodeName());

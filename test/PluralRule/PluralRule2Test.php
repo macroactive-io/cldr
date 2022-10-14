@@ -16,7 +16,7 @@ class PluralRule2Test extends TestCase
     /**
      * @return void
      */
-    public function testNumberOfPluralForms()
+    public function testNumberOfPluralForms(): void
     {
         $plural_rule = new PluralRule2();
 
@@ -26,7 +26,7 @@ class PluralRule2Test extends TestCase
     /**
      * @return void
      */
-    public function testPluralRules()
+    public function testPluralRules(): void
     {
         $plural_rule = new PluralRule2();
 

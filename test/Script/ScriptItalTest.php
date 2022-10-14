@@ -16,12 +16,12 @@ class ScriptItalTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptItal();
 
         self::assertSame('Ital', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('210', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Old_Italic', $script->unicodeName());

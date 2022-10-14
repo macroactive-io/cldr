@@ -3,8 +3,19 @@
 namespace Fisharebest\Localization;
 
 use Exception;
-use Fisharebest\Localization\Locale\AbstractLocale;
+use Fisharebest\Localization\Script\ScriptDirection;
 use PHPUnit\Framework\TestCase;
+use function array_slice;
+use function basename;
+use function bin2hex;
+use function count;
+use function explode;
+use function glob;
+use function implode;
+use function preg_match;
+use function preg_quote;
+use function strpos;
+use function strtr;
 
 /**
  * Tests for the CLDR
@@ -20,11 +31,11 @@ class CldrTest extends TestCase
      *
      * @medium
      */
-    public function testCharacterOrder()
+    public function testCharacterOrder(): void
     {
         $direction = array(
-            'left-to-right' => 'ltr',
-            'right-to-left' => 'rtl',
+            'left-to-right' => ScriptDirection::LTR,
+            'right-to-left' => ScriptDirection::RTL,
         );
 
         foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $cldr) {
@@ -42,7 +53,7 @@ class CldrTest extends TestCase
      *
      * @large
      */
-    public function testNumbers()
+    public function testNumbers(): void
     {
         foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $cldr) {
             if (strpos($cldr, '/root.xml') === false) {

@@ -16,12 +16,12 @@ class ScriptArmnTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptArmn();
 
         self::assertSame('Armn', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('230', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Armenian', $script->unicodeName());

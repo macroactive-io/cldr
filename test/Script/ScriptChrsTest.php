@@ -16,12 +16,12 @@ class ScriptChrsTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptChrs();
 
         self::assertSame('Chrs', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('109', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Chorasmian', $script->unicodeName());

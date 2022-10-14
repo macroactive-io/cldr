@@ -16,12 +16,12 @@ class ScriptNarbTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptNarb();
 
         self::assertSame('Narb', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('106', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Old_North_Arabian', $script->unicodeName());

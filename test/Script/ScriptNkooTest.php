@@ -16,12 +16,12 @@ class ScriptNkooTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptNkoo();
 
         self::assertSame('Nkoo', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('165', $script->number());
         self::assertSame(array('߀', '߁', '߂', '߃', '߄', '߅', '߆', '߇', '߈', '߉'), $script->numerals());
         self::assertSame('Nko', $script->unicodeName());

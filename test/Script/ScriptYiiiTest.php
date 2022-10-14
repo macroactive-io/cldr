@@ -16,12 +16,12 @@ class ScriptYiiiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptYiii();
 
         self::assertSame('Yiii', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('460', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Yi', $script->unicodeName());

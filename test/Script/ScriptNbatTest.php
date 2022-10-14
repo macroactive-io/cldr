@@ -16,12 +16,12 @@ class ScriptNbatTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptNbat();
 
         self::assertSame('Nbat', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('159', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Nabataean', $script->unicodeName());

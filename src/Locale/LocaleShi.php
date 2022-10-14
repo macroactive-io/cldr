@@ -6,6 +6,7 @@ namespace Fisharebest\Localization\Locale;
 
 use Fisharebest\Localization\Language\LanguageInterface;
 use Fisharebest\Localization\Language\LanguageShi;
+use Fisharebest\Localization\Script\ScriptDirection;
 
 /**
  * Class LocaleShi - Tachelhit
@@ -13,9 +14,9 @@ use Fisharebest\Localization\Language\LanguageShi;
  */
 class LocaleShi extends AbstractLocale implements LocaleInterface
 {
-    public function direction(): string
+    public function direction(): ScriptDirection
     {
-        return 'ltr';
+        return ScriptDirection::LTR;
     }
 
     public function endonym(): string

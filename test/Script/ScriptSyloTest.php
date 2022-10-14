@@ -16,12 +16,12 @@ class ScriptSyloTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSylo();
 
         self::assertSame('Sylo', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('316', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Syloti_Nagri', $script->unicodeName());

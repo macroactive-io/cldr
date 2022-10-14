@@ -16,12 +16,12 @@ class ScriptLinbTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLinb();
 
         self::assertSame('Linb', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('401', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Linear_B', $script->unicodeName());

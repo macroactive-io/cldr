@@ -16,12 +16,12 @@ class ScriptZanbTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptZanb();
 
         self::assertSame('Zanb', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('339', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Zanabazar_Square', $script->unicodeName());

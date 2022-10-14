@@ -16,12 +16,12 @@ class ScriptHantTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptHant();
 
         self::assertSame('Hant', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('502', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

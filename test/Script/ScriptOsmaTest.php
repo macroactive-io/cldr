@@ -16,12 +16,12 @@ class ScriptOsmaTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOsma();
 
         self::assertSame('Osma', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('260', $script->number());
         self::assertSame(array('𐒠', '𐒡', '𐒢', '𐒣', '𐒤', '𐒥', '𐒦', '𐒧', '𐒨', '𐒩'), $script->numerals());
         self::assertSame('Osmanya', $script->unicodeName());

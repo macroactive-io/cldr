@@ -16,12 +16,12 @@ class ScriptCariTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCari();
 
         self::assertSame('Cari', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('201', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Carian', $script->unicodeName());

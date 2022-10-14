@@ -16,12 +16,12 @@ class ScriptPelmTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptPelm();
 
         self::assertSame('Pelm', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('016', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

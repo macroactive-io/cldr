@@ -20,7 +20,7 @@ class LocaleIsTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $locale = new LocaleIs();
 

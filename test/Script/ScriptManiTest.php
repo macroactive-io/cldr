@@ -16,12 +16,12 @@ class ScriptManiTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMani();
 
         self::assertSame('Mani', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('139', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Manichaean', $script->unicodeName());

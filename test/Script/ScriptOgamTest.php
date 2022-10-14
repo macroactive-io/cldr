@@ -16,12 +16,12 @@ class ScriptOgamTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOgam();
 
         self::assertSame('Ogam', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('212', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Ogham', $script->unicodeName());

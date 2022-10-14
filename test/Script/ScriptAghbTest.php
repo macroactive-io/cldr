@@ -16,12 +16,12 @@ class ScriptAghbTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptAghb();
 
         self::assertSame('Aghb', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('239', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Caucasian_Albanian', $script->unicodeName());

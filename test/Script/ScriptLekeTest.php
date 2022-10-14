@@ -16,12 +16,12 @@ class ScriptLekeTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptLeke();
 
         self::assertSame('Leke', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('364', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

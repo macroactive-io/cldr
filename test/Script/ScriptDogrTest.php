@@ -16,12 +16,12 @@ class ScriptDogrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptDogr();
 
         self::assertSame('Dogr', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('328', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Dogra', $script->unicodeName());

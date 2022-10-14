@@ -16,12 +16,12 @@ class ScriptCprtTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptCprt();
 
         self::assertSame('Cprt', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('403', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Cypriot', $script->unicodeName());

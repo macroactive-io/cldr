@@ -16,12 +16,12 @@ class ScriptSarbTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSarb();
 
         self::assertSame('Sarb', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('105', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Old_South_Arabian', $script->unicodeName());

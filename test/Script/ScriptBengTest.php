@@ -16,12 +16,12 @@ class ScriptBengTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptBeng();
 
         self::assertSame('Beng', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('325', $script->number());
         self::assertSame(array('০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'), $script->numerals());
         self::assertSame('Bengali', $script->unicodeName());

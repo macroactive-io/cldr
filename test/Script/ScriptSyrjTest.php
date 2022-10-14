@@ -16,12 +16,12 @@ class ScriptSyrjTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptSyrj();
 
         self::assertSame('Syrj', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('137', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

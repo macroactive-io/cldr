@@ -16,7 +16,7 @@ class TerritoryFjTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $territory = new TerritoryFj();
 

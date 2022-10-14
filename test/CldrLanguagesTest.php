@@ -18,7 +18,7 @@ class CldrLanguagesTest extends TestCase
      *
      * @medium
      */
-    public function testLanguages()
+    public function testLanguages(): void
     {
         foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $xml) {
             if (strpos($xml, '/root.xml') === false) {

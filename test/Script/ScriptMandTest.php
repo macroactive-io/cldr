@@ -16,12 +16,12 @@ class ScriptMandTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMand();
 
         self::assertSame('Mand', $script->code());
-        self::assertSame('rtl', $script->direction());
+        self::assertSame(ScriptDirection::RTL, $script->direction());
         self::assertSame('140', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Mandaic', $script->unicodeName());

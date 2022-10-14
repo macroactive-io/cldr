@@ -16,12 +16,12 @@ class ScriptHansTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptHans();
 
         self::assertSame('Hans', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('501', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertNull($script->unicodeName());

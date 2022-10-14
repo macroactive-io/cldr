@@ -16,12 +16,12 @@ class ScriptMymrTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptMymr();
 
         self::assertSame('Mymr', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('350', $script->number());
         self::assertSame(array('၀', '၁', '၂', '၃', '၄', '၅', '၆', '၇', '၈', '၉'), $script->numerals());
         self::assertSame('Myanmar', $script->unicodeName());

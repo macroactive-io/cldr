@@ -16,12 +16,12 @@ class ScriptOsgeTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptOsge();
 
         self::assertSame('Osge', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('219', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Osage', $script->unicodeName());

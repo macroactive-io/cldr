@@ -16,12 +16,12 @@ class ScriptZinhTest extends TestCase
     /**
      * Test the properties
      */
-    public function testProperties()
+    public function testProperties(): void
     {
         $script = new ScriptZinh();
 
         self::assertSame('Zinh', $script->code());
-        self::assertSame('ltr', $script->direction());
+        self::assertSame(ScriptDirection::LTR, $script->direction());
         self::assertSame('994', $script->number());
         self::assertSame(array(), $script->numerals());
         self::assertSame('Inherited', $script->unicodeName());
