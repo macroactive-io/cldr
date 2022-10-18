@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LanguageOs - Representation of the Ossetian language.
+ * Ossetian
  *
  * @psalm-immutable
  */

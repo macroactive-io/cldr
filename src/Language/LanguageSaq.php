@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageSaq - Representation of the Samburu language.
+ * Samburu
  *
  * @psalm-immutable
  */

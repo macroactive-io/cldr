@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
- * Class LanguageSms - Representation of the Skolt Sami language.
+ * Skolt Sami
  *
  * @psalm-immutable
  */

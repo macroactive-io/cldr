@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryAl;
 
 /**
- * Class LanguageSq - Representation of the Albanian language.
+ * Albanian
  *
  * @psalm-immutable
  */

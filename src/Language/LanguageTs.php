@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageTs - Representation of the Tsonga language.
+ * Tsonga
  *
  * @psalm-immutable
  */

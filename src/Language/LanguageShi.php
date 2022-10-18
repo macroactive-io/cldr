@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptTfng;
 use Macroactive\Cldr\Territory\TerritoryMa;
 
 /**
- * Class LanguageShi - Representation of the Tachelhit language.
+ * Tachelhit
  *
  * @psalm-immutable
  */

@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule8;
 use Macroactive\Cldr\Territory\TerritoryCz;
 
 /**
- * Class LanguageCs - Representation of the Czech language.
+ * Czech
  *
  * @psalm-immutable
  */

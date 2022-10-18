@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageAsa - Representation of the Asu (Tanzania) language.
+ * Asu (Tanzania)
  *
  * @psalm-immutable
  */

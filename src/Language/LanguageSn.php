@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZw;
 
 /**
- * Class LanguageSn - Representation of the Shona language.
+ * Shona
  *
  * @psalm-immutable
  */

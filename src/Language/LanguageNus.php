@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritorySd;
 
 /**
- * Class LanguageNus - Representation of the Nuer language.
+ * Nuer
  *
  * @psalm-immutable
  */

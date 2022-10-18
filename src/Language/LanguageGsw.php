@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCh;
 
 /**
- * Class LanguageGsw - Representation of the Swiss German language.
+ * Swiss German
  *
  * @psalm-immutable
  */

@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptSyrc;
 use Macroactive\Cldr\Territory\TerritoryIq;
 
 /**
- * Class LanguageSyr - Representation of the Syriac language.
+ * Syriac
  *
  * @psalm-immutable
  */

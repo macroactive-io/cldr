@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule8;
 use Macroactive\Cldr\Territory\TerritorySk;
 
 /**
- * Class LanguageSk - Representation of the Slovak language.
+ * Slovak
  *
  * @psalm-immutable
  */

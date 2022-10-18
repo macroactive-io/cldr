@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule7;
 use Macroactive\Cldr\Territory\TerritoryBa;
 
 /**
- * Class LanguageBs - Representation of the Bosnian language.
+ * Bosnian
  *
  * @psalm-immutable
  */

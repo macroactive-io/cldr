@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNo;
 
 /**
- * Class LanguageSe - Representation of the Northern Sami language.
+ * Northern Sami
  *
  * @psalm-immutable
  */

@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
- * Class LanguageAst - Representation of the Asturian language.
+ * Asturian
  *
  * @psalm-immutable
  */

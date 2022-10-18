@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptBeng;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageAs - Representation of the Assamese language.
+ * Assamese
  *
  * @psalm-immutable
  */

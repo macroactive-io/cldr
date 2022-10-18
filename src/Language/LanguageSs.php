@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritorySz;
 
 /**
- * Class LanguageSs - Representation of the Swati language.
+ * Swati
  *
  * @psalm-immutable
  */

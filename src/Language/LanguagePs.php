@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
- * Class LanguagePs - Representation of the Pushto language.
+ * Pushto
  *
  * @psalm-immutable
  */

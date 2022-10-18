@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
 use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
- * Class LanguageKsh - Representation of the Kölsch language.
+ * Kölsch
  *
  * @psalm-immutable
  */

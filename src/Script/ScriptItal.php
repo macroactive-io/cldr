@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptItal - Representation of the Old Italic (Etruscan, Oscan, etc.) script.
+ * Old Italic (Etruscan, Oscan, etc.)
  *
  * @psalm-immutable
  */

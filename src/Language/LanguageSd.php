@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
- * Class LanguageSd - Representation of the Sindhi language.
+ * Sindhi
  *
  * @psalm-immutable
  */

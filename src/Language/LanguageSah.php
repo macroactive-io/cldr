@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LanguageSah - Representation of the Yakut language.
+ * Yakut
  *
  * @psalm-immutable
  */

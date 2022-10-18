@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
- * Class LanguageScn - Representation of the Sicilian language.
+ * Sicilian
  *
  * @psalm-immutable
  */

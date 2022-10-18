@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageBas - Representation of the Basa (Cameroon) language.
+ * Basa (Cameroon)
  *
  * @psalm-immutable
  */

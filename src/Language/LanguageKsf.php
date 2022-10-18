@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageKsf - Representation of the Bafia language.
+ * Bafia
  *
  * @psalm-immutable
  */

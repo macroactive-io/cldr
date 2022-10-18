@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryMz;
 
 /**
- * Class LanguageSeh - Representation of the Sena language.
+ * Sena
  *
  * @psalm-immutable
  */

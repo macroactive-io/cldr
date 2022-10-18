@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
- * Class LanguageSwc - Representation of the Congo Swahili language.
+ * Congo Swahili
  *
  * @psalm-immutable
  */

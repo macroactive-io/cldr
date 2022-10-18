@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
- * Class LanguageEs - Representation of the Spanish language.
+ * Spanish
  *
  * @psalm-immutable
  */

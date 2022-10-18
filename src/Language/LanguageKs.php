@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageKs - Representation of the Kashmiri language.
+ * Kashmiri
  *
  * @psalm-immutable
  */

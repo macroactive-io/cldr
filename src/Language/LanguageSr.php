@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryRs;
 
 /**
- * Class LanguageSr - Representation of the Serbian language.
+ * Serbian
  *
  * @psalm-immutable
  */

@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageNso - Representation of the Pedi language.
+ * Pedi
  *
  * @psalm-immutable
  */

@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryMy;
 
 /**
- * Class LanguageMs - Representation of the Malay language.
+ * Malay
  *
  * @psalm-immutable
  */

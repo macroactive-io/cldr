@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Territory\TerritorySi;
 
 /**
- * Class LanguageSl - Representation of the Slovenian language.
+ * Slovenian
  *
  * @psalm-immutable
  */

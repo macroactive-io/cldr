@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritorySo;
 
 /**
- * Class LanguageSo - Representation of the Somali language.
+ * Somali
  *
  * @psalm-immutable
  */

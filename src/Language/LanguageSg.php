@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryCf;
 
 /**
- * Class LanguageSg - Representation of the Sango language.
+ * Sango
  *
  * @psalm-immutable
  */

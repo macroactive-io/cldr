@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageKsb - Representation of the Shambala language.
+ * Shambala
  *
  * @psalm-immutable
  */

@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptSinh;
 use Macroactive\Cldr\Territory\TerritoryLk;
 
 /**
- * Class LanguageSi - Representation of the Sinhala language.
+ * Sinhala
  *
  * @psalm-immutable
  */

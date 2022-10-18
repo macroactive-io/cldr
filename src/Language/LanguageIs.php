@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule15;
 use Macroactive\Cldr\Territory\TerritoryIs;
 
 /**
- * Class LanguageIs - Representation of the Icelandic language.
+ * Icelandic
  *
  * @psalm-immutable
  */

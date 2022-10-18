@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
- * Class LanguageHsb - Representation of the Upper Sorbian language.
+ * Upper Sorbian
  *
  * @psalm-immutable
  */

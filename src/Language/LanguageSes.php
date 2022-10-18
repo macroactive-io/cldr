@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
- * Class LanguageSes - Representation of the Koyraboro Senni Songhai language.
+ * Koyraboro Senni Songhai
  *
  * @psalm-immutable
  */

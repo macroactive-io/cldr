@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageMas - Representation of the Masai language.
+ * Masai
  *
  * @psalm-immutable
  */

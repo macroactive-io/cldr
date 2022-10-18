@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptSund;
 use Macroactive\Cldr\Territory\TerritoryId;
 
 /**
- * Class LanguageSu - Representation of the Sotho language.
+ * Sotho
  *
  * @psalm-immutable
  */

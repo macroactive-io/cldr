@@ -19,7 +19,7 @@ use function strlen;
 use function substr;
 
 /**
- * Class AbstractLocale - The “root” locale, from which all others are derived.
+ * The “root” locale, from which all others are derived.
  *
  * @psalm-immutable
  */

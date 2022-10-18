@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritorySe;
 
 /**
- * Class LanguageSv - Representation of the Swedish language.
+ * Swedish
  *
  * @psalm-immutable
  */

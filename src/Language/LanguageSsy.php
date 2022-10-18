@@ -8,7 +8,7 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEr;
 
 /**
- * Class LanguageSsy - Representation of the Saho language.
+ * Saho
  *
  * @psalm-immutable
  */

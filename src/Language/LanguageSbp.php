@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageSbp - Representation of the Sangu (Tanzania) language.
+ * Sangu (Tanzania)
  *
  * @psalm-immutable
  */
