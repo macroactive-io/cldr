@@ -7,6 +7,7 @@ namespace Fisharebest\Localization\PluralRule;
 /**
  * Interface PluralRuleInterface - Select a plural form for a specified number.
  *
+ * @website          https://unicode-org.github.io/cldr-staging/charts/latest/supplemental/language_plural_rules.html
  * @website          https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals
  * @website          http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
  */
