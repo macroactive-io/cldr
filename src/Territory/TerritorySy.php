@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory SY - Syrian Arab Republic.
+ * SY - Syrian Arab Republic
+ *
  * @psalm-immutable
  */
 class TerritorySy extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMani - Representation of the Manichaean script.
+ * Manichaean
+ *
  * @psalm-immutable
  */
 class ScriptMani extends AbstractScript implements ScriptInterface

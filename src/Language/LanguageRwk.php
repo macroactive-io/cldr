@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageRwk - Representation of the Rwa language.
+ * Rwa
+ *
  * @psalm-immutable
  */
 class LanguageRwk extends AbstractLanguage implements LanguageInterface

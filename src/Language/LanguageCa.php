@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
- * Class LanguageCa - Representation of the Catalan language.
+ * Catalan
+ *
  * @psalm-immutable
  */
 class LanguageCa extends AbstractLanguage implements LanguageInterface

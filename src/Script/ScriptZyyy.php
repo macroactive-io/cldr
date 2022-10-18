@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptZyyy - Representation of the Code for undetermined script script.
+ * Code for undetermined script
+ *
  * @psalm-immutable
  */
 class ScriptZyyy extends AbstractScript implements ScriptInterface

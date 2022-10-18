@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMroo - Representation of the Mro, Mru script.
+ * Mro, Mru
+ *
  * @psalm-immutable
  */
 class ScriptMroo extends AbstractScript implements ScriptInterface

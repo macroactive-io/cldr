@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHani - Representation of the Han (Hanzi, Kanji, Hanja) script.
+ * Han (Hanzi, Kanji, Hanja)
+ *
  * @psalm-immutable
  */
 class ScriptHani extends AbstractScript implements ScriptInterface

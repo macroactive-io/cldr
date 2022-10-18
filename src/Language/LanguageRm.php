@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCh;
 
 /**
- * Class LanguageRm - Representation of the Romansh language.
+ * Romansh
+ *
  * @psalm-immutable
  */
 class LanguageRm extends AbstractLanguage implements LanguageInterface

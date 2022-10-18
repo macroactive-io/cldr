@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleYueHansCn - Yue
+ * Yue
+ *
  * @psalm-immutable
  */
 class LocaleYueHansCn extends LocaleYueHans

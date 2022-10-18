@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMymr - Representation of the Myanmar script.
+ * Myanmar
+ *
  * @psalm-immutable
  */
 class ScriptMymr extends AbstractScript implements ScriptInterface

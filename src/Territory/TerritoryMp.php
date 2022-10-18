@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory MP - Northern Mariana Islands.
+ * MP - Northern Mariana Islands
+ *
  * @psalm-immutable
  */
 class TerritoryMp extends AbstractTerritory implements TerritoryInterface

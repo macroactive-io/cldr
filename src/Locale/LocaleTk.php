@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTk;
 
 /**
- * Class LocaleTk - Turkmen
+ * Turkmen
+ *
  * @psalm-immutable
  */
 class LocaleTk extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFa - Persian
+ * Persian
+ *
  * @psalm-immutable
  */
 class LocaleFa extends AbstractLocale implements LocaleInterface

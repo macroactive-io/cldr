@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNg;
 
 /**
- * Class LanguageHa - Representation of the Hausa language.
+ * Hausa
+ *
  * @psalm-immutable
  */
 class LanguageHa extends AbstractLanguage implements LanguageInterface

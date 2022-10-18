@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIq;
 
 /**
- * Class LanguageKu - Representation of the Kurdish language.
+ * Kurdish
+ *
  * @psalm-immutable
  */
 class LanguageCkb extends AbstractLanguage implements LanguageInterface

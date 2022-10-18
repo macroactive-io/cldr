@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryAl;
 
 /**
  * Class LanguageSq - Representation of the Albanian language.
+ *
  * @psalm-immutable
  */
 class LanguageSq extends AbstractLanguage implements LanguageInterface

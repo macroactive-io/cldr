@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptAdlm - Representation of the Adlam script.
+ * Adlam
+ *
  * @psalm-immutable
  */
 class ScriptAdlm extends AbstractScript implements ScriptInterface

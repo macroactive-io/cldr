@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
  * Class LanguageTs - Representation of the Tsonga language.
+ *
  * @psalm-immutable
  */
 class LanguageTs extends AbstractLanguage implements LanguageInterface

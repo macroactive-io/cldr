@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePt;
 
 /**
- * Class LocalePt - Portuguese
+ * Portuguese
+ *
  * @psalm-immutable
  */
 class LocalePt extends AbstractLocale implements LocaleInterface

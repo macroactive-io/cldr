@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptGuru;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguagePa - Representation of the Panjabi language.
+ * Panjabi
+ *
  * @psalm-immutable
  */
 class LanguagePa extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTglg - Representation of the Tagalog (Baybayin, Alibata) script.
+ * Tagalog (Baybayin, Alibata)
+ *
  * @psalm-immutable
  */
 class ScriptTglg extends AbstractScript implements ScriptInterface

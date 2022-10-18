@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageId;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleId - Indonesian
+ * Indonesian
+ *
  * @psalm-immutable
  */
 class LocaleId extends AbstractLocale implements LocaleInterface

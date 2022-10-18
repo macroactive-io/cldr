@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOugr - Representation of the Old Uyghur script.
+ * Old Uyghur
+ *
  * @psalm-immutable
  */
 class ScriptOugr extends AbstractScript implements ScriptInterface

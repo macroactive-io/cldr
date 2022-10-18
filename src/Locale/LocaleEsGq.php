@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryGq;
 
 /**
- * Class LocaleEsGq
  * @psalm-immutable
  */
 class LocaleEsGq extends LocaleEs

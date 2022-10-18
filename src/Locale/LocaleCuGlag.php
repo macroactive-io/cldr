@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptGlag;
 
 /**
- * Class LocaleCuGlag - Old Church Slavonic
+ * Old Church Slavonic
+ *
  * @psalm-immutable
  */
 class LocaleCuGlag extends LocaleCu

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLt;
 
 /**
- * Class LocaleLt - Lithuanian
+ * Lithuanian
+ *
  * @psalm-immutable
  */
 class LocaleLt extends AbstractLocale implements LocaleInterface

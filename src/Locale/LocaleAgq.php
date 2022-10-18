@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAgq;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAgq - Aghem
+ * Aghem
+ *
  * @psalm-immutable
  */
 class LocaleAgq extends AbstractLocale implements LocaleInterface

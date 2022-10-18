@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageKs - Representation of the Kashmiri language.
+ *
  * @psalm-immutable
  */
 class LanguageKs extends AbstractLanguage implements LanguageInterface

@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LocaleSwUg
  * @psalm-immutable
  */
 class LocaleSwUg extends LocaleSw

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory MZ - Mozambique.
+ * MZ - Mozambique
+ *
  * @psalm-immutable
  */
 class TerritoryMz extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHang - Representation of the Hangul script.
+ * Hangul
+ *
  * @psalm-immutable
  */
 class ScriptHang extends AbstractScript implements ScriptInterface

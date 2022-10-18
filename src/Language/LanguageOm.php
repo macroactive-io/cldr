@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEt;
 
 /**
- * Class LanguageOm - Representation of the Oromo language.
+ * Oromo
+ *
  * @psalm-immutable
  */
 class LanguageOm extends AbstractLanguage implements LanguageInterface

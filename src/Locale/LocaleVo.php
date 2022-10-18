@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageVo;
 
 /**
- * Class LocaleVo - Volapük
+ * Volapük
+ *
  * @psalm-immutable
  */
 class LocaleVo extends AbstractLocale implements LocaleInterface

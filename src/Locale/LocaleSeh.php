@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSeh;
 
 /**
- * Class LocaleSeh - Sena
+ * Sena
+ *
  * @psalm-immutable
  */
 class LocaleSeh extends AbstractLocale implements LocaleInterface

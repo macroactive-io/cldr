@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
- * Class LocaleEnDe - English
+ * English
+ *
  * @psalm-immutable
  */
 class LocaleEnDe extends LocaleEn

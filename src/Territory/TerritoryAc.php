@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AC - Ascension Island.
+ * AC - Ascension Island
+ *
  * @psalm-immutable
  */
 class TerritoryAc extends AbstractTerritory implements TerritoryInterface

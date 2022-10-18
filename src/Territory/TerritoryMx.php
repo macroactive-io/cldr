@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory MX - Mexico.
+ * MX - Mexico
+ *
  * @psalm-immutable
  */
 class TerritoryMx extends AbstractTerritory implements TerritoryInterface

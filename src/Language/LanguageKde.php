@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageKde - Representation of the Makonde language.
+ * Makonde
+ *
  * @psalm-immutable
  */
 class LanguageKde extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCopt - Representation of the Coptic script.
+ * Coptic
+ *
  * @psalm-immutable
  */
 class ScriptCopt extends AbstractScript implements ScriptInterface

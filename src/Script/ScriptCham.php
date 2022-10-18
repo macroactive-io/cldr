@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCham - Representation of the Cham script.
+ * Cham
+ *
  * @psalm-immutable
  */
 class ScriptCham extends AbstractScript implements ScriptInterface

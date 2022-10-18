@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLb;
 
 /**
- * Class LocaleLb - Luxembourgish
+ * Luxembourgish
+ *
  * @psalm-immutable
  */
 class LocaleLb extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMgh;
 
 /**
- * Class LocaleMgh - Makhuwa-Meetto
+ * Makhuwa-Meetto
+ *
  * @psalm-immutable
  */
 class LocaleMgh extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory YU - Yugoslavia.
+ * YU - Yugoslavia
+ *
  * @psalm-immutable
  */
 class TerritoryYu extends AbstractTerritory implements TerritoryInterface

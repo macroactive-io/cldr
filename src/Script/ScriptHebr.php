@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHebr - Representation of the Hebrew script.
+ * Hebrew
+ *
  * @psalm-immutable
  */
 class ScriptHebr extends AbstractScript implements ScriptInterface

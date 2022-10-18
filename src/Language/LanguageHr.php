@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule7;
 use Macroactive\Cldr\Territory\TerritoryHr;
 
 /**
- * Class LanguageHr - Representation of the Croatian language.
+ * Croatian
+ *
  * @psalm-immutable
  */
 class LanguageHr extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory KE - Kenya.
+ * KE - Kenya
+ *
  * @psalm-immutable
  */
 class TerritoryKe extends AbstractTerritory implements TerritoryInterface

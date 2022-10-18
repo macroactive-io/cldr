@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
  * Class LanguagePs - Representation of the Pushto language.
+ *
  * @psalm-immutable
  */
 class LanguagePs extends AbstractLanguage implements LanguageInterface

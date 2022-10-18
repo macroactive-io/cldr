@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTang - Representation of the Tangut script.
+ * Tangut
+ *
  * @psalm-immutable
  */
 class ScriptTang extends AbstractScript implements ScriptInterface

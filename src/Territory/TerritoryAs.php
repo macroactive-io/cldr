@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AS - American Samoa.
+ * AS - American Samoa
+ *
  * @psalm-immutable
  */
 class TerritoryAs extends AbstractTerritory implements TerritoryInterface

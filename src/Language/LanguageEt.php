@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEe;
 
 /**
- * Class LanguageEt - Representation of the Estonian language.
+ * Estonian
+ *
  * @psalm-immutable
  */
 class LanguageEt extends AbstractLanguage implements LanguageInterface

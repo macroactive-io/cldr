@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageEbu - Representation of the Embu language.
+ * Embu
+ *
  * @psalm-immutable
  */
 class LanguageEbu extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSgnw - Representation of the SignWriting script.
+ * SignWriting
+ *
  * @psalm-immutable
  */
 class ScriptSgnw extends AbstractScript implements ScriptInterface

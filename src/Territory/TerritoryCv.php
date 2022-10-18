@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory CV - Cabo Verde.
+ * CV - Cabo Verde
+ *
  * @psalm-immutable
  */
 class TerritoryCv extends AbstractTerritory implements TerritoryInterface

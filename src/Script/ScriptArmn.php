@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptArmn - Representation of the Armenian script.
+ * Armenian
+ *
  * @psalm-immutable
  */
 class ScriptArmn extends AbstractScript implements ScriptInterface

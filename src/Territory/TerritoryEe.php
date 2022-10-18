@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory EE - Estonia.
+ * EE - Estonia
+ *
  * @psalm-immutable
  */
 class TerritoryEe extends AbstractTerritory implements TerritoryInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTg;
 
 /**
- * Class LocaleTg - Tajik
+ * Tajik
+ *
  * @psalm-immutable
  */
 class LocaleTg extends AbstractLocale implements LocaleInterface

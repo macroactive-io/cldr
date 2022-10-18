@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageLag - Representation of the Langi language.
+ * Langi
+ *
  * @psalm-immutable
  */
 class LanguageLag extends AbstractLanguage implements LanguageInterface

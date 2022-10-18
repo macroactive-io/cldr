@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageAf - Representation of the Afrikaans language.
+ * Afrikaans
+ *
  * @psalm-immutable
  */
 class LanguageAf extends AbstractLanguage implements LanguageInterface

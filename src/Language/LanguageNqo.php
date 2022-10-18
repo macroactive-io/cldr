@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptNkoo;
 use Macroactive\Cldr\Territory\TerritoryGn;
 
 /**
- * Class LanguageNqo - Representation of the N’Ko language.
+ * N’Ko
+ *
  * @psalm-immutable
  */
 class LanguageNqo extends AbstractLanguage implements LanguageInterface

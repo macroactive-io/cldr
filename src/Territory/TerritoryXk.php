@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory XK - Kosovo.
+ * XK - Kosovo
  * Note: this is a provisional assignemnt, used by various European organisations.
+ *
  * @psalm-immutable
  */
 class TerritoryXk extends AbstractTerritory implements TerritoryInterface

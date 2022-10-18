@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLu;
 
 /**
- * Class LocaleLu - Luba-Katanga
+ * Luba-Katanga
+ *
  * @psalm-immutable
  */
 class LocaleLu extends AbstractLocale implements LocaleInterface

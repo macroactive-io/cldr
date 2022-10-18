@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryFr;
 
 /**
- * Class LanguageOc - Representation of the Occitan language.
+ * Occitan
+ *
  * @psalm-immutable
  */
 class LanguageOc extends AbstractLanguage implements LanguageInterface

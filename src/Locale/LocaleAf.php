@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAf;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAf - Afrikaans
+ * Afrikaans
+ *
  * @psalm-immutable
  */
 class LocaleAf extends AbstractLocale implements LocaleInterface

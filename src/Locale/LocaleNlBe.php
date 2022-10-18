@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryBe;
 
 /**
- * Class LocaleNlBe - Flemish
+ * Flemish
+ *
  * @psalm-immutable
  */
 class LocaleNlBe extends LocaleNl

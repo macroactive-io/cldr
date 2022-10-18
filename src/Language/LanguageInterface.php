@@ -10,12 +10,14 @@ use Macroactive\Cldr\Territory\TerritoryInterface;
 
 /**
  * Interface LanguageInterface - Representation of a language.
+ *
  * @psalm-immutable
  */
 interface LanguageInterface
 {
     /**
      * The ISO639 code for this language.
+     *
      * @return non-empty-string
      */
     public function code(): string;

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
  * Class LanguageKsh - Representation of the Kölsch language.
+ *
  * @psalm-immutable
  */
 class LanguageKsh extends AbstractLanguage implements LanguageInterface

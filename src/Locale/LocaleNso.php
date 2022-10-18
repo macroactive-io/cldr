@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNso;
 
 /**
- * Class LocaleNso - Northern Sotho
+ * Northern Sotho
+ *
  * @psalm-immutable
  */
 class LocaleNso extends AbstractLocale implements LocaleInterface

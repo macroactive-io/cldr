@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMas;
 
 /**
- * Class LocaleMas - Masai
+ * Masai
+ *
  * @psalm-immutable
  */
 class LocaleMas extends AbstractLocale implements LocaleInterface

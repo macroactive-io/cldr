@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory PR - Puerto Rico.
+ * PR - Puerto Rico
+ *
  * @psalm-immutable
  */
 class TerritoryPr extends AbstractTerritory implements TerritoryInterface

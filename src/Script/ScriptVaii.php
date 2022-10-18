@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptVaii - Representation of the Vai script.
+ * Vai
+ *
  * @psalm-immutable
  */
 class ScriptVaii extends AbstractScript implements ScriptInterface

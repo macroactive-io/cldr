@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageZu - Representation of the Zulu language.
+ * Zulu
+ *
  * @psalm-immutable
  */
 class LanguageZu extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageJmc;
 
 /**
- * Class LocaleJmc - Machame
+ * Machame
+ *
  * @psalm-immutable
  */
 class LocaleJmc extends AbstractLocale implements LocaleInterface

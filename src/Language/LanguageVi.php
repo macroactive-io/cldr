@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryVn;
 
 /**
- * Class LanguageVi - Representation of the Vietnamese language.
+ * Vietnamese
+ *
  * @psalm-immutable
  */
 class LanguageVi extends AbstractLanguage implements LanguageInterface

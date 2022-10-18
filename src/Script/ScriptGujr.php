@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGujr - Representation of the Gujarati script.
+ * Gujarati
+ *
  * @psalm-immutable
  */
 class ScriptGujr extends AbstractScript implements ScriptInterface

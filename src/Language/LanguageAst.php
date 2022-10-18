@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
  * Class LanguageAst - Representation of the Asturian language.
+ *
  * @psalm-immutable
  */
 class LanguageAst extends AbstractLanguage implements LanguageInterface

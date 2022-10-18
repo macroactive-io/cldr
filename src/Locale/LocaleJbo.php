@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageJbo;
 
 /**
- * Class LocalePap - Lojban
+ * Lojban
+ *
  * @psalm-immutable
  */
 class LocaleJbo extends AbstractLocale implements LocaleInterface

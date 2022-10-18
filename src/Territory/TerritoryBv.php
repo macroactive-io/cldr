@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BV - Bouvet Island.
+ * BV - Bouvet Island
+ *
  * @psalm-immutable
  */
 class TerritoryBv extends AbstractTerritory implements TerritoryInterface

@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageMua - Representation of the Mundang language.
+ * Mundang
+ *
  * @psalm-immutable
  */
 class LanguageMua extends AbstractLanguage implements LanguageInterface

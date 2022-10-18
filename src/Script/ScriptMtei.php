@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMtei - Representation of the Meitei Mayek (Meithei, Meetei) script.
+ * Meitei Mayek (Meithei, Meetei)
+ *
  * @psalm-immutable
  */
 class ScriptMtei extends AbstractScript implements ScriptInterface

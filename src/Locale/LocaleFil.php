@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFil;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFil - Filipino
+ * Filipino
+ *
  * @psalm-immutable
  */
 class LocaleFil extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LanguageTeo - Representation of the Teso language.
+ * Teso
+ *
  * @psalm-immutable
  */
 class LanguageTeo extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BL - Saint Barthélemy.
+ * BL - Saint Barthélemy
+ *
  * @psalm-immutable
  */
 class TerritoryBl extends AbstractTerritory implements TerritoryInterface

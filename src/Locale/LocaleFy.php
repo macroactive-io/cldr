@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFy;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFy - Western Frisian
+ * Western Frisian
+ *
  * @psalm-immutable
  */
 class LocaleFy extends AbstractLocale implements LocaleInterface

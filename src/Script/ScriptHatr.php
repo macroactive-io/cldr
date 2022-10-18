@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHatr - Representation of the Hatran script.
+ * Hatran
+ *
  * @psalm-immutable
  */
 class ScriptHatr extends AbstractScript implements ScriptInterface

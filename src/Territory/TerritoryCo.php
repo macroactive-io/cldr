@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory CO - Colombia.
+ * CO - Colombia
+ *
  * @psalm-immutable
  */
 class TerritoryCo extends AbstractTerritory implements TerritoryInterface

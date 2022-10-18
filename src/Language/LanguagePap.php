@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\Territory029;
 
 /**
- * Class LanguagePap - Representation of the Papiamentu language.
+ * Papiamentu
+ *
  * @psalm-immutable
  */
 class LanguagePap extends AbstractLanguage implements LanguageInterface

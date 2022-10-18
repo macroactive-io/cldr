@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageEu;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleEu - Basque
+ * Basque
+ *
  * @psalm-immutable
  */
 class LocaleEu extends AbstractLocale implements LocaleInterface

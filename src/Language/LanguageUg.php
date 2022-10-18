@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryCn;
 
 /**
- * Class LanguageUg - Representation of the Uighur language.
+ * Uighur
+ *
  * @psalm-immutable
  */
 class LanguageUg extends AbstractLanguage implements LanguageInterface

@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritorySn;
 
 /**
- * Class LanguageDyo - Representation of the Jola-Fonyi language.
+ * Jola-Fonyi
+ *
  * @psalm-immutable
  */
 class LanguageDyo extends AbstractLanguage implements LanguageInterface

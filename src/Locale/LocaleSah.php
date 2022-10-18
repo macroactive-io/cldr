@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSah;
 
 /**
- * Class LocaleSah - Sakha
+ * Sakha
+ *
  * @psalm-immutable
  */
 class LocaleSah extends AbstractLocale implements LocaleInterface

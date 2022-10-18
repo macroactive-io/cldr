@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBatk - Representation of the Batak script.
+ * Batak
+ *
  * @psalm-immutable
  */
 class ScriptBatk extends AbstractScript implements ScriptInterface

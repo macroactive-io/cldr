@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryCf;
 
 /**
  * Class LanguageSg - Representation of the Sango language.
+ *
  * @psalm-immutable
  */
 class LanguageSg extends AbstractLanguage implements LanguageInterface

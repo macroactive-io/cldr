@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNshu - Representation of the Nüshu script.
+ * Nüshu
+ *
  * @psalm-immutable
  */
 class ScriptNshu extends AbstractScript implements ScriptInterface

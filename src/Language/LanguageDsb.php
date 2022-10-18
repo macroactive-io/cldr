@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
  * Class LanguageDsb - Representation of the Lower Sorbian language.
+ *
  * @psalm-immutable
  */
 class LanguageDsb extends AbstractLanguage implements LanguageInterface

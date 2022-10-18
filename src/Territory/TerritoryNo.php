@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory NO - Norway.
+ * NO - Norway
+ *
  * @psalm-immutable
  */
 class TerritoryNo extends AbstractTerritory implements TerritoryInterface

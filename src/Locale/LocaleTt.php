@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTt;
 
 /**
- * Class LocaleTt - Tatar
+ * Tatar
+ *
  * @psalm-immutable
  */
 class LocaleTt extends AbstractLocale implements LocaleInterface

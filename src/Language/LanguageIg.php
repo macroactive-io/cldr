@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryNg;
 
 /**
- * Class LanguageIg - Representation of the Igbo language.
+ * Igbo
+ *
  * @psalm-immutable
  */
 class LanguageIg extends AbstractLanguage implements LanguageInterface

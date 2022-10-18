@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDe;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDe - German
+ * German
+ *
  * @psalm-immutable
  */
 class LocaleDe extends AbstractLocale implements LocaleInterface

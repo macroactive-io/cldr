@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptDeva - Representation of the Devanagari script.
+ * Devanagari
+ *
  * @psalm-immutable
  */
 class ScriptDeva extends AbstractScript implements ScriptInterface

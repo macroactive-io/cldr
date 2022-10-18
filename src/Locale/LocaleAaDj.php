@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryDj;
 
 /**
- * Class LocaleAaDj
  * @psalm-immutable
  */
 class LocaleAaDj extends LocaleAa

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory 053 - Australia and New Zealand.
+ * 053 - Australia and New Zealand
+ *
  * @psalm-immutable
  */
 class Territory053 extends AbstractTerritory implements TerritoryInterface

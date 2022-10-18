@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMn;
 
 /**
- * Class LocaleMn - Mongolian
+ * Mongolian
+ *
  * @psalm-immutable
  */
 class LocaleMn extends AbstractLocale implements LocaleInterface

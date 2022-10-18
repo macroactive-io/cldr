@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptDsrt - Representation of the Deseret (Mormon) script.
+ * Deseret (Mormon)
+ *
  * @psalm-immutable
  */
 class ScriptDsrt extends AbstractScript implements ScriptInterface

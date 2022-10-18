@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySi;
 
 /**
  * Class LanguageSl - Representation of the Slovenian language.
+ *
  * @psalm-immutable
  */
 class LanguageSl extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageOr;
 
 /**
- * Class LocaleOr - Oriya
+ * Oriya
+ *
  * @psalm-immutable
  */
 class LocaleOr extends AbstractLocale implements LocaleInterface

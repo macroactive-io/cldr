@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
- * Class LanguageIt - Representation of the Italian language.
+ * Italian
+ *
  * @psalm-immutable
  */
 class LanguageIt extends AbstractLanguage implements LanguageInterface

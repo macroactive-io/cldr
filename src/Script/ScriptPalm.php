@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPalm - Representation of the Palmyrene script.
+ * Palmyrene
+ *
  * @psalm-immutable
  */
 class ScriptPalm extends AbstractScript implements ScriptInterface

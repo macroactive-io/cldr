@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCprt - Representation of the Cypriot script.
+ * Cypriot
+ *
  * @psalm-immutable
  */
 class ScriptCprt extends AbstractScript implements ScriptInterface

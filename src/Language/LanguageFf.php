@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritorySn;
 
 /**
- * Class LanguageFf - Representation of the Fulah language.
+ * Fulah
+ *
  * @psalm-immutable
  */
 class LanguageFf extends AbstractLanguage implements LanguageInterface

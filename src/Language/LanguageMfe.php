@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryMu;
 
 /**
- * Class LanguageMfe - Representation of the Morisyen language.
+ * Morisyen
+ *
  * @psalm-immutable
  */
 class LanguageMfe extends AbstractLanguage implements LanguageInterface

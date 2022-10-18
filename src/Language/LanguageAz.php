@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryIr;
 
 /**
- * Class LanguageAz - Representation of the Azerbaijani language.
+ * Azerbaijani
+ *
  * @psalm-immutable
  */
 class LanguageAz extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNkgb - Representation of the Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba) script.
+ * Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba)
+ *
  * @psalm-immutable
  */
 class ScriptNkgb extends AbstractScript implements ScriptInterface

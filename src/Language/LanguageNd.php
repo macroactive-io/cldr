@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZw;
 
 /**
- * Class LanguageNd - Representation of the North Ndebele language.
+ * North Ndebele
+ *
  * @psalm-immutable
  */
 class LanguageNd extends AbstractLanguage implements LanguageInterface

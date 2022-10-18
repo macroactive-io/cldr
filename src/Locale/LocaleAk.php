@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAk;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAk - Akan
+ * Akan
+ *
  * @psalm-immutable
  */
 class LocaleAk extends AbstractLocale implements LocaleInterface

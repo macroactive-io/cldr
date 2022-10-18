@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCy;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCy - Welsh
+ * Welsh
+ *
  * @psalm-immutable
  */
 class LocaleCy extends AbstractLocale implements LocaleInterface

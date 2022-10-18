@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIr;
 
 /**
- * Class LanguageLrc - Representation of the Luri language.
+ * Luri
+ *
  * @psalm-immutable
  */
 class LanguageLrc extends AbstractLanguage implements LanguageInterface

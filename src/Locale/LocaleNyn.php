@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNyn;
 
 /**
- * Class LocaleNyn - Nyankole
+ * Nyankole
+ *
  * @psalm-immutable
  */
 class LocaleNyn extends AbstractLocale implements LocaleInterface

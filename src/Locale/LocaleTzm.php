@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTzm;
 
 /**
- * Class LocaleTzm - Central Atlas Tamazight
+ * Central Atlas Tamazight
+ *
  * @psalm-immutable
  */
 class LocaleTzm extends AbstractLocale implements LocaleInterface

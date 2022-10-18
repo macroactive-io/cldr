@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\Territory419;
 
 /**
- * Class LocaleEs419 - Latin American Spanish
+ * Latin American Spanish
+ *
  * @psalm-immutable
  */
 class LocaleEs419 extends LocaleEs

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSo;
 
 /**
- * Class LocaleSo - Somali
+ * Somali
+ *
  * @psalm-immutable
  */
 class LocaleSo extends AbstractLocale implements LocaleInterface

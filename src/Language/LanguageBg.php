@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryBg;
 
 /**
- * Class LanguageBg - Representation of the Bulgarian language.
+ * Bulgarian
+ *
  * @psalm-immutable
  */
 class LanguageBg extends AbstractLanguage implements LanguageInterface

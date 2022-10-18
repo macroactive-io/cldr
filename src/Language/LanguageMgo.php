@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageMgo - Representation of the Meta' language.
+ * Meta'
+ *
  * @psalm-immutable
  */
 class LanguageMgo extends AbstractLanguage implements LanguageInterface

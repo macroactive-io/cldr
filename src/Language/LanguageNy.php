@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryMw;
 
 /**
- * Class LanguageNy - Representation of the Chewa language.
+ * Chewa
+ *
  * @psalm-immutable
  */
 class LanguageNy extends AbstractLanguage implements LanguageInterface

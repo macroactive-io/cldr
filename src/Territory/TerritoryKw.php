@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory KW - Kuwait.
+ * KW - Kuwait
+ *
  * @psalm-immutable
  */
 class TerritoryKw extends AbstractTerritory implements TerritoryInterface

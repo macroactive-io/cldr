@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCpmn - Representation of the Makasar script.
+ * Makasar
+ *
  * @psalm-immutable
  */
 class ScriptMaka extends AbstractScript implements ScriptInterface

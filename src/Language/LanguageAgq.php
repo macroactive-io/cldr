@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageAgq - Representation of the Aghem language.
+ * Aghem
+ *
  * @psalm-immutable
  */
 class LanguageAgq extends AbstractLanguage implements LanguageInterface

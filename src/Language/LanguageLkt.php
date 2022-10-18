@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryUs;
 
 /**
- * Class LanguageLkt - Representation of the Lakota language.
+ * Lakota
+ *
  * @psalm-immutable
  */
 class LanguageLkt extends AbstractLanguage implements LanguageInterface

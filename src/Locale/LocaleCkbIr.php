@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryIr;
 
 /**
- * Class LocaleCkbIr - Sorani
+ * Sorani
+ *
  * @psalm-immutable
  */
 class LocaleCkbIr extends LocaleCkb

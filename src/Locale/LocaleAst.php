@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAst;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAst - Asturian
+ * Asturian
+ *
  * @psalm-immutable
  */
 class LocaleAst extends AbstractLocale implements LocaleInterface

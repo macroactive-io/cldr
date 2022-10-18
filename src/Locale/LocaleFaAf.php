@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryAf;
 
 /**
- * Class LocaleFaAf
  * @psalm-immutable
  */
 class LocaleFaAf extends LocaleFa

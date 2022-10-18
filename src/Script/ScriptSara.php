@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSara - Representation of the Sarati script.
+ * Sarati
+ *
  * @psalm-immutable
  */
 class ScriptSara extends AbstractScript implements ScriptInterface

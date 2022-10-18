@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNl;
 
 /**
- * Class LanguageFy - Representation of the Western Frisian language.
+ * Western Frisian
+ *
  * @psalm-immutable
  */
 class LanguageFy extends AbstractLanguage implements LanguageInterface

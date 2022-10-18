@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageXog;
 
 /**
- * Class LocaleXog - Soga
+ * Soga
+ *
  * @psalm-immutable
  */
 class LocaleXog extends AbstractLocale implements LocaleInterface

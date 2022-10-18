@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule13;
 use Macroactive\Cldr\Territory\TerritoryMt;
 
 /**
- * Class LanguageMt - Representation of the Maltese language.
+ * Maltese
+ *
  * @psalm-immutable
  */
 class LanguageMt extends AbstractLanguage implements LanguageInterface

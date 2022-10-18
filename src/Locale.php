@@ -6,6 +6,7 @@ namespace Macroactive\Cldr;
 
 use DomainException;
 use Macroactive\Cldr\Locale\LocaleInterface;
+
 use function array_combine;
 use function array_key_exists;
 use function array_keys;

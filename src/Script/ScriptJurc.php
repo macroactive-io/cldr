@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptJurc - Representation of the Jurchen script.
+ * Jurchen
+ *
  * @psalm-immutable
  */
 class ScriptJurc extends AbstractScript implements ScriptInterface

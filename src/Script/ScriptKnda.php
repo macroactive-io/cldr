@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKnda - Representation of the Kannada script.
+ * Kannada
+ *
  * @psalm-immutable
  */
 class ScriptKnda extends AbstractScript implements ScriptInterface

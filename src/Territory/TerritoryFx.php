@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory FX - Metropolitan France.
+ * FX - Metropolitan France
+ *
  * @psalm-immutable
  */
 class TerritoryFx extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BI - Burundi.
+ * BI - Burundi
+ *
  * @psalm-immutable
  */
 class TerritoryBi extends AbstractTerritory implements TerritoryInterface

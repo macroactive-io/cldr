@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRw;
 
 /**
- * Class LocaleRw - Kinyarwanda
+ * Kinyarwanda
+ *
  * @psalm-immutable
  */
 class LocaleRw extends AbstractLocale implements LocaleInterface

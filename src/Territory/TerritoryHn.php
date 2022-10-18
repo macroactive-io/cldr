@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory HN - Honduras.
+ * HN - Honduras
+ *
  * @psalm-immutable
  */
 class TerritoryHn extends AbstractTerritory implements TerritoryInterface

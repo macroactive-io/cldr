@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSsy;
 
 /**
- * Class LocaleSsy - Saho
+ * Saho
+ *
  * @psalm-immutable
  */
 class LocaleSsy extends AbstractLocale implements LocaleInterface

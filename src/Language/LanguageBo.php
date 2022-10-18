@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryCn;
 
 /**
- * Class LanguageBo - Representation of the Tibetan language.
+ * Tibetan
+ *
  * @psalm-immutable
  */
 class LanguageBo extends AbstractLanguage implements LanguageInterface

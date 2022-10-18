@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCakm - Representation of the Chakma script.
+ * Chakma
+ *
  * @psalm-immutable
  */
 class ScriptCakm extends AbstractScript implements ScriptInterface

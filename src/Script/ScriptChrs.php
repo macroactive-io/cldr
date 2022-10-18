@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptChrs - Representation of the Chorasmian script.
+ * Chorasmian
+ *
  * @psalm-immutable
  */
 class ScriptChrs extends AbstractScript implements ScriptInterface

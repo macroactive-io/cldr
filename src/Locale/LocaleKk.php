@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKk;
 
 /**
- * Class LocaleKk - Kazakh
+ * Kazakh
+ *
  * @psalm-immutable
  */
 class LocaleKk extends AbstractLocale implements LocaleInterface

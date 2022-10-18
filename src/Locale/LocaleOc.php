@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageOc;
 
 /**
- * Class LocaleOc - Occitan
+ * Occitan
+ *
  * @psalm-immutable
  */
 class LocaleOc extends AbstractLocale implements LocaleInterface

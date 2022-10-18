@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMua;
 
 /**
- * Class LocaleMua - Mundang
+ * Mundang
+ *
  * @psalm-immutable
  */
 class LocaleMua extends AbstractLocale implements LocaleInterface

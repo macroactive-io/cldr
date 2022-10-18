@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
- * Class LanguageLu - Representation of the Luba-Katanga language.
+ * Luba-Katanga
+ *
  * @psalm-immutable
  */
 class LanguageLu extends AbstractLanguage implements LanguageInterface

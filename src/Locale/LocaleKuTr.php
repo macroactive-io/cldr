@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleKu - Kurdish
+ * Kurdish
+ *
  * @psalm-immutable
  */
 class LocaleKuTr extends LocaleKu

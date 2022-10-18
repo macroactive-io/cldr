@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCpmn - Representation of the Cypro-Minoan script.
+ * Cypro-Minoan
+ *
  * @psalm-immutable
  */
 class ScriptCpmn extends AbstractScript implements ScriptInterface

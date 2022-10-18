@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageJv;
 
 /**
- * Class LocaleJv - Javanese
+ * Javanese
+ *
  * @psalm-immutable
  */
 class LocaleJv extends AbstractLocale implements LocaleInterface

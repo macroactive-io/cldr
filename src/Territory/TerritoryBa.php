@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BA - Bosnia and Herzegovina.
+ * BA - Bosnia and Herzegovina
+ *
  * @psalm-immutable
  */
 class TerritoryBa extends AbstractTerritory implements TerritoryInterface

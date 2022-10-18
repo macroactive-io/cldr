@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryXk;
 
 /**
- * Class LocaleSrCyrlXk
  * @psalm-immutable
  */
 class LocaleSrCyrlXk extends LocaleSrCyrl

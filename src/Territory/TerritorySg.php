@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory SG - Singapore.
+ * SG - Singapore
+ *
  * @psalm-immutable
  */
 class TerritorySg extends AbstractTerritory implements TerritoryInterface

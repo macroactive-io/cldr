@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNarb - Representation of the Old North Arabian (Ancient North Arabian) script.
+ * Old North Arabian (Ancient North Arabian)
+ *
  * @psalm-immutable
  */
 class ScriptNarb extends AbstractScript implements ScriptInterface

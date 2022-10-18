@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOsma - Representation of the Osmanya script.
+ * Osmanya
+ *
  * @psalm-immutable
  */
 class ScriptOsma extends AbstractScript implements ScriptInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleCentralAtlasTamazight;
 use Macroactive\Cldr\Territory\TerritoryMa;
 
 /**
- * Class LanguageTzm - Representation of the Central Atlas Tamazight language.
+ * Central Atlas Tamazight
+ *
  * @psalm-immutable
  */
 class LanguageTzm extends AbstractLanguage implements LanguageInterface

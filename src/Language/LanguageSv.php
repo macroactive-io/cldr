@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySe;
 
 /**
  * Class LanguageSv - Representation of the Swedish language.
+ *
  * @psalm-immutable
  */
 class LanguageSv extends AbstractLanguage implements LanguageInterface

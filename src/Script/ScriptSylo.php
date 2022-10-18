@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSylo - Representation of the Syloti Nagri script.
+ * Syloti Nagri
+ *
  * @psalm-immutable
  */
 class ScriptSylo extends AbstractScript implements ScriptInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHano - Representation of the Hanunoo (Hanunóo) script.
+ * Hanunoo (Hanunóo)
+ *
  * @psalm-immutable
  */
 class ScriptHano extends AbstractScript implements ScriptInterface

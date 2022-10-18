@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
  * Class LanguageSma - Representation of the Southern Sami language.
+ *
  * @psalm-immutable
  */
 class LanguageSma extends AbstractLanguage implements LanguageInterface

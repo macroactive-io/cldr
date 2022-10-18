@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBrah - Representation of the Brahmi script.
+ * Brahmi
+ *
  * @psalm-immutable
  */
 class ScriptBrah extends AbstractScript implements ScriptInterface

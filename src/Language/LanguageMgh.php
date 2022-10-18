@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryMz;
 
 /**
- * Class LanguageMgh - Representation of the Makhuwa-Meetto language.
+ * Makhuwa-Meetto
+ *
  * @psalm-immutable
  */
 class LanguageMgh extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKea;
 
 /**
- * Class LocaleKea - Kabuverdianu
+ * Kabuverdianu
+ *
  * @psalm-immutable
  */
 class LocaleKea extends AbstractLocale implements LocaleInterface

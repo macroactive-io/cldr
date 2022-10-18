@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
  * Class LanguageEs - Representation of the Spanish language.
+ *
  * @psalm-immutable
  */
 class LanguageEs extends AbstractLanguage implements LanguageInterface

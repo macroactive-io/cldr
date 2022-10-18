@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryBa;
 
 /**
- * Class LocaleSrCyrlBa
  * @psalm-immutable
  */
 class LocaleSrCyrlBa extends LocaleSrCyrl

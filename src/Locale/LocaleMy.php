@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMy;
 
 /**
- * Class LocaleMy - Burmese
+ * Burmese
+ *
  * @psalm-immutable
  */
 class LocaleMy extends AbstractLocale implements LocaleInterface

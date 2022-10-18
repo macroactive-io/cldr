@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptInds - Representation of the Indus (Harappan) script.
+ * Indus (Harappan)
+ *
  * @psalm-immutable
  */
 class ScriptInds extends AbstractScript implements ScriptInterface

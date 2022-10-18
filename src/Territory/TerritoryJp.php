@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory JP - Japan.
+ * JP - Japan
+ *
  * @psalm-immutable
  */
 class TerritoryJp extends AbstractTerritory implements TerritoryInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryTo;
 
 /**
- * Class LanguageTo - Representation of the Tonga (Tonga Islands) language.
+ * Tonga (Tonga Islands)
+ *
  * @psalm-immutable
  */
 class LanguageTo extends AbstractLanguage implements LanguageInterface

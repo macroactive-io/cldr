@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHmng - Representation of the Pahawh Hmong script.
+ * Pahawh Hmong
+ *
  * @psalm-immutable
  */
 class ScriptHmng extends AbstractScript implements ScriptInterface

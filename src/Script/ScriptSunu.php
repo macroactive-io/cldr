@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSunu - Representation of the Sunuwar script.
+ * Sunuwar
+ *
  * @psalm-immutable
  */
 class ScriptSunu extends AbstractScript implements ScriptInterface

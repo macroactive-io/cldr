@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptJpan - Representation of the Japanese script.
+ * Japanese
+ *
  * @psalm-immutable
  */
 class ScriptJpan extends AbstractScript implements ScriptInterface

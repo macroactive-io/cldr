@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCpmn - Representation of the Elymaic script.
+ * Elymaic
+ *
  * @psalm-immutable
  */
 class ScriptElym extends AbstractScript implements ScriptInterface

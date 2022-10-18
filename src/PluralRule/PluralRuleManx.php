@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleManx - Select a plural form for a specified number.
  * nplurals=4; plural=(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : ((n % 20 == 0) ? 2 : 3));
  */
 class PluralRuleManx implements PluralRuleInterface

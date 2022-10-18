@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleWelsh;
 use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
- * Class LanguageCy - Representation of the Welsh language.
+ * Welsh
+ *
  * @psalm-immutable
  */
 class LanguageCy extends AbstractLanguage implements LanguageInterface

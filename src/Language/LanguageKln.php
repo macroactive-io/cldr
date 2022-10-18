@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageKln - Representation of the Kalenjin language.
+ * Kalenjin
+ *
  * @psalm-immutable
  */
 class LanguageKln extends AbstractLanguage implements LanguageInterface

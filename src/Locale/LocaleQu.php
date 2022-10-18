@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageQu;
 
 /**
- * Class LocaleQu - Quechua
+ * Quechua
+ *
  * @psalm-immutable
  */
 class LocaleQu extends AbstractLocale implements LocaleInterface

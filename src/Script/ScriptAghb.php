@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptAghb - Representation of the Caucasian Albanian script.
+ * Caucasian Albanian
+ *
  * @psalm-immutable
  */
 class ScriptAghb extends AbstractScript implements ScriptInterface

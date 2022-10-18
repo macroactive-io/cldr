@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryBe;
 
 /**
- * Class LanguageXh - Representation of the Walloon language.
+ * Walloon
+ *
  * @psalm-immutable
  */
 class LanguageWa extends AbstractLanguage implements LanguageInterface

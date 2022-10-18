@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptArmi - Representation of the Imperial Aramaic script.
+ * Imperial Aramaic
+ *
  * @psalm-immutable
  */
 class ScriptArmi extends AbstractScript implements ScriptInterface

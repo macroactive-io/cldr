@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory CI - Côte d'Ivoire.
+ * CI - Côte d'Ivoire
+ *
  * @psalm-immutable
  */
 class TerritoryCi extends AbstractTerritory implements TerritoryInterface

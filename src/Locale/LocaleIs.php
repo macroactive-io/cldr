@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageIs;
 
 /**
- * Class LocaleIs - Icelandic
+ * Icelandic
+ *
  * @psalm-immutable
  */
 class LocaleIs extends AbstractLocale implements LocaleInterface

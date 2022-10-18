@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleWelsh - Select a plural form for a specified number.
  * nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n == 3) ? 2 : 3;
  */
 class PluralRuleCornish implements PluralRuleInterface

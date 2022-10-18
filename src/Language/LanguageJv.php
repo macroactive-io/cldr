@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptJava;
 use Macroactive\Cldr\Territory\TerritoryId;
 
 /**
- * Class LanguageJv - Representation of the Javanese language.
+ * Javanese
+ *
  * @psalm-immutable
  */
 class LanguageJv extends AbstractLanguage implements LanguageInterface

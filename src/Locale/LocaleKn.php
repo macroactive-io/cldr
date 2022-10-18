@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKn;
 
 /**
- * Class LocaleKn - Kannada
+ * Kannada
+ *
  * @psalm-immutable
  */
 class LocaleKn extends AbstractLocale implements LocaleInterface

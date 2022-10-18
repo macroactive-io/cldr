@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySz;
 
 /**
  * Class LanguageSs - Representation of the Swati language.
+ *
  * @psalm-immutable
  */
 class LanguageSs extends AbstractLanguage implements LanguageInterface

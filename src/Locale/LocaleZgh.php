@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageZgh;
 
 /**
- * Class LocaleZgh - Standard Moroccan Tamazight
+ * Standard Moroccan Tamazight
+ *
  * @psalm-immutable
  */
 class LocaleZgh extends AbstractLocale implements LocaleInterface

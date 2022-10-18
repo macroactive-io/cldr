@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryKz;
 
 /**
- * Class LanguageKk - Representation of the Kazakh language.
+ * Kazakh
+ *
  * @psalm-immutable
  */
 class LanguageKk extends AbstractLanguage implements LanguageInterface

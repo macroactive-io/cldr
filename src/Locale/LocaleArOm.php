@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryOm;
 
 /**
- * Class LocaleArOm
  * @psalm-immutable
  */
 class LocaleArOm extends LocaleAr

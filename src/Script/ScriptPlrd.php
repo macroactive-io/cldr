@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPlrd - Representation of the Miao (Pollard) script.
+ * Miao (Pollard)
+ *
  * @psalm-immutable
  */
 class ScriptPlrd extends AbstractScript implements ScriptInterface

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptKnda;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageKn - Representation of the Kannada language.
+ * Kannada
+ *
  * @psalm-immutable
  */
 class LanguageKn extends AbstractLanguage implements LanguageInterface

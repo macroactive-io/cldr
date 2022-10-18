@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryMz;
 
 /**
- * Class LocalePtMz
  * @psalm-immutable
  */
 class LocalePtMz extends LocalePt

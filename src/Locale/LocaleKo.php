@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKo;
 
 /**
- * Class LocaleKo - Korean
+ * Korean
+ *
  * @psalm-immutable
  */
 class LocaleKo extends AbstractLocale implements LocaleInterface

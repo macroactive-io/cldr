@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRof;
 
 /**
- * Class LocaleRof - Rombo
+ * Rombo
+ *
  * @psalm-immutable
  */
 class LocaleRof extends AbstractLocale implements LocaleInterface

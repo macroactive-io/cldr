@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBn;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBn - Bengali
+ * Bengali
+ *
  * @psalm-immutable
  */
 class LocaleBn extends AbstractLocale implements LocaleInterface

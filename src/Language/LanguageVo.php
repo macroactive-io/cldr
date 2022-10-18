@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 
 /**
- * Class LanguageVo - Representation of the Volapük language.
+ * Volapük
+ *
  * @psalm-immutable
  */
 class LanguageVo extends AbstractLanguage implements LanguageInterface

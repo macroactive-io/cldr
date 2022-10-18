@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory KI - Kiribati.
+ * KI - Kiribati
+ *
  * @psalm-immutable
  */
 class TerritoryKi extends AbstractTerritory implements TerritoryInterface

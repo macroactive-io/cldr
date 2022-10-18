@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptLatn;
 
 /**
- * Class LocaleSrLatn
  * @psalm-immutable
  */
 class LocaleSrLatn extends LocaleSr

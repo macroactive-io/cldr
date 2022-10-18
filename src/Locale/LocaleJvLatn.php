@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptLatn;
 
 /**
- * Class LocaleJv - Javanese
+ * Javanese
+ *
  * @psalm-immutable
  */
 class LocaleJvLatn extends LocaleJv

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNah;
 
 /**
- * Class LocaleNah - Nahuatl
+ * Nahuatl
+ *
  * @psalm-immutable
  */
 class LocaleNah extends AbstractLocale implements LocaleInterface

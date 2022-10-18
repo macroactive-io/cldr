@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Territory\TerritoryNa;
 
 /**
- * Class LanguageNaq - Representation of the Nama (Namibia) language.
+ * Nama (Namibia)
+ *
  * @psalm-immutable
  */
 class LanguageNaq extends AbstractLanguage implements LanguageInterface

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryUa;
 
 /**
- * Class LanguageUk - Representation of the Ukrainian language.
+ * Ukrainian
+ *
  * @psalm-immutable
  */
 class LanguageUk extends AbstractLanguage implements LanguageInterface

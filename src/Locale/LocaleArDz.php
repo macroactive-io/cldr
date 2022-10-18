@@ -8,7 +8,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDz;
 
 /**
- * Class LocaleArDz
  * @psalm-immutable
  */
 class LocaleArDz extends LocaleAr

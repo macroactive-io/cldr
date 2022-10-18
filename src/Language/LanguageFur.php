@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
- * Class LanguageFur - Representation of the Friulian language.
+ * Friulian
+ *
  * @psalm-immutable
  */
 class LanguageFur extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTr;
 
 /**
- * Class LocaleTr - Turkish
+ * Turkish
+ *
  * @psalm-immutable
  */
 class LocaleTr extends AbstractLocale implements LocaleInterface

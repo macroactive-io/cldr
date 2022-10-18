@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritorySa;
 
 /**
- * Class LanguageAr - Representation of the Najdi Arabic language.
+ * Najdi Arabic
+ *
  * @psalm-immutable
  */
 class LanguageArs extends LanguageAr

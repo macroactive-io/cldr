@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTelu - Representation of the Telugu script.
+ * Telugu
+ *
  * @psalm-immutable
  */
 class ScriptTelu extends AbstractScript implements ScriptInterface

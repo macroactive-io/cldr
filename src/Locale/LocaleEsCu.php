@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryCu;
 
 /**
- * Class LocaleEsCu
  * @psalm-immutable
  */
 class LocaleEsCu extends LocaleEs

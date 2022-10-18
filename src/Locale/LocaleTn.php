@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTn;
 
 /**
- * Class LocaleTn - Tswana
+ * Tswana
+ *
  * @psalm-immutable
  */
 class LocaleTn extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSr;
 
 /**
- * Class LocaleSr - Serbian
+ * Serbian
+ *
  * @psalm-immutable
  */
 class LocaleSr extends AbstractLocale implements LocaleInterface

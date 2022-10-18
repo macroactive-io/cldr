@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKm;
 
 /**
- * Class LocaleKm - Khmer
+ * Khmer
+ *
  * @psalm-immutable
  */
 class LocaleKm extends AbstractLocale implements LocaleInterface

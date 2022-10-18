@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
  * Class LanguageSms - Representation of the Skolt Sami language.
+ *
  * @psalm-immutable
  */
 class LanguageSms extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory VN - Viet Nam.
+ * VN - Viet Nam
+ *
  * @psalm-immutable
  */
 class TerritoryVn extends AbstractTerritory implements TerritoryInterface

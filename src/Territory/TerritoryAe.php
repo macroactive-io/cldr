@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AE - United Arab Emirates.
+ * AE - United Arab Emirates
+ *
  * @psalm-immutable
  */
 class TerritoryAe extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule10 - Select a plural form for a specified number.
  * Families:
  * Slavic (Slovenian, Sorbian)
  * nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);

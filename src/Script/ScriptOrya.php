@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOrya - Representation of the Oriya script.
+ * Oriya
+ *
  * @psalm-immutable
  */
 class ScriptOrya extends AbstractScript implements ScriptInterface

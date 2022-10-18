@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 
 /**
- * Class LanguageEo - Representation of the Esperanto language.
+ * Esperanto
+ *
  * @psalm-immutable
  */
 class LanguageEo extends AbstractLanguage implements LanguageInterface

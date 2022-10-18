@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory VI - U.S. Virgin Islands.
+ * VI - US. Virgin Islands.
+ *
  * @psalm-immutable
  */
 class TerritoryVi extends AbstractTerritory implements TerritoryInterface

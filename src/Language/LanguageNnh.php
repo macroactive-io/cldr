@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageNnh - Representation of the Ngiemboon language.
+ * Ngiemboon
+ *
  * @psalm-immutable
  */
 class LanguageNnh extends AbstractLanguage implements LanguageInterface

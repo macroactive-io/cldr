@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory SA - Saudi Arabia.
+ * SA - Saudi Arabia
+ *
  * @psalm-immutable
  */
 class TerritorySa extends AbstractTerritory implements TerritoryInterface

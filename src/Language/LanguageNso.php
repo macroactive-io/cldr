@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
  * Class LanguageNso - Representation of the Pedi language.
+ *
  * @psalm-immutable
  */
 class LanguageNso extends AbstractLanguage implements LanguageInterface

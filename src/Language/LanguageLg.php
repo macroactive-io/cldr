@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LanguageLg - Representation of the Ganda language.
+ * Ganda
+ *
  * @psalm-immutable
  */
 class LanguageLg extends AbstractLanguage implements LanguageInterface

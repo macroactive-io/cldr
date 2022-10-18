@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCpmn - Representation of the Nyiakeng Puachue Hmong script.
+ * Nyiakeng Puachue Hmong
+ *
  * @psalm-immutable
  */
 class ScriptHmnp extends AbstractScript implements ScriptInterface

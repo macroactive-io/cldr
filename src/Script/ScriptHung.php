@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHung - Representation of the Old Hungarian (Hungarian Runic) script.
+ * Old Hungarian (Hungarian Runic)
+ *
  * @psalm-immutable
  */
 class ScriptHung extends AbstractScript implements ScriptInterface

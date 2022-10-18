@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKw;
 
 /**
- * Class LocaleKw - Cornish
+ * Cornish
+ *
  * @psalm-immutable
  */
 class LocaleKw extends AbstractLocale implements LocaleInterface

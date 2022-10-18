@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKhmr - Representation of the Khmer script.
+ * Khmer
+ *
  * @psalm-immutable
  */
 class ScriptKhmr extends AbstractScript implements ScriptInterface

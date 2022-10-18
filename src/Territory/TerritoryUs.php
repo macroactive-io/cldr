@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory US - United States.
+ * US - United States
+ *
  * @psalm-immutable
  */
 class TerritoryUs extends AbstractTerritory implements TerritoryInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageXh - Representation of the Xhosa language.
+ * Xhosa
+ *
  * @psalm-immutable
  */
 class LanguageXh extends AbstractLanguage implements LanguageInterface

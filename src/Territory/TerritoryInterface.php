@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Territory;
 
 /**
  * Interface TerritoryInterface - Representation of a geographic area.
+ *
  * @psalm-immutable
  */
 interface TerritoryInterface

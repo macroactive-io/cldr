@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleTachelhit - Select a plural form for a specified number.
  * nplurals=4; plural=(n==0 || n==1) ? 0 : (n>=2 && n<=10) ? 1 : 2;
  */
 class PluralRuleTachelhit implements PluralRuleInterface

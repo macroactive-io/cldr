@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCs;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCs - Czech
+ * Czech
+ *
  * @psalm-immutable
  */
 class LocaleCs extends AbstractLocale implements LocaleInterface

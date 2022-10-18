@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
  * Class LanguageSwc - Representation of the Congo Swahili language.
+ *
  * @psalm-immutable
  */
 class LanguageSwc extends AbstractLanguage implements LanguageInterface

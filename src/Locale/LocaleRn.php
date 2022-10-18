@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRn;
 
 /**
- * Class LocaleRn - Rundi
+ * Rundi
+ *
  * @psalm-immutable
  */
 class LocaleRn extends AbstractLocale implements LocaleInterface

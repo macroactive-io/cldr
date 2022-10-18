@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryBr;
 
 /**
- * Class LocalePtBr - Brazilian Portuguese
+ * Brazilian Portuguese
+ *
  * @psalm-immutable
  */
 class LocalePtBr extends LocalePt

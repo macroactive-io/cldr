@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory UA - Ukraine.
+ * UA - Ukraine
+ *
  * @psalm-immutable
  */
 class TerritoryUa extends AbstractTerritory implements TerritoryInterface

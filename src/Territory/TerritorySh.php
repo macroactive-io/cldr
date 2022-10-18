@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory SH - Saint Helena, Ascension and Tristan da Cunha.
+ * SH - Saint Helena, Ascension and Tristan da Cunha
+ *
  * @psalm-immutable
  */
 class TerritorySh extends AbstractTerritory implements TerritoryInterface

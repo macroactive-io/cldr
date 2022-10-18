@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNkdb - Representation of the Naxi Dongba script.
+ * Naxi Dongba
+ *
  * @psalm-immutable
  */
 class ScriptNkdb extends AbstractScript implements ScriptInterface

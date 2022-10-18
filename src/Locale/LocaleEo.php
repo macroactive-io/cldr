@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageEo;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleEo - Esperanto
+ * Esperanto
+ *
  * @psalm-immutable
  */
 class LocaleEo extends AbstractLocale implements LocaleInterface

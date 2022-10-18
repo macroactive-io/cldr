@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleTgTj - Tajik
+ * Tajik
+ *
  * @psalm-immutable
  */
 class LocaleTgTj extends LocaleTg

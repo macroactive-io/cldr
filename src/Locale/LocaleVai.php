@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageVai;
 
 /**
- * Class LocaleVai - Vai
+ * Vai
+ *
  * @psalm-immutable
  */
 class LocaleVai extends AbstractLocale implements LocaleInterface

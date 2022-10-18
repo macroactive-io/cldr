@@ -9,7 +9,8 @@ use Macroactive\Cldr\Language\LanguageYue;
 use Macroactive\Cldr\Territory\TerritoryHk;
 
 /**
- * Class LocaleYueHk - Chinese
+ * Chinese
+ *
  * @psalm-immutable
  */
 class LocaleYueHk extends AbstractLocale implements LocaleInterface

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\TerritoryIl;
 
 /**
- * Class LanguageHe - Representation of the Hebrew language.
+ * Hebrew
+ *
  * @psalm-immutable
  */
 class LanguageHe extends AbstractLanguage implements LanguageInterface

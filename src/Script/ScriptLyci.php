@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLyci - Representation of the Lycian script.
+ * Lycian
+ *
  * @psalm-immutable
  */
 class ScriptLyci extends AbstractScript implements ScriptInterface

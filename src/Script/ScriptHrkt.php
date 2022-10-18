@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHrkt - Representation of the Japanese syllabaries (alias for Hiragana + Katakana) script.
+ * Japanese syllabaries (alias for Hiragana + Katakana)
+ *
  * @psalm-immutable
  */
 class ScriptHrkt extends AbstractScript implements ScriptInterface

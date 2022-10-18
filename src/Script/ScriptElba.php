@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptElba - Representation of the Elbasan script.
+ * Elbasan
+ *
  * @psalm-immutable
  */
 class ScriptElba extends AbstractScript implements ScriptInterface

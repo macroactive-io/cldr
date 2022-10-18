@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBr;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBr - Breton
+ * Breton
+ *
  * @psalm-immutable
  */
 class LocaleBr extends AbstractLocale implements LocaleInterface

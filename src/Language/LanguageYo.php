@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryNg;
 
 /**
- * Class LanguageYo - Representation of the Yoruba language.
+ * Yoruba
+ *
  * @psalm-immutable
  */
 class LanguageYo extends AbstractLanguage implements LanguageInterface

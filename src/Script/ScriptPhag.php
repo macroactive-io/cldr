@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPhag - Representation of the Phags-pa script.
+ * Phags-pa
+ *
  * @psalm-immutable
  */
 class ScriptPhag extends AbstractScript implements ScriptInterface

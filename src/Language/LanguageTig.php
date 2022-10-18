@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptEthi;
 use Macroactive\Cldr\Territory\TerritoryEr;
 
 /**
- * Class LanguageTif - Representation of the Tigre language.
+ * Tigre
+ *
  * @psalm-immutable
  */
 class LanguageTig extends AbstractLanguage implements LanguageInterface

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
  * Class LanguageSmn - Representation of the Inari Sami language.
+ *
  * @psalm-immutable
  */
 class LanguageSmn extends AbstractLanguage implements LanguageInterface

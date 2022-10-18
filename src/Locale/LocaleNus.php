@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNus;
 
 /**
- * Class LocaleNus - Nuer
+ * Nuer
+ *
  * @psalm-immutable
  */
 class LocaleNus extends AbstractLocale implements LocaleInterface

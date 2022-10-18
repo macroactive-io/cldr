@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageVi;
 
 /**
- * Class LocaleVi - Vietnamese
+ * Vietnamese
+ *
  * @psalm-immutable
  */
 class LocaleVi extends AbstractLocale implements LocaleInterface

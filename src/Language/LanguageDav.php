@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageDav - Representation of the Taita language.
+ * Taita
+ *
  * @psalm-immutable
  */
 class LanguageDav extends AbstractLanguage implements LanguageInterface

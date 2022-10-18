@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageJgo - Representation of the Ngomba language.
+ * Ngomba
+ *
  * @psalm-immutable
  */
 class LanguageJgo extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOlck - Representation of the Ol Chiki (Ol Cemet’, Ol, Santali) script.
+ * Ol Chiki (Ol Cemet’, Ol, Santali)
+ *
  * @psalm-immutable
  */
 class ScriptOlck extends AbstractScript implements ScriptInterface

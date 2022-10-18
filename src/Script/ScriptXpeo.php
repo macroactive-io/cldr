@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptXpeo - Representation of the Old Persian script.
+ * Old Persian
+ *
  * @psalm-immutable
  */
 class ScriptXpeo extends AbstractScript implements ScriptInterface

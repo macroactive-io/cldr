@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
- * Class LanguageBm - Representation of the Bambara language.
+ * Bambara
+ *
  * @psalm-immutable
  */
 class LanguageBm extends AbstractLanguage implements LanguageInterface

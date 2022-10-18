@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMong - Representation of the Mongolian script.
+ * Mongolian
+ *
  * @psalm-immutable
  */
 class ScriptMong extends AbstractScript implements ScriptInterface

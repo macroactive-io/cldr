@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
  * Class LanguageScn - Representation of the Sicilian language.
+ *
  * @psalm-immutable
  */
 class LanguageScn extends AbstractLanguage implements LanguageInterface

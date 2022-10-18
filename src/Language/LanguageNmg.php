@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageNmg - Representation of the Kwasio language.
+ * Kwasio
+ *
  * @psalm-immutable
  */
 class LanguageNmg extends AbstractLanguage implements LanguageInterface

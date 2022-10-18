@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageSbp - Representation of the Sangu (Tanzania) language.
+ *
  * @psalm-immutable
  */
 class LanguageSbp extends AbstractLanguage implements LanguageInterface

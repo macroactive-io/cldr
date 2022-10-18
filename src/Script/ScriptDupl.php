@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptDupl - Representation of the Duployan shorthand, Duployan stenography script.
+ * Duployan shorthand, Duployan stenography
+ *
  * @psalm-immutable
  */
 class ScriptDupl extends AbstractScript implements ScriptInterface

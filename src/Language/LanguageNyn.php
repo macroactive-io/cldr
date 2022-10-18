@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LanguageNyn - Representation of the Nyankole language.
+ * Nyankole
+ *
  * @psalm-immutable
  */
 class LanguageNyn extends AbstractLanguage implements LanguageInterface

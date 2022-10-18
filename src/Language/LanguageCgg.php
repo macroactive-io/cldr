@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LanguageCgg - Representation of the Chiga language.
+ * Chiga
+ *
  * @psalm-immutable
  */
 class LanguageCgg extends AbstractLanguage implements LanguageInterface

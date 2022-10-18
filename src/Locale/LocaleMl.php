@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMl;
 
 /**
- * Class LocaleMl - Malayalam
+ * Malayalam
+ *
  * @psalm-immutable
  */
 class LocaleMl extends AbstractLocale implements LocaleInterface

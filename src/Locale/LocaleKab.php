@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKab;
 
 /**
- * Class LocaleKab - Kabyle
+ * Kabyle
+ *
  * @psalm-immutable
  */
 class LocaleKab extends AbstractLocale implements LocaleInterface

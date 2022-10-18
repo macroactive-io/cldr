@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKhoj - Representation of the Khojki script.
+ * Khojki
+ *
  * @psalm-immutable
  */
 class ScriptKhoj extends AbstractScript implements ScriptInterface

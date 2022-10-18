@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryMx;
 
 /**
- * Class LocaleEsMx - Mexican Spanish
+ * Mexican Spanish
+ *
  * @psalm-immutable
  */
 class LocaleEsMx extends LocaleEs

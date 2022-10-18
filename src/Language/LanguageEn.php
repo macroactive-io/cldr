@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 
 /**
- * Class LanguageEn - Representation of the English language.
+ * English
+ *
  * @psalm-immutable
  */
 class LanguageEn extends AbstractLanguage implements LanguageInterface

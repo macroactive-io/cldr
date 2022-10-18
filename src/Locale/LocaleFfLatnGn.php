@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryGn;
 
 /**
- * Class LocaleFfLatn - Fulah
+ * Fulah
+ *
  * @psalm-immutable
  */
 class LocaleFfLatnGn extends LocaleFfLatn

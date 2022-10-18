@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryLi;
 
 /**
- * Class LocaleGswLi
  * @psalm-immutable
  */
 class LocaleGswLi extends LocaleGsw

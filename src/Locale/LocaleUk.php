@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageUk;
 
 /**
- * Class LocaleUk - Ukrainian
+ * Ukrainian
+ *
  * @psalm-immutable
  */
 class LocaleUk extends AbstractLocale implements LocaleInterface

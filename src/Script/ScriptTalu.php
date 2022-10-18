@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTalu - Representation of the New Tai Lue script.
+ * New Tai Lue
+ *
  * @psalm-immutable
  */
 class ScriptTalu extends AbstractScript implements ScriptInterface

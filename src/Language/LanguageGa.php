@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule11;
 use Macroactive\Cldr\Territory\TerritoryIe;
 
 /**
- * Class LanguageGa - Representation of the Irish language.
+ * Irish
+ *
  * @psalm-immutable
  */
 class LanguageGa extends AbstractLanguage implements LanguageInterface

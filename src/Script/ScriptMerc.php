@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMerc - Representation of the Meroitic Cursive script.
+ * Meroitic Cursive
+ *
  * @psalm-immutable
  */
 class ScriptMerc extends AbstractScript implements ScriptInterface

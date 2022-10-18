@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBeng - Representation of the Bengali script.
+ * Bengali
+ *
  * @psalm-immutable
  */
 class ScriptBeng extends AbstractScript implements ScriptInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageJa;
 
 /**
- * Class LocaleJa - Japanese
+ * Japanese
+ *
  * @psalm-immutable
  */
 class LocaleJa extends AbstractLocale implements LocaleInterface

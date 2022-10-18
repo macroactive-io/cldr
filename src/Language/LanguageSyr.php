@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryIq;
 
 /**
  * Class LanguageSyr - Representation of the Syriac language.
+ *
  * @psalm-immutable
  */
 class LanguageSyr extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BH - Bahrain.
+ * BH - Bahrain
+ *
  * @psalm-immutable
  */
 class TerritoryBh extends AbstractTerritory implements TerritoryInterface

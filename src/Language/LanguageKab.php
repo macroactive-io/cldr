@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryDz;
 
 /**
- * Class LanguageKab - Representation of the Kabyle language.
+ * Kabyle
+ *
  * @psalm-immutable
  */
 class LanguageKab extends AbstractLanguage implements LanguageInterface

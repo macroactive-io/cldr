@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptWara - Representation of the Zanabazar Square script.
+ * Zanabazar Square
+ *
  * @psalm-immutable
  */
 class ScriptZanb extends AbstractScript implements ScriptInterface

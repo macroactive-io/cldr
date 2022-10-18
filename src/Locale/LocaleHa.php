@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHa - Hausa
+ * Hausa
+ *
  * @psalm-immutable
  */
 class LocaleHa extends AbstractLocale implements LocaleInterface

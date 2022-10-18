@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleFfLatn - Fulah
+ * Fulah
+ *
  * @psalm-immutable
  */
 class LocaleFfLatnSn extends LocaleFfLatn

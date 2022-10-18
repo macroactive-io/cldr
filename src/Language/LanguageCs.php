@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryCz;
 
 /**
  * Class LanguageCs - Representation of the Czech language.
+ *
  * @psalm-immutable
  */
 class LanguageCs extends AbstractLanguage implements LanguageInterface

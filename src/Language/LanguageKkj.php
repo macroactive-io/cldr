@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageKkj - Representation of the Kako language.
+ * Kako
+ *
  * @psalm-immutable
  */
 class LanguageKkj extends AbstractLanguage implements LanguageInterface

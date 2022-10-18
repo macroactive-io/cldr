@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptOrya;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageOr - Representation of the Oriya language.
+ * Oriya
+ *
  * @psalm-immutable
  */
 class LanguageOr extends AbstractLanguage implements LanguageInterface

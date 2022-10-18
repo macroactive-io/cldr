@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageKsb - Representation of the Shambala language.
+ *
  * @psalm-immutable
  */
 class LanguageKsb extends AbstractLanguage implements LanguageInterface

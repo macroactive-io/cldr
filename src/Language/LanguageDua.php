@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageDua - Representation of the Duala language.
+ * Duala
+ *
  * @psalm-immutable
  */
 class LanguageDua extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKsf;
 
 /**
- * Class LocaleKsf - Bafia
+ * Bafia
+ *
  * @psalm-immutable
  */
 class LocaleKsf extends AbstractLocale implements LocaleInterface

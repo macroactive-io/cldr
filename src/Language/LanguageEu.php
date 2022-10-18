@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
- * Class LanguageEu - Representation of the Basque language.
+ * Basque
+ *
  * @psalm-immutable
  */
 class LanguageEu extends AbstractLanguage implements LanguageInterface

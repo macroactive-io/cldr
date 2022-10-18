@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageVun - Representation of the Vunjo language.
+ * Vunjo
+ *
  * @psalm-immutable
  */
 class LanguageVun extends AbstractLanguage implements LanguageInterface

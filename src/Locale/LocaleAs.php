@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAs;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAs - Assamese
+ * Assamese
+ *
  * @psalm-immutable
  */
 class LocaleAs extends AbstractLocale implements LocaleInterface

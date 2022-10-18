@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryMx;
 
 /**
- * Class LanguageNah - Representation of the Nahuatl language.
+ * Nahuatl
+ *
  * @psalm-immutable
  */
 class LanguageNah extends AbstractLanguage implements LanguageInterface

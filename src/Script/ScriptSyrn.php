@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSyrn - Representation of the Syriac (Eastern variant) script.
+ * Syriac (Eastern variant)
+ *
  * @psalm-immutable
  */
 class ScriptSyrn extends AbstractScript implements ScriptInterface

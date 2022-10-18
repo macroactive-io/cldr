@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GS - South Georgia and the South Sandwich Islands.
+ * GS - South Georgia and the South Sandwich Islands
+ *
  * @psalm-immutable
  */
 class TerritoryGs extends AbstractTerritory implements TerritoryInterface

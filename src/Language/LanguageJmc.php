@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageJmc - Representation of the Machame language.
+ * Machame
+ *
  * @psalm-immutable
  */
 class LanguageJmc extends AbstractLanguage implements LanguageInterface

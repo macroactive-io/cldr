@@ -10,7 +10,8 @@ use Macroactive\Cldr\Territory\TerritoryEs;
 use Macroactive\Cldr\Territory\TerritoryInterface;
 
 /**
- * Class LocaleEs - Spanish
+ * Spanish
+ *
  * @psalm-immutable
  */
 class LocaleEs extends AbstractLocale implements LocaleInterface

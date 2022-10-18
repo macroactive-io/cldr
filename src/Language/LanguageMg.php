@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryMg;
 
 /**
- * Class LanguageMg - Representation of the Malagasy language.
+ * Malagasy
+ *
  * @psalm-immutable
  */
 class LanguageMg extends AbstractLanguage implements LanguageInterface

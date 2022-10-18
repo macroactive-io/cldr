@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageHi - Representation of the Hindi language.
+ * Hindi
+ *
  * @psalm-immutable
  */
 class LanguageHi extends AbstractLanguage implements LanguageInterface

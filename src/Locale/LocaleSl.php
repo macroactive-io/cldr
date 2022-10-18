@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSl;
 
 /**
- * Class LocaleSl - Slovenian
+ * Slovenian
+ *
  * @psalm-immutable
  */
 class LocaleSl extends AbstractLocale implements LocaleInterface

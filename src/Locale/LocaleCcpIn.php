@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LocaleCcpIn - Chakma
+ * Chakma
+ *
  * @psalm-immutable
  */
 class LocaleCcpIn extends LocaleCcp

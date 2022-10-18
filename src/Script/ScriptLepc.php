@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLepc - Representation of the Lepcha (Róng) script.
+ * Lepcha (Róng)
+ *
  * @psalm-immutable
  */
 class ScriptLepc extends AbstractScript implements ScriptInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleLrc - Mazanderani
+ * Mazanderani
+ *
  * @psalm-immutable
  */
 class LocaleMznIr extends LocaleMzn

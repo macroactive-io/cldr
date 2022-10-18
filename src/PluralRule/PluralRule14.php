@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule14 - Select a plural form for a specified number.
  * Families:
  * Slavic (Macedonian)
  */

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule7 - Select a plural form for a specified number.
  * Families:
  * Slavic (Belarusian, Bosnian, Croatian, Serbian, Russian, Ukrainian)
  * nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);

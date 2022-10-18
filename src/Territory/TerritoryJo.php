@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory JO - Jordan.
+ * JO - Jordan
+ *
  * @psalm-immutable
  */
 class TerritoryJo extends AbstractTerritory implements TerritoryInterface

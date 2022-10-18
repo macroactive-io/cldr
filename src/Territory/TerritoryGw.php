@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GW - Guinea-Bissau.
+ * GW - Guinea-Bissau
+ *
  * @psalm-immutable
  */
 class TerritoryGw extends AbstractTerritory implements TerritoryInterface

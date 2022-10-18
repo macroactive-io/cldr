@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageIg;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleIg - Igbo
+ * Igbo
+ *
  * @psalm-immutable
  */
 class LocaleIg extends AbstractLocale implements LocaleInterface

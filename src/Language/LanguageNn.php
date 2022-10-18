@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNo;
 
 /**
- * Class LanguageNn - Representation of the Norwegian Nynorsk language.
+ * Norwegian Nynorsk
+ *
  * @psalm-immutable
  */
 class LanguageNn extends AbstractLanguage implements LanguageInterface

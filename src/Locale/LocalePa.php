@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePa;
 
 /**
- * Class LocalePa - Punjabi
+ * Punjabi
+ *
  * @psalm-immutable
  */
 class LocalePa extends AbstractLocale implements LocaleInterface

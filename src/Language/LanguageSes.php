@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
  * Class LanguageSes - Representation of the Koyraboro Senni Songhai language.
+ *
  * @psalm-immutable
  */
 class LanguageSes extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNy;
 
 /**
- * Class LocaleNy - Chewa
+ * Chewa
+ *
  * @psalm-immutable
  */
 class LocaleNy extends AbstractLocale implements LocaleInterface

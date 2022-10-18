@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageVe;
 
 /**
- * Class LocaleVe - Venda
+ * Venda
+ *
  * @psalm-immutable
  */
 class LocaleVe extends AbstractLocale implements LocaleInterface

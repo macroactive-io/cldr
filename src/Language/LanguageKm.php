@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptKhmr;
 use Macroactive\Cldr\Territory\TerritoryKh;
 
 /**
- * Class LanguageKm - Representation of the Central Khmer language.
+ * Central Khmer
+ *
  * @psalm-immutable
  */
 class LanguageKm extends AbstractLanguage implements LanguageInterface

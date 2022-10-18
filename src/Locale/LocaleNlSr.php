@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritorySr;
 
 /**
- * Class LocaleNlSr
  * @psalm-immutable
  */
 class LocaleNlSr extends LocaleNl

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBlis - Representation of the Blissymbols script.
+ * Blissymbols
+ *
  * @psalm-immutable
  */
 class ScriptBlis extends AbstractScript implements ScriptInterface

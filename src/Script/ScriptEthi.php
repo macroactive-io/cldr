@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptEthi - Representation of the Ethiopic script.
+ * Ethiopic
+ *
  * @psalm-immutable
  */
 class ScriptEthi extends AbstractScript implements ScriptInterface

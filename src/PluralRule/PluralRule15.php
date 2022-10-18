@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule15 - Select a plural form for a specified number.
  * Families:
  * Icelandic
  */

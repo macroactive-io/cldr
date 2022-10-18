@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryPy;
 
 /**
- * Class LocaleEsPy
  * @psalm-immutable
  */
 class LocaleEsPy extends LocaleEs

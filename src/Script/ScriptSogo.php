@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSyrc - Representation of the Old Sogdian script.
+ * Old Sogdian
+ *
  * @psalm-immutable
  */
 class ScriptSogo extends AbstractScript implements ScriptInterface

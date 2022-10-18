@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryEt;
 
 /**
- * Class LanguageAa - Representation of the Afar language.
+ * Afar
+ *
  * @psalm-immutable
  */
 class LanguageAa extends AbstractLanguage implements LanguageInterface

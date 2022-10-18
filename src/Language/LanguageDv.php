@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptThaa;
 use Macroactive\Cldr\Territory\TerritoryMv;
 
 /**
- * Class LanguageDv - Representation of the Divehi language.
+ * Divehi
+ *
  * @psalm-immutable
  */
 class LanguageDv extends AbstractLanguage implements LanguageInterface

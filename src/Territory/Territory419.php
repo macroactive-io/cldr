@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory 419 - Latin America and the Caribbean.
+ * 419 - Latin America and the Caribbean
+ *
  * @psalm-immutable
  */
 class Territory419 extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMlym - Representation of the Malayalam script.
+ * Malayalam
+ *
  * @psalm-immutable
  */
 class ScriptMlym extends AbstractScript implements ScriptInterface

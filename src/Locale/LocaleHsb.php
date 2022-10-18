@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHsb;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHsb - Upper Sorbian
+ * Upper Sorbian
+ *
  * @psalm-immutable
  */
 class LocaleHsb extends AbstractLocale implements LocaleInterface

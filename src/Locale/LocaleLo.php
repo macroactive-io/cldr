@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLo;
 
 /**
- * Class LocaleLo - Lao
+ * Lao
+ *
  * @psalm-immutable
  */
 class LocaleLo extends AbstractLocale implements LocaleInterface

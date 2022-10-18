@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCher - Representation of the Cherokee script.
+ * Cherokee
+ *
  * @psalm-immutable
  */
 class ScriptCher extends AbstractScript implements ScriptInterface

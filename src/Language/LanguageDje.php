@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryNe;
 
 /**
- * Class LanguageDje - Representation of the Zarma language.
+ * Zarma
+ *
  * @psalm-immutable
  */
 class LanguageDje extends AbstractLanguage implements LanguageInterface

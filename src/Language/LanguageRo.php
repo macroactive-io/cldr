@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule5;
 use Macroactive\Cldr\Territory\TerritoryRo;
 
 /**
- * Class LanguageRo - Representation of the Romanian language.
+ * Romanian
+ *
  * @psalm-immutable
  */
 class LanguageRo extends AbstractLanguage implements LanguageInterface

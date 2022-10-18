@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePap;
 
 /**
- * Class LocalePap - Papiamentu
+ * Papiamentu
+ *
  * @psalm-immutable
  */
 class LocalePap extends AbstractLocale implements LocaleInterface

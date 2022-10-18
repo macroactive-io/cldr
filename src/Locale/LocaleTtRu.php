@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleTtRu - Tatar
+ * Tatar
+ *
  * @psalm-immutable
  */
 class LocaleTtRu extends LocaleTt

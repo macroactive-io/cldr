@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageScn;
 
 /**
- * Class LocaleScn - Sicilain
+ * Sicilain
+ *
  * @psalm-immutable
  */
 class LocaleScn extends AbstractLocale implements LocaleInterface

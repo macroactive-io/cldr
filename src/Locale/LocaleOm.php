@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageOm;
 
 /**
- * Class LocaleOm - Oromo
+ * Oromo
+ *
  * @psalm-immutable
  */
 class LocaleOm extends AbstractLocale implements LocaleInterface

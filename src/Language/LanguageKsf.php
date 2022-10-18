@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
  * Class LanguageKsf - Representation of the Bafia language.
+ *
  * @psalm-immutable
  */
 class LanguageKsf extends AbstractLanguage implements LanguageInterface

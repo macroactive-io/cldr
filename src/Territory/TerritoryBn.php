@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory BN - Brunei Darussalam.
+ * BN - Brunei Darussalam
+ *
  * @psalm-immutable
  */
 class TerritoryBn extends AbstractTerritory implements TerritoryInterface

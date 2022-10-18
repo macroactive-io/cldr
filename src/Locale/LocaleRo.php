@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRo;
 
 /**
- * Class LocaleRo - Romanian
+ * Romanian
+ *
  * @psalm-immutable
  */
 class LocaleRo extends AbstractLocale implements LocaleInterface

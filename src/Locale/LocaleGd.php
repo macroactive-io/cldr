@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGd;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGd - Scottish Gaelic
+ * Scottish Gaelic
+ *
  * @psalm-immutable
  */
 class LocaleGd extends AbstractLocale implements LocaleInterface

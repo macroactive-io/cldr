@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritorySv;
 
 /**
- * Class LocaleEsSv
  * @psalm-immutable
  */
 class LocaleEsSv extends LocaleEs

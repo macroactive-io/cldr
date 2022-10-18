@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
- * Class LanguageVe - Representation of the Venda language.
+ * Venda
+ *
  * @psalm-immutable
  */
 class LanguageVe extends AbstractLanguage implements LanguageInterface

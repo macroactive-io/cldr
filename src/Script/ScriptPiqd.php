@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPiqd - Representation of the Piqd script.
+ * Piqd
+ *
  * @psalm-immutable
  */
 class ScriptPiqd extends AbstractScript implements ScriptInterface

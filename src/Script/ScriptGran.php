@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGran - Representation of the Grantha script.
+ * Grantha
+ *
  * @psalm-immutable
  */
 class ScriptGran extends AbstractScript implements ScriptInterface

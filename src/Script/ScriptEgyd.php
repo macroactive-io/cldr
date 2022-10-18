@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptEgyd - Representation of the Egyptian demotic script.
+ * Egyptian demotic
+ *
  * @psalm-immutable
  */
 class ScriptEgyd extends AbstractScript implements ScriptInterface

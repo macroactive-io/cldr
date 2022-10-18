@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCans - Representation of the Unified Canadian Aboriginal Syllabics script.
+ * Unified Canadian Aboriginal Syllabics
+ *
  * @psalm-immutable
  */
 class ScriptCans extends AbstractScript implements ScriptInterface

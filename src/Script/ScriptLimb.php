@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLimb - Representation of the Limbu script.
+ * Limbu
+ *
  * @psalm-immutable
  */
 class ScriptLimb extends AbstractScript implements ScriptInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCyrs - Representation of the Cyrillic (Old Church Slavonic variant) script.
+ * Cyrillic (Old Church Slavonic variant)
+ *
  * @psalm-immutable
  */
 class ScriptCyrs extends AbstractScript implements ScriptInterface

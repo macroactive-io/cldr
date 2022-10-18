@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryLk;
 
 /**
  * Class LanguageSi - Representation of the Sinhala language.
+ *
  * @psalm-immutable
  */
 class LanguageSi extends AbstractLanguage implements LanguageInterface

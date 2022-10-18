@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
  * Class LanguageSah - Representation of the Yakut language.
+ *
  * @psalm-immutable
  */
 class LanguageSah extends AbstractLanguage implements LanguageInterface

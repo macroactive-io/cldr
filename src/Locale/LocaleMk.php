@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMk;
 
 /**
- * Class LocaleMk - Macedonian
+ * Macedonian
+ *
  * @psalm-immutable
  */
 class LocaleMk extends AbstractLocale implements LocaleInterface

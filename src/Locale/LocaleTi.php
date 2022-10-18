@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTi;
 
 /**
- * Class LocaleTi - Tigrinya
+ * Tigrinya
+ *
  * @psalm-immutable
  */
 class LocaleTi extends AbstractLocale implements LocaleInterface

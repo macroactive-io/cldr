@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageKi - Representation of the Kikuyu language.
+ * Kikuyu
+ *
  * @psalm-immutable
  */
 class LanguageKi extends AbstractLanguage implements LanguageInterface

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryBa;
 
 /**
  * Class LanguageBs - Representation of the Bosnian language.
+ *
  * @psalm-immutable
  */
 class LanguageBs extends AbstractLanguage implements LanguageInterface

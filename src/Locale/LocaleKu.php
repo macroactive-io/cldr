@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKu;
 
 /**
- * Class LocaleKu - Kurdish
+ * Kurdish
+ *
  * @psalm-immutable
  */
 class LocaleKu extends AbstractLocale implements LocaleInterface

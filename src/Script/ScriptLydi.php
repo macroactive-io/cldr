@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLydi - Representation of the Lydian script.
+ * Lydian
+ *
  * @psalm-immutable
  */
 class ScriptLydi extends AbstractScript implements ScriptInterface

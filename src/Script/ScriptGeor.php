@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGeor - Representation of the Georgian script.
+ * Georgian
+ *
  * @psalm-immutable
  */
 class ScriptGeor extends AbstractScript implements ScriptInterface

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySo;
 
 /**
  * Class LanguageSo - Representation of the Somali language.
+ *
  * @psalm-immutable
  */
 class LanguageSo extends AbstractLanguage implements LanguageInterface

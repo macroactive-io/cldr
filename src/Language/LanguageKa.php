@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptGeor;
 use Macroactive\Cldr\Territory\TerritoryGe;
 
 /**
- * Class LanguageKa - Representation of the Georgian language.
+ * Georgian
+ *
  * @psalm-immutable
  */
 class LanguageKa extends AbstractLanguage implements LanguageInterface

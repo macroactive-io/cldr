@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUz;
 
 /**
- * Class LanguageUz - Representation of the Uzbek language.
+ * Uzbek
+ *
  * @psalm-immutable
  */
 class LanguageUz extends AbstractLanguage implements LanguageInterface

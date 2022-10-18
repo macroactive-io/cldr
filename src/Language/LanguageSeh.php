@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryMz;
 
 /**
  * Class LanguageSeh - Representation of the Sena language.
+ *
  * @psalm-immutable
  */
 class LanguageSeh extends AbstractLanguage implements LanguageInterface

@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryBo;
 
 /**
- * Class LocaleEsBo
  * @psalm-immutable
  */
 class LocaleEsBo extends LocaleEs

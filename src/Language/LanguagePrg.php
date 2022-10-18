@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule3;
 
 /**
- * Class LanguagePrg - Representation of the Old Prussian language.
+ * Old Prussian
+ *
  * @psalm-immutable
  */
 class LanguagePrg extends AbstractLanguage implements LanguageInterface

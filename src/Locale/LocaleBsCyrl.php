@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptCyrl;
 
 /**
- * Class LocaleBsCyrl
  * @psalm-immutable
  */
 class LocaleBsCyrl extends LocaleBs

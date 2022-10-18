@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryKg;
 
 /**
- * Class LocaleRuKg
  * @psalm-immutable
  */
 class LocaleRuKg extends LocaleRu

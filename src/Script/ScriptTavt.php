@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTavt - Representation of the Tai Viet script.
+ * Tai Viet
+ *
  * @psalm-immutable
  */
 class ScriptTavt extends AbstractScript implements ScriptInterface

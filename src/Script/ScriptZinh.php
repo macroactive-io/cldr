@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptZinh - Representation of the Code for inherited script script.
+ * Code for inherited script
+ *
  * @psalm-immutable
  */
 class ScriptZinh extends AbstractScript implements ScriptInterface

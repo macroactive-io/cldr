@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPrti - Representation of the Inscriptional Parthian script.
+ * Inscriptional Parthian
+ *
  * @psalm-immutable
  */
 class ScriptPrti extends AbstractScript implements ScriptInterface

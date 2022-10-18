@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory HT - Haiti.
+ * HT - Haiti
+ *
  * @psalm-immutable
  */
 class TerritoryHt extends AbstractTerritory implements TerritoryInterface

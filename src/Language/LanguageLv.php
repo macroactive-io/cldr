@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule3;
 use Macroactive\Cldr\Territory\TerritoryLv;
 
 /**
- * Class LanguageLv - Representation of the Latvian language.
+ * Latvian
+ *
  * @psalm-immutable
  */
 class LanguageLv extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory PY - Paraguay.
+ * PY - Paraguay
+ *
  * @psalm-immutable
  */
 class TerritoryPy extends AbstractTerritory implements TerritoryInterface

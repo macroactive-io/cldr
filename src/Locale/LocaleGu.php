@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGu;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGu - Gujarati
+ * Gujarati
+ *
  * @psalm-immutable
  */
 class LocaleGu extends AbstractLocale implements LocaleInterface

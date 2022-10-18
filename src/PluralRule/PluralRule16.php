@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule16 - Select a plural form for a specified number.
  * Families:
  * Celtic (Breton)
  * nplurals=2; plural=(n > 1);

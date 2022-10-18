@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPcun - Representation of the Proto Cuneiform script.
+ * Proto Cuneiform
+ *
  * @psalm-immutable
  */
 class ScriptPcun extends AbstractScript implements ScriptInterface

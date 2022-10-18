@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryNo;
 
 /**
  * Class LanguageSe - Representation of the Northern Sami language.
+ *
  * @psalm-immutable
  */
 class LanguageSe extends AbstractLanguage implements LanguageInterface

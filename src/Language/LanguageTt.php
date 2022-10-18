@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LanguageTt - Representation of the Tatar language.
+ * Tatar
+ *
  * @psalm-immutable
  */
 class LanguageTt extends AbstractLanguage implements LanguageInterface

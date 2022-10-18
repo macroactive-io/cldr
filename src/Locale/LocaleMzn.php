@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMzn;
 
 /**
- * Class LocaleLrc - Mazanderani
+ * Mazanderani
+ *
  * @psalm-immutable
  */
 class LocaleMzn extends AbstractLocale implements LocaleInterface

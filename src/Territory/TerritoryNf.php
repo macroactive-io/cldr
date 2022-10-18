@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory NF - Norfolk Island.
+ * NF - Norfolk Island
+ *
  * @psalm-immutable
  */
 class TerritoryNf extends AbstractTerritory implements TerritoryInterface

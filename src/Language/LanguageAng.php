@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
- * Class LanguageEn - Representation of the Anglo-Saxon / Old-English language.
+ * Anglo-Saxon / Old-English
+ *
  * @psalm-immutable
  */
 class LanguageAng extends AbstractLanguage implements LanguageInterface

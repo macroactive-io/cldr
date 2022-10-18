@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGuru - Representation of the Gurmukhi script.
+ * Gurmukhi
+ *
  * @psalm-immutable
  */
 class ScriptGuru extends AbstractScript implements ScriptInterface

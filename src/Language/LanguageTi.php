@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptEthi;
 use Macroactive\Cldr\Territory\TerritoryEt;
 
 /**
- * Class LanguageTi - Representation of the Tigrinya language.
+ * Tigrinya
+ *
  * @psalm-immutable
  */
 class LanguageTi extends AbstractLanguage implements LanguageInterface

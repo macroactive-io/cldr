@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleZeroOneOther - Select a plural form for a specified number.
  * nplurals=4; plural=(n==0) ? 0 : (n==1) ? 1 : 2;
  */
 class PluralRuleZeroOneOther implements PluralRuleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTeo;
 
 /**
- * Class LocaleTeo - Teso
+ * Teso
+ *
  * @psalm-immutable
  */
 class LocaleTeo extends AbstractLocale implements LocaleInterface

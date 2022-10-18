@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryBy;
 
 /**
- * Class LocaleRuBy
  * @psalm-immutable
  */
 class LocaleRuBy extends LocaleRu

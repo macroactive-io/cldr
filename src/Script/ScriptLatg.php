@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLatg - Representation of the Latin (Gaelic variant) script.
+ * Latin (Gaelic variant)
+ *
  * @psalm-immutable
  */
 class ScriptLatg extends AbstractScript implements ScriptInterface

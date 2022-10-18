@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GL - Greenland.
+ * GL - Greenland
+ *
  * @psalm-immutable
  */
 class TerritoryGl extends AbstractTerritory implements TerritoryInterface

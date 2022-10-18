@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptJamo - Representation of the Jamo script.
+ * Jamo
+ *
  * @psalm-immutable
  */
 class ScriptJamo extends AbstractScript implements ScriptInterface

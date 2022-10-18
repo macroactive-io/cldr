@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMaya - Representation of the Mayan hieroglyphs script.
+ * Mayan hieroglyphs
+ *
  * @psalm-immutable
  */
 class ScriptMaya extends AbstractScript implements ScriptInterface

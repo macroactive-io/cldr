@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptZsym - Representation of the Symbols script.
+ * Symbols
+ *
  * @psalm-immutable
  */
 class ScriptZsym extends AbstractScript implements ScriptInterface

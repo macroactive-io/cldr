@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptMlym;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageMl - Representation of the Malayalam language.
+ * Malayalam
+ *
  * @psalm-immutable
  */
 class LanguageMl extends AbstractLanguage implements LanguageInterface

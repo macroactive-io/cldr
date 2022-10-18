@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory PK - Pakistan.
+ * PK - Pakistan
+ *
  * @psalm-immutable
  */
 class TerritoryPk extends AbstractTerritory implements TerritoryInterface

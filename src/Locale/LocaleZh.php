@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageZh;
 
 /**
- * Class LocaleZh - Chinese
+ * Chinese
+ *
  * @psalm-immutable
  */
 class LocaleZh extends AbstractLocale implements LocaleInterface

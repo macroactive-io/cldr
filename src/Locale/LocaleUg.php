@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageUg;
 
 /**
- * Class LocaleUg - Uyghur
+ * Uyghur
+ *
  * @psalm-immutable
  */
 class LocaleUg extends AbstractLocale implements LocaleInterface

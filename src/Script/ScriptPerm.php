@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPerm - Representation of the Old Permic script.
+ * Old Permic
+ *
  * @psalm-immutable
  */
 class ScriptPerm extends AbstractScript implements ScriptInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKkj;
 
 /**
- * Class LocaleKkj - Kako
+ * Kako
+ *
  * @psalm-immutable
  */
 class LocaleKkj extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptShaw - Representation of the Shavian (Shaw) script.
+ * Shavian (Shaw)
+ *
  * @psalm-immutable
  */
 class ScriptShaw extends AbstractScript implements ScriptInterface

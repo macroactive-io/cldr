@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory NU - Niue.
+ * NU - Niue
+ *
  * @psalm-immutable
  */
 class TerritoryNu extends AbstractTerritory implements TerritoryInterface

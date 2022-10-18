@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritorySg;
 
 /**
- * Class LocaleTaSg
  * @psalm-immutable
  */
 class LocaleTaSg extends LocaleTa

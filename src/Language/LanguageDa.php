@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryDk;
 
 /**
- * Class LanguageDa - Representation of the Danish language.
+ * Danish
+ *
  * @psalm-immutable
  */
 class LanguageDa extends AbstractLanguage implements LanguageInterface

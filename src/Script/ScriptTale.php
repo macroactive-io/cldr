@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTale - Representation of the Tai Le script.
+ * Tai Le
+ *
  * @psalm-immutable
  */
 class ScriptTale extends AbstractScript implements ScriptInterface

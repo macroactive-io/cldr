@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGoth - Representation of the Gothic script.
+ * Gothic
+ *
  * @psalm-immutable
  */
 class ScriptGoth extends AbstractScript implements ScriptInterface

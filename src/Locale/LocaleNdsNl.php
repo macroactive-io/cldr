@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryNl;
 
 /**
- * Class LocaleNdsNl - Low German
+ * Low German
+ *
  * @psalm-immutable
  */
 class LocaleNdsNl extends LocaleNds

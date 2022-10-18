@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSk;
 
 /**
- * Class LocaleSk - Slovak
+ * Slovak
+ *
  * @psalm-immutable
  */
 class LocaleSk extends AbstractLocale implements LocaleInterface

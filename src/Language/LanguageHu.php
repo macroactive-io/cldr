@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryHu;
 
 /**
- * Class LanguageHu - Representation of the Hungarian language.
+ * Hungarian
+ *
  * @psalm-immutable
  */
 class LanguageHu extends AbstractLanguage implements LanguageInterface

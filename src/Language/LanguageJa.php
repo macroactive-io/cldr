@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptJpan;
 use Macroactive\Cldr\Territory\TerritoryJp;
 
 /**
- * Class LanguageJa - Representation of the Japanese language.
+ * Japanese
+ *
  * @psalm-immutable
  */
 class LanguageJa extends AbstractLanguage implements LanguageInterface

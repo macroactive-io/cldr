@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTe;
 
 /**
- * Class LocaleTe - Telugu
+ * Telugu
+ *
  * @psalm-immutable
  */
 class LocaleTe extends AbstractLocale implements LocaleInterface

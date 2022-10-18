@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPelm - Representation of the Proto-Elamite script.
+ * Proto-Elamite
+ *
  * @psalm-immutable
  */
 class ScriptPelm extends AbstractScript implements ScriptInterface

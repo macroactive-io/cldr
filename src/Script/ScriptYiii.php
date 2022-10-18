@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptYiii - Representation of the Yi script.
+ * Yi
+ *
  * @psalm-immutable
  */
 class ScriptYiii extends AbstractScript implements ScriptInterface

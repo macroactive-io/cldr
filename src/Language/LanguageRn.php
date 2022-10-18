@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryBi;
 
 /**
- * Class LanguageRn - Representation of the Rundi language.
+ * Rundi
+ *
  * @psalm-immutable
  */
 class LanguageRn extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOgam - Representation of the Ogham script.
+ * Ogham
+ *
  * @psalm-immutable
  */
 class ScriptOgam extends AbstractScript implements ScriptInterface

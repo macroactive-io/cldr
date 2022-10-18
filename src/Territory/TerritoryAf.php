@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AF - Afghanistan.
+ * AF - Afghanistan
+ *
  * @psalm-immutable
  */
 class TerritoryAf extends AbstractTerritory implements TerritoryInterface

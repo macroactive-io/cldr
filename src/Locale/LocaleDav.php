@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDav;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDav - Taita
+ * Taita
+ *
  * @psalm-immutable
  */
 class LocaleDav extends AbstractLocale implements LocaleInterface

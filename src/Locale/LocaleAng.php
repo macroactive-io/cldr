@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAng;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAng - Anglo-Saxon / Old-English
+ * Anglo-Saxon / Old-English
+ *
  * @psalm-immutable
  */
 class LocaleAng extends AbstractLocale implements LocaleInterface

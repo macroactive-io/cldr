@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHanb - Representation of the Hangul+Bopomofo script.
+ * Hangul+Bopomofo
+ *
  * @psalm-immutable
  */
 class ScriptHanb extends AbstractScript implements ScriptInterface

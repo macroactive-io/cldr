@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCpmn - Representation of the Masaram Gondi script.
+ * Masaram Gondi
+ *
  * @psalm-immutable
  */
 class ScriptGonm extends AbstractScript implements ScriptInterface

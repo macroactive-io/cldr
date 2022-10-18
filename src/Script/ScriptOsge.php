@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOsge - Representation of the Osage script.
+ * Osage
+ *
  * @psalm-immutable
  */
 class ScriptOsge extends AbstractScript implements ScriptInterface

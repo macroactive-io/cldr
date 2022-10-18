@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMult - Representation of the  Multani script.
+ *  Multani
+ *
  * @psalm-immutable
  */
 class ScriptMult extends AbstractScript implements ScriptInterface

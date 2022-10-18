@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory IL - Israel.
+ * IL - Israel
+ *
  * @psalm-immutable
  */
 class TerritoryIl extends AbstractTerritory implements TerritoryInterface

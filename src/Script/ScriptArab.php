@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptArab - Representation of the Arabic script.
+ * Arabic
+ *
  * @psalm-immutable
  */
 class ScriptArab extends AbstractScript implements ScriptInterface

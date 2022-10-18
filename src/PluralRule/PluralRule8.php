@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule8 - Select a plural form for a specified number.
  * Families:
  * Slavic (Slovak, Czech)
  * nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;

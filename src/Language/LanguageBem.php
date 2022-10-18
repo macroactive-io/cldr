@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZm;
 
 /**
- * Class LanguageBem - Representation of the Bemba (Zambia) language.
+ * Bemba (Zambia)
+ *
  * @psalm-immutable
  */
 class LanguageBem extends AbstractLanguage implements LanguageInterface

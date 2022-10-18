@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
  * Class LanguageNds - Representation of the Low German language.
+ *
  * @psalm-immutable
  */
 class LanguageNds extends AbstractLanguage implements LanguageInterface

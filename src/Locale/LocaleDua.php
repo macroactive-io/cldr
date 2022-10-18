@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDua;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDua - Duala
+ * Duala
+ *
  * @psalm-immutable
  */
 class LocaleDua extends AbstractLocale implements LocaleInterface

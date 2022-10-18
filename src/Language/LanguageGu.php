@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptGujr;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageGu - Representation of the Gujarati language.
+ * Gujarati
+ *
  * @psalm-immutable
  */
 class LanguageGu extends AbstractLanguage implements LanguageInterface

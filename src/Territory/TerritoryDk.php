@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory DK - Denmark.
+ * DK - Denmark
+ *
  * @psalm-immutable
  */
 class TerritoryDk extends AbstractTerritory implements TerritoryInterface

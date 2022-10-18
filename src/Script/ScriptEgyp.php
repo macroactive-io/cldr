@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptEgyp - Representation of the Egyptian hieroglyphs script.
+ * Egyptian hieroglyphs
+ *
  * @psalm-immutable
  */
 class ScriptEgyp extends AbstractScript implements ScriptInterface

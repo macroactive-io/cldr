@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryId;
 
 /**
- * Class LanguageId - Representation of the Indonesian language.
+ * Indonesian
+ *
  * @psalm-immutable
  */
 class LanguageId extends AbstractLanguage implements LanguageInterface

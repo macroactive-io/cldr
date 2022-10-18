@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSe;
 
 /**
- * Class LocaleSe - Northern Sami
+ * Northern Sami
+ *
  * @psalm-immutable
  */
 class LocaleSe extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGlag - Representation of the Glagolitic script.
+ * Glagolitic
+ *
  * @psalm-immutable
  */
 class ScriptGlag extends AbstractScript implements ScriptInterface

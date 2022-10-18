@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTeng - Representation of the Tengwar script.
+ * Tengwar
+ *
  * @psalm-immutable
  */
 class ScriptTeng extends AbstractScript implements ScriptInterface

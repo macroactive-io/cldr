@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIr;
 
 /**
- * Class LanguageFa - Representation of the Persian language.
+ * Persian
+ *
  * @psalm-immutable
  */
 class LanguageFa extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTs;
 
 /**
- * Class LocaleTs - Tsonga
+ * Tsonga
+ *
  * @psalm-immutable
  */
 class LocaleTs extends AbstractLocale implements LocaleInterface

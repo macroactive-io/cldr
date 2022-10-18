@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRu;
 
 /**
- * Class LocaleRu - Russian
+ * Russian
+ *
  * @psalm-immutable
  */
 class LocaleRu extends AbstractLocale implements LocaleInterface

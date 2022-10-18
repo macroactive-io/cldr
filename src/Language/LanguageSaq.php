@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
  * Class LanguageSaq - Representation of the Samburu language.
+ *
  * @psalm-immutable
  */
 class LanguageSaq extends AbstractLanguage implements LanguageInterface

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptKore;
 use Macroactive\Cldr\Territory\TerritoryKr;
 
 /**
- * Class LanguageKo - Representation of the Korean language.
+ * Korean
+ *
  * @psalm-immutable
  */
 class LanguageKo extends AbstractLanguage implements LanguageInterface

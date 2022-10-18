@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptWara - Representation of the Warang Citi (Varang Kshiti) script.
+ * Warang Citi (Varang Kshiti)
+ *
  * @psalm-immutable
  */
 class ScriptWara extends AbstractScript implements ScriptInterface

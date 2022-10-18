@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKam;
 
 /**
- * Class LocaleKam - Kamba
+ * Kamba
+ *
  * @psalm-immutable
  */
 class LocaleKam extends AbstractLocale implements LocaleInterface

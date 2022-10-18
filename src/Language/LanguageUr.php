@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
- * Class LanguageUr - Representation of the Urdu language.
+ * Urdu
+ *
  * @psalm-immutable
  */
 class LanguageUr extends AbstractLanguage implements LanguageInterface

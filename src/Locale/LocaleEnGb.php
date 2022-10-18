@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
- * Class LocaleEnGb - British English
+ * British English
+ *
  * @psalm-immutable
  */
 class LocaleEnGb extends LocaleEn

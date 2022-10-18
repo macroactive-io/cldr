@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptItal - Representation of the Old Italic (Etruscan, Oscan, etc.) script.
+ *
  * @psalm-immutable
  */
 class ScriptItal extends AbstractScript implements ScriptInterface

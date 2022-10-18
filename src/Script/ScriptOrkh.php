@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptOrkh - Representation of the Old Turkic, Orkhon Runic script.
+ * Old Turkic, Orkhon Runic
+ *
  * @psalm-immutable
  */
 class ScriptOrkh extends AbstractScript implements ScriptInterface

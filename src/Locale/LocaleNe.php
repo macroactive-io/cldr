@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNe;
 
 /**
- * Class LocaleNe - Nepali
+ * Nepali
+ *
  * @psalm-immutable
  */
 class LocaleNe extends AbstractLocale implements LocaleInterface

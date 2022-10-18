@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMoon - Representation of the Moon (Moon code, Moon script, Moon type) script.
+ * Moon (Moon code, Moon script, Moon type)
+ *
  * @psalm-immutable
  */
 class ScriptMoon extends AbstractScript implements ScriptInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLrc;
 
 /**
- * Class LocaleLrc - Luri
+ * Luri
+ *
  * @psalm-immutable
  */
 class LocaleLrc extends AbstractLocale implements LocaleInterface

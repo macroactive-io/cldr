@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageVun;
 
 /**
- * Class LocaleVun - Vunjo
+ * Vunjo
+ *
  * @psalm-immutable
  */
 class LocaleVun extends AbstractLocale implements LocaleInterface

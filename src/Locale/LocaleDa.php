@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDa - Danish
+ * Danish
+ *
  * @psalm-immutable
  */
 class LocaleDa extends AbstractLocale implements LocaleInterface

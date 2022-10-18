@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryBj;
 
 /**
- * Class LanguageGuw - Representation of the Gun language.
+ * Gun
+ *
  * @psalm-immutable
  */
 class LanguageGuw extends AbstractLanguage implements LanguageInterface

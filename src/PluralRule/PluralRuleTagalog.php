@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleTagalog - Select a plural form for a specified number.
  * nplurals=2; plural=n % 10 != 4 && n%10 != 6 && n%10 != 9;
  */
 class PluralRuleTagalog implements PluralRuleInterface

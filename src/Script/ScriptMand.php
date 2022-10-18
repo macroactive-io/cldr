@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMand - Representation of the Mandaic, Mandaean script.
+ * Mandaic, Mandaean
+ *
  * @psalm-immutable
  */
 class ScriptMand extends AbstractScript implements ScriptInterface

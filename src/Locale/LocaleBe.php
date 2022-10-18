@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBe;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBe - Belarusian
+ * Belarusian
+ *
  * @psalm-immutable
  */
 class LocaleBe extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptVith - Representation of the Vithkuqi script.
+ * Vithkuqi
+ *
  * @psalm-immutable
  */
 class ScriptVith extends AbstractScript implements ScriptInterface

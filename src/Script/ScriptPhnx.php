@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPhnx - Representation of the Phoenician script.
+ * Phoenician
+ *
  * @psalm-immutable
  */
 class ScriptPhnx extends AbstractScript implements ScriptInterface

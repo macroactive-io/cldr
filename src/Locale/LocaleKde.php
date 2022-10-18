@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKde;
 
 /**
- * Class LocaleKde - Makonde
+ * Makonde
+ *
  * @psalm-immutable
  */
 class LocaleKde extends AbstractLocale implements LocaleInterface

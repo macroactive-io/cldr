@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
- * Class LanguageYav - Representation of the Yangben language.
+ * Yangben
+ *
  * @psalm-immutable
  */
 class LanguageYav extends AbstractLanguage implements LanguageInterface

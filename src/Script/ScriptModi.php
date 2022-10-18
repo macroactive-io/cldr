@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptModi - Representation of the Modi, Moḍī script.
+ * Modi, Moḍī
+ *
  * @psalm-immutable
  */
 class ScriptModi extends AbstractScript implements ScriptInterface

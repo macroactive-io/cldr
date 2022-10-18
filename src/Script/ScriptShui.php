@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSyrc - Representation of the Shuishu script.
+ * Shuishu
+ *
  * @psalm-immutable
  */
 class ScriptShui extends AbstractScript implements ScriptInterface

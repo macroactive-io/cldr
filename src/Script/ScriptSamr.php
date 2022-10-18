@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSamr - Representation of the Samaritan script.
+ * Samaritan
+ *
  * @psalm-immutable
  */
 class ScriptSamr extends AbstractScript implements ScriptInterface

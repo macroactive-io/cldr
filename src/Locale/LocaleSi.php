@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSi;
 
 /**
- * Class LocaleSi - Sinhala
+ * Sinhala
+ *
  * @psalm-immutable
  */
 class LocaleSi extends AbstractLocale implements LocaleInterface

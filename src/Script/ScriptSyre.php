@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSyre - Representation of the Syriac (Estrangelo variant) script.
+ * Syriac (Estrangelo variant)
+ *
  * @psalm-immutable
  */
 class ScriptSyre extends AbstractScript implements ScriptInterface

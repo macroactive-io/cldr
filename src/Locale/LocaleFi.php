@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFi;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFi - Finnish
+ * Finnish
+ *
  * @psalm-immutable
  */
 class LocaleFi extends AbstractLocale implements LocaleInterface

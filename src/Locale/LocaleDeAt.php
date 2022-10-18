@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryAt;
 
 /**
- * Class LocaleDeAt - Austrian German
+ * Austrian German
+ *
  * @psalm-immutable
  */
 class LocaleDeAt extends LocaleDe

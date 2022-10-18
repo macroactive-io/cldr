@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTnsa - Representation of the Tangsa script.
+ * Tangsa
+ *
  * @psalm-immutable
  */
 class ScriptTnsa extends AbstractScript implements ScriptInterface

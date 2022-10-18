@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHaw;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHaw - Hawaiian
+ * Hawaiian
+ *
  * @psalm-immutable
  */
 class LocaleHaw extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageYo;
 
 /**
- * Class LocaleYo - Yoruba
+ * Yoruba
+ *
  * @psalm-immutable
  */
 class LocaleYo extends AbstractLocale implements LocaleInterface

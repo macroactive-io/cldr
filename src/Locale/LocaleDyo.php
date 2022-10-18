@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDyo;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDyo - Jola-Fonyi
+ * Jola-Fonyi
+ *
  * @psalm-immutable
  */
 class LocaleDyo extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptJava - Representation of the Javanese script.
+ * Javanese
+ *
  * @psalm-immutable
  */
 class ScriptJava extends AbstractScript implements ScriptInterface

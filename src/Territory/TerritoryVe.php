@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory VE - Venezuela.
+ * VE - Venezuela
+ *
  * @psalm-immutable
  */
 class TerritoryVe extends AbstractTerritory implements TerritoryInterface

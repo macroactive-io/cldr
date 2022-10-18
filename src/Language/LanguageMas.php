@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
  * Class LanguageMas - Representation of the Masai language.
+ *
  * @psalm-immutable
  */
 class LanguageMas extends AbstractLanguage implements LanguageInterface

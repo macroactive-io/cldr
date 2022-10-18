@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 
 /**
- * Class LanguageIa - Representation of the Interlingua (International Auxiliary AbstractLanguage language.
+ * Interlingua (International Auxiliary AbstractLanguage
+ *
  * @psalm-immutable
  */
 class LanguageIa extends AbstractLanguage implements LanguageInterface

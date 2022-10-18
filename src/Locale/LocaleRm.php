@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageRm;
 
 /**
- * Class LocaleRm - Romansh
+ * Romansh
+ *
  * @psalm-immutable
  */
 class LocaleRm extends AbstractLocale implements LocaleInterface

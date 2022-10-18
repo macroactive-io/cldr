@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLaoo - Representation of the Lao script.
+ * Lao
+ *
  * @psalm-immutable
  */
 class ScriptLaoo extends AbstractScript implements ScriptInterface

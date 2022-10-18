@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryId;
 
 /**
  * Class LanguageSu - Representation of the Sotho language.
+ *
  * @psalm-immutable
  */
 class LanguageSu extends AbstractLanguage implements LanguageInterface

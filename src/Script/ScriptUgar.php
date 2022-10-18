@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptUgar - Representation of the Ugaritic script.
+ * Ugaritic
+ *
  * @psalm-immutable
  */
 class ScriptUgar extends AbstractScript implements ScriptInterface

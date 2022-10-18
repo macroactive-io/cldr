@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptHebr;
 
 /**
- * Class LanguageYi - Representation of the Yiddish language.
+ * Yiddish
+ *
  * @psalm-immutable
  */
 class LanguageYi extends AbstractLanguage implements LanguageInterface

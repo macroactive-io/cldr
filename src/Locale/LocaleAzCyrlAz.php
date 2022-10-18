@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryAz;
 
 /**
- * Class LocaleAzCyrlAz
  * @psalm-immutable
  */
 class LocaleAzCyrlAz extends LocaleAzCyrl

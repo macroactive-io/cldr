@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBugi - Representation of the Buginese script.
+ * Buginese
+ *
  * @psalm-immutable
  */
 class ScriptBugi extends AbstractScript implements ScriptInterface

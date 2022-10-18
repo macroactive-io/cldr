@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTwq;
 
 /**
- * Class LocaleTwq - Tasawaq
+ * Tasawaq
+ *
  * @psalm-immutable
  */
 class LocaleTwq extends AbstractLocale implements LocaleInterface

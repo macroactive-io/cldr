@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBrai - Representation of the Braille script.
+ * Braille
+ *
  * @psalm-immutable
  */
 class ScriptBrai extends AbstractScript implements ScriptInterface

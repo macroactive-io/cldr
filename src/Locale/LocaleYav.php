@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageYav;
 
 /**
- * Class LocaleYav - Yangben
+ * Yangben
+ *
  * @psalm-immutable
  */
 class LocaleYav extends AbstractLocale implements LocaleInterface

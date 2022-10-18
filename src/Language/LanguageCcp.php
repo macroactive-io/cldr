@@ -9,9 +9,10 @@ use Macroactive\Cldr\Script\ScriptCakm;
 use Macroactive\Cldr\Territory\TerritoryBd;
 
 /**
- * Class LanguageCgg - Representation of the Chakma language.
+ * Chakma
  *
  * @TODO          Plural rules
+ *
  * @psalm-immutable
  */
 class LanguageCcp extends AbstractLanguage implements LanguageInterface

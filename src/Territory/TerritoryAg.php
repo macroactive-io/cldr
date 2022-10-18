@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AG - Antigua and Barbuda.
+ * AG - Antigua and Barbuda
+ *
  * @psalm-immutable
  */
 class TerritoryAg extends AbstractTerritory implements TerritoryInterface

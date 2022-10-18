@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageBh - Representation of the Bihari language.
+ * Bihari
+ *
  * @psalm-immutable
  */
 class LanguageBh extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
- * Class LanguageDe - Representation of the German language.
+ * German
+ *
  * @psalm-immutable
  */
 class LanguageDe extends AbstractLanguage implements LanguageInterface

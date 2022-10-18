@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptLatn;
 
 /**
- * Class LocaleIuLatn - Inuktitut
+ * Inuktitut
+ *
  * @psalm-immutable
  */
 class LocaleIuLatn extends LocaleIu

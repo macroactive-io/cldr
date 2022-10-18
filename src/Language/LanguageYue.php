@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptHans;
 use Macroactive\Cldr\Territory\TerritoryCn;
 
 /**
- * Class LanguageZh - Representation of the Chinese language.
+ * Chinese
+ *
  * @psalm-immutable
  */
 class LanguageYue extends AbstractLanguage implements LanguageInterface

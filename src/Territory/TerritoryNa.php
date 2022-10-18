@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory NA - Namibia.
+ * NA - Namibia
+ *
  * @psalm-immutable
  */
 class TerritoryNa extends AbstractTerritory implements TerritoryInterface

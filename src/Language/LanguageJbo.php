@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 
 /**
- * Class LanguageJbo - Representation of the Lojban language.
+ * Lojban
+ *
  * @psalm-immutable
  */
 class LanguageJbo extends AbstractLanguage implements LanguageInterface

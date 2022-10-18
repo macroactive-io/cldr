@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCcp;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCcp - Chakma
+ * Chakma
+ *
  * @psalm-immutable
  */
 class LocaleCcp extends AbstractLocale implements LocaleInterface

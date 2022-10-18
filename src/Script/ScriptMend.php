@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMend - Representation of the Mende Kikakui script.
+ * Mende Kikakui
+ *
  * @psalm-immutable
  */
 class ScriptMend extends AbstractScript implements ScriptInterface

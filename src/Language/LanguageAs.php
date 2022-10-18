@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageAs - Representation of the Assamese language.
+ *
  * @psalm-immutable
  */
 class LanguageAs extends AbstractLanguage implements LanguageInterface

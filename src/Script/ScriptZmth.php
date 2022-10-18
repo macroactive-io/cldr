@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptZmth - Representation of the Mathematical notation script.
+ * Mathematical notation
+ *
  * @psalm-immutable
  */
 class ScriptZmth extends AbstractScript implements ScriptInterface

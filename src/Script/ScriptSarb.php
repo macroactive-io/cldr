@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSarb - Representation of the Old South Arabian script.
+ * Old South Arabian
+ *
  * @psalm-immutable
  */
 class ScriptSarb extends AbstractScript implements ScriptInterface

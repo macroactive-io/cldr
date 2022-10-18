@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTh;
 
 /**
- * Class LocaleTh - Thai
+ * Thai
+ *
  * @psalm-immutable
  */
 class LocaleTh extends AbstractLocale implements LocaleInterface

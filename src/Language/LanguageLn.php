@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
- * Class LanguageLn - Representation of the Lingala language.
+ * Lingala
+ *
  * @psalm-immutable
  */
 class LanguageLn extends AbstractLanguage implements LanguageInterface

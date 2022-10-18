@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLoma - Representation of the Loma script.
+ * Loma
+ *
  * @psalm-immutable
  */
 class ScriptLoma extends AbstractScript implements ScriptInterface

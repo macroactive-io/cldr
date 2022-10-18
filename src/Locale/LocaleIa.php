@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageIa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleIa - Interlingua
+ * Interlingua
+ *
  * @psalm-immutable
  */
 class LocaleIa extends AbstractLocale implements LocaleInterface

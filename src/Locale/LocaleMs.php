@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMs;
 
 /**
- * Class LocaleMs - Malay
+ * Malay
+ *
  * @psalm-immutable
  */
 class LocaleMs extends AbstractLocale implements LocaleInterface

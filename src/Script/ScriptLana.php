@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLana - Representation of the Tai Tham (Lanna) script.
+ * Tai Tham (Lanna)
+ *
  * @psalm-immutable
  */
 class ScriptLana extends AbstractScript implements ScriptInterface

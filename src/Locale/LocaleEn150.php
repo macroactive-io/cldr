@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\Territory150;
 
 /**
  * Class LocaleEn150
+ *
  * @psalm-immutable
  */
 class LocaleEn150 extends LocaleEn

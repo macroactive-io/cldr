@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSes;
 
 /**
- * Class LocaleSes - Koyraboro Senni
+ * Koyraboro Senni
+ *
  * @psalm-immutable
  */
 class LocaleSes extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNmg;
 
 /**
- * Class LocaleNmg - Kwasio
+ * Kwasio
+ *
  * @psalm-immutable
  */
 class LocaleNmg extends AbstractLocale implements LocaleInterface

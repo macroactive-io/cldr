@@ -6,12 +6,14 @@ namespace Macroactive\Cldr\Script;
 
 /**
  * Interface ScriptInterface - Representation of a writing system.
+ *
  * @psalm-immutable
  */
 interface ScriptInterface
 {
     /**
      * The ISO15924 code for this script.
+     *
      * @return non-empty-string
      */
     public function code(): string;
@@ -23,6 +25,7 @@ interface ScriptInterface
 
     /**
      * The ISO15924 number for this script.
+     *
      * @return non-empty-string
      */
     public function number(): string;
@@ -41,6 +44,7 @@ interface ScriptInterface
     /**
      * The Unicode name (aka “property value alias”) for this script, or
      * null if one does not exist.
+     *
      * @return non-empty-string|null
      */
     public function unicodeName(): ?string;

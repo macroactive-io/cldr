@@ -10,6 +10,7 @@ use Macroactive\Cldr\Script\ScriptDirection;
 use Macroactive\Cldr\Script\ScriptInterface;
 use Macroactive\Cldr\Territory\TerritoryInterface;
 use Macroactive\Cldr\Variant\VariantInterface;
+
 use function assert;
 use function count;
 use function explode;
@@ -19,6 +20,7 @@ use function substr;
 
 /**
  * Class AbstractLocale - The “root” locale, from which all others are derived.
+ *
  * @psalm-immutable
  */
 abstract class AbstractLocale implements LocaleInterface
@@ -96,7 +98,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     public function htmlAttributes(): string
     {
-        $direction = $this->direction();
+        $direction       = $this->direction();
         $directionString = '';
 
         if ($direction === ScriptDirection::RTL || $direction !== $this->script()->direction()) {
@@ -110,9 +112,6 @@ abstract class AbstractLocale implements LocaleInterface
         return 'lang="' . $this->languageTag() . '"' . $directionString;
     }
 
-    /**
-     * The language used by this locale.
-     */
     abstract public function language(): LanguageInterface;
 
     public function languageTag(): string
@@ -238,6 +237,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     /**
      * How to format a floating point number (%s) as a percentage.
+     *
      * @return non-empty-string
      */
     protected function percentFormat(): string

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLisu - Representation of the Lisu (Fraser) script.
+ * Lisu (Fraser)
+ *
  * @psalm-immutable
  */
 class ScriptLisu extends AbstractScript implements ScriptInterface

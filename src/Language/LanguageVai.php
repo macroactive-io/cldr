@@ -8,7 +8,8 @@ use Macroactive\Cldr\Script\ScriptVaii;
 use Macroactive\Cldr\Territory\TerritoryLr;
 
 /**
- * Class LanguageVai - Representation of the Vai language.
+ * Vai
+ *
  * @psalm-immutable
  */
 class LanguageVai extends AbstractLanguage implements LanguageInterface

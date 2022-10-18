@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHr;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHr - Croatian
+ * Croatian
+ *
  * @psalm-immutable
  */
 class LocaleHr extends AbstractLocale implements LocaleInterface

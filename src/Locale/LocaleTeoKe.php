@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LocaleTeoKe
  * @psalm-immutable
  */
 class LocaleTeoKe extends LocaleTeo

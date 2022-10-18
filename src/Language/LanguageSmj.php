@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySe;
 
 /**
  * Class LanguageSms - Representation of the Lule Sami language.
+ *
  * @psalm-immutable
  */
 class LanguageSmj extends AbstractLanguage implements LanguageInterface

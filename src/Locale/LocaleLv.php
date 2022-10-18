@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLv;
 
 /**
- * Class LocaleLv - Latvian
+ * Latvian
+ *
  * @psalm-immutable
  */
 class LocaleLv extends AbstractLocale implements LocaleInterface

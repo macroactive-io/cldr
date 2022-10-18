@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageLuy;
 
 /**
- * Class LocaleLuy - Luyia
+ * Luyia
+ *
  * @psalm-immutable
  */
 class LocaleLuy extends AbstractLocale implements LocaleInterface

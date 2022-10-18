@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritorySd;
 
 /**
  * Class LanguageNus - Representation of the Nuer language.
+ *
  * @psalm-immutable
  */
 class LanguageNus extends AbstractLanguage implements LanguageInterface

@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageKam - Representation of the Kamba (Kenya) language.
+ * Kamba (Kenya)
+ *
  * @psalm-immutable
  */
 class LanguageKam extends AbstractLanguage implements LanguageInterface

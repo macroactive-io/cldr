@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritorySk;
 
 /**
  * Class LanguageSk - Representation of the Slovak language.
+ *
  * @psalm-immutable
  */
 class LanguageSk extends AbstractLanguage implements LanguageInterface

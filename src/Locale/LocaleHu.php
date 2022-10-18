@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHu;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHu - Hungarian
+ * Hungarian
+ *
  * @psalm-immutable
  */
 class LocaleHu extends AbstractLocale implements LocaleInterface

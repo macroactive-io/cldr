@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryCn;
 
 /**
- * Class LanguageIi - Representation of the Sichuan Yi language.
+ * Sichuan Yi
+ *
  * @psalm-immutable
  */
 class LanguageIi extends AbstractLanguage implements LanguageInterface

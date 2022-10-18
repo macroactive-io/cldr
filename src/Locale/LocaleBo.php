@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBo;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBo - Tibetan
+ * Tibetan
+ *
  * @psalm-immutable
  */
 class LocaleBo extends AbstractLocale implements LocaleInterface

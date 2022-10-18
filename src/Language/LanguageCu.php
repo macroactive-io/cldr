@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LanguageCu - Representation of the Old Church Slavonic language.
+ * Old Church Slavonic
+ *
  * @psalm-immutable
  */
 class LanguageCu extends AbstractLanguage implements LanguageInterface

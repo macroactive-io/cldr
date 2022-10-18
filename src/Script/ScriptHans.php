@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHans - Representation of the Simplified Han script.
+ * Simplified Han
+ *
  * @psalm-immutable
  */
 class ScriptHans extends AbstractScript implements ScriptInterface

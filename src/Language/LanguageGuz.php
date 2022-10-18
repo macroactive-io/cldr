@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageGuz - Representation of the Gusii language.
+ * Gusii
+ *
  * @psalm-immutable
  */
 class LanguageGuz extends AbstractLanguage implements LanguageInterface

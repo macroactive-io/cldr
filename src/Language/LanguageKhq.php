@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
- * Class LanguageKhq - Representation of the Koyra Chiini Songhay language.
+ * Koyra Chiini Songhay
+ *
  * @psalm-immutable
  */
 class LanguageKhq extends AbstractLanguage implements LanguageInterface

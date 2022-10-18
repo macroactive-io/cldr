@@ -8,7 +8,6 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSu;
 
 /**
- * Class LocaleSu
  * @psalm-immutable
  */
 class LocaleSu extends AbstractLocale implements LocaleInterface

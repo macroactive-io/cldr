@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptTibt;
 use Macroactive\Cldr\Territory\TerritoryBt;
 
 /**
- * Class LanguageDz - Representation of the Dzongkha language.
+ * Dzongkha
+ *
  * @psalm-immutable
  */
 class LanguageDz extends AbstractLanguage implements LanguageInterface

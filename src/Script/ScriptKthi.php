@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKthi - Representation of the Kaithi script.
+ * Kaithi
+ *
  * @psalm-immutable
  */
 class ScriptKthi extends AbstractScript implements ScriptInterface

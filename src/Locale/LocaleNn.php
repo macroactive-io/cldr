@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNn;
 
 /**
- * Class LocaleNn - Norwegian Nynorsk
+ * Norwegian Nynorsk
+ *
  * @psalm-immutable
  */
 class LocaleNn extends AbstractLocale implements LocaleInterface

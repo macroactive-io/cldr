@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
- * Class LocaleDeCh - Swiss High German
+ * Swiss High German
+ *
  * @psalm-immutable
  */
 class LocaleDeIt extends LocaleDe

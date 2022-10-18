@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBs;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBs - Bosnian
+ * Bosnian
+ *
  * @psalm-immutable
  */
 class LocaleBs extends AbstractLocale implements LocaleInterface

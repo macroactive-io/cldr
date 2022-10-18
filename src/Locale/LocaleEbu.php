@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageEbu;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleEbu - Embu
+ * Embu
+ *
  * @psalm-immutable
  */
 class LocaleEbu extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHy;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHy - Armenian
+ * Armenian
+ *
  * @psalm-immutable
  */
 class LocaleHy extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory IN - India.
+ * IN - India
+ *
  * @psalm-immutable
  */
 class TerritoryIn extends AbstractTerritory implements TerritoryInterface

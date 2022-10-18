@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDz;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDz - Dzongkha
+ * Dzongkha
+ *
  * @psalm-immutable
  */
 class LocaleDz extends AbstractLocale implements LocaleInterface

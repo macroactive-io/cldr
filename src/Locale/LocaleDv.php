@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDv;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDv - Divehi
+ * Divehi
+ *
  * @psalm-immutable
  */
 class LocaleDv extends AbstractLocale implements LocaleInterface

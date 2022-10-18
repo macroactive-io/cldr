@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryGh;
 
 /**
- * Class LanguageEe - Representation of the Ewe language.
+ * Ewe
+ *
  * @psalm-immutable
  */
 class LanguageEe extends AbstractLanguage implements LanguageInterface

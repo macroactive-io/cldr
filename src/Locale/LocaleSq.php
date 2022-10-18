@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSq;
 
 /**
- * Class LocaleSq - Albanian
+ * Albanian
+ *
  * @psalm-immutable
  */
 class LocaleSq extends AbstractLocale implements LocaleInterface

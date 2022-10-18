@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePl;
 
 /**
- * Class LocalePl - Polish
+ * Polish
+ *
  * @psalm-immutable
  */
 class LocalePl extends AbstractLocale implements LocaleInterface

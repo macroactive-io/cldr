@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageBez - Representation of the Bena (Tanzania) language.
+ * Bena (Tanzania)
+ *
  * @psalm-immutable
  */
 class LanguageBez extends AbstractLanguage implements LanguageInterface

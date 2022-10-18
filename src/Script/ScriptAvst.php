@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptAvst - Representation of the Avestan script.
+ * Avestan
+ *
  * @psalm-immutable
  */
 class ScriptAvst extends AbstractScript implements ScriptInterface

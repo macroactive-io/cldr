@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRuleCentralAtlasTamazight - Select a plural form for a specified number.
  * nplurals=4; plural=(n>=2 && n<=10 || n>99) ? 1 : 0
  */
 class PluralRuleCentralAtlasTamazight implements PluralRuleInterface

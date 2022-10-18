@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryIq;
 
 /**
- * Class LocaleArIq
  * @psalm-immutable
  */
 class LocaleArIq extends LocaleAr

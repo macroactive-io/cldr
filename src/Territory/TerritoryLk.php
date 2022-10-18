@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory LK - Sri Lanka.
+ * LK - Sri Lanka
+ *
  * @psalm-immutable
  */
 class TerritoryLk extends AbstractTerritory implements TerritoryInterface

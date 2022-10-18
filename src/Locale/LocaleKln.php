@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKln;
 
 /**
- * Class LocaleKln - Kalenjin
+ * Kalenjin
+ *
  * @psalm-immutable
  */
 class LocaleKln extends AbstractLocale implements LocaleInterface

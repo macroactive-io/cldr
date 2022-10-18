@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSyr;
 
 /**
- * Class LocaleSyr - Syriac
+ * Syriac
+ *
  * @psalm-immutable
  */
 class LocaleSyr extends AbstractLocale implements LocaleInterface

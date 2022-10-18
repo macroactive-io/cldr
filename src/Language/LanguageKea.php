@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryCv;
 
 /**
- * Class LanguageKea - Representation of the Kabuverdianu language.
+ * Kabuverdianu
+ *
  * @psalm-immutable
  */
 class LanguageKea extends AbstractLanguage implements LanguageInterface

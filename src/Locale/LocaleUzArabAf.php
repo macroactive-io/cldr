@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryAf;
 
 /**
- * Class LocaleUzArabAf
  * @psalm-immutable
  */
 class LocaleUzArabAf extends LocaleUzArab

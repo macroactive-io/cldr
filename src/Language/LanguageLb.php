@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryLu;
 
 /**
- * Class LanguageLb - Representation of the Luxembourgish language.
+ * Luxembourgish
+ *
  * @psalm-immutable
  */
 class LanguageLb extends AbstractLanguage implements LanguageInterface

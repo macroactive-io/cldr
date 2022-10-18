@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory QM - Private use.
+ * QM - Private use
+ *
  * @psalm-immutable
  */
 class TerritoryQm extends AbstractTerritory implements TerritoryInterface

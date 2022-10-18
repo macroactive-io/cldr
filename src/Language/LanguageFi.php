@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
- * Class LanguageFi - Representation of the Finnish language.
+ * Finnish
+ *
  * @psalm-immutable
  */
 class LanguageFi extends AbstractLanguage implements LanguageInterface

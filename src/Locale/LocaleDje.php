@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageDje;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleDje - Zarma
+ * Zarma
+ *
  * @psalm-immutable
  */
 class LocaleDje extends AbstractLocale implements LocaleInterface

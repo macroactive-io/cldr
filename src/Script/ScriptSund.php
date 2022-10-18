@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSund - Representation of the Sundanese script.
+ * Sundanese
+ *
  * @psalm-immutable
  */
 class ScriptSund extends AbstractScript implements ScriptInterface

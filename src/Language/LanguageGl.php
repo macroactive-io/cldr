@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
- * Class LanguageGl - Representation of the Galician language.
+ * Galician
+ *
  * @psalm-immutable
  */
 class LanguageGl extends AbstractLanguage implements LanguageInterface

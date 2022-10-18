@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory EG - Egypt.
+ * EG - Egypt
+ *
  * @psalm-immutable
  */
 class TerritoryEg extends AbstractTerritory implements TerritoryInterface

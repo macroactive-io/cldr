@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBopo - Representation of the Bopomofo script.
+ * Bopomofo
+ *
  * @psalm-immutable
  */
 class ScriptBopo extends AbstractScript implements ScriptInterface

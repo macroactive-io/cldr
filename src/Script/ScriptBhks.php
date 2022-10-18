@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBhks - Representation of the Bhaiksuki script.
+ * Bhaiksuki
+ *
  * @psalm-immutable
  */
 class ScriptBhks extends AbstractScript implements ScriptInterface

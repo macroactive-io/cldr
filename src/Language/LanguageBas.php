@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
  * Class LanguageBas - Representation of the Basa (Cameroon) language.
+ *
  * @psalm-immutable
  */
 class LanguageBas extends AbstractLanguage implements LanguageInterface

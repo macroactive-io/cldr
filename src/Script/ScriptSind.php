@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSind - Representation of the Khudawadi, Sindhi script.
+ * Khudawadi, Sindhi
+ *
  * @psalm-immutable
  */
 class ScriptSind extends AbstractScript implements ScriptInterface

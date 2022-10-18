@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptRjng - Representation of the Rejang (Redjang, Kaganga) script.
+ * Rejang (Redjang, Kaganga)
+ *
  * @psalm-immutable
  */
 class ScriptRjng extends AbstractScript implements ScriptInterface

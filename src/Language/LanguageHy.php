@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArmn;
 use Macroactive\Cldr\Territory\TerritoryAm;
 
 /**
- * Class LanguageHy - Representation of the Armenian language.
+ * Armenian
+ *
  * @psalm-immutable
  */
 class LanguageHy extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGrek - Representation of the Greek script.
+ * Greek
+ *
  * @psalm-immutable
  */
 class ScriptGrek extends AbstractScript implements ScriptInterface

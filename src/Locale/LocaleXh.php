@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageXh;
 
 /**
- * Class LocaleXh - Xhosa
+ * Xhosa
+ *
  * @psalm-immutable
  */
 class LocaleXh extends AbstractLocale implements LocaleInterface

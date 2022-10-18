@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptRunr - Representation of the Runic script.
+ * Runic
+ *
  * @psalm-immutable
  */
 class ScriptRunr extends AbstractScript implements ScriptInterface

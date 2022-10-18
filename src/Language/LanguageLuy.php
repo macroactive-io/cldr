@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageLuy - Representation of the Luyia language.
+ * Luyia
+ *
  * @psalm-immutable
  */
 class LanguageLuy extends AbstractLanguage implements LanguageInterface

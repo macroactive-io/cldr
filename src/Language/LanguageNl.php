@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNl;
 
 /**
- * Class LanguageNl - Representation of the Dutch language.
+ * Dutch
+ *
  * @psalm-immutable
  */
 class LanguageNl extends AbstractLanguage implements LanguageInterface

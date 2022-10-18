@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptThai - Representation of the Thai script.
+ * Thai
+ *
  * @psalm-immutable
  */
 class ScriptThai extends AbstractScript implements ScriptInterface

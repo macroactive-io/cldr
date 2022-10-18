@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKhq;
 
 /**
- * Class LocaleKhq - Koyra Chiini
+ * Koyra Chiini
+ *
  * @psalm-immutable
  */
 class LocaleKhq extends AbstractLocale implements LocaleInterface

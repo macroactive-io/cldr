@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleZhHans - Simplified Chinese
+ * Simplified Chinese
+ *
  * @psalm-immutable
  */
 class LocaleZhHans extends LocaleZh

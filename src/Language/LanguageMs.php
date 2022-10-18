@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryMy;
 
 /**
  * Class LanguageMs - Representation of the Malay language.
+ *
  * @psalm-immutable
  */
 class LanguageMs extends AbstractLanguage implements LanguageInterface

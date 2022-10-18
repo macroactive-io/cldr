@@ -13,6 +13,7 @@ use Macroactive\Cldr\Variant\VariantInterface;
 
 /**
  * Interface LocaleInterface - Locale.
+ *
  * @psalm-immutable
  */
 interface LocaleInterface
@@ -20,6 +21,7 @@ interface LocaleInterface
     /**
      * Generate a linux locale code for this locale.  Examples include
      * "fr", “en_GB”, “ca_ES@valencia” and “sr@latin”.
+     *
      * @return non-empty-string
      */
     public function code(): string;
@@ -29,6 +31,7 @@ interface LocaleInterface
      * “unicode_ci” would mean use “utf8_unicode_ci”, “utf8mb4_unicode_ci”, etc.
      *
      * @website http://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html
+     *
      * @return non-empty-string
      */
     public function collation(): string;
@@ -37,6 +40,7 @@ interface LocaleInterface
      * Convert (Hindu-Arabic) digits into a localized form
      *
      * @param non-empty-string $string
+     *
      * @return non-empty-string
      */
     public function digits(string $string): string;
@@ -51,6 +55,7 @@ interface LocaleInterface
     /**
      * The name of this locale, in its own language/script, and with the
      * customary capitalization of the locale.
+     *
      * @return non-empty-string
      */
     public function endonym(): string;
@@ -59,6 +64,7 @@ interface LocaleInterface
      * A sortable version of the locale name.  For example, “British English”
      * might sort as “ENGLISH, BRITISH” to keep all the variants of English together.
      * All-capitals makes sorting easier, as we can use a simple strcmp().
+     *
      * @return non-empty-string
      */
     public function endonymSortable(): string;
@@ -78,6 +84,7 @@ interface LocaleInterface
     /**
      * The IETF language tag for the locale.  Examples include
      * “fr, “en-GB”, “ca-ES-valencia” and “sr-Latn”.
+     *
      * @return non-empty-string
      */
     public function languageTag(): string;
@@ -86,6 +93,7 @@ interface LocaleInterface
      * Convert (Hindu-Arabic) digits into a localized form
      *
      * @param int|float $number The number to be localized
+     *
      * @return non-empty-string
      */
     public function number(int|float $number): string;
@@ -94,6 +102,7 @@ interface LocaleInterface
      * Convert (Hindu-Arabic) digits into a localized form
      *
      * @param float|int $number The number to be localized
+     *
      * @return non-empty-string
      */
     public function percent(int|float $number): string;

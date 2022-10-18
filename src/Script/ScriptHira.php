@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptHira - Representation of the Hiragana script.
+ * Hiragana
+ *
  * @psalm-immutable
  */
 class ScriptHira extends AbstractScript implements ScriptInterface

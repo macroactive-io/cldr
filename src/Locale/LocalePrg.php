@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePrg;
 
 /**
- * Class LocalePrg - Old Prussian
+ * Old Prussian
+ *
  * @psalm-immutable
  */
 class LocalePrg extends AbstractLocale implements LocaleInterface

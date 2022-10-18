@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageMr - Representation of the Marathi language.
+ * Marathi
+ *
  * @psalm-immutable
  */
 class LanguageMr extends AbstractLanguage implements LanguageInterface

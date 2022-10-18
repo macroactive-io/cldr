@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCa - Catalan
+ * Catalan
+ *
  * @psalm-immutable
  */
 class LocaleCa extends AbstractLocale implements LocaleInterface

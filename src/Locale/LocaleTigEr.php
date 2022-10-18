@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleTig - Tigre
+ * Tigre
+ *
  * @psalm-immutable
  */
 class LocaleTigEr extends LocaleTig

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePs;
 
 /**
- * Class LocalePs - Pashto
+ * Pashto
+ *
  * @psalm-immutable
  */
 class LocalePs extends AbstractLocale implements LocaleInterface

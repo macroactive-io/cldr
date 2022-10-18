@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSyrc - Representation of the Soyombo script.
+ * Soyombo
+ *
  * @psalm-immutable
  */
 class ScriptSoyo extends AbstractScript implements ScriptInterface

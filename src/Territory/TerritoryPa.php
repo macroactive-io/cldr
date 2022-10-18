@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory PA - Panama.
+ * PA - Panama
+ *
  * @psalm-immutable
  */
 class TerritoryPa extends AbstractTerritory implements TerritoryInterface

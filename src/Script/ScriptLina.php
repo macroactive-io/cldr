@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLina - Representation of the Linear A script.
+ * Linear A
+ *
  * @psalm-immutable
  */
 class ScriptLina extends AbstractScript implements ScriptInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTm;
 
 /**
- * Class LanguageTk - Representation of the Turkmen language.
+ * Turkmen
+ *
  * @psalm-immutable
  */
 class LanguageTk extends AbstractLanguage implements LanguageInterface

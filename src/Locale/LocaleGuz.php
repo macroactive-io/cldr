@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGuz;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGuz - Gusii
+ * Gusii
+ *
  * @psalm-immutable
  */
 class LocaleGuz extends AbstractLocale implements LocaleInterface

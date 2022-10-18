@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSaur - Representation of the Saurashtra script.
+ * Saurashtra
+ *
  * @psalm-immutable
  */
 class ScriptSaur extends AbstractScript implements ScriptInterface

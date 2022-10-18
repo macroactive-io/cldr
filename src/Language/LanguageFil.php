@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryPh;
 
 /**
- * Class LanguageFil - Representation of the Filipino language.
+ * Filipino
+ *
  * @psalm-immutable
  */
 class LanguageFil extends AbstractLanguage implements LanguageInterface

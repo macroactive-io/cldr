@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGa;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGa - Irish
+ * Irish
+ *
  * @psalm-immutable
  */
 class LocaleGa extends AbstractLocale implements LocaleInterface

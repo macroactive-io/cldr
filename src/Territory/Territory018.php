@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory 018 - Southern Africa.
+ * 018 - Southern Africa
+ *
  * @psalm-immutable
  */
 class Territory018 extends AbstractTerritory implements TerritoryInterface

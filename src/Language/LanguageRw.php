@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryRw;
 
 /**
- * Class LanguageRw - Representation of the Kinyarwanda language.
+ * Kinyarwanda
+ *
  * @psalm-immutable
  */
 class LanguageRw extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLeke - Representation of the Leke script.
+ * Leke
+ *
  * @psalm-immutable
  */
 class ScriptLeke extends AbstractScript implements ScriptInterface

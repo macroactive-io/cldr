@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\PluralRule;
 
 /**
- * Class PluralRule1 - Select a plural form for a specified number.
  * Families:
  * Germanic (Danish, Dutch, English, Faroese, Frisian, German, Norwegian, Swedish)
  * Finno-Ugric (Estonian, Finnish, Hungarian)

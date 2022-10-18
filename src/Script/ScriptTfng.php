@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTfng - Representation of the Tifinagh script.
+ * Tifinagh
+ *
  * @psalm-immutable
  */
 class ScriptTfng extends AbstractScript implements ScriptInterface

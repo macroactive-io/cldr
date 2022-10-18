@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageUz;
 
 /**
- * Class LocaleUz - Uzbek
+ * Uzbek
+ *
  * @psalm-immutable
  */
 class LocaleUz extends AbstractLocale implements LocaleInterface

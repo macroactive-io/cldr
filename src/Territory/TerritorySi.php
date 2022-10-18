@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory SI - Slovenia.
+ * SI - Slovenia
+ *
  * @psalm-immutable
  */
 class TerritorySi extends AbstractTerritory implements TerritoryInterface

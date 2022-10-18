@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule6;
 use Macroactive\Cldr\Territory\TerritoryLt;
 
 /**
- * Class LanguageLt - Representation of the Lithuanian language.
+ * Lithuanian
+ *
  * @psalm-immutable
  */
 class LanguageLt extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKcg;
 
 /**
- * Class LocaleKcg - Tyap
+ * Tyap
+ *
  * @psalm-immutable
  */
 class LocaleKcg extends AbstractLocale implements LocaleInterface

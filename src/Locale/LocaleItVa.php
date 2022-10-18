@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryVa;
 
 /**
- * Class LocaleItVa
  * @psalm-immutable
  */
 class LocaleItVa extends LocaleIt

@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageMer - Representation of the Meru language.
+ * Meru
+ *
  * @psalm-immutable
  */
 class LanguageMer extends AbstractLanguage implements LanguageInterface

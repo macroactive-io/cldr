@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryFr;
 
 /**
- * Class LanguageBr - Representation of the Breton language.
+ * Breton
+ *
  * @psalm-immutable
  */
 class LanguageBr extends AbstractLanguage implements LanguageInterface

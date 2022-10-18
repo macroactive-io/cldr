@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryMd;
 
 /**
- * Class LocaleRoMd - Moldavian
+ * Moldavian
+ *
  * @psalm-immutable
  */
 class LocaleRoMd extends LocaleRo

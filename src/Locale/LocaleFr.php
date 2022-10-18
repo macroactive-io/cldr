@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFr;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFr - French
+ * French
+ *
  * @psalm-immutable
  */
 class LocaleFr extends AbstractLocale implements LocaleInterface

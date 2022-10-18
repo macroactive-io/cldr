@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFf;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFf - Fulah
+ * Fulah
+ *
  * @psalm-immutable
  */
 class LocaleFf extends AbstractLocale implements LocaleInterface

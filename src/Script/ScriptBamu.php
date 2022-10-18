@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBamu - Representation of the Bamum script.
+ * Bamum
+ *
  * @psalm-immutable
  */
 class ScriptBamu extends AbstractScript implements ScriptInterface

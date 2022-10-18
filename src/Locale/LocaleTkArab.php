@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleTkArab
  * @psalm-immutable
  */
 class LocaleTkArab extends LocaleTk

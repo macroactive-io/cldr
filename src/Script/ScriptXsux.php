@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptXsux - Representation of the Cuneiform, Sumero-Akkadian script.
+ * Cuneiform, Sumero-Akkadian
+ *
  * @psalm-immutable
  */
 class ScriptXsux extends AbstractScript implements ScriptInterface

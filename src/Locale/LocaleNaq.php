@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNaq;
 
 /**
- * Class LocaleNaq - Nama
+ * Nama
+ *
  * @psalm-immutable
  */
 class LocaleNaq extends AbstractLocale implements LocaleInterface

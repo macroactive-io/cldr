@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule12;
 use Macroactive\Cldr\Script\ScriptArab;
 
 /**
- * Class LanguageAr - Representation of the Arabic language.
+ * Arabic
+ *
  * @psalm-immutable
  */
 class LanguageAr extends AbstractLanguage implements LanguageInterface

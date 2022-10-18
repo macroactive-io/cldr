@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSidd - Representation of the Siddham, Siddhaṃ, Siddhamātṛkā script.
+ * Siddham, Siddhaṃ, Siddhamātṛkā
+ *
  * @psalm-immutable
  */
 class ScriptSidd extends AbstractScript implements ScriptInterface

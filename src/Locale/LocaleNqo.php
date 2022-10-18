@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNqo;
 
 /**
- * Class LocaleNko - N'Ko
+ * N'Ko
+ *
  * @psalm-immutable
  */
 class LocaleNqo extends AbstractLocale implements LocaleInterface

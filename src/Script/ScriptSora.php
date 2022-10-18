@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSora - Representation of the Sora Sompeng script.
+ * Sora Sompeng
+ *
  * @psalm-immutable
  */
 class ScriptSora extends AbstractScript implements ScriptInterface

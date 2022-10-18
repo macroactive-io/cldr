@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBuhd - Representation of the Buhid script.
+ * Buhid
+ *
  * @psalm-immutable
  */
 class ScriptBuhd extends AbstractScript implements ScriptInterface

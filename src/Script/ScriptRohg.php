@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptRunr - Representation of the Hanifi Rohingya script.
+ * Hanifi Rohingya
+ *
  * @psalm-immutable
  */
 class ScriptRohg extends AbstractScript implements ScriptInterface

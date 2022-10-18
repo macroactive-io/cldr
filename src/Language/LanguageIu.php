@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCans;
 use Macroactive\Cldr\Territory\TerritoryCa;
 
 /**
- * Class LanguageEl - Representation of the Modern Greek (1453-) language.
+ * Modern Greek (1453-)
+ *
  * @psalm-immutable
  */
 class LanguageIu extends AbstractLanguage implements LanguageInterface

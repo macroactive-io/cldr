@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryBw;
 
 /**
- * Class LanguageTn - Representation of the Tswana language.
+ * Tswana
+ *
  * @psalm-immutable
  */
 class LanguageTn extends AbstractLanguage implements LanguageInterface

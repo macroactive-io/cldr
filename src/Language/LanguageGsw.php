@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryCh;
 
 /**
  * Class LanguageGsw - Representation of the Swiss German language.
+ *
  * @psalm-immutable
  */
 class LanguageGsw extends AbstractLanguage implements LanguageInterface

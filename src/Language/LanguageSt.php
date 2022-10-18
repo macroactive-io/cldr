@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryLs;
 
 /**
- * Class LanguageEn - Representation of the Sotho language.
+ * Sotho
+ *
  * @psalm-immutable
  */
 class LanguageSt extends AbstractLanguage implements LanguageInterface

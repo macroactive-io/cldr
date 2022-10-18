@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCe;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCe - Chechen
+ * Chechen
+ *
  * @psalm-immutable
  */
 class LocaleCe extends AbstractLocale implements LocaleInterface

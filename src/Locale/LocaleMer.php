@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMer;
 
 /**
- * Class LocaleMer - Meru
+ * Meru
+ *
  * @psalm-immutable
  */
 class LocaleMer extends AbstractLocale implements LocaleInterface

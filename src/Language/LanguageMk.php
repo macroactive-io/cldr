@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryMk;
 
 /**
- * Class LanguageMk - Representation of the Macedonian language.
+ * Macedonian
+ *
  * @psalm-immutable
  */
 class LanguageMk extends AbstractLanguage implements LanguageInterface

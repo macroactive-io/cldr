@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGv;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGv - Manx
+ * Manx
+ *
  * @psalm-immutable
  */
 class LocaleGv extends AbstractLocale implements LocaleInterface

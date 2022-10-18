@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Class LanguageLuo - Representation of the Luo (Kenya and Tanzania) language.
+ * Luo (Kenya and Tanzania)
+ *
  * @psalm-immutable
  */
 class LanguageLuo extends AbstractLanguage implements LanguageInterface

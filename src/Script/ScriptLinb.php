@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLinb - Representation of the Linear B script.
+ * Linear B
+ *
  * @psalm-immutable
  */
 class ScriptLinb extends AbstractScript implements ScriptInterface

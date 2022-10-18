@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptTelu;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageTe - Representation of the Telugu language.
+ * Telugu
+ *
  * @psalm-immutable
  */
 class LanguageTe extends AbstractLanguage implements LanguageInterface

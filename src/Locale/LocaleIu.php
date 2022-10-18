@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageIu;
 
 /**
- * Class LocaleIu - Inuktitut
+ * Inuktitut
+ *
  * @psalm-immutable
  */
 class LocaleIu extends AbstractLocale implements LocaleInterface

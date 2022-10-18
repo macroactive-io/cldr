@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory HM - Heard Island and McDonald Islands.
+ * HM - Heard Island and McDonald Islands
+ *
  * @psalm-immutable
  */
 class TerritoryHm extends AbstractTerritory implements TerritoryInterface

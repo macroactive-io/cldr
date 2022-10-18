@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTa;
 
 /**
- * Class LocaleTa - Tamil
+ * Tamil
+ *
  * @psalm-immutable
  */
 class LocaleTa extends AbstractLocale implements LocaleInterface

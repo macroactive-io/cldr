@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMg;
 
 /**
- * Class LocaleMg - Malagasy
+ * Malagasy
+ *
  * @psalm-immutable
  */
 class LocaleMg extends AbstractLocale implements LocaleInterface

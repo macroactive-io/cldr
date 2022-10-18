@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTakr - Representation of the Takri, Ṭākrī, Ṭāṅkrī script.
+ * Takri, Ṭākrī, Ṭāṅkrī
+ *
  * @psalm-immutable
  */
 class ScriptTakr extends AbstractScript implements ScriptInterface

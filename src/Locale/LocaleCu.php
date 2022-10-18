@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCu;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCu - Old Church Slavonic
+ * Old Church Slavonic
+ *
  * @psalm-immutable
  */
 class LocaleCu extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptGeok - Representation of the Khutsuri (Asomtavruli and Nuskhuri) script.
+ * Khutsuri (Asomtavruli and Nuskhuri)
+ *
  * @psalm-immutable
  */
 class ScriptGeok extends AbstractScript implements ScriptInterface

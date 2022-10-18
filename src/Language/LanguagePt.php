@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryPt;
 
 /**
- * Class LanguagePt - Representation of the Portuguese language.
+ * Portuguese
+ *
  * @psalm-immutable
  */
 class LanguagePt extends AbstractLanguage implements LanguageInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory CX - Christmas Island.
+ * CX - Christmas Island
+ *
  * @psalm-immutable
  */
 class TerritoryCx extends AbstractTerritory implements TerritoryInterface

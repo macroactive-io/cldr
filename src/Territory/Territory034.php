@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory 034 - Southern Asia.
+ * 034 - Southern Asia
+ *
  * @psalm-immutable
  */
 class Territory034 extends AbstractTerritory implements TerritoryInterface

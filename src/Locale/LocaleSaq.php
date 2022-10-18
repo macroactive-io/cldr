@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSaq;
 
 /**
- * Class LocaleSaq - Samburu
+ * Samburu
+ *
  * @psalm-immutable
  */
 class LocaleSaq extends AbstractLocale implements LocaleInterface

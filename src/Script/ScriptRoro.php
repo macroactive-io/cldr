@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptRoro - Representation of the Rongorongo script.
+ * Rongorongo
+ *
  * @psalm-immutable
  */
 class ScriptRoro extends AbstractScript implements ScriptInterface

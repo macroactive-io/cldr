@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLatn - Representation of the Latin script.
+ * Latin
+ *
  * @psalm-immutable
  */
 class ScriptLatn extends AbstractScript implements ScriptInterface

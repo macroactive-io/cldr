@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
  * Class LanguageSd - Representation of the Sindhi language.
+ *
  * @psalm-immutable
  */
 class LanguageSd extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryGl;
 
 /**
- * Class LanguageKl - Representation of the Kalaallisut language.
+ * Kalaallisut
+ *
  * @psalm-immutable
  */
 class LanguageKl extends AbstractLanguage implements LanguageInterface

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Language\LanguageShi;
 use Macroactive\Cldr\Script\ScriptDirection;
 
 /**
- * Class LocaleShi - Tachelhit
+ * Tachelhit
+ *
  * @psalm-immutable
  */
 class LocaleShi extends AbstractLocale implements LocaleInterface

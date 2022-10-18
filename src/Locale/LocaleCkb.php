@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCkb;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCkb - Sorani
+ * Sorani
+ *
  * @psalm-immutable
  */
 class LocaleCkb extends AbstractLocale implements LocaleInterface

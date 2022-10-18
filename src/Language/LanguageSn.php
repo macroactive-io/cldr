@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryZw;
 
 /**
  * Class LanguageSn - Representation of the Shona language.
+ *
  * @psalm-immutable
  */
 class LanguageSn extends AbstractLanguage implements LanguageInterface

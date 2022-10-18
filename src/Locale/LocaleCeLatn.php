@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptLatn;
 
 /**
- * Class LocaleCeLatn - Chechen
+ * Chechen
+ *
  * @psalm-immutable
  */
 class LocaleCeLatn extends LocaleCe

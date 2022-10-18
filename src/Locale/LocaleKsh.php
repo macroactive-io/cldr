@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKsh;
 
 /**
- * Class LocaleKsh - Colognian
+ * Colognian
+ *
  * @psalm-immutable
  */
 class LocaleKsh extends AbstractLocale implements LocaleInterface

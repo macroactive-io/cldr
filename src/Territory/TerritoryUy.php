@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory UY - Uruguay.
+ * UY - Uruguay
+ *
  * @psalm-immutable
  */
 class TerritoryUy extends AbstractTerritory implements TerritoryInterface

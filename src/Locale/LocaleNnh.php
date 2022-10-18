@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNnh;
 
 /**
- * Class LocaleNnh - Ngiemboon
+ * Ngiemboon
+ *
  * @psalm-immutable
  */
 class LocaleNnh extends AbstractLocale implements LocaleInterface

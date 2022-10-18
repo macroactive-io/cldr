@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryPe;
 
 /**
- * Class LanguageQu - Representation of the Quechua language.
+ * Quechua
+ *
  * @psalm-immutable
  */
 class LanguageQu extends AbstractLanguage implements LanguageInterface

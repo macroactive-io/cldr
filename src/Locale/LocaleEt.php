@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageEt;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleEt - Estonian
+ * Estonian
+ *
  * @psalm-immutable
  */
 class LocaleEt extends AbstractLocale implements LocaleInterface

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
  * Class LanguageOs - Representation of the Ossetian language.
+ *
  * @psalm-immutable
  */
 class LanguageOs extends AbstractLanguage implements LanguageInterface

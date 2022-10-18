@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleTagalog;
 use Macroactive\Cldr\Territory\TerritoryPh;
 
 /**
- * Class LanguageTl - Representation of the Tagalog language.
+ * Tagalog
+ *
  * @psalm-immutable
  */
 class LanguageTl extends AbstractLanguage implements LanguageInterface

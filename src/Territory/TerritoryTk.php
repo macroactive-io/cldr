@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory TK - Tokelau.
+ * TK - Tokelau
+ *
  * @psalm-immutable
  */
 class TerritoryTk extends AbstractTerritory implements TerritoryInterface

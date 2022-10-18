@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKok;
 
 /**
- * Class LocaleKok - Konkani
+ * Konkani
+ *
  * @psalm-immutable
  */
 class LocaleKok extends AbstractLocale implements LocaleInterface

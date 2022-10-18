@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryEr;
 
 /**
  * Class LanguageSsy - Representation of the Saho language.
+ *
  * @psalm-immutable
  */
 class LanguageSsy extends AbstractLanguage implements LanguageInterface

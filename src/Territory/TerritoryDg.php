@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory DG - Diego Garcia.
+ * DG - Diego Garcia
+ *
  * @psalm-immutable
  */
 class TerritoryDg extends AbstractTerritory implements TerritoryInterface

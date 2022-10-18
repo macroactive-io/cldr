@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptEthi;
 use Macroactive\Cldr\Territory\TerritoryEt;
 
 /**
- * Class LanguageAm - Representation of the Amharic language.
+ * Amharic
+ *
  * @psalm-immutable
  */
 class LanguageAm extends AbstractLanguage implements LanguageInterface

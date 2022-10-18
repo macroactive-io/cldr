@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptThaa - Representation of the Thaana script.
+ * Thaana
+ *
  * @psalm-immutable
  */
 class ScriptThaa extends AbstractScript implements ScriptInterface

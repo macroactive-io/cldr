@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryGw;
 
 /**
- * Class LocalePtGw
  * @psalm-immutable
  */
 class LocalePtGw extends LocalePt

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryKg;
 
 /**
- * Class LanguageKy - Representation of the Kirghiz language.
+ * Kirghiz
+ *
  * @psalm-immutable
  */
 class LanguageKy extends AbstractLanguage implements LanguageInterface

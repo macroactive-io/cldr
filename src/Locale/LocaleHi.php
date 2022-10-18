@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageHi;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleHi - Hindi
+ * Hindi
+ *
  * @psalm-immutable
  */
 class LocaleHi extends AbstractLocale implements LocaleInterface

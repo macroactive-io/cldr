@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory UM - United States Minor Outlying Islands.
+ * UM - United States Minor Outlying Islands
+ *
  * @psalm-immutable
  */
 class TerritoryUm extends AbstractTerritory implements TerritoryInterface

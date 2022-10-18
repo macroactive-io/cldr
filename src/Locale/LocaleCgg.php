@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageCgg;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleCgg - Chiga
+ * Chiga
+ *
  * @psalm-immutable
  */
 class LocaleCgg extends AbstractLocale implements LocaleInterface

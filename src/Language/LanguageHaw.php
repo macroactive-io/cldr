@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUs;
 
 /**
- * Class LanguageHaw - Representation of the Hawaiian language.
+ * Hawaiian
+ *
  * @psalm-immutable
  */
 class LanguageHaw extends AbstractLanguage implements LanguageInterface

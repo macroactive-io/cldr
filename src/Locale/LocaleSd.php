@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSd;
 
 /**
- * Class LocaleScn - Sindhi
+ * Sindhi
+ *
  * @psalm-immutable
  */
 class LocaleSd extends AbstractLocale implements LocaleInterface

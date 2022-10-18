@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptWara - Representation of the Wancho script.
+ * Wancho
+ *
  * @psalm-immutable
  */
 class ScriptWcho extends AbstractScript implements ScriptInterface

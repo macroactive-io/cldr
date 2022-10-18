@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptArab;
 
 /**
- * Class LocaleUzArab
  * @psalm-immutable
  */
 class LocaleUzArab extends LocaleUz

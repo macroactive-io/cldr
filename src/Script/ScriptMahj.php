@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMahj - Representation of the Mahajani script.
+ * Mahajani
+ *
  * @psalm-immutable
  */
 class ScriptMahj extends AbstractScript implements ScriptInterface

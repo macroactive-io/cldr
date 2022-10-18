@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptRanj - Representation of the Ranjana script.
+ * Ranjana
+ *
  * @psalm-immutable
  */
 class ScriptRanj extends AbstractScript implements ScriptInterface

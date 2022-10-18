@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GB - United Kingdom.
+ * GB - United Kingdom
+ *
  * @psalm-immutable
  */
 class TerritoryGb extends AbstractTerritory implements TerritoryInterface

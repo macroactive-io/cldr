@@ -10,7 +10,8 @@ use Macroactive\Cldr\Territory\TerritoryInterface;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LocaleOs - Ossetic
+ * Ossetic
+ *
  * @psalm-immutable
  */
 class LocaleOs extends AbstractLocale implements LocaleInterface

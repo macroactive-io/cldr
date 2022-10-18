@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
- * Class LanguageXog - Representation of the Soga language.
+ * Soga
+ *
  * @psalm-immutable
  */
 class LanguageXog extends AbstractLanguage implements LanguageInterface

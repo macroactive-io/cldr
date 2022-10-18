@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSn;
 
 /**
- * Class LocaleSn - Shona
+ * Shona
+ *
  * @psalm-immutable
  */
 class LocaleSn extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptBali - Representation of the Balinese script.
+ * Balinese
+ *
  * @psalm-immutable
  */
 class ScriptBali extends AbstractScript implements ScriptInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKali - Representation of the Kayah Li script.
+ * Kayah Li
+ *
  * @psalm-immutable
  */
 class ScriptKali extends AbstractScript implements ScriptInterface

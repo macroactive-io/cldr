@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFur;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFur - Friulian
+ * Friulian
+ *
  * @psalm-immutable
  */
 class LocaleFur extends AbstractLocale implements LocaleInterface

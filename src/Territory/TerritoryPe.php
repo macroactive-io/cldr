@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory PE - Peru.
+ * PE - Peru
+ *
  * @psalm-immutable
  */
 class TerritoryPe extends AbstractTerritory implements TerritoryInterface

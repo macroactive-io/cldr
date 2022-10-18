@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSg;
 
 /**
- * Class LocaleSg - Sango
+ * Sango
+ *
  * @psalm-immutable
  */
 class LocaleSg extends AbstractLocale implements LocaleInterface

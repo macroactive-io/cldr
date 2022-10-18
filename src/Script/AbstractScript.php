@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Script;
 
 /**
  * Class AbstractScript - Representation of a writing system.
+ *
  * @psalm-immutable
  */
 abstract class AbstractScript implements ScriptInterface

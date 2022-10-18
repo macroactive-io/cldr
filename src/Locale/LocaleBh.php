@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBh;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBh - Bihari
+ * Bihari
+ *
  * @psalm-immutable
  */
 class LocaleBh extends AbstractLocale implements LocaleInterface

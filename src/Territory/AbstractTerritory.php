@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Territory;
 
 /**
  * Class AbstractTerritory - Representation of a geographic area.
+ *
  * @psalm-immutable
  */
 abstract class AbstractTerritory implements TerritoryInterface

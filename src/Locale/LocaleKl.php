@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKl;
 
 /**
- * Class LocaleKl - Kalaallisut
+ * Kalaallisut
+ *
  * @psalm-immutable
  */
 class LocaleKl extends AbstractLocale implements LocaleInterface

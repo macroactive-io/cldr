@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory LA - Lao People's Democratic Republic.
+ * LA - Lao People's Democratic Republic
+ *
  * @psalm-immutable
  */
 class TerritoryLa extends AbstractTerritory implements TerritoryInterface

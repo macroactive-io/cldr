@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageSw - Representation of the Swahili language.
+ *
  * @psalm-immutable
  */
 class LanguageSw extends AbstractLanguage implements LanguageInterface

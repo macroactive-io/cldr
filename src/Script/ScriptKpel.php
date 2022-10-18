@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKpel - Representation of the Kpelle script.
+ * Kpelle
+ *
  * @psalm-immutable
  */
 class ScriptKpel extends AbstractScript implements ScriptInterface

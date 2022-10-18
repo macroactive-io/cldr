@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptDiak - Representation of the Diak script.
+ * Diak
+ *
  * @psalm-immutable
  */
 class ScriptDiak extends AbstractScript implements ScriptInterface

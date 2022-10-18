@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryCv;
 
 /**
- * Class LocalePtCv
  * @psalm-immutable
  */
 class LocalePtCv extends LocalePt

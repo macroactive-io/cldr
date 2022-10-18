@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryLi;
 
 /**
- * Class LocaleDeLi
  * @psalm-immutable
  */
 class LocaleDeLi extends LocaleDe

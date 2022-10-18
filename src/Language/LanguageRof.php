@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
- * Class LanguageRof - Representation of the Rombo language.
+ * Rombo
+ *
  * @psalm-immutable
  */
 class LanguageRof extends AbstractLanguage implements LanguageInterface

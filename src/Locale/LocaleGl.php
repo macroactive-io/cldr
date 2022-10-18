@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGl;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGl - Galician
+ * Galician
+ *
  * @psalm-immutable
  */
 class LocaleGl extends AbstractLocale implements LocaleInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryTr;
 
 /**
- * Class LanguageKu - Representation of the Kurdish language.
+ * Kurdish
+ *
  * @psalm-immutable
  */
 class LanguageKu extends AbstractLanguage implements LanguageInterface

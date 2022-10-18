@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptBeng;
 use Macroactive\Cldr\Territory\TerritoryBd;
 
 /**
- * Class LanguageBn - Representation of the Bengali language.
+ * Bengali
+ *
  * @psalm-immutable
  */
 class LanguageBn extends AbstractLanguage implements LanguageInterface

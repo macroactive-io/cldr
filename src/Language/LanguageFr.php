@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryFr;
 
 /**
- * Class LanguageFr - Representation of the French language.
+ * French
+ *
  * @psalm-immutable
  */
 class LanguageFr extends AbstractLanguage implements LanguageInterface

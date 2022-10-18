@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBez;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBez - Bena
+ * Bena
+ *
  * @psalm-immutable
  */
 class LocaleBez extends AbstractLocale implements LocaleInterface

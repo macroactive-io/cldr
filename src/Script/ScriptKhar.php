@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKhar - Representation of the Kharoshthi script.
+ * Kharoshthi
+ *
  * @psalm-immutable
  */
 class ScriptKhar extends AbstractScript implements ScriptInterface

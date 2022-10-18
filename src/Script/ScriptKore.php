@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKore - Representation of the Korean (alias for Hangul + Han) script.
+ * Korean (alias for Hangul + Han)
+ *
  * @psalm-immutable
  */
 class ScriptKore extends AbstractScript implements ScriptInterface

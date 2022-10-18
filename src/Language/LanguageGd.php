@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule4;
 use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
- * Class LanguageGd - Representation of the Scottish Gaelic language.
+ * Scottish Gaelic
+ *
  * @psalm-immutable
  */
 class LanguageGd extends AbstractLanguage implements LanguageInterface

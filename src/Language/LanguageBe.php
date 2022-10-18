@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryBy;
 
 /**
- * Class LanguageBe - Representation of the Belarusian language.
+ * Belarusian
+ *
  * @psalm-immutable
  */
 class LanguageBe extends AbstractLanguage implements LanguageInterface

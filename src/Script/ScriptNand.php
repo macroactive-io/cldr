@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNand - Representation of the Nandinagari script.
+ * Nandinagari
+ *
  * @psalm-immutable
  */
 class ScriptNand extends AbstractScript implements ScriptInterface

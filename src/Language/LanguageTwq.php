@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryNe;
 
 /**
- * Class LanguageTwq - Representation of the Tasawaq language.
+ * Tasawaq
+ *
  * @psalm-immutable
  */
 class LanguageTwq extends AbstractLanguage implements LanguageInterface

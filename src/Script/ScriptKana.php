@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptKana - Representation of the Katakana script.
+ * Katakana
+ *
  * @psalm-immutable
  */
 class ScriptKana extends AbstractScript implements ScriptInterface

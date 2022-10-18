@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageBrx;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleBrx - Bodo
+ * Bodo
+ *
  * @psalm-immutable
  */
 class LocaleBrx extends AbstractLocale implements LocaleInterface

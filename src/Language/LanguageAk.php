@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryGh;
 
 /**
- * Class LanguageAk - Representation of the Akan language.
+ * Akan
+ *
  * @psalm-immutable
  */
 class LanguageAk extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageAr;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleAr - Arabic
+ * Arabic
+ *
  * @psalm-immutable
  */
 class LocaleAr extends AbstractLocale implements LocaleInterface

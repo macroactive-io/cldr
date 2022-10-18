@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageBrx - Representation of the Bodo (India) language.
+ * Bodo (India)
+ *
  * @psalm-immutable
  */
 class LanguageBrx extends AbstractLanguage implements LanguageInterface

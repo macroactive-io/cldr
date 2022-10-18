@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryTj;
 
 /**
- * Class LanguageTg - Representation of the Tajik language.
+ * Tajik
+ *
  * @psalm-immutable
  */
 class LanguageTg extends AbstractLanguage implements LanguageInterface

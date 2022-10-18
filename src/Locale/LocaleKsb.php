@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKsb;
 
 /**
- * Class LocaleKsb - Shambala
+ * Shambala
+ *
  * @psalm-immutable
  */
 class LocaleKsb extends AbstractLocale implements LocaleInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptMarc - Representation of the Marchen script.
+ * Marchen
+ *
  * @psalm-immutable
  */
 class ScriptMarc extends AbstractScript implements ScriptInterface

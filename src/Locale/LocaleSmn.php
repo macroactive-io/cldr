@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSmn;
 
 /**
- * Class LocaleSmn - Inari Sami
+ * Inari Sami
+ *
  * @psalm-immutable
  */
 class LocaleSmn extends AbstractLocale implements LocaleInterface

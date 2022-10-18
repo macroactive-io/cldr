@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKi;
 
 /**
- * Class LocaleKi - Kikuyu
+ * Kikuyu
+ *
  * @psalm-immutable
  */
 class LocaleKi extends AbstractLocale implements LocaleInterface

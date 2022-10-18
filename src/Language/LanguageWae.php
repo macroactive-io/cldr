@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryCh;
 
 /**
- * Class LanguageWae - Representation of the Walser language.
+ * Walser
+ *
  * @psalm-immutable
  */
 class LanguageWae extends AbstractLanguage implements LanguageInterface

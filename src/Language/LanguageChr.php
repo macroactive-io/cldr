@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryUs;
 
 /**
- * Class LanguageChr - Representation of the Cherokee language.
+ * Cherokee
+ *
  * @psalm-immutable
  */
 class LanguageChr extends AbstractLanguage implements LanguageInterface

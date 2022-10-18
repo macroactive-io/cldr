@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptLaoo;
 use Macroactive\Cldr\Territory\TerritoryLa;
 
 /**
- * Class LanguageLo - Representation of the Lao language.
+ * Lao
+ *
  * @psalm-immutable
  */
 class LanguageLo extends AbstractLanguage implements LanguageInterface

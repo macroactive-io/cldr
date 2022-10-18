@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageAsa - Representation of the Asu (Tanzania) language.
+ *
  * @psalm-immutable
  */
 class LanguageAsa extends AbstractLanguage implements LanguageInterface

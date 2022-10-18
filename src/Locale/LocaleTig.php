@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTig;
 
 /**
- * Class LocaleTig - Tigre
+ * Tigre
+ *
  * @psalm-immutable
  */
 class LocaleTig extends AbstractLocale implements LocaleInterface

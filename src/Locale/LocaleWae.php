@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageWae;
 
 /**
- * Class LocaleWae - Walser
+ * Walser
+ *
  * @psalm-immutable
  */
 class LocaleWae extends AbstractLocale implements LocaleInterface

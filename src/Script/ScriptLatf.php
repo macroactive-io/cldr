@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptLatf - Representation of the Latin (Fraktur variant) script.
+ * Latin (Fraktur variant)
+ *
  * @psalm-immutable
  */
 class ScriptLatf extends AbstractScript implements ScriptInterface

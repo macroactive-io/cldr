@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageChr;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleChr - Cherokee
+ * Cherokee
+ *
  * @psalm-immutable
  */
 class LocaleChr extends AbstractLocale implements LocaleInterface

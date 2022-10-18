@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCari - Representation of the Carian script.
+ * Carian
+ *
  * @psalm-immutable
  */
 class ScriptCari extends AbstractScript implements ScriptInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPauc - Representation of the Pau Cin Hau script.
+ * Pau Cin Hau
+ *
  * @psalm-immutable
  */
 class ScriptPauc extends AbstractScript implements ScriptInterface

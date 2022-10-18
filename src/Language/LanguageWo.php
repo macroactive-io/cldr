@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritorySn;
 
 /**
- * Class LanguageXh - Representation of the Wolof language.
+ * Wolof
+ *
  * @psalm-immutable
  */
 class LanguageWo extends AbstractLanguage implements LanguageInterface

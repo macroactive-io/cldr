@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Locale;
 
 /**
- * Class LocaleJv - Javanese
+ * Javanese
+ *
  * @psalm-immutable
  */
 class LocaleJvId extends LocaleJv

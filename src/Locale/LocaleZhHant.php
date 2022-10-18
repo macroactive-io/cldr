@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptHant;
 
 /**
- * Class LocaleZhHant - Traditional Chinese
+ * Traditional Chinese
+ *
  * @psalm-immutable
  */
 class LocaleZhHant extends LocaleZh

@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryRs;
 
 /**
  * Class LanguageSr - Representation of the Serbian language.
+ *
  * @psalm-immutable
  */
 class LanguageSr extends AbstractLanguage implements LanguageInterface

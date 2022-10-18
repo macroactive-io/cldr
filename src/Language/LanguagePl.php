@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule9;
 use Macroactive\Cldr\Territory\TerritoryPl;
 
 /**
- * Class LanguagePl - Representation of the Polish language.
+ * Polish
+ *
  * @psalm-immutable
  */
 class LanguagePl extends AbstractLanguage implements LanguageInterface

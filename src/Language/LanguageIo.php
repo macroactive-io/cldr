@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 
 /**
- * Class LanguageIo - Representation of the Ido language.
+ * Ido
+ *
  * @psalm-immutable
  */
 class LanguageIo extends AbstractLanguage implements LanguageInterface

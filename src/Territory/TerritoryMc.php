@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory MC - Monaco.
+ * MC - Monaco
+ *
  * @psalm-immutable
  */
 class TerritoryMc extends AbstractTerritory implements TerritoryInterface

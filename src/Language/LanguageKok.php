@@ -8,7 +8,8 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageKok - Representation of the Konkani language.
+ * Konkani
+ *
  * @psalm-immutable
  */
 class LanguageKok extends AbstractLanguage implements LanguageInterface

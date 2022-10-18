@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory AU - Australia.
+ * AU - Australia
+ *
  * @psalm-immutable
  */
 class TerritoryAu extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptCirt - Representation of the Cirth script.
+ * Cirth
+ *
  * @psalm-immutable
  */
 class ScriptCirt extends AbstractScript implements ScriptInterface

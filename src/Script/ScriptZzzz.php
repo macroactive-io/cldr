@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptZzzz - Representation of the Code for uncoded script script.
+ * Code for uncoded script
+ *
  * @psalm-immutable
  */
 class ScriptZzzz extends AbstractScript implements ScriptInterface

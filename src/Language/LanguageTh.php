@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptThai;
 use Macroactive\Cldr\Territory\TerritoryTh;
 
 /**
- * Class LanguageTh - Representation of the Thai language.
+ * Thai
+ *
  * @psalm-immutable
  */
 class LanguageTh extends AbstractLanguage implements LanguageInterface

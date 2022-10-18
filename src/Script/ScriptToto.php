@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptToto - Representation of the Toto script.
+ * Toto
+ *
  * @psalm-immutable
  */
 class ScriptToto extends AbstractScript implements ScriptInterface

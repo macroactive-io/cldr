@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageJgo;
 
 /**
- * Class LocaleJgo - Ngomba
+ * Ngomba
+ *
  * @psalm-immutable
  */
 class LocaleJgo extends AbstractLocale implements LocaleInterface

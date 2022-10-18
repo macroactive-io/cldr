@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryIs;
 
 /**
  * Class LanguageIs - Representation of the Icelandic language.
+ *
  * @psalm-immutable
  */
 class LanguageIs extends AbstractLanguage implements LanguageInterface

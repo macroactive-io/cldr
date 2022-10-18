@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryNp;
 
 /**
- * Class LanguageNe - Representation of the Nepali language.
+ * Nepali
+ *
  * @psalm-immutable
  */
 class LanguageNe extends AbstractLanguage implements LanguageInterface

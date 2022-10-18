@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRuleManx;
 use Macroactive\Cldr\Territory\TerritoryIm;
 
 /**
- * Class LanguageGv - Representation of the Manx language.
+ * Manx
+ *
  * @psalm-immutable
  */
 class LanguageGv extends AbstractLanguage implements LanguageInterface

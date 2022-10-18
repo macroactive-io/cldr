@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageGsw;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleGsw - Swiss German
+ * Swiss German
+ *
  * @psalm-immutable
  */
 class LocaleGsw extends AbstractLocale implements LocaleInterface

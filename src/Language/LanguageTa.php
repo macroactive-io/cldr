@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptTaml;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
- * Class LanguageTa - Representation of the Tamil language.
+ * Tamil
+ *
  * @psalm-immutable
  */
 class LanguageTa extends AbstractLanguage implements LanguageInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryNg;
 
 /**
- * Class LanguageKcg - Representation of the Katab language.
+ * Katab
+ *
  * @psalm-immutable
  */
 class LanguageKcg extends AbstractLanguage implements LanguageInterface

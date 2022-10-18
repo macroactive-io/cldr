@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Territory\TerritoryNz;
 
 /**
- * Class LanguageEn - Representation of the Maori language.
+ * Maori
+ *
  * @psalm-immutable
  */
 class LanguageMi extends AbstractLanguage implements LanguageInterface

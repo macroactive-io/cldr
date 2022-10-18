@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageKa;
 
 /**
- * Class LocaleKa - Georgian
+ * Georgian
+ *
  * @psalm-immutable
  */
 class LocaleKa extends AbstractLocale implements LocaleInterface

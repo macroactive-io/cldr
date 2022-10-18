@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory VC - Saint Vincent and the Grenadines.
+ * VC - Saint Vincent and the Grenadines
+ *
  * @psalm-immutable
  */
 class TerritoryVc extends AbstractTerritory implements TerritoryInterface

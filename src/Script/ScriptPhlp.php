@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptPhlp - Representation of the Psalter Pahlavi script.
+ * Psalter Pahlavi
+ *
  * @psalm-immutable
  */
 class ScriptPhlp extends AbstractScript implements ScriptInterface

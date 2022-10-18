@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptAran - Representation of the Arabic (Nastaliq) script.
+ * Arabic (Nastaliq)
+ *
  * @psalm-immutable
  */
 class ScriptAran extends AbstractScript implements ScriptInterface

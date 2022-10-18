@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNkoo - Representation of the N’Ko script.
+ * N’Ko
+ *
  * @psalm-immutable
  */
 class ScriptNkoo extends AbstractScript implements ScriptInterface

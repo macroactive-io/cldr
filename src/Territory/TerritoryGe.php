@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GE - Georgia.
+ * GE - Georgia
+ *
  * @psalm-immutable
  */
 class TerritoryGe extends AbstractTerritory implements TerritoryInterface

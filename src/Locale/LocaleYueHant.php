@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptHant;
 
 /**
- * Class LocaleYueHant - Yue
+ * Yue
+ *
  * @psalm-immutable
  */
 class LocaleYueHant extends LocaleYue

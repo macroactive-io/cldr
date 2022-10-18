@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageUr;
 
 /**
- * Class LocaleUr - Urdu
+ * Urdu
+ *
  * @psalm-immutable
  */
 class LocaleUr extends AbstractLocale implements LocaleInterface

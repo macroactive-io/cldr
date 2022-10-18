@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
- * Class LanguageRu - Representation of the Russian language.
+ * Russian
+ *
  * @psalm-immutable
  */
 class LanguageCe extends AbstractLanguage implements LanguageInterface

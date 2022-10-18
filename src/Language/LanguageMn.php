@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryMn;
 
 /**
- * Class LanguageMn - Representation of the Mongolian language.
+ * Mongolian
+ *
  * @psalm-immutable
  */
 class LanguageMn extends AbstractLanguage implements LanguageInterface

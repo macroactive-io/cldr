@@ -7,7 +7,8 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryMa;
 
 /**
- * Class LanguageZgh - Representation of the Standard Moroccan Tamazight language.
+ * Standard Moroccan Tamazight
+ *
  * @psalm-immutable
  */
 class LanguageZgh extends AbstractLanguage implements LanguageInterface

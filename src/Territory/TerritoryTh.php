@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory TH - Thailand.
+ * TH - Thailand
+ *
  * @psalm-immutable
  */
 class TerritoryTh extends AbstractTerritory implements TerritoryInterface

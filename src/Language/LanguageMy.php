@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptMymr;
 use Macroactive\Cldr\Territory\TerritoryMm;
 
 /**
- * Class LanguageMy - Representation of the Burmese language.
+ * Burmese
+ *
  * @psalm-immutable
  */
 class LanguageMy extends AbstractLanguage implements LanguageInterface

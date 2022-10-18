@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptNewa - Representation of the Newa script.
+ * Newa
+ *
  * @psalm-immutable
  */
 class ScriptNewa extends AbstractScript implements ScriptInterface

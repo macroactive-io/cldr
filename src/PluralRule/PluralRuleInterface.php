@@ -20,8 +20,6 @@ interface PluralRuleInterface
 
     /**
      * Which plural form to use for a specified number.
-     *
-     * @param int $number
      */
     public function plural(int $number): int;
 }

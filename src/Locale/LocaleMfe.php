@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageMfe;
 
 /**
- * Class LocaleMfe - Morisyen
+ * Morisyen
+ *
  * @psalm-immutable
  */
 class LocaleMfe extends AbstractLocale implements LocaleInterface

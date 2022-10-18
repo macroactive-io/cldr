@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageFo;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleFo - Faroese
+ * Faroese
+ *
  * @psalm-immutable
  */
 class LocaleFo extends AbstractLocale implements LocaleInterface

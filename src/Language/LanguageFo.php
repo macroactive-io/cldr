@@ -8,7 +8,8 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryFo;
 
 /**
- * Class LanguageFo - Representation of the Faroese language.
+ * Faroese
+ *
  * @psalm-immutable
  */
 class LanguageFo extends AbstractLanguage implements LanguageInterface

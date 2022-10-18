@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptWole - Representation of the Woleai script.
+ * Woleai
+ *
  * @psalm-immutable
  */
 class ScriptWole extends AbstractScript implements ScriptInterface

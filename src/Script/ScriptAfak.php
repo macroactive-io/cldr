@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptAraf - Representation of the Afaka script.
+ * Afaka
+ *
  * @psalm-immutable
  */
 class ScriptAfak extends AbstractScript implements ScriptInterface

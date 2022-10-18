@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
- * Class LocaleSeFi
  * @psalm-immutable
  */
 class LocaleSeFi extends LocaleSe

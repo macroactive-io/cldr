@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory TW - Taiwan, Province of China.
+ * TW - Taiwan, Province of China
+ *
  * @psalm-immutable
  */
 class TerritoryTw extends AbstractTerritory implements TerritoryInterface

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptTirh - Representation of the Tirhuta script.
+ * Tirhuta
+ *
  * @psalm-immutable
  */
 class ScriptTirh extends AbstractScript implements ScriptInterface

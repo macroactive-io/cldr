@@ -9,7 +9,8 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIr;
 
 /**
- * Class LanguageMzn - Representation of the Mazanderani language.
+ * Mazanderani
+ *
  * @psalm-immutable
  */
 class LanguageMzn extends AbstractLanguage implements LanguageInterface

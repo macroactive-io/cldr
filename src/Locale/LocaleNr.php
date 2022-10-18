@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageNr;
 
 /**
- * Class LocaleNr - South Ndebele
+ * South Ndebele
+ *
  * @psalm-immutable
  */
 class LocaleNr extends AbstractLocale implements LocaleInterface

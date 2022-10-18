@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Script;
 
 /**
- * Class ScriptSinh - Representation of the Sinhala script.
+ * Sinhala
+ *
  * @psalm-immutable
  */
 class ScriptSinh extends AbstractScript implements ScriptInterface

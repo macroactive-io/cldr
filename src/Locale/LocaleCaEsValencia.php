@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Variant\VariantValencia;
 
 /**
- * Class LocaleCaEsValencia
  * @psalm-immutable
  */
 class LocaleCaEsValencia extends LocaleCaEs

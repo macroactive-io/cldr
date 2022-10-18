@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageSv;
 
 /**
- * Class LocaleSv - Swedish
+ * Swedish
+ *
  * @psalm-immutable
  */
 class LocaleSv extends AbstractLocale implements LocaleInterface

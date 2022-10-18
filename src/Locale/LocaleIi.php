@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageIi;
 use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
- * Class LocaleIi - Sichuan Yi
+ * Sichuan Yi
+ *
  * @psalm-immutable
  */
 class LocaleIi extends AbstractLocale implements LocaleInterface

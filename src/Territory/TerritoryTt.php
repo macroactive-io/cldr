@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory TT - Trinidad and Tobago.
+ * TT - Trinidad and Tobago
+ *
  * @psalm-immutable
  */
 class TerritoryTt extends AbstractTerritory implements TerritoryInterface

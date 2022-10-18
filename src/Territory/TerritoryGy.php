@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Territory;
 
 /**
- * Class AbstractTerritory - Representation of the territory GY - Guyana.
+ * GY - Guyana
+ *
  * @psalm-immutable
  */
 class TerritoryGy extends AbstractTerritory implements TerritoryInterface

@@ -8,7 +8,8 @@ use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguageTo;
 
 /**
- * Class LocaleTo - Tongan
+ * Tongan
+ *
  * @psalm-immutable
  */
 class LocaleTo extends AbstractLocale implements LocaleInterface

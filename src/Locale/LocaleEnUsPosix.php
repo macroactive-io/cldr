@@ -7,7 +7,6 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Variant\VariantPosix;
 
 /**
- * Class LocaleEnUsPosix
  * @psalm-immutable
  */
 class LocaleEnUsPosix extends LocaleEnUs
