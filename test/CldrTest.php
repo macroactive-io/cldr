@@ -20,6 +20,7 @@ use function preg_quote;
 use function simplexml_load_file;
 use function sprintf;
 use function str_ends_with;
+use function str_starts_with;
 use function strtr;
 
 /**
@@ -33,11 +34,11 @@ class CldrTest extends TestCase
     private static array $cachedXmls = [];
 
     /**
-     * Test layout
+     * Test numbers
      *
-     * @medium
+     * @large
      */
-    public function testCharacterOrder(): void
+    public function testNumbersAndCharacterOrder(): void
     {
         $direction = [
             'left-to-right' => ScriptDirection::LTR,
@@ -51,24 +52,7 @@ class CldrTest extends TestCase
 
             $locale = Locale::create(basename($cldr, '.xml'));
             $dir    = self::cldrValue($cldr, '/ldml/layout/orientation/characterOrder');
-
             self::assertSame($direction[$dir], $locale->direction());
-        }
-    }
-
-    /**
-     * Test numbers
-     *
-     * @large
-     */
-    public function testNumbers(): void
-    {
-        foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $cldr) {
-            if (str_ends_with($cldr, '/root.xml')) {
-                continue;
-            }
-
-            $locale = Locale::create(basename($cldr, '.xml'));
 
             $def_num_system = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
 
