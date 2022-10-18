@@ -17,6 +17,9 @@ use function glob;
 use function implode;
 use function preg_match;
 use function preg_quote;
+use function simplexml_load_file;
+use function sprintf;
+use function str_ends_with;
 use function strtr;
 
 /**
@@ -26,6 +29,9 @@ use function strtr;
  */
 class CldrTest extends TestCase
 {
+    /** @var array<string, array<string, \SimpleXMLElement>> */
+    private static array $cachedXmls = [];
+
     /**
      * Test layout
      *
@@ -44,7 +50,7 @@ class CldrTest extends TestCase
             }
 
             $locale = Locale::create(basename($cldr, '.xml'));
-            $dir    = $this->cldrValue($cldr, '/ldml/layout/orientation/characterOrder');
+            $dir    = self::cldrValue($cldr, '/ldml/layout/orientation/characterOrder');
 
             self::assertSame($direction[$dir], $locale->direction());
         }
@@ -64,33 +70,33 @@ class CldrTest extends TestCase
 
             $locale = Locale::create(basename($cldr, '.xml'));
 
-            $def_num_system = $this->cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
+            $def_num_system = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
 
             try {
-                $alias = $this->cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/alias/@path");
+                $alias = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/alias/@path");
 
                 if ($alias === "../symbols[@numberSystem='latn']") {
                     $def_num_system = 'latn';
                 }
             } catch (Exception $ex) {
             }
-            $decimal      = $this->cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/decimal");
-            $group        = $this->cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/group");
-            $percent_sign = $this->cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/percentSign");
-            $minus_sign   = $this->cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/minusSign");
+            $decimal      = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/decimal");
+            $group        = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/group");
+            $percent_sign = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/percentSign");
+            $minus_sign   = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/minusSign");
 
-            $def_num_system = $this->cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
+            $def_num_system = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
 
             try {
-                $alias = $this->cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/alias/@path");
+                $alias = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/alias/@path");
 
                 if ($alias === "../decimalFormats[@numberSystem='latn']") {
                     $def_num_system = 'latn';
                 }
             } catch (Exception $ex) {
             }
-            $standard = $this->cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern");
-            $percent  = $this->cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $def_num_system . "']/percentFormatLength[not(@type)]/percentFormat/pattern");
+            $standard = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern");
+            $percent  = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $def_num_system . "']/percentFormatLength[not(@type)]/percentFormat/pattern");
 
             // The CLDR example doesn't demonstrate the lack of group separators.
             if ($standard === '0.######' && $locale->languageTag() === 'en-US-posix') {
@@ -168,25 +174,40 @@ class CldrTest extends TestCase
     }
 
     /**
-     * @param string $file
-     * @param string $xpath
-     *
      * @throws Exception
      */
-    private function cldrValue(string $file, string $xpath): string
+    private static function cldrValue(string $file, string $xpath): string
     {
-        $xml = simplexml_load_string(file_get_contents($file));
-        $tmp = $file;
+        $locale = basename($file, '.xml');
 
-        while (in_array($xml->xpath($xpath), [false, null, []], true)) {
-            if (str_contains($file, 'root.xml')) {
-                throw new Exception('Cannot find ' . $xpath . ' in ' . $tmp);
+        $data = self::xpathCached($locale, $file, $xpath);
+
+        while (in_array($data, [false, null, []], true)) {
+            if (str_ends_with($file, 'root.xml')) {
+                throw new Exception(sprintf('Cannot find xpath "%s" in file "%s" for locale "%s"', $xpath, $file, $locale));
             }
+
             $file = self::parentCldr($file);
-            $xml  = simplexml_load_string(file_get_contents($file));
+
+            $data = self::xpathCached($locale, $file, $xpath);
         }
-        $data = $xml->xpath($xpath);
 
         return (string) $data[0];
+    }
+
+    private static function xpathCached(string $locale, string $file, string $xpath): null|bool|array
+    {
+        if (!isset(self::$cachedXmls[$locale])) {
+            self::$cachedXmls = [$locale => []];
+        }
+
+        $xml = self::$cachedXmls[$locale][$file] ?? null;
+
+        if (null === $xml) {
+            self::$cachedXmls[$locale][$file] = simplexml_load_file($file);
+            $xml = self::$cachedXmls[$locale][$file];
+        }
+
+        return $xml->xpath($xpath);
     }
 }
