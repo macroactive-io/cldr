@@ -1,9 +1,6 @@
-[![Build Status](https://travis-ci.org/fisharebest/localization.svg?branch=master)](https://travis-ci.org/fisharebest/localization)
-[![Coverage Status](https://coveralls.io/repos/fisharebest/localization/badge.svg?branch=master&service=github)](https://coveralls.io/github/fisharebest/localization?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a252b4b3-62c1-40bd-be44-43a7dc6e4a9b/mini.png)](https://insight.sensiolabs.com/projects/a252b4b3-62c1-40bd-be44-43a7dc6e4a9b)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fisharebest/localization/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fisharebest/localization/?branch=master)
-[![StyleCI](https://github.styleci.io/repos/23638409/shield)](https://github.styleci.io/repos/23638409)
-[![Code Climate](https://codeclimate.com/github/fisharebest/localization/badges/gpa.svg)](https://codeclimate.com/github/fisharebest/localization)
+This package represents stripped reference data cloned from AWESOME [fisharebest/localization](https://github.com/fisharebest/localization). Main difference:
+* removed `Translator`
+* PHP version >= 8.1 for the sake of using strict typing, enums, etc
 
 Localization standards and data
 ===============================
@@ -93,7 +90,7 @@ $locale->percent(0.123);        // "12.3%"
 $locale->collation();           // "unicode_ci", "swedish_ci", etc.
 ```
 
-Translation
+Plural rules
 ===========
 
 Plural rules are defined for each locale.  This example shows that although
@@ -108,44 +105,6 @@ $locale = new LocaleFr;
 $locale->pluralRule()->plurals(); // 2 (French also has two plural forms)
 $locale->pluralRule()->plural(0); // 0 (zero is singular in French "zero apple")
 ```
-
-Note that some of the plural definitions in CLDR differ to those traditionally used by
-`gettext`.  We use the gettext versions for br, fa, fil, he, lv, mk, pt and se.
-
-Translation functions work the same as `gettext`.
-
-``` php
-// We need to translate into French
-$locale = new LocaleFr;
-// Create the translation
-$translation = new Translation('/path/to/fr.mo');  // Can use .CSV, .PHP, .PO and .MO files
-// Create the translator
-$translator = new Translator($translation->asArray(), $locale->pluralRule());
-// Use the translator
-$translator->translate('the fish');                // "le poisson" 
-$translator->translateContext('noun', 'fish');     // "poisson" 
-$translator->translateContext('verb', 'fish');     // "pêcher" 
-$translator->plural('%d fish', '%d fishes', 4);    // "%d poissons" 
-```
-
-TIP: If your translations are stored in more than one file, you can merge them easily.
-
-```php
-// Create the translation
-$translation1 = new Translation('/path/to/core/fr.mo');
-$translation2 = new Translation('/path/to/extra/fr.mo');
-// Create the translator
-$translator = new Translator(array_merge($translation1->asArray(), $translation2->asArray()), $locale->pluralRule());
-```
-
-TIP: Loading translations from .PHP files is a little faster than loading them from .MO files.
-You can convert and/or cache them using this approach.
-
-```
-$translation = new Translation('/path/to/fr.mo');
-file_put_contents('/path/to/fr.php', '<?php return ' . var_export($translations->asArray(), true) . ';');
-```
-
 
 Updates welcome
 ===============

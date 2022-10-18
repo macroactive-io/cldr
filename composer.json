@@ -1,19 +1,23 @@
 {
-	"name": "fisharebest/localization",
+	"name": "macroacitve/cldr",
 	"description": "A lightweight localization database and translation tools, with data from the CLDR, IANA, ISO, etc.",
 	"type": "library",
 	"keywords": [
-		"localization", "locale", "language", "script", "translate", "translation", "i18n", "l10n", "cldr", "gettext"
+		"localization", "locale", "language", "script", "translate", "translation", "i18n", "l10n", "cldr"
 	],
-	"homepage": "https://github.com/fisharebest/localization",
+	"homepage": "https://github.com/macroactive-io/cldr",
 	"license": "GPL-3.0-or-later",
 	"authors": [{
 			"name": "Greg Roach",
 			"email": "greg@subaqua.co.uk",
 			"role": "Developer"
+	},{
+			"homepage": "https://github.com/macroactive-io/cldr/graphs/contributors",
+			"name": "Opensource contributors",
+			"role": "Developer"
 	}],
 	"support": {
-			"issues": "https://github.com/fisharebest/localization/issues"
+			"issues": "https://github.com/macroactive-io/cldr/issues"
 	},
 	"require": {
 		"php": ">=8.1.0"
