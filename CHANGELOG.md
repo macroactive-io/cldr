@@ -1,6 +1,11 @@
 CHANGE LOG
 ==========
 
+## 2.0.0 (2022-10-19)
+ - PHP8.1 minimum as PHP enums and strict typing used
+ - Changed package name and NS
+ - Removed `Translator`
+
 ## 1.16.1 (2022-08-10)
  - Fix: plural rules for Farsi
 
