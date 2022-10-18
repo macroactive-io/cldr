@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="dev-master@212281dbcd17700bd6a577a61cbd088b7e0c8d13">
+  <file src="src/Locale.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>new $class()</code>
+    </LessSpecificReturnStatement>
+    <MixedArgument occurrences="1">
+      <code>$new</code>
+    </MixedArgument>
+    <MixedArrayOffset occurrences="1">
+      <code>$preferences[$new]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="2">
+      <code>$n</code>
+      <code>$new</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>new $class()</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$n</code>
+    </MixedOperand>
+    <MixedReturnTypeCoercion occurrences="2">
+      <code>$preferences</code>
+      <code>array&lt;string, int|float&gt;</code>
+    </MixedReturnTypeCoercion>
+    <MoreSpecificReturnType occurrences="1">
+      <code>LocaleInterface</code>
+    </MoreSpecificReturnType>
+  </file>
+</files>
