@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptThaa;
-use Fisharebest\Localization\Territory\TerritoryMv;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptThaa;
+use Macroactive\Cldr\Territory\TerritoryMv;
 
 /**
  * Class LanguageDv - Representation of the Divehi language.

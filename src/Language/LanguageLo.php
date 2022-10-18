@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptLaoo;
-use Fisharebest\Localization\Territory\TerritoryLa;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptLaoo;
+use Macroactive\Cldr\Territory\TerritoryLa;
 
 /**
  * Class LanguageLo - Representation of the Lao language.

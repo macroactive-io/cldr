@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule2;
-use Fisharebest\Localization\Territory\TerritoryMu;
+use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Territory\TerritoryMu;
 
 /**
  * Class LanguageMfe - Representation of the Morisyen language.

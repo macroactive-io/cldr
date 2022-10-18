@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\Language\LanguageShi;
-use Fisharebest\Localization\Script\ScriptDirection;
+use Macroactive\Cldr\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageShi;
+use Macroactive\Cldr\Script\ScriptDirection;
 
 /**
  * Class LocaleShi - Tachelhit

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptArab;
-use Fisharebest\Localization\Territory\TerritoryIq;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptArab;
+use Macroactive\Cldr\Territory\TerritoryIq;
 
 /**
  * Class LanguageKu - Representation of the Kurdish language.

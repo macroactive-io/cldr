@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageSq;
-use Fisharebest\Localization\Script\ScriptLatn;
-use Fisharebest\Localization\Territory\TerritoryXk;
+use Macroactive\Cldr\Language\LanguageSq;
+use Macroactive\Cldr\Script\ScriptLatn;
+use Macroactive\Cldr\Territory\TerritoryXk;
 use PHPUnit\Framework\TestCase;
 
 /**

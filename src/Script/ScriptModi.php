@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Script;
+namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptModi - Representation of the Modi, Moḍī script.

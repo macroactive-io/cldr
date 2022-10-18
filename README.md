@@ -1,6 +1,7 @@
 This package represents stripped reference data cloned from AWESOME [fisharebest/localization](https://github.com/fisharebest/localization). Main difference:
 * removed `Translator`
 * PHP version >= 8.1 for the sake of using strict typing, enums, etc
+* obviously, changed NS and package name
 
 Localization standards and data
 ===============================

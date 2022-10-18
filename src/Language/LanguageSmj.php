@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleOneTwoOther;
-use Fisharebest\Localization\Territory\TerritorySe;
+use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Territory\TerritorySe;
 
 /**
  * Class LanguageSms - Representation of the Lule Sami language.

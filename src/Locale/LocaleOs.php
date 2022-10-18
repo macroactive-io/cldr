@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\Language\LanguageOs;
-use Fisharebest\Localization\Territory\TerritoryInterface;
-use Fisharebest\Localization\Territory\TerritoryRu;
+use Macroactive\Cldr\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageOs;
+use Macroactive\Cldr\Territory\TerritoryInterface;
+use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
  * Class LocaleOs - Ossetic

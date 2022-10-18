@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleTachelhit;
-use Fisharebest\Localization\Script\ScriptTfng;
+use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
+use Macroactive\Cldr\Script\ScriptTfng;
 use PHPUnit\Framework\TestCase;
 
 /**

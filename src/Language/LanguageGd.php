@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule4;
-use Fisharebest\Localization\Territory\TerritoryGb;
+use Macroactive\Cldr\PluralRule\PluralRule4;
+use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
  * Class LanguageGd - Representation of the Scottish Gaelic language.

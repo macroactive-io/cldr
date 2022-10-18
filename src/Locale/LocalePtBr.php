@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\PluralRule\PluralRule2;
-use Fisharebest\Localization\Territory\TerritoryBr;
+use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Territory\TerritoryBr;
 
 /**
  * Class LocalePtBr - Brazilian Portuguese

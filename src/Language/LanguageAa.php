@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryEt;
+use Macroactive\Cldr\Territory\TerritoryEt;
 
 /**
  * Class LanguageAa - Representation of the Afar language.

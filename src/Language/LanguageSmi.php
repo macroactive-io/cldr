@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleOneTwoOther;
-use Fisharebest\Localization\Territory\TerritoryFi;
+use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Territory\TerritoryFi;
 
 /**
  * Class LanguageSmi - Representation of the Sami language.

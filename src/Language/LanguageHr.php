@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule7;
-use Fisharebest\Localization\Territory\TerritoryHr;
+use Macroactive\Cldr\PluralRule\PluralRule7;
+use Macroactive\Cldr\Territory\TerritoryHr;
 
 /**
  * Class LanguageHr - Representation of the Croatian language.

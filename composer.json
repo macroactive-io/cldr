@@ -1,5 +1,5 @@
 {
-	"name": "macroacitve/cldr",
+	"name": "macroactive/cldr",
 	"description": "A lightweight localization database and translation tools, with data from the CLDR, IANA, ISO, etc.",
 	"type": "library",
 	"keywords": [
@@ -37,7 +37,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Fisharebest\\Localization\\": "src/"
+			"Macroactive\\Cldr\\": "src/"
 		}
 	},
 	"config": {

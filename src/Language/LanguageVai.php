@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Script\ScriptVaii;
-use Fisharebest\Localization\Territory\TerritoryLr;
+use Macroactive\Cldr\Script\ScriptVaii;
+use Macroactive\Cldr\Territory\TerritoryLr;
 
 /**
  * Class LanguageVai - Representation of the Vai language.

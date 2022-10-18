@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Script\ScriptHant;
+use Macroactive\Cldr\Script\ScriptHant;
 
 /**
  * Class LocaleYueHant - Yue

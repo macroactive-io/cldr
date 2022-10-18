@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptCyrl;
-use Fisharebest\Localization\Territory\TerritoryBg;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptCyrl;
+use Macroactive\Cldr\Territory\TerritoryBg;
 
 /**
  * Class LanguageBg - Representation of the Bulgarian language.

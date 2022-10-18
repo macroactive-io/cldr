@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritorySa;
+use Macroactive\Cldr\Territory\TerritorySa;
 
 /**
  * Class LanguageAr - Representation of the Najdi Arabic language.

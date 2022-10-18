@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Script;
+namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptCyrs - Representation of the Cyrillic (Old Church Slavonic variant) script.

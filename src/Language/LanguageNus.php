@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritorySd;
+use Macroactive\Cldr\Territory\TerritorySd;
 
 /**
  * Class LanguageNus - Representation of the Nuer language.

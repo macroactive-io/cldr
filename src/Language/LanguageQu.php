@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryPe;
+use Macroactive\Cldr\Territory\TerritoryPe;
 
 /**
  * Class LanguageQu - Representation of the Quechua language.

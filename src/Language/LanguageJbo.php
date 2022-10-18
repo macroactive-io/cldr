@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
+use Macroactive\Cldr\PluralRule\PluralRule0;
 
 /**
  * Class LanguageJbo - Representation of the Lojban language.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
 /**
  * Tests for the Localization package

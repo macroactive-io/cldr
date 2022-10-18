@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\PluralRule;
+namespace Macroactive\Cldr\PluralRule;
 
 /**
  * Class PluralRuleManx - Select a plural form for a specified number.

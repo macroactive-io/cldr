@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptCakm;
-use Fisharebest\Localization\Territory\TerritoryBd;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptCakm;
+use Macroactive\Cldr\Territory\TerritoryBd;
 
 /**
  * Class LanguageCgg - Representation of the Chakma language.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
 use Exception;
-use Fisharebest\Localization\Script\ScriptDirection;
+use Macroactive\Cldr\Script\ScriptDirection;
 use PHPUnit\Framework\TestCase;
 
 use function array_slice;

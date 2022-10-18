@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleTagalog;
-use Fisharebest\Localization\Territory\TerritoryPh;
+use Macroactive\Cldr\PluralRule\PluralRuleTagalog;
+use Macroactive\Cldr\Territory\TerritoryPh;
 
 /**
  * Class LanguageTl - Representation of the Tagalog language.

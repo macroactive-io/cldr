@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Territory\Territory419;
+use Macroactive\Cldr\Territory\Territory419;
 
 /**
  * Class LocaleEs419 - Latin American Spanish

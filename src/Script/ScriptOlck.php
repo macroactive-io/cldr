@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Script;
+namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptOlck - Representation of the Ol Chiki (Ol Cemet’, Ol, Santali) script.

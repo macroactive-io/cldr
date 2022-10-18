@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleInterface;
-use Fisharebest\Localization\Script\ScriptInterface;
-use Fisharebest\Localization\Territory\TerritoryInterface;
+use Macroactive\Cldr\PluralRule\PluralRuleInterface;
+use Macroactive\Cldr\Script\ScriptInterface;
+use Macroactive\Cldr\Territory\TerritoryInterface;
 
 /**
  * Interface LanguageInterface - Representation of a language.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Territory\TerritoryVc;
+use Macroactive\Cldr\Territory\TerritoryVc;
 
 /**
  * Class LocaleEnVc

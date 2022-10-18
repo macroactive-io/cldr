@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule3;
-use Fisharebest\Localization\Territory\TerritoryLv;
+use Macroactive\Cldr\PluralRule\PluralRule3;
+use Macroactive\Cldr\Territory\TerritoryLv;
 
 /**
  * Class LanguageLv - Representation of the Latvian language.

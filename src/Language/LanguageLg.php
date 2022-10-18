@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Territory\TerritoryUg;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Territory\TerritoryUg;
 
 /**
  * Class LanguageLg - Representation of the Ganda language.

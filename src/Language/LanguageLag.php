@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleZeroOneOther;
-use Fisharebest\Localization\Territory\TerritoryTz;
+use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
+use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageLag - Representation of the Langi language.

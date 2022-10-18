@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageArs;
-use Fisharebest\Localization\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageArs;
+use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleAr - Najdi Arabic

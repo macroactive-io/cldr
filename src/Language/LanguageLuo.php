@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryKe;
+use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
  * Class LanguageLuo - Representation of the Luo (Kenya and Tanzania) language.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageCs;
-use Fisharebest\Localization\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageCs;
+use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleCs - Czech

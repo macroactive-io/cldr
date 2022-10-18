@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\Language\LanguageKln;
+use Macroactive\Cldr\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageKln;
 
 /**
  * Class LocaleKln - Kalenjin

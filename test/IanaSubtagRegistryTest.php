@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
-use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\Territory\TerritoryInterface;
+use Macroactive\Cldr\Language\LanguageInterface;
+use Macroactive\Cldr\Territory\TerritoryInterface;
 use PHPUnit\Framework\TestCase;
 
 /**

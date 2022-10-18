@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryNe;
+use Macroactive\Cldr\Territory\TerritoryNe;
 
 /**
  * Class LanguageTwq - Representation of the Tasawaq language.

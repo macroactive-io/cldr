@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptDeva;
-use Fisharebest\Localization\Territory\TerritoryNp;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptDeva;
+use Macroactive\Cldr\Territory\TerritoryNp;
 
 /**
  * Class LanguageNe - Representation of the Nepali language.

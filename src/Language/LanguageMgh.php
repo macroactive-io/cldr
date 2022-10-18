@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryMz;
+use Macroactive\Cldr\Territory\TerritoryMz;
 
 /**
  * Class LanguageMgh - Representation of the Makhuwa-Meetto language.

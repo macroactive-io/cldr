@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryTz;
+use Macroactive\Cldr\Territory\TerritoryTz;
 
 /**
  * Class LanguageSbp - Representation of the Sangu (Tanzania) language.

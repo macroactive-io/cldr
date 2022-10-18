@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule13;
-use Fisharebest\Localization\Territory\TerritoryMt;
+use Macroactive\Cldr\PluralRule\PluralRule13;
+use Macroactive\Cldr\Territory\TerritoryMt;
 
 /**
  * Class LanguageMt - Representation of the Maltese language.

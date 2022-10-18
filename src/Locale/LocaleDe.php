@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageDe;
-use Fisharebest\Localization\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageDe;
+use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleDe - German

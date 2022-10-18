@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptNkoo;
-use Fisharebest\Localization\Territory\TerritoryGn;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptNkoo;
+use Macroactive\Cldr\Territory\TerritoryGn;
 
 /**
  * Class LanguageNqo - Representation of the N’Ko language.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryCm;
+use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
  * Class LanguageMua - Representation of the Mundang language.

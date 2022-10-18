@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule15;
-use Fisharebest\Localization\Script\ScriptCyrl;
+use Macroactive\Cldr\PluralRule\PluralRule15;
+use Macroactive\Cldr\Script\ScriptCyrl;
 use PHPUnit\Framework\TestCase;
 
 /**

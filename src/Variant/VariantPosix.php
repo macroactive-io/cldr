@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Variant;
+namespace Macroactive\Cldr\Variant;
 
 /**
  * Class Posix - Representation of the Posix variant of en-US.

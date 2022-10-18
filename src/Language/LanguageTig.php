@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptEthi;
-use Fisharebest\Localization\Territory\TerritoryEr;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptEthi;
+use Macroactive\Cldr\Territory\TerritoryEr;
 
 /**
  * Class LanguageTif - Representation of the Tigre language.

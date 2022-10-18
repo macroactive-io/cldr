@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Territory\TerritoryBl;
+use Macroactive\Cldr\Territory\TerritoryBl;
 
 /**
  * Class LocaleFrBl

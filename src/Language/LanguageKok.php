@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Script\ScriptDeva;
-use Fisharebest\Localization\Territory\TerritoryIn;
+use Macroactive\Cldr\Script\ScriptDeva;
+use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageKok - Representation of the Konkani language.

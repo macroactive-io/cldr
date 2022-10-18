@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageInterface;
-use Fisharebest\Localization\PluralRule\PluralRuleInterface;
-use Fisharebest\Localization\Script\ScriptDirection;
-use Fisharebest\Localization\Script\ScriptInterface;
-use Fisharebest\Localization\Territory\TerritoryInterface;
-use Fisharebest\Localization\Variant\VariantInterface;
+use Macroactive\Cldr\Language\LanguageInterface;
+use Macroactive\Cldr\PluralRule\PluralRuleInterface;
+use Macroactive\Cldr\Script\ScriptDirection;
+use Macroactive\Cldr\Script\ScriptInterface;
+use Macroactive\Cldr\Territory\TerritoryInterface;
+use Macroactive\Cldr\Variant\VariantInterface;
 use function assert;
 use function count;
 use function explode;

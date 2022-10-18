@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule15;
-use Fisharebest\Localization\Territory\TerritoryIs;
+use Macroactive\Cldr\PluralRule\PluralRule15;
+use Macroactive\Cldr\Territory\TerritoryIs;
 
 /**
  * Class LanguageIs - Representation of the Icelandic language.

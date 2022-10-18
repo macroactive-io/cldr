@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryMl;
+use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
  * Class LanguageKhq - Representation of the Koyra Chiini Songhay language.

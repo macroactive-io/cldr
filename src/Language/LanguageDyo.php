@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritorySn;
+use Macroactive\Cldr\Territory\TerritorySn;
 
 /**
  * Class LanguageDyo - Representation of the Jola-Fonyi language.

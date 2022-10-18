@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule10;
-use Fisharebest\Localization\Territory\TerritoryDe;
+use Macroactive\Cldr\PluralRule\PluralRule10;
+use Macroactive\Cldr\Territory\TerritoryDe;
 
 /**
  * Class LanguageHsb - Representation of the Upper Sorbian language.

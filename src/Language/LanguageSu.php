@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptSund;
-use Fisharebest\Localization\Territory\TerritoryId;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptSund;
+use Macroactive\Cldr\Territory\TerritoryId;
 
 /**
  * Class LanguageSu - Representation of the Sotho language.

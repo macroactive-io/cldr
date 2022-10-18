@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule11;
-use Fisharebest\Localization\Territory\TerritoryIe;
+use Macroactive\Cldr\PluralRule\PluralRule11;
+use Macroactive\Cldr\Territory\TerritoryIe;
 
 /**
  * Class LanguageGa - Representation of the Irish language.

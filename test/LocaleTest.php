@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
 use DomainException;
-use Fisharebest\Localization\Locale\LocaleEnAu;
-use Fisharebest\Localization\Locale\LocaleEnGb;
-use Fisharebest\Localization\Locale\LocaleEnUs;
+use Macroactive\Cldr\Locale\LocaleEnAu;
+use Macroactive\Cldr\Locale\LocaleEnGb;
+use Macroactive\Cldr\Locale\LocaleEnUs;
 use PHPUnit\Framework\TestCase;
 
 /**

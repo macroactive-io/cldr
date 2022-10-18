@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleInterface;
-use Fisharebest\Localization\PluralRule\PluralRuleUnknown;
-use Fisharebest\Localization\Script\ScriptInterface;
-use Fisharebest\Localization\Script\ScriptLatn;
-use Fisharebest\Localization\Territory\Territory001;
-use Fisharebest\Localization\Territory\TerritoryInterface;
+use Macroactive\Cldr\PluralRule\PluralRuleInterface;
+use Macroactive\Cldr\PluralRule\PluralRuleUnknown;
+use Macroactive\Cldr\Script\ScriptInterface;
+use Macroactive\Cldr\Script\ScriptLatn;
+use Macroactive\Cldr\Territory\Territory001;
+use Macroactive\Cldr\Territory\TerritoryInterface;
 
 /** @psalm-immutable */
 abstract class AbstractLanguage implements LanguageInterface

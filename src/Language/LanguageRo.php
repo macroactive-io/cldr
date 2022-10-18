@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule5;
-use Fisharebest\Localization\Territory\TerritoryRo;
+use Macroactive\Cldr\PluralRule\PluralRule5;
+use Macroactive\Cldr\Territory\TerritoryRo;
 
 /**
  * Class LanguageRo - Representation of the Romanian language.

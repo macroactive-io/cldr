@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule9;
-use Fisharebest\Localization\Territory\TerritoryPl;
+use Macroactive\Cldr\PluralRule\PluralRule9;
+use Macroactive\Cldr\Territory\TerritoryPl;
 
 /**
  * Class LanguagePl - Representation of the Polish language.

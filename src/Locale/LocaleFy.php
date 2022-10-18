@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageFy;
-use Fisharebest\Localization\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageFy;
+use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleFy - Western Frisian

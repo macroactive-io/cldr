@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule2;
-use Fisharebest\Localization\Script\ScriptArmn;
-use Fisharebest\Localization\Territory\TerritoryAm;
+use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Script\ScriptArmn;
+use Macroactive\Cldr\Territory\TerritoryAm;
 
 /**
  * Class LanguageHy - Representation of the Armenian language.

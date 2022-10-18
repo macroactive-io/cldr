@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleManx;
-use Fisharebest\Localization\Territory\TerritoryIm;
+use Macroactive\Cldr\PluralRule\PluralRuleManx;
+use Macroactive\Cldr\Territory\TerritoryIm;
 
 /**
  * Class LanguageGv - Representation of the Manx language.

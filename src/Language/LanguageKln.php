@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryKe;
+use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
  * Class LanguageKln - Representation of the Kalenjin language.

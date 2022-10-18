@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptKore;
-use Fisharebest\Localization\Territory\TerritoryKr;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptKore;
+use Macroactive\Cldr\Territory\TerritoryKr;
 
 /**
  * Class LanguageKo - Representation of the Korean language.

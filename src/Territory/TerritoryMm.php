@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Territory;
+namespace Macroactive\Cldr\Territory;
 
 /**
  * Class AbstractTerritory - Representation of the territory MM - Myanmar.

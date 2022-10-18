@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleCornish;
-use Fisharebest\Localization\Territory\TerritoryGb;
+use Macroactive\Cldr\PluralRule\PluralRuleCornish;
+use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
  * Class LanguageKw - Representation of the Cornish language.

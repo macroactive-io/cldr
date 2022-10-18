@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
 use DomainException;
-use Fisharebest\Localization\Locale\LocaleInterface;
+use Macroactive\Cldr\Locale\LocaleInterface;
 use function array_combine;
 use function array_key_exists;
 use function array_keys;

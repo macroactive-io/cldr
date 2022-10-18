@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Territory\TerritoryMy;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Territory\TerritoryMy;
 
 /**
  * Class LanguageMs - Representation of the Malay language.

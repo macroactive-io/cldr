@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageMo;
-use Fisharebest\Localization\PluralRule\PluralRule5;
-use Fisharebest\Localization\Script\ScriptLatn;
-use Fisharebest\Localization\Territory\TerritoryMd;
+use Macroactive\Cldr\Language\LanguageMo;
+use Macroactive\Cldr\PluralRule\PluralRule5;
+use Macroactive\Cldr\Script\ScriptLatn;
+use Macroactive\Cldr\Territory\TerritoryMd;
 use PHPUnit\Framework\TestCase;
 
 /**

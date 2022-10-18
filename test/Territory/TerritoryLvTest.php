@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Territory;
+namespace Macroactive\Cldr\Territory;
 
 use PHPUnit\Framework\TestCase;
 

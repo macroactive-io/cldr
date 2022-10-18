@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryCm;
+use Macroactive\Cldr\Territory\TerritoryCm;
 
 /**
  * Class LanguageYav - Representation of the Yangben language.

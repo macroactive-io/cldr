@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Locale;
+namespace Macroactive\Cldr\Locale;
 
-use Fisharebest\Localization\Language\LanguageDyo;
-use Fisharebest\Localization\Language\LanguageInterface;
+use Macroactive\Cldr\Language\LanguageDyo;
+use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleDyo - Jola-Fonyi

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Territory;
+namespace Macroactive\Cldr\Territory;
 
 /**
  * Interface TerritoryInterface - Representation of a geographic area.

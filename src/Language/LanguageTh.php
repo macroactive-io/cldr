@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptThai;
-use Fisharebest\Localization\Territory\TerritoryTh;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptThai;
+use Macroactive\Cldr\Territory\TerritoryTh;
 
 /**
  * Class LanguageTh - Representation of the Thai language.

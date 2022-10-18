@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Script;
+namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptHrkt - Representation of the Japanese syllabaries (alias for Hiragana + Katakana) script.

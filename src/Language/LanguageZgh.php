@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryMa;
+use Macroactive\Cldr\Territory\TerritoryMa;
 
 /**
  * Class LanguageZgh - Representation of the Standard Moroccan Tamazight language.

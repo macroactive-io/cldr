@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Script\ScriptGrek;
-use Fisharebest\Localization\Territory\TerritoryGr;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Script\ScriptGrek;
+use Macroactive\Cldr\Territory\TerritoryGr;
 
 /**
  * Class LanguageEl - Representation of the Modern Greek (1453-) language.

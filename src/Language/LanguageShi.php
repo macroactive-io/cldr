@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleTachelhit;
-use Fisharebest\Localization\Script\ScriptTfng;
-use Fisharebest\Localization\Territory\TerritoryMa;
+use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
+use Macroactive\Cldr\Script\ScriptTfng;
+use Macroactive\Cldr\Territory\TerritoryMa;
 
 /**
  * Class LanguageShi - Representation of the Tachelhit language.

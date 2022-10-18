@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization;
+namespace Macroactive\Cldr;
 
-use Fisharebest\Localization\Script\ScriptInterface;
+use Macroactive\Cldr\Script\ScriptInterface;
 use PHPUnit\Framework\TestCase;
 
 /**

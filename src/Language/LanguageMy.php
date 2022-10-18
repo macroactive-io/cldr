@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptMymr;
-use Fisharebest\Localization\Territory\TerritoryMm;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptMymr;
+use Macroactive\Cldr\Territory\TerritoryMm;
 
 /**
  * Class LanguageMy - Representation of the Burmese language.

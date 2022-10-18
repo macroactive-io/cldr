@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule6;
-use Fisharebest\Localization\Territory\TerritoryLt;
+use Macroactive\Cldr\PluralRule\PluralRule6;
+use Macroactive\Cldr\Territory\TerritoryLt;
 
 /**
  * Class LanguageLt - Representation of the Lithuanian language.

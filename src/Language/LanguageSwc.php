@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryCd;
+use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
  * Class LanguageSwc - Representation of the Congo Swahili language.

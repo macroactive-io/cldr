@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\Territory\TerritoryCd;
+use Macroactive\Cldr\Territory\TerritoryCd;
 
 /**
  * Class LanguageLu - Representation of the Luba-Katanga language.

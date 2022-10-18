@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule0;
-use Fisharebest\Localization\Script\ScriptJpan;
-use Fisharebest\Localization\Territory\TerritoryJp;
+use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Script\ScriptJpan;
+use Macroactive\Cldr\Territory\TerritoryJp;
 
 /**
  * Class LanguageJa - Representation of the Japanese language.

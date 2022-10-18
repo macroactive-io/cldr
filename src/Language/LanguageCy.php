@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRuleWelsh;
-use Fisharebest\Localization\Territory\TerritoryGb;
+use Macroactive\Cldr\PluralRule\PluralRuleWelsh;
+use Macroactive\Cldr\Territory\TerritoryGb;
 
 /**
  * Class LanguageCy - Representation of the Welsh language.

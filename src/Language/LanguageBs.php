@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule7;
-use Fisharebest\Localization\Territory\TerritoryBa;
+use Macroactive\Cldr\PluralRule\PluralRule7;
+use Macroactive\Cldr\Territory\TerritoryBa;
 
 /**
  * Class LanguageBs - Representation of the Bosnian language.

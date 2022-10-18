@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule1;
-use Fisharebest\Localization\Territory\TerritoryZa;
+use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Territory\TerritoryZa;
 
 /**
  * Class LanguageAf - Representation of the Afrikaans language.

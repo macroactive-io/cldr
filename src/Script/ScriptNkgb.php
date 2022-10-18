@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Script;
+namespace Macroactive\Cldr\Script;
 
 /**
  * Class ScriptNkgb - Representation of the Nakhi Geba ('Na-'Khi ²Ggŏ-¹baw, Naxi Geba) script.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Fisharebest\Localization\Language;
+namespace Macroactive\Cldr\Language;
 
-use Fisharebest\Localization\PluralRule\PluralRule12;
-use Fisharebest\Localization\Script\ScriptArab;
+use Macroactive\Cldr\PluralRule\PluralRule12;
+use Macroactive\Cldr\Script\ScriptArab;
 use PHPUnit\Framework\TestCase;
 
 /**
