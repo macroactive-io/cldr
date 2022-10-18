@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPh;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFilPh class
- *
- * @coversNothing
- */
 class LocaleFilPhTest extends TestCase
 {
     /**

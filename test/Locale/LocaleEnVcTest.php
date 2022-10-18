@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryVc;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnVc class
- *
- * @coversNothing
- */
 class LocaleEnVcTest extends TestCase
 {
     /**

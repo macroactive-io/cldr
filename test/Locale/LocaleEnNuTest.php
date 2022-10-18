@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNu;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnNu class
- *
- * @coversNothing
- */
 class LocaleEnNuTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFfLatnMr class
- *
- * @coversNothing
- */
 class LocaleFfLatnMrTest extends TestCase
 {
     /**

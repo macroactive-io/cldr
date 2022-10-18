@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryMe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSrCyrlMe class
- *
- * @coversNothing
- */
 class LocaleSrCyrlMeTest extends TestCase
 {
     /**

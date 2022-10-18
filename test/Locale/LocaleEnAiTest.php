@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnAi class
- *
- * @coversNothing
- */
 class LocaleEnAiTest extends TestCase
 {
     /**

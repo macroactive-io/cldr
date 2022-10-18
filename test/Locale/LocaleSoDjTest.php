@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDj;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSoDj class
- *
- * @coversNothing
- */
 class LocaleSoDjTest extends TestCase
 {
     /**

@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDj;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleAaDj class
- *
- * @coversNothing
- */
 class LocaleAaDjTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\Territory001;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleYi class
- *
- * @coversNothing
- */
 class LocaleYiTest extends TestCase
 {
     /**

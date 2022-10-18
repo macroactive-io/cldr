@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleOsGe class
- *
- * @coversNothing
- */
 class LocaleOsGeTest extends TestCase
 {
     /**

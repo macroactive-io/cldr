@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptThaa;
 use Macroactive\Cldr\Territory\TerritoryMv;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleDv class
- *
- * @coversNothing
- */
 class LocaleDvTest extends TestCase
 {
     /**

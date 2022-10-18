@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEc;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleQuEc class
- *
- * @coversNothing
- */
 class LocaleQuEcTest extends TestCase
 {
     /**

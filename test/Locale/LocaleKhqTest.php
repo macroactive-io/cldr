@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMl;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKhq class
- *
- * @coversNothing
- */
 class LocaleKhqTest extends TestCase
 {
     /**

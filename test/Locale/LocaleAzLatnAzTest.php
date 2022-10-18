@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAz;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleAzLatnAz class
- *
- * @coversNothing
- */
 class LocaleAzLatnAzTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptNkoo;
 use Macroactive\Cldr\Territory\TerritoryGn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleNqo class
- *
- * @coversNothing
- */
 class LocaleNqoTest extends TestCase
 {
     /**

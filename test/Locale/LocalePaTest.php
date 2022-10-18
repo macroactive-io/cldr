@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptGuru;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocalePa class
- *
- * @coversNothing
- */
 class LocalePaTest extends TestCase
 {
     /**

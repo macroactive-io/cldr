@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptGeor;
 use Macroactive\Cldr\Territory\TerritoryGe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKa class
- *
- * @coversNothing
- */
 class LocaleKaTest extends TestCase
 {
     /**

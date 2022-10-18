@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSsZa class
- *
- * @coversNothing
- */
 class LocaleSsZaTest extends TestCase
 {
     /**

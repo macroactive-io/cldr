@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEsPa class
- *
- * @coversNothing
- */
 class LocaleEsPaTest extends TestCase
 {
     /**

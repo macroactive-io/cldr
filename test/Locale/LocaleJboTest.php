@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\Territory001;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocalePap class
- *
- * @coversNothing
- */
 class LocaleJboTest extends TestCase
 {
     /**

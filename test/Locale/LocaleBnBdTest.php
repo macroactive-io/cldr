@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptBeng;
 use Macroactive\Cldr\Territory\TerritoryBd;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleBnBd class
- *
- * @coversNothing
- */
 class LocaleBnBdTest extends TestCase
 {
     /**

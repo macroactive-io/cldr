@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryBa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleBsCyrlBa class
- *
- * @coversNothing
- */
 class LocaleBsCyrlBaTest extends TestCase
 {
     /**

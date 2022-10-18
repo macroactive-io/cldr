@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGw;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocalePtGw class
- *
- * @coversNothing
- */
 class LocalePtGwTest extends TestCase
 {
     /**

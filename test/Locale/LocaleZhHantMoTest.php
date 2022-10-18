@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptHant;
 use Macroactive\Cldr\Territory\TerritoryMo;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleZhHantMo class
- *
- * @coversNothing
- */
 class LocaleZhHantMoTest extends TestCase
 {
     /**

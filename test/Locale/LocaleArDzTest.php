@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryDz;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArDz class
- *
- * @coversNothing
- */
 class LocaleArDzTest extends TestCase
 {
     /**

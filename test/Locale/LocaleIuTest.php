@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCans;
 use Macroactive\Cldr\Territory\TerritoryCa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleIu class
- *
- * @coversNothing
- */
 class LocaleIuTest extends TestCase
 {
     /**

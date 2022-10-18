@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIq;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArIq class
- *
- * @coversNothing
- */
 class LocaleArIqTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGq;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEsGq class
- *
- * @coversNothing
- */
 class LocaleEsGqTest extends TestCase
 {
     /**

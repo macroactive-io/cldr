@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptTaml;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTaIn class
- *
- * @coversNothing
- */
 class LocaleTaInTest extends TestCase
 {
     /**

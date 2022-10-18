@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptTfng;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleShi class
- *
- * @coversNothing
- */
 class LocaleShiTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryRw;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleRwRw class
- *
- * @coversNothing
- */
 class LocaleRwRwTest extends TestCase
 {
     /**

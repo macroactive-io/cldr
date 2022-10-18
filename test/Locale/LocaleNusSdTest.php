@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySd;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleNusSd class
- *
- * @coversNothing
- */
 class LocaleNusSdTest extends TestCase
 {
     /**

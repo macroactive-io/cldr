@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCv;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKeaCv class
- *
- * @coversNothing
- */
 class LocaleKeaCvTest extends TestCase
 {
     /**

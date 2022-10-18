@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnKi class
- *
- * @coversNothing
- */
 class LocaleEnKiTest extends TestCase
 {
     /**

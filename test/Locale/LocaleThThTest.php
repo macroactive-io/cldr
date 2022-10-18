@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptThai;
 use Macroactive\Cldr\Territory\TerritoryTh;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleThTh class
- *
- * @coversNothing
- */
 class LocaleThThTest extends TestCase
 {
     /**

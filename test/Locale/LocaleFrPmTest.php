@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFrPm class
- *
- * @coversNothing
- */
 class LocaleFrPmTest extends TestCase
 {
     /**

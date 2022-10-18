@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCz;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleCsCz class
- *
- * @coversNothing
- */
 class LocaleCsCzTest extends TestCase
 {
     /**

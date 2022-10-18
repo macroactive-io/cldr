@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptGrek;
 use Macroactive\Cldr\Territory\TerritoryCy;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleElCy class
- *
- * @coversNothing
- */
 class LocaleElCyTest extends TestCase
 {
     /**

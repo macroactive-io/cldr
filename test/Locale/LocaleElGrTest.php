@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptGrek;
 use Macroactive\Cldr\Territory\TerritoryGr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleElGr class
- *
- * @coversNothing
- */
 class LocaleElGrTest extends TestCase
 {
     /**

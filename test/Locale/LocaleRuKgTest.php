@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryKg;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleRuKg class
- *
- * @coversNothing
- */
 class LocaleRuKgTest extends TestCase
 {
     /**

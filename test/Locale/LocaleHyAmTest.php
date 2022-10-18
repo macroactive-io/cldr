@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArmn;
 use Macroactive\Cldr\Territory\TerritoryAm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleHyAm class
- *
- * @coversNothing
- */
 class LocaleHyAmTest extends TestCase
 {
     /**

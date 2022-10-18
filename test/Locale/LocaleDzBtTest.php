@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptTibt;
 use Macroactive\Cldr\Territory\TerritoryBt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleDzBt class
- *
- * @coversNothing
- */
 class LocaleDzBtTest extends TestCase
 {
     /**

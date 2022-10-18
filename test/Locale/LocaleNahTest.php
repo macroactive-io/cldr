@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMx;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleNah class
- *
- * @coversNothing
- */
 class LocaleNahTest extends TestCase
 {
     /**

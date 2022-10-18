@@ -7,6 +7,7 @@ namespace Macroactive\Cldr;
 use Exception;
 use Macroactive\Cldr\Script\ScriptDirection;
 use PHPUnit\Framework\TestCase;
+use SimpleXMLElement;
 
 use function array_slice;
 use function basename;
@@ -30,7 +31,7 @@ use function strtr;
  */
 class CldrTest extends TestCase
 {
-    /** @var array<string, array<string, \SimpleXMLElement>> */
+    /** @var array<string, array<string, SimpleXMLElement>> */
     private static array $cachedXmls = [];
 
     /**
@@ -189,7 +190,7 @@ class CldrTest extends TestCase
 
         if (null === $xml) {
             self::$cachedXmls[$locale][$file] = simplexml_load_file($file);
-            $xml = self::$cachedXmls[$locale][$file];
+            $xml                              = self::$cachedXmls[$locale][$file];
         }
 
         return $xml->xpath($xpath);

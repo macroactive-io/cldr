@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryAf;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFaAf class
- *
- * @coversNothing
- */
 class LocaleFaAfTest extends TestCase
 {
     /**

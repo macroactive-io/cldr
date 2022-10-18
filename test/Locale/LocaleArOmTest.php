@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryOm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArOm class
- *
- * @coversNothing
- */
 class LocaleArOmTest extends TestCase
 {
     /**

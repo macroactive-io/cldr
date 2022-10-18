@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKokIn class
- *
- * @coversNothing
- */
 class LocaleKokInTest extends TestCase
 {
     /**

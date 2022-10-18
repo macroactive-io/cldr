@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\Territory029;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocalePap class
- *
- * @coversNothing
- */
 class LocalePapTest extends TestCase
 {
     /**

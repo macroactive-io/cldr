@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCh;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleRm class
- *
- * @coversNothing
- */
 class LocaleRmTest extends TestCase
 {
     /**

@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleDuaCm class
- *
- * @coversNothing
- */
 class LocaleDuaCmTest extends TestCase
 {
     /**

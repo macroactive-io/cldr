@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBo;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleQuBo class
- *
- * @coversNothing
- */
 class LocaleQuBoTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleDeAt class
- *
- * @coversNothing
- */
 class LocaleDeAtTest extends TestCase
 {
     /**

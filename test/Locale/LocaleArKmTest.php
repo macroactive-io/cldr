@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryKm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArKm class
- *
- * @coversNothing
- */
 class LocaleArKmTest extends TestCase
 {
     /**

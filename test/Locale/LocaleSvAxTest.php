@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAx;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSvAx class
- *
- * @coversNothing
- */
 class LocaleSvAxTest extends TestCase
 {
     /**

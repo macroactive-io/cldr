@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKshDe class
- *
- * @coversNothing
- */
 class LocaleKshDeTest extends TestCase
 {
     /**

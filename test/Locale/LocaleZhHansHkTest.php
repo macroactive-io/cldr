@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptHans;
 use Macroactive\Cldr\Territory\TerritoryHk;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleZhHansHk class
- *
- * @coversNothing
- */
 class LocaleZhHansHkTest extends TestCase
 {
     /**

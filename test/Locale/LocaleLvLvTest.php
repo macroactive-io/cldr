@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryLv;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleLvLv class
- *
- * @coversNothing
- */
 class LocaleLvLvTest extends TestCase
 {
     /**

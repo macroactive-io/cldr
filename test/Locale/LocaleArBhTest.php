@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryBh;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArBh class
- *
- * @coversNothing
- */
 class LocaleArBhTest extends TestCase
 {
     /**

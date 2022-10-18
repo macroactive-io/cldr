@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleZghMa class
- *
- * @coversNothing
- */
 class LocaleZghMaTest extends TestCase
 {
     /**

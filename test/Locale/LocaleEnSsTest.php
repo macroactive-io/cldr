@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySs;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnSs class
- *
- * @coversNothing
- */
 class LocaleEnSsTest extends TestCase
 {
     /**

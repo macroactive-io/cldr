@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleOmEt class
- *
- * @coversNothing
- */
 class LocaleOmEtTest extends TestCase
 {
     /**

@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleRn class
- *
- * @coversNothing
- */
 class LocaleRnTest extends TestCase
 {
     /**

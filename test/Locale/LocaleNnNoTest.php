@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNo;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleNnNo class
- *
- * @coversNothing
- */
 class LocaleNnNoTest extends TestCase
 {
     /**

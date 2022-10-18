@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPy;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEsPy class
- *
- * @coversNothing
- */
 class LocaleEsPyTest extends TestCase
 {
     /**

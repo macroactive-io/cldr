@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryTm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTk class
- *
- * @coversNothing
- */
 class LocaleTkArabTest extends TestCase
 {
     /**

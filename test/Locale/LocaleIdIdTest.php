@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryId;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleIdId class
- *
- * @coversNothing
- */
 class LocaleIdIdTest extends TestCase
 {
     /**

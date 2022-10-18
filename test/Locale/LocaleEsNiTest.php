@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEsNi class
- *
- * @coversNothing
- */
 class LocaleEsNiTest extends TestCase
 {
     /**

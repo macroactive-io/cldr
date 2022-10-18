@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTwqNe class
- *
- * @coversNothing
- */
 class LocaleTwqNeTest extends TestCase
 {
     /**

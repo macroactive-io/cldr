@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryPs;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArPs class
- *
- * @coversNothing
- */
 class LocaleArPsTest extends TestCase
 {
     /**

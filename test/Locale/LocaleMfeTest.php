@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMu;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleMfe class
- *
- * @coversNothing
- */
 class LocaleMfeTest extends TestCase
 {
     /**

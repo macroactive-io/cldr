@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCd;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSwCd class
- *
- * @coversNothing
- */
 class LocaleSwCdTest extends TestCase
 {
     /**

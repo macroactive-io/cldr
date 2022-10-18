@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFrKm class
- *
- * @coversNothing
- */
 class LocaleFrKmTest extends TestCase
 {
     /**

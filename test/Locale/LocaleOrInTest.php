@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptOrya;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleOrIn class
- *
- * @coversNothing
- */
 class LocaleOrInTest extends TestCase
 {
     /**

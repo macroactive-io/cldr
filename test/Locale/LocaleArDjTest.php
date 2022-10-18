@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryDj;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleArDj class
- *
- * @coversNothing
- */
 class LocaleArDjTest extends TestCase
 {
     /**

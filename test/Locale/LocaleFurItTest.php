@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFurIt class
- *
- * @coversNothing
- */
 class LocaleFurItTest extends TestCase
 {
     /**

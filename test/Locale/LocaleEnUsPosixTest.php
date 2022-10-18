@@ -11,11 +11,6 @@ use Macroactive\Cldr\Territory\TerritoryUs;
 use Macroactive\Cldr\Variant\VariantPosix;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnUsPosix class
- *
- * @coversNothing
- */
 class LocaleEnUsPosixTest extends TestCase
 {
     /**

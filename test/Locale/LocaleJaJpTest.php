@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptJpan;
 use Macroactive\Cldr\Territory\TerritoryJp;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleJaJp class
- *
- * @coversNothing
- */
 class LocaleJaJpTest extends TestCase
 {
     /**

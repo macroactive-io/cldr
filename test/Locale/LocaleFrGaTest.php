@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFrGa class
- *
- * @coversNothing
- */
 class LocaleFrGaTest extends TestCase
 {
     /**

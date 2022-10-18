@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryUg;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTeo class
- *
- * @coversNothing
- */
 class LocaleTeoTest extends TestCase
 {
     /**

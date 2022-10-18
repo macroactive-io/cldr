@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryFi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleFi class
- *
- * @coversNothing
- */
 class LocaleFiTest extends TestCase
 {
     /**

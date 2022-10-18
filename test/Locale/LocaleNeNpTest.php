@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryNp;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleNeNp class
- *
- * @coversNothing
- */
 class LocaleNeNpTest extends TestCase
 {
     /**

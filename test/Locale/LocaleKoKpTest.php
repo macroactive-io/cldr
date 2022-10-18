@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptKore;
 use Macroactive\Cldr\Territory\TerritoryKp;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKoKp class
- *
- * @coversNothing
- */
 class LocaleKoKpTest extends TestCase
 {
     /**

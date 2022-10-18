@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryTz;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleRofTz class
- *
- * @coversNothing
- */
 class LocaleRofTzTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptJava;
 use Macroactive\Cldr\Territory\TerritoryId;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKo class
- *
- * @coversNothing
- */
 class LocaleJvTest extends TestCase
 {
     /**

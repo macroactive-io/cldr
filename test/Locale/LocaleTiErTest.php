@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptEthi;
 use Macroactive\Cldr\Territory\TerritoryEr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTiEr class
- *
- * @coversNothing
- */
 class LocaleTiErTest extends TestCase
 {
     /**

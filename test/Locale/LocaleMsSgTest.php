@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySg;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleMsSg class
- *
- * @coversNothing
- */
 class LocaleMsSgTest extends TestCase
 {
     /**

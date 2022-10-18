@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAg;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEnAg class
- *
- * @coversNothing
- */
 class LocaleEnAgTest extends TestCase
 {
     /**

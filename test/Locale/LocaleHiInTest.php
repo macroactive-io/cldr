@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleHiIn class
- *
- * @coversNothing
- */
 class LocaleHiInTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleGvIm class
- *
- * @coversNothing
- */
 class LocaleGvImTest extends TestCase
 {
     /**

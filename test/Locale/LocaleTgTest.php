@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryTj;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTg class
- *
- * @coversNothing
- */
 class LocaleTgTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAd;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleCaAd class
- *
- * @coversNothing
- */
 class LocaleCaAdTest extends TestCase
 {
     /**

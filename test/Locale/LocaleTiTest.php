@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptEthi;
 use Macroactive\Cldr\Territory\TerritoryEt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTi class
- *
- * @coversNothing
- */
 class LocaleTiTest extends TestCase
 {
     /**

@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGb;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKw class
- *
- * @coversNothing
- */
 class LocaleKwTest extends TestCase
 {
     /**

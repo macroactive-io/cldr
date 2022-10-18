@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleEsGt class
- *
- * @coversNothing
- */
 class LocaleEsGtTest extends TestCase
 {
     /**

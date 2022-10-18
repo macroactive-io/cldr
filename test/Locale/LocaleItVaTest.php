@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryVa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleItVa class
- *
- * @coversNothing
- */
 class LocaleItVaTest extends TestCase
 {
     /**

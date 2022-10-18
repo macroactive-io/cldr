@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptSyrc;
 use Macroactive\Cldr\Territory\TerritoryIq;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleTig class
- *
- * @coversNothing
- */
 class LocaleSyrTest extends TestCase
 {
     /**

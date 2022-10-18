@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryXk;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSqXk class
- *
- * @coversNothing
- */
 class LocaleSqXkTest extends TestCase
 {
     /**

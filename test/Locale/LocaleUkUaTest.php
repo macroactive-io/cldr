@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryUa;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleUkUa class
- *
- * @coversNothing
- */
 class LocaleUkUaTest extends TestCase
 {
     /**

@@ -11,11 +11,6 @@ use Macroactive\Cldr\Territory\TerritoryEs;
 use Macroactive\Cldr\Variant\VariantValencia;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleCaEsValencia class
- *
- * @coversNothing
- */
 class LocaleCaEsValenciaTest extends TestCase
 {
     /**

@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKe;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleGuzKe class
- *
- * @coversNothing
- */
 class LocaleGuzKeTest extends TestCase
 {
     /**

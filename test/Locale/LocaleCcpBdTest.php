@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptCakm;
 use Macroactive\Cldr\Territory\TerritoryBd;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleCcpBd class
- *
- * @coversNothing
- */
 class LocaleCcpBdTest extends TestCase
 {
     /**

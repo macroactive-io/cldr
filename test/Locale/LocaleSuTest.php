@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptSund;
 use Macroactive\Cldr\Territory\TerritoryId;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleSu class
- *
- * @coversNothing
- */
 class LocaleSuTest extends TestCase
 {
     /**

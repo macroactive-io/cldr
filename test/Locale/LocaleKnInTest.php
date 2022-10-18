@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptKnda;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleKnIn class
- *
- * @coversNothing
- */
 class LocaleKnInTest extends TestCase
 {
     /**

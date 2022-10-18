@@ -10,11 +10,6 @@ use Macroactive\Cldr\Script\ScriptGlag;
 use Macroactive\Cldr\Territory\TerritoryRu;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleCuGlag class
- *
- * @coversNothing
- */
 class LocaleCuGlagTest extends TestCase
 {
     /**

@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptVaii;
 use Macroactive\Cldr\Territory\TerritoryLr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleVaiVaii class
- *
- * @coversNothing
- */
 class LocaleVaiVaiiTest extends TestCase
 {
     /**

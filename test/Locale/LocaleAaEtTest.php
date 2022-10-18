@@ -9,11 +9,6 @@ use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LocaleAaEt class
- *
- * @coversNothing
- */
 class LocaleAaEtTest extends TestCase
 {
     /**
