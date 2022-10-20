@@ -6,16 +6,8 @@ namespace Macroactive\Cldr\Script;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the ScriptOgam class
- *
- * @coversNothing
- */
 class ScriptOgamTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $script = new ScriptOgam();

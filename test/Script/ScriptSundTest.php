@@ -6,16 +6,8 @@ namespace Macroactive\Cldr\Script;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the ScriptSund class
- *
- * @coversNothing
- */
 class ScriptSundTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $script = new ScriptSund();

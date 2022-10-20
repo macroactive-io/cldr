@@ -6,16 +6,8 @@ namespace Macroactive\Cldr\Script;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the ScriptZsym class
- *
- * @coversNothing
- */
 class ScriptZsymTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $script = new ScriptZsym();

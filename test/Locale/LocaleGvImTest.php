@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleGvImTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleGvIm();
 
-        self::assertEquals(new LanguageGv(), $locale->language());
-        self::assertEquals(new PluralRuleManx(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryIm(), $locale->territory());
+        self::assertSame(LanguageGv::class, $locale->language()::class);
+        self::assertSame(PluralRuleManx::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryIm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('gv_IM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

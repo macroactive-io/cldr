@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleGaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleGa();
 
-        self::assertEquals(new LanguageGa(), $locale->language());
-        self::assertEquals(new PluralRule11(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryIe(), $locale->territory());
+        self::assertSame(LanguageGa::class, $locale->language()::class);
+        self::assertSame(PluralRule11::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryIe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ga_IE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

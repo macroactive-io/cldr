@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleBemZmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleBemZm();
 
-        self::assertEquals(new LanguageBem(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryZm(), $locale->territory());
+        self::assertSame(LanguageBem::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryZm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('bem_ZM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

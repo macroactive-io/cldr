@@ -6,16 +6,8 @@ namespace Macroactive\Cldr\Territory;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the TerritoryZa class
- *
- * @coversNothing
- */
 class TerritoryZaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $territory = new TerritoryZa();

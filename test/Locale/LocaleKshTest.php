@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKshTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKsh();
 
-        self::assertEquals(new LanguageKsh(), $locale->language());
-        self::assertEquals(new PluralRuleZeroOneOther(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryDe(), $locale->territory());
+        self::assertSame(LanguageKsh::class, $locale->language()::class);
+        self::assertSame(PluralRuleZeroOneOther::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ksh_DE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptArab;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageUr class
- *
- * @coversNothing
- */
 class LanguageUrTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageUr();
 
-        self::assertEquals(new ScriptArab(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptArab::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('ur', $language->code());
     }
 }

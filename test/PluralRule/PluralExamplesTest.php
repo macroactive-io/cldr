@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Macroactive\Cldr\PluralRule;
+
+use PHPUnit\Framework\TestCase;
+
+class PluralRule0Test extends TestCase
+{
+    public function testNumberOfPluralForms(): void
+    {
+        $plural_rule = new PluralRule0();
+
+        self::assertSame(1, $plural_rule->plurals());
+    }
+
+    public function testPluralRules(): void
+    {
+        $plural_rule = new PluralRule0();
+
+        foreach ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as $n) {
+            self::assertSame(0, $plural_rule->plural($n));
+        }
+    }
+}

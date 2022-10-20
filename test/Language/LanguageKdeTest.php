@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageKde class
- *
- * @coversNothing
- */
 class LanguageKdeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageKde();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('kde', $language->code());
     }
 }

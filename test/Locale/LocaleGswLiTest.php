@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleGswLiTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleGswLi();
 
-        self::assertEquals(new LanguageGsw(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryLi(), $locale->territory());
+        self::assertSame(LanguageGsw::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryLi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('gsw_LI', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

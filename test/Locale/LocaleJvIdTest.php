@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleJvIdTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleJvId();
 
-        self::assertEquals(new LanguageJv(), $locale->language());
-        self::assertEquals(new PluralRule0(), $locale->pluralRule());
-        self::assertEquals(new ScriptJava(), $locale->script());
-        self::assertEquals(new TerritoryId(), $locale->territory());
+        self::assertSame(LanguageJv::class, $locale->language()::class);
+        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptJava::class, $locale->script()::class);
+        self::assertSame(TerritoryId::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('jv_ID', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

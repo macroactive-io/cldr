@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKamTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKam();
 
-        self::assertEquals(new LanguageKam(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryKe(), $locale->territory());
+        self::assertSame(LanguageKam::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kam_KE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

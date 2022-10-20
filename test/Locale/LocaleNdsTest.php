@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNdsTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNds();
 
-        self::assertEquals(new LanguageNds(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryDe(), $locale->territory());
+        self::assertSame(LanguageNds::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nds_DE', $locale->code());
         self::assertSame('german2_ci', $locale->collation());

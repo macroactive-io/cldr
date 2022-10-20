@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKhqTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKhq();
 
-        self::assertEquals(new LanguageKhq(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryMl(), $locale->territory());
+        self::assertSame(LanguageKhq::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryMl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('khq_ML', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

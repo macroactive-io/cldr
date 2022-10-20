@@ -13,18 +13,15 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleCaEsValenciaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleCaEsValencia();
 
-        self::assertEquals(new LanguageCa(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryEs(), $locale->territory());
-        self::assertEquals(new VariantValencia(), $locale->variant());
+        self::assertSame(LanguageCa::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryEs::class, $locale->territory()::class);
+        self::assertSame(VariantValencia::class, $locale->variant()::class);
         self::assertSame('ca_ES@valencia', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());
         self::assertSame('0123456789', $locale->digits('0123456789'));

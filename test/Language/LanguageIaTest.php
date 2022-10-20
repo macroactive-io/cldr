@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageIa class
- *
- * @coversNothing
- */
 class LanguageIaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageIa();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('ia', $language->code());
     }
 }

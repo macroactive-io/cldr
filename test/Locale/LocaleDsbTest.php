@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleDsbTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleDsb();
 
-        self::assertEquals(new LanguageDsb(), $locale->language());
-        self::assertEquals(new PluralRule10(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryDe(), $locale->territory());
+        self::assertSame(LanguageDsb::class, $locale->language()::class);
+        self::assertSame(PluralRule10::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dsb_DE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRuleCentralAtlasTamazight;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageTzm class
- *
- * @coversNothing
- */
 class LanguageTzmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageTzm();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRuleCentralAtlasTamazight(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRuleCentralAtlasTamazight::class, $language->pluralRule()::class);
         self::assertSame('tzm', $language->code());
     }
 }

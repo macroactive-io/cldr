@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKsfCmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKsfCm();
 
-        self::assertEquals(new LanguageKsf(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageKsf::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ksf_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

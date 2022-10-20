@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleEwoTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleEwo();
 
-        self::assertEquals(new LanguageEwo(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageEwo::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ewo_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

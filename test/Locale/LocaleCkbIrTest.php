@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleCkbIrTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleCkbIr();
 
-        self::assertEquals(new LanguageCkb(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptArab(), $locale->script());
-        self::assertEquals(new TerritoryIr(), $locale->territory());
+        self::assertSame(LanguageCkb::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptArab::class, $locale->script()::class);
+        self::assertSame(TerritoryIr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ckb_IR', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

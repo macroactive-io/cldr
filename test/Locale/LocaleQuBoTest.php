@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleQuBoTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleQuBo();
 
-        self::assertEquals(new LanguageQu(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryBo(), $locale->territory());
+        self::assertSame(LanguageQu::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryBo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('qu_BO', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

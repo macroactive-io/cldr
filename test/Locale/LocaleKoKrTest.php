@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKoKrTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKoKr();
 
-        self::assertEquals(new LanguageKo(), $locale->language());
-        self::assertEquals(new PluralRule0(), $locale->pluralRule());
-        self::assertEquals(new ScriptKore(), $locale->script());
-        self::assertEquals(new TerritoryKr(), $locale->territory());
+        self::assertSame(LanguageKo::class, $locale->language()::class);
+        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptKore::class, $locale->script()::class);
+        self::assertSame(TerritoryKr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ko_KR', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleAfNaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleAfNa();
 
-        self::assertEquals(new LanguageAf(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryNa(), $locale->territory());
+        self::assertSame(LanguageAf::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryNa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('af_NA', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

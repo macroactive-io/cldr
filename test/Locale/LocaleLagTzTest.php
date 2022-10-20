@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleLagTzTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleLagTz();
 
-        self::assertEquals(new LanguageLag(), $locale->language());
-        self::assertEquals(new PluralRuleZeroOneOther(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryTz(), $locale->territory());
+        self::assertSame(LanguageLag::class, $locale->language()::class);
+        self::assertSame(PluralRuleZeroOneOther::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryTz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('lag_TZ', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

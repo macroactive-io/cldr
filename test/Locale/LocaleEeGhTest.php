@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleEeGhTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleEeGh();
 
-        self::assertEquals(new LanguageEe(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryGh(), $locale->territory());
+        self::assertSame(LanguageEe::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryGh::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ee_GH', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

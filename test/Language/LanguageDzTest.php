@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptTibt;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageDz class
- *
- * @coversNothing
- */
 class LanguageDzTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageDz();
 
-        self::assertEquals(new ScriptTibt(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptTibt::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('dz', $language->code());
     }
 }

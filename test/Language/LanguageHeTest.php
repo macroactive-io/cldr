@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptHebr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageHe class
- *
- * @coversNothing
- */
 class LanguageHeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageHe();
 
-        self::assertEquals(new ScriptHebr(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptHebr::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('he', $language->code());
     }
 }

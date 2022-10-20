@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleArErTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleArEr();
 
-        self::assertEquals(new LanguageAr(), $locale->language());
-        self::assertEquals(new PluralRule12(), $locale->pluralRule());
-        self::assertEquals(new ScriptArab(), $locale->script());
-        self::assertEquals(new TerritoryEr(), $locale->territory());
+        self::assertSame(LanguageAr::class, $locale->language()::class);
+        self::assertSame(PluralRule12::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptArab::class, $locale->script()::class);
+        self::assertSame(TerritoryEr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ar_ER', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKokInTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKokIn();
 
-        self::assertEquals(new LanguageKok(), $locale->language());
-        self::assertEquals(new ScriptDeva(), $locale->script());
-        self::assertEquals(new TerritoryIn(), $locale->territory());
+        self::assertSame(LanguageKok::class, $locale->language()::class);
+        self::assertSame(ScriptDeva::class, $locale->script()::class);
+        self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kok_IN', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

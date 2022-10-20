@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptGujr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageGu class
- *
- * @coversNothing
- */
 class LanguageGuTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageGu();
 
-        self::assertEquals(new ScriptGujr(), $language->defaultScript());
-        self::assertEquals(new PluralRule2(), $language->pluralRule());
+        self::assertSame(ScriptGujr::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule2::class, $language->pluralRule()::class);
         self::assertSame('gu', $language->code());
     }
 }

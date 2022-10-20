@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptNkoo;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageNqo class
- *
- * @coversNothing
- */
 class LanguageNqoTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageNqo();
 
-        self::assertEquals(new ScriptNkoo(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptNkoo::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('nqo', $language->code());
     }
 }

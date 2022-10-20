@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule7;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageBs class
- *
- * @coversNothing
- */
 class LanguageBsTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageBs();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule7(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule7::class, $language->pluralRule()::class);
         self::assertSame('bs', $language->code());
     }
 }

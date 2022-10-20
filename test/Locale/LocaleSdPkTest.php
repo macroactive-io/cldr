@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSdPkTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSdPk();
 
-        self::assertEquals(new LanguageSd(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptArab(), $locale->script());
-        self::assertEquals(new TerritoryPk(), $locale->territory());
+        self::assertSame(LanguageSd::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptArab::class, $locale->script()::class);
+        self::assertSame(TerritoryPk::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sd_PK', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

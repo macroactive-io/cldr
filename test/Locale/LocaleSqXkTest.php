@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSqXkTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSqXk();
 
-        self::assertEquals(new LanguageSq(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryXk(), $locale->territory());
+        self::assertSame(LanguageSq::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryXk::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sq_XK', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

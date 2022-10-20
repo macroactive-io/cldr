@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleShiLatnMaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleShiLatnMa();
 
-        self::assertEquals(new LanguageShi(), $locale->language());
-        self::assertEquals(new PluralRuleTachelhit(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryMa(), $locale->territory());
+        self::assertSame(LanguageShi::class, $locale->language()::class);
+        self::assertSame(PluralRuleTachelhit::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryMa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('shi_MA@latin', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

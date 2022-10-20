@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule12;
 use Macroactive\Cldr\Script\ScriptArab;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageMzn class
- *
- * @coversNothing
- */
 class LanguageMznTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageMzn();
 
-        self::assertEquals(new ScriptArab(), $language->defaultScript());
-        self::assertEquals(new PluralRule12(), $language->pluralRule());
+        self::assertSame(ScriptArab::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule12::class, $language->pluralRule()::class);
         self::assertSame('mzn', $language->code());
     }
 }

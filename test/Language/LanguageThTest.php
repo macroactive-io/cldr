@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptThai;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageTh class
- *
- * @coversNothing
- */
 class LanguageThTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageTh();
 
-        self::assertEquals(new ScriptThai(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptThai::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('th', $language->code());
     }
 }

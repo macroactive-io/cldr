@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleOmEtTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleOmEt();
 
-        self::assertEquals(new LanguageOm(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryEt(), $locale->territory());
+        self::assertSame(LanguageOm::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryEt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('om_ET', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

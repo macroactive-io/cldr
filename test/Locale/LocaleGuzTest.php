@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleGuzTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleGuz();
 
-        self::assertEquals(new LanguageGuz(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryKe(), $locale->territory());
+        self::assertSame(LanguageGuz::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('guz_KE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

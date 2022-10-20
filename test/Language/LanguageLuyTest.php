@@ -7,21 +7,13 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageLuy class
- *
- * @coversNothing
- */
 class LanguageLuyTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageLuy();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
         self::assertSame('luy', $language->code());
     }
 }

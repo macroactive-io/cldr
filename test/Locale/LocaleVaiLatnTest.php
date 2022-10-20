@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleVaiLatnTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleVaiLatn();
 
-        self::assertEquals(new LanguageVai(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryLr(), $locale->territory());
+        self::assertSame(LanguageVai::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryLr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('unicode_ci', $locale->collation());
         self::assertSame('0123456789', $locale->digits('0123456789'));

@@ -6,16 +6,8 @@ namespace Macroactive\Cldr\Variant;
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the VariantPosix class
- *
- * @coversNothing
- */
 class VariantPosixTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $variant = new VariantPosix();

@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleAzTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleAz();
 
-        self::assertEquals(new LanguageAz(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryIr(), $locale->territory());
+        self::assertSame(LanguageAz::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryIr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('az_IR', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

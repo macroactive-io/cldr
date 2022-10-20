@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNaqTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNaq();
 
-        self::assertEquals(new LanguageNaq(), $locale->language());
-        self::assertEquals(new PluralRuleOneTwoOther(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryNa(), $locale->territory());
+        self::assertSame(LanguageNaq::class, $locale->language()::class);
+        self::assertSame(PluralRuleOneTwoOther::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryNa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('naq_NA', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

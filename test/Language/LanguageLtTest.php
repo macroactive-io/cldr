@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule6;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageLt class
- *
- * @coversNothing
- */
 class LanguageLtTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageLt();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule6(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule6::class, $language->pluralRule()::class);
         self::assertSame('lt', $language->code());
     }
 }

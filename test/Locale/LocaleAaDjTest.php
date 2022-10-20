@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleAaDjTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleAaDj();
 
-        self::assertEquals(new LanguageAa(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryDj(), $locale->territory());
+        self::assertSame(LanguageAa::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryDj::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('aa_DJ', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

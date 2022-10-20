@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKeaCvTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKeaCv();
 
-        self::assertEquals(new LanguageKea(), $locale->language());
-        self::assertEquals(new PluralRule0(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCv(), $locale->territory());
+        self::assertSame(LanguageKea::class, $locale->language()::class);
+        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCv::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kea_CV', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

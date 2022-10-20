@@ -7,21 +7,13 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageMua class
- *
- * @coversNothing
- */
 class LanguageMuaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageMua();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
         self::assertSame('mua', $language->code());
     }
 }

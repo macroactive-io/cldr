@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule9;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguagePl class
- *
- * @coversNothing
- */
 class LanguagePlTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguagePl();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule9(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule9::class, $language->pluralRule()::class);
         self::assertSame('pl', $language->code());
     }
 }

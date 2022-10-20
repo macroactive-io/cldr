@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleDyoSnTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleDyoSn();
 
-        self::assertEquals(new LanguageDyo(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritorySn(), $locale->territory());
+        self::assertSame(LanguageDyo::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritorySn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dyo_SN', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

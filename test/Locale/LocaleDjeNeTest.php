@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleDjeNeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleDjeNe();
 
-        self::assertEquals(new LanguageDje(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryNe(), $locale->territory());
+        self::assertSame(LanguageDje::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryNe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dje_NE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

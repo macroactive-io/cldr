@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule4;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageGd class
- *
- * @coversNothing
- */
 class LanguageGdTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageGd();
 
-        self::assertEquals(new ScriptLatn(), $language->defaultScript());
-        self::assertEquals(new PluralRule4(), $language->pluralRule());
+        self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule4::class, $language->pluralRule()::class);
         self::assertSame('gd', $language->code());
     }
 }

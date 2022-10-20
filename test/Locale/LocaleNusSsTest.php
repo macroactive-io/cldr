@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNusSsTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNusSs();
 
-        self::assertEquals(new LanguageNus(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritorySs(), $locale->territory());
+        self::assertSame(LanguageNus::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritorySs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nus_SS', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

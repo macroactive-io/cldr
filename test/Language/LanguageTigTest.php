@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptEthi;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageTig class
- *
- * @coversNothing
- */
 class LanguageTigTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageTig();
 
-        self::assertEquals(new ScriptEthi(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptEthi::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('tig', $language->code());
     }
 }

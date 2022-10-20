@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleRnBiTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleRnBi();
 
-        self::assertEquals(new LanguageRn(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryBi(), $locale->territory());
+        self::assertSame(LanguageRn::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryBi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('rn_BI', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

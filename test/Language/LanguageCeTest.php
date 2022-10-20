@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptCyrl;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageCe class
- *
- * @coversNothing
- */
 class LanguageCeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageCe();
 
-        self::assertEquals(new ScriptCyrl(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptCyrl::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('ce', $language->code());
     }
 }

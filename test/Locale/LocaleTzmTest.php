@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleTzmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleTzm();
 
-        self::assertEquals(new LanguageTzm(), $locale->language());
-        self::assertEquals(new PluralRuleCentralAtlasTamazight(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryMa(), $locale->territory());
+        self::assertSame(LanguageTzm::class, $locale->language()::class);
+        self::assertSame(PluralRuleCentralAtlasTamazight::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryMa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('unicode_ci', $locale->collation());
         self::assertSame('0123456789', $locale->digits('0123456789'));

@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSmjTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSmj();
 
-        self::assertEquals(new LanguageSmj(), $locale->language());
-        self::assertEquals(new PluralRuleOneTwoOther(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritorySe(), $locale->territory());
+        self::assertSame(LanguageSmj::class, $locale->language()::class);
+        self::assertSame(PluralRuleOneTwoOther::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritorySe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('smj_SE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

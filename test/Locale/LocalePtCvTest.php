@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocalePtCvTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocalePtCv();
 
-        self::assertEquals(new LanguagePt(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCv(), $locale->territory());
+        self::assertSame(LanguagePt::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCv::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('pt_CV', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSwcCdTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSwcCd();
 
-        self::assertEquals(new LanguageSwc(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCd(), $locale->territory());
+        self::assertSame(LanguageSwc::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCd::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('swc_CD', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

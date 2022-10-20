@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleJgoCmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleJgoCm();
 
-        self::assertEquals(new LanguageJgo(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageJgo::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('jgo_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

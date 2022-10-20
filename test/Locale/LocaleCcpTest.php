@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleCcpTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleCcp();
 
-        self::assertEquals(new LanguageCcp(), $locale->language());
-        self::assertEquals(new PluralRule0(), $locale->pluralRule());
-        self::assertEquals(new ScriptCakm(), $locale->script());
-        self::assertEquals(new TerritoryBd(), $locale->territory());
+        self::assertSame(LanguageCcp::class, $locale->language()::class);
+        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptCakm::class, $locale->script()::class);
+        self::assertSame(TerritoryBd::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ccp_BD', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

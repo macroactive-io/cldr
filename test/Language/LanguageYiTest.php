@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptHebr;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageYi class
- *
- * @coversNothing
- */
 class LanguageYiTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageYi();
 
-        self::assertEquals(new ScriptHebr(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptHebr::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('yi', $language->code());
     }
 }

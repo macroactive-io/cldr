@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleLrcIqTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleLrcIq();
 
-        self::assertEquals(new LanguageLrc(), $locale->language());
-        self::assertEquals(new PluralRule12(), $locale->pluralRule());
-        self::assertEquals(new ScriptArab(), $locale->script());
-        self::assertEquals(new TerritoryIq(), $locale->territory());
+        self::assertSame(LanguageLrc::class, $locale->language()::class);
+        self::assertSame(PluralRule12::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptArab::class, $locale->script()::class);
+        self::assertSame(TerritoryIq::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('lrc_IQ', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

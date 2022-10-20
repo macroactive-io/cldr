@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptTelu;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageTe class
- *
- * @coversNothing
- */
 class LanguageTeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageTe();
 
-        self::assertEquals(new ScriptTelu(), $language->defaultScript());
-        self::assertEquals(new PluralRule1(), $language->pluralRule());
+        self::assertSame(ScriptTelu::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('te', $language->code());
     }
 }

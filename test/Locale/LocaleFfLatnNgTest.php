@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleFfLatnNgTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleFfLatnNg();
 
-        self::assertEquals(new LanguageFf(), $locale->language());
-        self::assertEquals(new PluralRule2(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryNg(), $locale->territory());
+        self::assertSame(LanguageFf::class, $locale->language()::class);
+        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryNg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ff_NG', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

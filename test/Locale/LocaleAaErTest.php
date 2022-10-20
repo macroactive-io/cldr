@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleAaErTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleAaEr();
 
-        self::assertEquals(new LanguageAa(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryEr(), $locale->territory());
+        self::assertSame(LanguageAa::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryEr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('aa_ER', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

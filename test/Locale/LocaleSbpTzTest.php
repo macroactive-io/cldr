@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSbpTzTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSbpTz();
 
-        self::assertEquals(new LanguageSbp(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryTz(), $locale->territory());
+        self::assertSame(LanguageSbp::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryTz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sbp_TZ', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

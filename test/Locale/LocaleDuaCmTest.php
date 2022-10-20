@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleDuaCmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleDuaCm();
 
-        self::assertEquals(new LanguageDua(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageDua::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dua_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

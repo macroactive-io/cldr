@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptCakm;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageCcp class
- *
- * @coversNothing
- */
 class LanguageCcpTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageCcp();
 
-        self::assertEquals(new ScriptCakm(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptCakm::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('ccp', $language->code());
     }
 }

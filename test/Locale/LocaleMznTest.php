@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleMznTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleMzn();
 
-        self::assertEquals(new LanguageMzn(), $locale->language());
-        self::assertEquals(new PluralRule12(), $locale->pluralRule());
-        self::assertEquals(new ScriptArab(), $locale->script());
-        self::assertEquals(new TerritoryIr(), $locale->territory());
+        self::assertSame(LanguageMzn::class, $locale->language()::class);
+        self::assertSame(PluralRule12::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptArab::class, $locale->script()::class);
+        self::assertSame(TerritoryIr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mzn_IR', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

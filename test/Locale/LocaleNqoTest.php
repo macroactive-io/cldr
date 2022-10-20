@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNqoTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNqo();
 
-        self::assertEquals(new LanguageNqo(), $locale->language());
-        self::assertEquals(new PluralRule0(), $locale->pluralRule());
-        self::assertEquals(new ScriptNkoo(), $locale->script());
-        self::assertEquals(new TerritoryGn(), $locale->territory());
+        self::assertSame(LanguageNqo::class, $locale->language()::class);
+        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptNkoo::class, $locale->script()::class);
+        self::assertSame(TerritoryGn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nqo_GN', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

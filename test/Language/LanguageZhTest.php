@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptHans;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageZh class
- *
- * @coversNothing
- */
 class LanguageZhTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageZh();
 
-        self::assertEquals(new ScriptHans(), $language->defaultScript());
-        self::assertEquals(new PluralRule0(), $language->pluralRule());
+        self::assertSame(ScriptHans::class, $language->defaultScript()::class);
+        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('zh', $language->code());
     }
 }

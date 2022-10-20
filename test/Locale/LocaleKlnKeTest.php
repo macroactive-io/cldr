@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleKlnKeTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleKlnKe();
 
-        self::assertEquals(new LanguageKln(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryKe(), $locale->territory());
+        self::assertSame(LanguageKln::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kln_KE', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

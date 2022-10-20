@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleSrCyrlTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleSrCyrl();
 
-        self::assertEquals(new LanguageSr(), $locale->language());
-        self::assertEquals(new PluralRule7(), $locale->pluralRule());
-        self::assertEquals(new ScriptCyrl(), $locale->script());
-        self::assertEquals(new TerritoryRs(), $locale->territory());
+        self::assertSame(LanguageSr::class, $locale->language()::class);
+        self::assertSame(PluralRule7::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptCyrl::class, $locale->script()::class);
+        self::assertSame(TerritoryRs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sr_RS', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

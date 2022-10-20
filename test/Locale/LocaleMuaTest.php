@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleMuaTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleMua();
 
-        self::assertEquals(new LanguageMua(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageMua::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mua_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());

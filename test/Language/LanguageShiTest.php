@@ -8,22 +8,14 @@ use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
 use Macroactive\Cldr\Script\ScriptTfng;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the LanguageShi class
- *
- * @coversNothing
- */
 class LanguageShiTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $language = new LanguageShi();
 
-        self::assertEquals(new ScriptTfng(), $language->defaultScript());
-        self::assertEquals(new PluralRuleTachelhit(), $language->pluralRule());
+        self::assertSame(ScriptTfng::class, $language->defaultScript()::class);
+        self::assertSame(PluralRuleTachelhit::class, $language->pluralRule()::class);
         self::assertSame('shi', $language->code());
     }
 }

@@ -12,18 +12,15 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNnTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNn();
 
-        self::assertEquals(new LanguageNn(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryNo(), $locale->territory());
+        self::assertSame(LanguageNn::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryNo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nn_NO', $locale->code());
         self::assertSame('danish_ci', $locale->collation());

@@ -12,17 +12,14 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleDaGlTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleDaGl();
 
-        self::assertEquals(new LanguageDa(), $locale->language());
-        self::assertEquals(new PluralRule1(), $locale->pluralRule());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryGl(), $locale->territory());
+        self::assertSame(LanguageDa::class, $locale->language()::class);
+        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryGl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('da_GL', $locale->code());
         self::assertSame('danish_ci', $locale->collation());

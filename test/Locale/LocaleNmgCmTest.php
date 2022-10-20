@@ -11,16 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class LocaleNmgCmTest extends TestCase
 {
-    /**
-     * Test the properties
-     */
     public function testProperties(): void
     {
         $locale = new LocaleNmgCm();
 
-        self::assertEquals(new LanguageNmg(), $locale->language());
-        self::assertEquals(new ScriptLatn(), $locale->script());
-        self::assertEquals(new TerritoryCm(), $locale->territory());
+        self::assertSame(LanguageNmg::class, $locale->language()::class);
+        self::assertSame(ScriptLatn::class, $locale->script()::class);
+        self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nmg_CM', $locale->code());
         self::assertSame('unicode_ci', $locale->collation());
