@@ -23,17 +23,17 @@ class LocaleDeCh extends LocaleDe
         return 'SCHWEIZER HOCHDEUTSCH';
     }
 
+    public function territory(): TerritoryCh
+    {
+        return new TerritoryCh();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,
             self::DECIMAL => self::DOT,
         ];
-    }
-
-    public function territory(): TerritoryCh
-    {
-        return new TerritoryCh();
     }
 
     protected function percentFormat(): string

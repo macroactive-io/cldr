@@ -10,7 +10,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageSat - Representation of the Santali language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageSat extends AbstractLanguage implements LanguageInterface

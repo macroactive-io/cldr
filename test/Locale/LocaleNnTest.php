@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNn;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleNn;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNo;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNn;
 
 class LocaleNnTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleNnTest extends TestCase
         self::assertSame(TerritoryNo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nn_NO', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="nn"', $locale->htmlAttributes());
         self::assertSame('nn', $locale->languageTag());

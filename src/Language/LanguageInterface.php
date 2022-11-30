@@ -38,8 +38,9 @@ interface LanguageInterface
 
     /**
      * Which plural rule is used in this locale?
-     
- * @psalm-immutable
- */
+
+     *
+     * @psalm-immutable
+     */
     public function pluralRule(): PluralRuleInterface;
 }

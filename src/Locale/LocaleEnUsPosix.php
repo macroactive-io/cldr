@@ -11,15 +11,15 @@ use Macroactive\Cldr\Variant\VariantPosix;
  */
 class LocaleEnUsPosix extends LocaleEnUs
 {
+    public function variant(): VariantPosix
+    {
+        return new VariantPosix();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP => '',
         ];
-    }
-
-    public function variant(): VariantPosix
-    {
-        return new VariantPosix();
     }
 }

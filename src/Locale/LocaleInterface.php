@@ -49,9 +49,10 @@ interface LocaleInterface
      * Is text written left-to-right “ltr” or right-to-left “rtl”.
      * Most scripts are only written in one direction, but there are a few that
      * can be written in either direction.
-     
- * @psalm-immutable
- */
+
+     *
+     * @psalm-immutable
+     */
     public function direction(): ScriptDirection;
 
     /**
@@ -81,9 +82,10 @@ interface LocaleInterface
 
     /**
      * The language used by this locale.
-     
- * @psalm-immutable
- */
+
+     *
+     * @psalm-immutable
+     */
     public function language(): LanguageInterface;
 
     /**
@@ -129,8 +131,9 @@ interface LocaleInterface
 
     /**
      * The variant, if any of this locale.
-     
- * @psalm-immutable
- */
+
+     *
+     * @psalm-immutable
+     */
     public function variant(): ?VariantInterface;
 }

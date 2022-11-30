@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEn;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleEnDk;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDk;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleEnDk;
 
 class LocaleEnDkTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleEnDkTest extends TestCase
         self::assertSame(TerritoryDk::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('en_DK', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="en-DK"', $locale->htmlAttributes());
         self::assertSame('en-DK', $locale->languageTag());

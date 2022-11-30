@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSk;
-use Macroactive\Cldr\PluralRule\PluralRule8;
+use Macroactive\Cldr\Locale\LocaleSkSk;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySk;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSkSk;
 
 class LocaleSkSkTest extends TestCase
 {

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageSa;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageSa;
 /**
  * Class LocaleSa - Sanskrit
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleSa extends AbstractLocale implements LocaleInterface
 {
@@ -16,7 +18,7 @@ class LocaleSa extends AbstractLocale implements LocaleInterface
         return 'संस्कृत भाषा';
     }
 
-    public function language(): LanguageSa 
+    public function language(): LanguageSa
     {
         return new LanguageSa();
     }

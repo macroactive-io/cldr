@@ -23,16 +23,16 @@ class LocaleEs419 extends LocaleEs
         return 'ESPANOL LATINOAMERICANO';
     }
 
+    public function territory(): Territory419
+    {
+        return new Territory419();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::COMMA,
             self::DECIMAL => self::DOT,
         ];
-    }
-
-    public function territory(): Territory419
-    {
-        return new Territory419();
     }
 }

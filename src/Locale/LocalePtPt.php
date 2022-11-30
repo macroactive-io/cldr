@@ -13,14 +13,6 @@ use Macroactive\Cldr\Language\LanguagePtPt;
  */
 class LocalePtPt extends AbstractLocale implements LocaleInterface
 {
-    protected function numberSymbols(): array
-    {
-        return [
-            self::GROUP   => self::NBSP,
-            self::DECIMAL => self::COMMA,
-        ];
-    }
-
     public function code(): string
     {
         return 'pt_PT';
@@ -39,5 +31,13 @@ class LocalePtPt extends AbstractLocale implements LocaleInterface
     public function language(): LanguagePtPt
     {
         return new LanguagePtPt();
+    }
+
+    protected function numberSymbols(): array
+    {
+        return [
+            self::GROUP   => self::NBSP,
+            self::DECIMAL => self::COMMA,
+        ];
     }
 }

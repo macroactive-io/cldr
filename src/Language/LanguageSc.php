@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
  * Class LanguageSc - Representation of the Sardinian language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageSc extends AbstractLanguage implements LanguageInterface

@@ -32,8 +32,8 @@ class LocaleKl extends AbstractLocale implements LocaleInterface
     protected function numberSymbols(): array
     {
         return [
-            self::GROUP    => self::DOT,
-            self::DECIMAL  => self::COMMA,
+            self::GROUP   => self::DOT,
+            self::DECIMAL => self::COMMA,
         ];
     }
 

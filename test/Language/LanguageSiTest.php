@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Language\LanguageSi;
 use Macroactive\Cldr\Script\ScriptSinh;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageSi;
 
 class LanguageSiTest extends TestCase
 {

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageShi;
-use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
+use Macroactive\Cldr\Locale\LocaleShi;
 use Macroactive\Cldr\Script\ScriptTfng;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleShi;
 
 class LocaleShiTest extends TestCase
 {

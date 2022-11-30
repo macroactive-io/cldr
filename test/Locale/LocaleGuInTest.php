@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGu;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleGuIn;
 use Macroactive\Cldr\Script\ScriptGujr;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleGuIn;
 
 class LocaleGuInTest extends TestCase
 {

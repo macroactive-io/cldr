@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageIu;
-use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Locale\LocaleIu;
 use Macroactive\Cldr\Script\ScriptCans;
 use Macroactive\Cldr\Territory\TerritoryCa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleIu;
 
 class LocaleIuTest extends TestCase
 {

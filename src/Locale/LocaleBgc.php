@@ -8,15 +8,11 @@ use Macroactive\Cldr\Language\LanguageBgc;
 
 /**
  * Class LocaleBgc - Haryanvi
+ *
  * @psalm-immutable
  */
 class LocaleBgc extends AbstractLocale implements LocaleInterface
 {
-    protected function digitsGroup(): int
-    {
-        return 2;
-    }
-
     public function endonym(): string
     {
         return 'हरियाणवी';
@@ -25,5 +21,10 @@ class LocaleBgc extends AbstractLocale implements LocaleInterface
     public function language(): LanguageBgc
     {
         return new LanguageBgc();
+    }
+
+    protected function digitsGroup(): int
+    {
+        return 2;
     }
 }

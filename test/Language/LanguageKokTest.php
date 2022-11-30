@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
+use Macroactive\Cldr\Language\LanguageKok;
 use Macroactive\Cldr\Script\ScriptDeva;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageKok;
 
 class LanguageKokTest extends TestCase
 {

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageRu;
-use Macroactive\Cldr\PluralRule\PluralRule7;
+use Macroactive\Cldr\Locale\LocaleRuRu;
 use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryRu;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleRuRu;
 
 class LocaleRuRuTest extends TestCase
 {

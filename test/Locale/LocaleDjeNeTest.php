@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDje;
+use Macroactive\Cldr\Locale\LocaleDjeNe;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleDjeNe;
 
 class LocaleDjeNeTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleDjeNeTest extends TestCase
         self::assertSame(TerritoryNe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dje_NE', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="dje"', $locale->htmlAttributes());
         self::assertSame('dje', $locale->languageTag());

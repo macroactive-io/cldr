@@ -12,6 +12,11 @@ use Macroactive\Cldr\Territory\TerritoryDz;
  */
 class LocaleArDz extends LocaleAr
 {
+    public function territory(): TerritoryDz
+    {
+        return new TerritoryDz();
+    }
+
     protected function numberSymbols(): array
     {
         return [
@@ -19,11 +24,6 @@ class LocaleArDz extends LocaleAr
             self::DECIMAL  => self::COMMA,
             self::NEGATIVE => self::LTR_MARK . self::HYPHEN,
         ];
-    }
-
-    public function territory(): TerritoryDz
-    {
-        return new TerritoryDz();
     }
 
     protected function numerals(): array

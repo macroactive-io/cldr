@@ -23,16 +23,16 @@ class LocaleFrCa extends LocaleFr
         return 'FRANCAIS CANADIEN';
     }
 
+    public function territory(): TerritoryCa
+    {
+        return new TerritoryCa();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryCa
-    {
-        return new TerritoryCa();
     }
 }

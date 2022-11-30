@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Language\LanguageXog;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageXog;
 
 class LanguageXogTest extends TestCase
 {

@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKhq;
+use Macroactive\Cldr\Locale\LocaleKhq;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMl;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleKhq;
 
 class LocaleKhqTest extends TestCase
 {

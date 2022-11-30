@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguagePis;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguagePis;
 /**
  * Class LocalePis - Pijin
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocalePis extends AbstractLocale implements LocaleInterface
 {
@@ -21,7 +23,7 @@ class LocalePis extends AbstractLocale implements LocaleInterface
         return 'Pijin';
     }
 
-    public function language(): LanguagePis 
+    public function language(): LanguagePis
     {
         return new LanguagePis();
     }

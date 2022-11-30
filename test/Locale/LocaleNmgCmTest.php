@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNmg;
+use Macroactive\Cldr\Locale\LocaleNmgCm;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNmgCm;
 
 class LocaleNmgCmTest extends TestCase
 {

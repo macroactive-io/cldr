@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Territory\TerritoryPk;
@@ -7,11 +9,11 @@ use Macroactive\Cldr\Territory\TerritoryPk;
 /**
  * Class LocalePsPk
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocalePsPk extends LocalePs
 {
-    public function territory(): TerritoryPk 
+    public function territory(): TerritoryPk
     {
         return new TerritoryPk();
     }

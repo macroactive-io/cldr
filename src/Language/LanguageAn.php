@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryEs;
 
 /**
  * Class LanguageAn - Representation of the Aragonese language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageAn extends AbstractLanguage implements LanguageInterface

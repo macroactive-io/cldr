@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageZu;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleZuZa;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleZuZa;
 
 class LocaleZuZaTest extends TestCase
 {
@@ -22,7 +20,7 @@ class LocaleZuZaTest extends TestCase
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryZa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="zu"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

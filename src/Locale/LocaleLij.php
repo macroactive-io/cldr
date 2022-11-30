@@ -9,6 +9,7 @@ use Macroactive\Cldr\Language\LanguageLij;
 
 /**
  * Class LocaleLij - Ligurian
+ *
  * @psalm-immutable
  */
 class LocaleLij extends AbstractLocale implements LocaleInterface

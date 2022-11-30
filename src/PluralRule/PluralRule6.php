@@ -21,17 +21,17 @@ class PluralRule6 implements PluralRuleInterface
         $n = abs($number);
 
         return match (true) {
-            $n % 10 == 1 && ($n % 100 < 11 || $n % 100 > 19) => 0,
+            $n % 10 === 1 && ($n % 100 < 11 || $n % 100 > 19)                => 0,
             $n % 10 >= 2 && $n % 10 <= 9 && ($n % 100 < 11 || $n % 100 > 19) => 1,
-            default => 2
+            default                                                          => 2
         };
     }
 
     public function pluralExamples(): array
     {
         return [
-            'one' => [1, 21,],
-            'few' => [2, 9, 28],
+            'one'   => [1, 21],
+            'few'   => [2, 9, 28],
             'other' => [0, 11, 19, 100],
         ];
     }

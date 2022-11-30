@@ -18,11 +18,11 @@ class LocaleArAe extends LocaleAr
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::GROUP    => self::COMMA,
             self::DECIMAL  => self::DOT,
             self::NEGATIVE => self::LTR_MARK . self::HYPHEN,
-        );
+        ];
     }
 
     protected function percentFormat(): string

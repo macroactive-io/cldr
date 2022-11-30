@@ -8,6 +8,7 @@ use Macroactive\Cldr\Language\LanguageSc;
 
 /**
  * Class LocaleSc - Sardinian
+ *
  * @psalm-immutable
  */
 class LocaleSc extends AbstractLocale implements LocaleInterface
@@ -29,9 +30,9 @@ class LocaleSc extends AbstractLocale implements LocaleInterface
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::DECIMAL => self::COMMA,
             self::GROUP   => self::DOT,
-        );
+        ];
     }
 }

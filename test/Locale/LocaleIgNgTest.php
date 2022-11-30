@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageIg;
-use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Locale\LocaleIgNg;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNg;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleIgNg;
 
 class LocaleIgNgTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleIgNgTest extends TestCase
         self::assertSame(TerritoryNg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ig_NG', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ig"', $locale->htmlAttributes());
         self::assertSame('ig', $locale->languageTag());

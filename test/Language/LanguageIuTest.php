@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Language\LanguageIu;
 use Macroactive\Cldr\Script\ScriptCans;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageIu;
 
 class LanguageIuTest extends TestCase
 {

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryTr;
 
 /**
  * Class LanguageKu - Representation of the Southern Kurdish language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageSdh extends AbstractLanguage implements LanguageInterface

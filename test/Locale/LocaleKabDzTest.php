@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKab;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleKabDz;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDz;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleKabDz;
 
 class LocaleKabDzTest extends TestCase
 {

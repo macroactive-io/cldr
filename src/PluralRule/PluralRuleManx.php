@@ -16,10 +16,10 @@ class PluralRuleManx implements PluralRuleInterface
         $n = abs($number);
 
         return match (true) {
-            $n % 10 === 1 => 0,
-            $n % 10 === 2 => 1,
+            $n % 10 === 1                                                                              => 0,
+            $n % 10 === 2                                                                              => 1,
             $n % 100 === 0 || $n % 100 === 20 || $n % 100 === 40 || $n % 100 === 60 || $n % 100 === 80 => 2,
-            default => 3,
+            default                                                                                    => 3,
         };
     }
 
@@ -27,7 +27,7 @@ class PluralRuleManx implements PluralRuleInterface
     {
         return [
             'one'   => [1, 11, 71],
-            'two'   => [2, 12, 1002,],
+            'two'   => [2, 12, 1002],
             'few'   => [0, 20, 40, 180],
             'other' => [3, 10, 13, 19],
         ];

@@ -8,6 +8,7 @@ use Macroactive\Cldr\Language\LanguageCeb;
 
 /**
  * Class LocaleCeb - Cebuano
+ *
  * @psalm-immutable
  */
 class LocaleCeb extends AbstractLocale implements LocaleInterface

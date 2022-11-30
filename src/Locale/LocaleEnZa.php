@@ -11,16 +11,16 @@ use Macroactive\Cldr\Territory\TerritoryZa;
  */
 class LocaleEnZa extends LocaleEn
 {
+    public function territory(): TerritoryZa
+    {
+        return new TerritoryZa();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryZa
-    {
-        return new TerritoryZa();
     }
 }

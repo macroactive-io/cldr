@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAr;
-use Macroactive\Cldr\PluralRule\PluralRule12;
+use Macroactive\Cldr\Locale\LocaleArYe;
 use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryYe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleArYe;
 
 class LocaleArYeTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleArYeTest extends TestCase
         self::assertSame(TerritoryYe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ar_YE', $locale->code());
-        
+
         self::assertSame('٠١٢٣٤٥٦٧٨٩', $locale->digits('0123456789'));
         self::assertSame('lang="ar-YE" dir="rtl"', $locale->htmlAttributes());
         self::assertSame('ar-YE', $locale->languageTag());

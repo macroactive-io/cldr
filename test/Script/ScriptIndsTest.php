@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Script;
 
-use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Script\ScriptInds;
-
 use Macroactive\Cldr\Script\ScriptDirection;
+use Macroactive\Cldr\Script\ScriptInds;
+use PHPUnit\Framework\TestCase;
 
 class ScriptIndsTest extends TestCase
 {

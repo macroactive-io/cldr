@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDyo;
+use Macroactive\Cldr\Locale\LocaleDyo;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleDyo;
 
 class LocaleDyoTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleDyoTest extends TestCase
         self::assertSame(TerritorySn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dyo_SN', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="dyo"', $locale->htmlAttributes());
         self::assertSame('dyo', $locale->languageTag());

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
  * Class LanguageLij - Representation of the Ligurian language.
+ *
  * @psalm-immutable
  */
 class LanguageLij extends AbstractLanguage implements LanguageInterface

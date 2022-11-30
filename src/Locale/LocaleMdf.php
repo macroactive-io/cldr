@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageMdf;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageMdf;
 /**
  * Class LocaleMdf - Moksha
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleMdf extends AbstractLocale implements LocaleInterface
 {
@@ -21,7 +23,7 @@ class LocaleMdf extends AbstractLocale implements LocaleInterface
         return 'МОКШЕНЬ КЯЛЬ';
     }
 
-    public function language(): LanguageMdf 
+    public function language(): LanguageMdf
     {
         return new LanguageMdf();
     }

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageTzm;
-use Macroactive\Cldr\PluralRule\PluralRuleCentralAtlasTamazight;
+use Macroactive\Cldr\Locale\LocaleTzm;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleTzm;
 
 class LocaleTzmTest extends TestCase
 {
@@ -22,7 +20,7 @@ class LocaleTzmTest extends TestCase
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="tzm"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

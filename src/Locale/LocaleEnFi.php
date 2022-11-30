@@ -26,7 +26,7 @@ class LocaleEnFi extends LocaleEn
     protected function numberSymbols(): array
     {
         return [
-            self::GROUP => self::NBSP,
+            self::GROUP   => self::NBSP,
             self::DECIMAL => self::COMMA,
         ];
     }

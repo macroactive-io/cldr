@@ -30,9 +30,9 @@ class PluralRule2WithMillions implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [0, 1],
-            'many' => [1_000_000, 99_000_000],
-            'other' => [2, 3, 9]
+            'one'   => [0, 1],
+            'many'  => [1_000_000, 99_000_000],
+            'other' => [2, 3, 9],
         ];
     }
 }

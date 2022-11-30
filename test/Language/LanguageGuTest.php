@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Language\LanguageGu;
 use Macroactive\Cldr\Script\ScriptGujr;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageGu;
 
 class LanguageGuTest extends TestCase
 {

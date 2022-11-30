@@ -10,7 +10,7 @@ use Macroactive\Cldr\Variant\VariantTarask;
 /**
  * Class LocaleBeTarask - Belarusian
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleBeTarask extends LocaleBe
 {

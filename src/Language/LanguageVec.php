@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
  * Class LanguageVec - Representation of the Venetian language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageVec extends AbstractLanguage implements LanguageInterface

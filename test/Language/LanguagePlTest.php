@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule9;
+use Macroactive\Cldr\Language\LanguagePl;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguagePl;
 
 class LanguagePlTest extends TestCase
 {

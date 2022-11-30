@@ -11,16 +11,16 @@ use Macroactive\Cldr\Territory\TerritoryCr;
  */
 class LocaleEsCr extends LocaleEs
 {
+    public function territory(): TerritoryCr
+    {
+        return new TerritoryCr();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryCr
-    {
-        return new TerritoryCr();
     }
 }

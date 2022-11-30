@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSw;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleSwCd;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCd;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSwCd;
 
 class LocaleSwCdTest extends TestCase
 {

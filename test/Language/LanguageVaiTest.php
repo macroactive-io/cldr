@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
+use Macroactive\Cldr\Language\LanguageVai;
 use Macroactive\Cldr\Script\ScriptVaii;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageVai;
 
 class LanguageVaiTest extends TestCase
 {

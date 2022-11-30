@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSyr;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleSyr;
 use Macroactive\Cldr\Script\ScriptSyrc;
 use Macroactive\Cldr\Territory\TerritoryIq;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSyr;
 
 class LocaleSyrTest extends TestCase
 {
@@ -22,7 +20,7 @@ class LocaleSyrTest extends TestCase
         self::assertSame(ScriptSyrc::class, $locale->script()::class);
         self::assertSame(TerritoryIq::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="syr" dir="rtl"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

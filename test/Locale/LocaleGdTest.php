@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGd;
-use Macroactive\Cldr\PluralRule\PluralRule4;
+use Macroactive\Cldr\Locale\LocaleGd;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGb;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleGd;
 
 class LocaleGdTest extends TestCase
 {

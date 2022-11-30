@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryNo;
 
 /**
  * Class LanguageNo - Representation of the Norwegian language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageNo extends AbstractLanguage implements LanguageInterface

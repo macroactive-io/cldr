@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSi;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleSiLk;
 use Macroactive\Cldr\Script\ScriptSinh;
 use Macroactive\Cldr\Territory\TerritoryLk;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSiLk;
 
 class LocaleSiLkTest extends TestCase
 {

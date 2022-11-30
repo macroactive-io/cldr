@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Language\LanguageVi;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageVi;
 
 class LanguageViTest extends TestCase
 {

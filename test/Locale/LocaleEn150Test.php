@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEn;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleEn150;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\Territory150;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleEn150;
 
 class LocaleEn150Test extends TestCase
 {
@@ -28,6 +26,6 @@ class LocaleEn150Test extends TestCase
         self::assertSame('en-150', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));
         self::assertSame('12,345,678.09', $locale->number(12345678.09));
-        self::assertSame("1,234.56%", $locale->percent(12.3456));
+        self::assertSame('1,234.56%', $locale->percent(12.3456));
     }
 }

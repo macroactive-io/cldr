@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageFrr;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageFrr;
 /**
  * Class LocaleFrr - North Frisian
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleFrr extends AbstractLocale implements LocaleInterface
 {
@@ -21,7 +23,7 @@ class LocaleFrr extends AbstractLocale implements LocaleInterface
         return 'NORDFRIISK';
     }
 
-    public function language(): LanguageFrr 
+    public function language(): LanguageFrr
     {
         return new LanguageFrr();
     }

@@ -9,6 +9,7 @@ use Macroactive\Cldr\Language\LanguagePcm;
 
 /**
  * Class LocalePcm - Nigerian Pidgin
+ *
  * @psalm-immutable
  */
 class LocalePcm extends AbstractLocale implements LocaleInterface

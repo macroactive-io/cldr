@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHi;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleHiIn;
 use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleHiIn;
 
 class LocaleHiInTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleHiInTest extends TestCase
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('hi_IN', $locale->code());
-        
+
         self::assertSame('०१२३४५६७८९', $locale->digits('0123456789'));
         self::assertSame('lang="hi"', $locale->htmlAttributes());
         self::assertSame('hi', $locale->languageTag());

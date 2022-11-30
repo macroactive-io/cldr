@@ -37,14 +37,15 @@ class LocaleHr extends AbstractLocale implements LocaleInterface
     protected function numberSymbols(): array
     {
         return [
-            self::GROUP   => self::DOT,
-            self::DECIMAL => self::COMMA,
+            self::GROUP    => self::DOT,
+            self::DECIMAL  => self::COMMA,
             self::NEGATIVE => self::MINUS_SIGN,
         ];
     }
 
     /**
      * How to format a floating point number (%s) as a percentage.
+     *
      * @psalm-immutable
      */
     protected function percentFormat(): string

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSmj;
-use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Locale\LocaleSmj;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSmj;
 
 class LocaleSmjTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleSmjTest extends TestCase
         self::assertSame(TerritorySe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('smj_SE', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="smj"', $locale->htmlAttributes());
         self::assertSame('smj', $locale->languageTag());

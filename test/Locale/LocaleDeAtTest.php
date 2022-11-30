@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDe;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleDeAt;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAt;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleDeAt;
 
 class LocaleDeAtTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleDeAtTest extends TestCase
         self::assertSame(TerritoryAt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('de_AT', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="de-AT"', $locale->htmlAttributes());
         self::assertSame('de-AT', $locale->languageTag());

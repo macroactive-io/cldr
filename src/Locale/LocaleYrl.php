@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageYrl;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageYrl;
 /**
  * Class LocaleYrl - Nheengatu
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleYrl extends AbstractLocale implements LocaleInterface
 {
@@ -16,16 +18,16 @@ class LocaleYrl extends AbstractLocale implements LocaleInterface
         return 'nheẽgatu';
     }
 
-    public function language(): LanguageYrl 
+    public function language(): LanguageYrl
     {
         return new LanguageYrl();
     }
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::DECIMAL => self::COMMA,
             self::GROUP   => self::DOT,
-        );
+        ];
     }
 }

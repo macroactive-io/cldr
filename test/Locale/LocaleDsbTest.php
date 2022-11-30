@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDsb;
-use Macroactive\Cldr\PluralRule\PluralRule10;
+use Macroactive\Cldr\Locale\LocaleDsb;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleDsb;
 
 class LocaleDsbTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleDsbTest extends TestCase
         self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dsb_DE', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="dsb"', $locale->htmlAttributes());
         self::assertSame('dsb', $locale->languageTag());

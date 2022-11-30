@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Territory;
 
-use PHPUnit\Framework\TestCase;
-
 use Macroactive\Cldr\Territory\TerritoryGf;
+use PHPUnit\Framework\TestCase;
 
 class TerritoryGfTest extends TestCase
 {

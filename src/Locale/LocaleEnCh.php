@@ -18,6 +18,6 @@ class LocaleEnCh extends LocaleEn
 
     protected function numberSymbols(): array
     {
-        return [self::GROUP => self::APOSTROPHE,];
+        return [self::GROUP => self::APOSTROPHE];
     }
 }

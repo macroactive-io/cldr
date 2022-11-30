@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Script;
 
-use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Script\ScriptElba;
-
 use Macroactive\Cldr\Script\ScriptDirection;
+use Macroactive\Cldr\Script\ScriptElba;
+use PHPUnit\Framework\TestCase;
 
 class ScriptElbaTest extends TestCase
 {

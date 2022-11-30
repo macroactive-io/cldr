@@ -8,6 +8,7 @@ use Macroactive\Cldr\Language\LanguageBal;
 
 /**
  * Class LocaleBal - Baluchi
+ *
  * @psalm-immutable
  */
 class LocaleBal extends AbstractLocale implements LocaleInterface

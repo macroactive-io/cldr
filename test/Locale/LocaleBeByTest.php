@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageBe;
-use Macroactive\Cldr\PluralRule\PluralRule7;
+use Macroactive\Cldr\Locale\LocaleBeBy;
 use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryBy;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleBeBy;
 
 class LocaleBeByTest extends TestCase
 {

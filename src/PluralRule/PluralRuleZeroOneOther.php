@@ -32,9 +32,9 @@ class PluralRuleZeroOneOther implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'zero' => [0],
-            'one' => [1],
-            'other' => [2, 3, 19]
+            'zero'  => [0],
+            'one'   => [1],
+            'other' => [2, 3, 19],
         ];
     }
 }

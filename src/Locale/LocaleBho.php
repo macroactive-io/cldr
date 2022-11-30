@@ -9,16 +9,12 @@ use Macroactive\Cldr\Language\LanguageInterface;
 
 /**
  * Class LocaleBho - Bhojpuri
- 
+
+ *
  * @psalm-immutable
  */
 class LocaleBho extends AbstractLocale implements LocaleInterface
 {
-    protected function digitsGroup(): int
-    {
-        return 2;
-    }
-
     public function endonym(): string
     {
         return 'भोजपुरी';
@@ -32,5 +28,10 @@ class LocaleBho extends AbstractLocale implements LocaleInterface
     public function language(): LanguageInterface
     {
         return new LanguageBho();
+    }
+
+    protected function digitsGroup(): int
+    {
+        return 2;
     }
 }

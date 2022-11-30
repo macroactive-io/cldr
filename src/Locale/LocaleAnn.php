@@ -8,6 +8,7 @@ use Macroactive\Cldr\Language\LanguageAnn;
 
 /**
  * Class LocaleAnn - Obolo
+ *
  * @psalm-immutable
  */
 class LocaleAnn extends AbstractLocale implements LocaleInterface

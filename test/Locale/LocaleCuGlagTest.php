@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageCu;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleCuGlag;
 use Macroactive\Cldr\Script\ScriptGlag;
 use Macroactive\Cldr\Territory\TerritoryRu;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleCuGlag;
 
 class LocaleCuGlagTest extends TestCase
 {

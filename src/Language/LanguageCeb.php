@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryPh;
 
 /**
  * Class LanguageCeb - Representation of the Cebuano language.
+ *
  * @psalm-immutable
  */
 class LanguageCeb extends AbstractLanguage implements LanguageInterface

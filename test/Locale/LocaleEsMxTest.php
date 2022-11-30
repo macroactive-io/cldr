@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEs;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleEsMx;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMx;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleEsMx;
 
 class LocaleEsMxTest extends TestCase
 {
@@ -29,6 +27,6 @@ class LocaleEsMxTest extends TestCase
         self::assertSame('es-MX', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));
         self::assertSame('12.345.678,09', $locale->number(12345678.09));
-        self::assertSame("1.234,56%", $locale->percent(12.3456));
+        self::assertSame('1.234,56%', $locale->percent(12.3456));
     }
 }

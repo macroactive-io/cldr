@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAr;
-use Macroactive\Cldr\PluralRule\PluralRule12;
+use Macroactive\Cldr\Locale\LocaleArJo;
 use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryJo;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleArJo;
 
 class LocaleArJoTest extends TestCase
 {

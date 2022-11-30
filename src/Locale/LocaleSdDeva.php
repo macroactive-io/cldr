@@ -26,11 +26,11 @@ class LocaleSdDeva extends LocaleSd
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::GROUP    => self::COMMA,
             self::DECIMAL  => self::DOT,
             self::NEGATIVE => self::HYPHEN,
-        );
+        ];
     }
 
     protected function percentFormat(): string

@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNus;
+use Macroactive\Cldr\Locale\LocaleNus;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySd;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNus;
 
 class LocaleNusTest extends TestCase
 {

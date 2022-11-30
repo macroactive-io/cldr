@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 /**
  * Class LocaleSuLatnId
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleSuLatnId extends LocaleSuLatn
 {

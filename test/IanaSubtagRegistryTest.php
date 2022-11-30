@@ -12,10 +12,12 @@ class IanaSubtagRegistryTest extends TestCase
 {
     /**
      * Test the language tags against the IANA subtag registry
+     *
      * @group ab
+     *
      * @large
      */
-    public function testLanguageTags()
+    public function testLanguageTags(): void
     {
         $iana = $this->getSubtagRegistry();
         $iana = explode("%%\n", $iana);
@@ -25,7 +27,7 @@ class IanaSubtagRegistryTest extends TestCase
         foreach ($iana as $data) {
             preg_match('/Subtag: (.+)/', $data, $match);
             $subtag = $match[1];
-            $class = '\\Macroactive\\Cldr\\Language\\Language' . ucfirst(strtolower($match[1]));
+            $class  = '\\Macroactive\\Cldr\\Language\\Language' . ucfirst(strtolower($match[1]));
             // The registry contains 8000 languages, and we aren't interested in most of them.
             if (class_exists($class)) {
                 /** @var LanguageInterface $language */
@@ -47,7 +49,7 @@ class IanaSubtagRegistryTest extends TestCase
      *
      * @large
      */
-    public function testScriptTags()
+    public function testScriptTags(): void
     {
         $iana = $this->getSubtagRegistry();
         $iana = explode("%%\n", $iana);
@@ -69,7 +71,7 @@ class IanaSubtagRegistryTest extends TestCase
      *
      * @large
      */
-    public function testTerritoryTags()
+    public function testTerritoryTags(): void
     {
         $iana = $this->getSubtagRegistry();
         $iana = explode("%%\n", $iana);

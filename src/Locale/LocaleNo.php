@@ -23,18 +23,18 @@ class LocaleNo extends AbstractLocale implements LocaleInterface
         return 'NORSK';
     }
 
-    public function language(): LanguageNo 
+    public function language(): LanguageNo
     {
         return new LanguageNo();
     }
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::DECIMAL  => self::COMMA,
             self::GROUP    => self::NBSP,
             self::NEGATIVE => self::MINUS_SIGN,
-        );
+        ];
     }
 
     protected function percentFormat(): string

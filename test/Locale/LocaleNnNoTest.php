@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNn;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleNnNo;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNo;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNnNo;
 
 class LocaleNnNoTest extends TestCase
 {

@@ -21,9 +21,9 @@ class PluralRule3 implements PluralRuleInterface
         $n = abs($number);
 
         return match (true) {
-            $n % 10 === 0 || $n % 100 >= 11 && $n % 100 <= 19 =>  0,
-            $n % 10 == 1 && $n % 100 != 11 => 1,
-            default => 2
+            $n % 10 === 0 || $n % 100 >= 11 && $n % 100 <= 19 => 0,
+            $n % 10 === 1 && $n % 100 !== 11                  => 1,
+            default                                           => 2
         };
     }
 

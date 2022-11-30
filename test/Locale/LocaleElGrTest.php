@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEl;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleElGr;
 use Macroactive\Cldr\Script\ScriptGrek;
 use Macroactive\Cldr\Territory\TerritoryGr;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleElGr;
 
 class LocaleElGrTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleElGrTest extends TestCase
         self::assertSame(TerritoryGr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('el_GR', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="el"', $locale->htmlAttributes());
         self::assertSame('el', $locale->languageTag());

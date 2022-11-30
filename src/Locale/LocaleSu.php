@@ -22,16 +22,16 @@ class LocaleSu extends AbstractLocale implements LocaleInterface
         return new LanguageSu();
     }
 
+    public function weekendEnd(): int
+    {
+        return 1;
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::COMMA,
             self::GROUP   => self::DOT,
         ];
-    }
-
-    public function weekendEnd(): int
-    {
-        return 1;
     }
 }

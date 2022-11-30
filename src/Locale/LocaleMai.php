@@ -24,7 +24,7 @@ class LocaleMai extends AbstractLocale implements LocaleInterface
         return 'मैथिली';
     }
 
-    public function language(): LanguageMai 
+    public function language(): LanguageMai
     {
         return new LanguageMai();
     }

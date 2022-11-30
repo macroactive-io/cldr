@@ -8,15 +8,11 @@ use Macroactive\Cldr\Language\LanguageDoi;
 
 /**
  * Class LocaleDoi - Dogri
+ *
  * @psalm-immutable
  */
 class LocaleDoi extends AbstractLocale implements LocaleInterface
 {
-    protected function digitsGroup(): int
-    {
-        return 2;
-    }
-
     public function endonym(): string
     {
         return 'डोगरी';
@@ -30,5 +26,10 @@ class LocaleDoi extends AbstractLocale implements LocaleInterface
     public function language(): LanguageDoi
     {
         return new LanguageDoi();
+    }
+
+    protected function digitsGroup(): int
+    {
+        return 2;
     }
 }

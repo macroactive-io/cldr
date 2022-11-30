@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageSa - Representation of the Sanskrit language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageSa extends AbstractLanguage implements LanguageInterface

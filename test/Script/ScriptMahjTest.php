@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Script;
 
-use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Script\ScriptMahj;
-
 use Macroactive\Cldr\Script\ScriptDirection;
+use Macroactive\Cldr\Script\ScriptMahj;
+use PHPUnit\Framework\TestCase;
 
 class ScriptMahjTest extends TestCase
 {

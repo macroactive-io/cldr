@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageTok;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageTok;
 /**
  * Class LocaleTok - Toki Pona
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleTok extends AbstractLocale implements LocaleInterface
 {
@@ -21,7 +23,7 @@ class LocaleTok extends AbstractLocale implements LocaleInterface
         return 'TOKI PONA';
     }
 
-    public function language(): LanguageTok 
+    public function language(): LanguageTok
     {
         return new LanguageTok();
     }

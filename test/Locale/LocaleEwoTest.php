@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEwo;
+use Macroactive\Cldr\Locale\LocaleEwo;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleEwo;
 
 class LocaleEwoTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleEwoTest extends TestCase
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ewo_CM', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ewo"', $locale->htmlAttributes());
         self::assertSame('ewo', $locale->languageTag());

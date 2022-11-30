@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Language\LanguageDz;
 use Macroactive\Cldr\Script\ScriptTibt;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageDz;
 
 class LanguageDzTest extends TestCase
 {

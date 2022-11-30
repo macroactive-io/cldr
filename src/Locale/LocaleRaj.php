@@ -9,22 +9,22 @@ use Macroactive\Cldr\Language\LanguageRaj;
 /**
  * Class LocaleRaj - Rajastani
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleRaj extends AbstractLocale implements LocaleInterface
 {
-    protected function digitsGroup(): int
-    {
-        return 2;
-    }
-
     public function endonym(): string
     {
         return 'राजस्थानी';
     }
 
-    public function language(): LanguageRaj 
+    public function language(): LanguageRaj
     {
         return new LanguageRaj();
+    }
+
+    protected function digitsGroup(): int
+    {
+        return 2;
     }
 }

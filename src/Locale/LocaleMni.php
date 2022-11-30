@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageMni;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageMni;
 /**
  * Class LocaleMni - Meitei
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleMni extends AbstractLocale implements LocaleInterface
 {
@@ -21,7 +23,7 @@ class LocaleMni extends AbstractLocale implements LocaleInterface
         return 'মৈতৈলোন্';
     }
 
-    public function language(): LanguageMni 
+    public function language(): LanguageMni
     {
         return new LanguageMni();
     }

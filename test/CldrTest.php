@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests;
 
-use Exception;
 use Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptDirection;
 use SimpleXMLElement;
@@ -14,12 +13,10 @@ use function basename;
 use function bin2hex;
 use function count;
 use function explode;
-use function glob;
 use function implode;
 use function preg_match;
 use function preg_quote;
 use function simplexml_load_file;
-use function sprintf;
 use function str_ends_with;
 use function str_starts_with;
 use function strtr;
@@ -61,9 +58,10 @@ class CldrTest extends TestCase
 
             if ('latn' !== $originalNumberSystem) {
                 try {
-                    $alias = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $alias        = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
                     $numberSystem = str_replace("']", '', str_replace("../symbols[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {}
+                } catch (CannotFindXpathException $ex) {
+                }
             }
 
             $decimal      = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/decimal[not(@draft='unconfirmed')]");
@@ -73,18 +71,20 @@ class CldrTest extends TestCase
 
             if ('latn' !== $originalNumberSystem) {
                 try {
-                    $alias = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $alias        = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
                     $numberSystem = str_replace("']", '', str_replace("../decimalFormats[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {}
+                } catch (CannotFindXpathException $ex) {
+                }
             }
 
             $standard = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $numberSystem . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern[not(@draft='unconfirmed')]");
 
             if ('latn' !== $originalNumberSystem) {
                 try {
-                    $alias = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $alias        = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
                     $numberSystem = str_replace("']", '', str_replace("../percentFormats[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {}
+                } catch (CannotFindXpathException $ex) {
+                }
             }
             $percent = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $numberSystem . "']/percentFormatLength[not(@type)]/percentFormat/pattern[not(@draft='unconfirmed')]");
 

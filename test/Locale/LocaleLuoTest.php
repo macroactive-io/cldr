@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLuo;
+use Macroactive\Cldr\Locale\LocaleLuo;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleLuo;
 
 class LocaleLuoTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleLuoTest extends TestCase
         self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('luo_KE', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="luo"', $locale->htmlAttributes());
         self::assertSame('luo', $locale->languageTag());

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageJa;
-use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Locale\LocaleJa;
 use Macroactive\Cldr\Script\ScriptJpan;
 use Macroactive\Cldr\Territory\TerritoryJp;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleJa;
 
 class LocaleJaTest extends TestCase
 {

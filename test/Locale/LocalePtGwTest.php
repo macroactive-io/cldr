@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguagePt;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocalePtGw;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGw;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocalePtGw;
 
 class LocalePtGwTest extends TestCase
 {

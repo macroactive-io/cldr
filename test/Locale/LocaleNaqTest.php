@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNaq;
-use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Locale\LocaleNaq;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNaq;
 
 class LocaleNaqTest extends TestCase
 {

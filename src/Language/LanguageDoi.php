@@ -10,6 +10,7 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageDoi - Representation of the Dogri language.
+ *
  * @psalm-immutable
  */
 class LanguageDoi extends AbstractLanguage implements LanguageInterface

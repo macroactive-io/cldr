@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Variant;
 
 /**
  * Class VariantValencia - Representation of the Tarask variant of be.
+ *
  * @psalm-immutable
  */
 class VariantTarask implements VariantInterface

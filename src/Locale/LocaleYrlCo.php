@@ -8,6 +8,7 @@ use Macroactive\Cldr\Territory\TerritoryCo;
 
 /**
  * Class LocaleYrlCo - Nheengatu
+ *
  * @psalm-immutable
  */
 class LocaleYrlCo extends LocaleYrl

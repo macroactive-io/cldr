@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNd;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleNdZw;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZw;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleNdZw;
 
 class LocaleNdZwTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleNdZwTest extends TestCase
         self::assertSame(TerritoryZw::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nd_ZW', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="nd"', $locale->htmlAttributes());
         self::assertSame('nd', $locale->languageTag());

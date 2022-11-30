@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGd;
-use Macroactive\Cldr\PluralRule\PluralRule4;
+use Macroactive\Cldr\Locale\LocaleGdGb;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGb;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleGdGb;
 
 class LocaleGdGbTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleGdGbTest extends TestCase
         self::assertSame(TerritoryGb::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('gd_GB', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="gd"', $locale->htmlAttributes());
         self::assertSame('gd', $locale->languageTag());

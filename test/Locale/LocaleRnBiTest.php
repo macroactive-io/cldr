@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageRn;
+use Macroactive\Cldr\Locale\LocaleRnBi;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBi;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleRnBi;
 
 class LocaleRnBiTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleRnBiTest extends TestCase
         self::assertSame(TerritoryBi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('rn_BI', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="rn"', $locale->htmlAttributes());
         self::assertSame('rn', $locale->languageTag());

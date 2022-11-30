@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageTr;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleTrCy;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCy;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleTrCy;
 
 class LocaleTrCyTest extends TestCase
 {
@@ -22,7 +20,7 @@ class LocaleTrCyTest extends TestCase
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCy::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="tr-CY"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

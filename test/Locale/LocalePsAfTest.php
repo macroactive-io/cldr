@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguagePs;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocalePsAf;
 use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryAf;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocalePsAf;
 
 class LocalePsAfTest extends TestCase
 {

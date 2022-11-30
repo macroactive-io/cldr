@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryPk;
 
 /**
  * Class LanguageBal - Representation of the Baluchi language.
+ *
  * @psalm-immutable
  */
 class LanguageBal extends AbstractLanguage implements LanguageInterface

@@ -37,8 +37,8 @@ class LocaleEo extends AbstractLocale implements LocaleInterface
     protected function numberSymbols(): array
     {
         return [
-            self::GROUP    => self::NBSP,
-            self::DECIMAL  => self::COMMA,
+            self::GROUP   => self::NBSP,
+            self::DECIMAL => self::COMMA,
         ];
     }
 }

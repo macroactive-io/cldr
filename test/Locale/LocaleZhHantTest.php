@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageZh;
-use Macroactive\Cldr\PluralRule\PluralRule0;
+use Macroactive\Cldr\Locale\LocaleZhHant;
 use Macroactive\Cldr\Script\ScriptHant;
 use Macroactive\Cldr\Territory\TerritoryCn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleZhHant;
 
 class LocaleZhHantTest extends TestCase
 {
@@ -22,7 +20,7 @@ class LocaleZhHantTest extends TestCase
         self::assertSame(ScriptHant::class, $locale->script()::class);
         self::assertSame(TerritoryCn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="zh-Hant"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

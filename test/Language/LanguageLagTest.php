@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
+use Macroactive\Cldr\Language\LanguageLag;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageLag;
 
 class LanguageLagTest extends TestCase
 {

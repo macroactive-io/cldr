@@ -38,9 +38,9 @@ class PluralRule4 implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [1, 11,],
-            'two' => [2, 12,],
-            'few' => [3, 9, 17],
+            'one'   => [1, 11],
+            'two'   => [2, 12],
+            'few'   => [3, 9, 17],
             'other' => [0, 20, 33],
         ];
     }

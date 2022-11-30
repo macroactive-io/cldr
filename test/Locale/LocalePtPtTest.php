@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguagePtPt;
+use Macroactive\Cldr\Locale\LocalePtPt;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPt;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocalePtPt;
 
 class LocalePtPtTest extends TestCase
 {

@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageRaj - Representation of the Rajastani language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageRaj extends AbstractLanguage implements LanguageInterface

@@ -9,7 +9,7 @@ use Macroactive\Cldr\Script\ScriptAdlm;
 /**
  * Class LocaleFfAdlm - Fulah
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleFfAdlm extends LocaleFf
 {
@@ -23,16 +23,16 @@ class LocaleFfAdlm extends LocaleFf
         return '𞤊𞤵𞤤𞤬𞤵𞤤𞤣𞤫';
     }
 
-    protected function numberSymbols(): array
-    {
-        return array(
-            self::DECIMAL => self::DOT,
-            self::GROUP   => self::ADLM_GROUP,
-        );
-    }
-
     public function script(): ScriptAdlm
     {
         return new ScriptAdlm();
+    }
+
+    protected function numberSymbols(): array
+    {
+        return [
+            self::DECIMAL => self::DOT,
+            self::GROUP   => self::ADLM_GROUP,
+        ];
     }
 }

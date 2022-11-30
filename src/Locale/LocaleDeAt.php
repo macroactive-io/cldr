@@ -35,5 +35,4 @@ class LocaleDeAt extends LocaleDe
             self::DECIMAL => self::COMMA,
         ];
     }
-
 }

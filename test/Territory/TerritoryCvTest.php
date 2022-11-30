@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Territory;
 
-use PHPUnit\Framework\TestCase;
-
 use Macroactive\Cldr\Territory\TerritoryCv;
+use PHPUnit\Framework\TestCase;
 
 class TerritoryCvTest extends TestCase
 {

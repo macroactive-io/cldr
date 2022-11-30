@@ -211,6 +211,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     /**
      * When using grouping digits in numbers, keep this many of digits together.
+     *
      * @psalm-immutable
      */
     protected function minimumGroupingDigits(): int

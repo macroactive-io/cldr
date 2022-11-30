@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLn;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleLnCf;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCf;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleLnCf;
 
 class LocaleLnCfTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleLnCfTest extends TestCase
         self::assertSame(TerritoryCf::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ln_CF', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ln-CF"', $locale->htmlAttributes());
         self::assertSame('ln-CF', $locale->languageTag());

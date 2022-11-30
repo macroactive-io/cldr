@@ -8,6 +8,7 @@ use Macroactive\Cldr\Language\LanguageSat;
 
 /**
  * Class LocaleSat - Santali
+ *
  * @psalm-immutable
  */
 class LocaleSat extends AbstractLocale implements LocaleInterface

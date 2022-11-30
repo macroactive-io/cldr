@@ -42,11 +42,11 @@ class PluralRule13 implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [1,],
-            'two' => [2],
-            'few' => [0, 7, 10, 110],
-            'many' => [11, 19, 119],
-            'other' => [20, 35, 100, 120]
+            'one'   => [1],
+            'two'   => [2],
+            'few'   => [0, 7, 10, 110],
+            'many'  => [11, 19, 119],
+            'other' => [20, 35, 100, 120],
         ];
     }
 }

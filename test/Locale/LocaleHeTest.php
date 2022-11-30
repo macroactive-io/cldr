@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHe;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleHe;
 use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\TerritoryIl;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleHe;
 
 class LocaleHeTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleHeTest extends TestCase
         self::assertSame(TerritoryIl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('he_IL', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="he" dir="rtl"', $locale->htmlAttributes());
         self::assertSame('he', $locale->languageTag());

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSms;
-use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
+use Macroactive\Cldr\Locale\LocaleSms;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryFi;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleSms;
 
 class LocaleSmsTest extends TestCase
 {

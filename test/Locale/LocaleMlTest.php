@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMl;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleMl;
 use Macroactive\Cldr\Script\ScriptMlym;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleMl;
 
 class LocaleMlTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleMlTest extends TestCase
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ml_IN', $locale->code());
-        
+
         self::assertSame('൦൧൨൩൪൫൬൭൮൯', $locale->digits('0123456789'));
         self::assertSame('lang="ml"', $locale->htmlAttributes());
         self::assertSame('ml', $locale->languageTag());

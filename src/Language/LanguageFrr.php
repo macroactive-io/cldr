@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Language;
 
 use Macroactive\Cldr\Territory\TerritoryDe;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryDe;
 /**
  * Class LanguageEn - Representation of the North Frisian language.
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LanguageFrr extends AbstractLanguage implements LanguageInterface
 {

@@ -11,16 +11,16 @@ use Macroactive\Cldr\Script\ScriptArab;
  */
 class LocalePaArab extends LocalePa
 {
+    public function script(): ScriptArab
+    {
+        return new ScriptArab();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::ARAB_DECIMAL,
         ];
-    }
-
-    public function script(): ScriptArab
-    {
-        return new ScriptArab();
     }
 
     protected function percentFormat(): string

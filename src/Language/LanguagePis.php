@@ -8,7 +8,8 @@ use Macroactive\Cldr\Territory\TerritorySb;
 
 /**
  * Class LanguageEn - Representation of the English language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguagePis extends AbstractLanguage implements LanguageInterface

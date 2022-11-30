@@ -11,16 +11,16 @@ use Macroactive\Cldr\Territory\TerritoryBo;
  */
 class LocaleQuBo extends LocaleQu
 {
+    public function territory(): TerritoryBo
+    {
+        return new TerritoryBo();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryBo
-    {
-        return new TerritoryBo();
     }
 }

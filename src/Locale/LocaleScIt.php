@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Locale;
 
 /**
  * Class LocaleScIt - Sardinian
+ *
  * @psalm-immutable
  */
 class LocaleScIt extends LocaleSc

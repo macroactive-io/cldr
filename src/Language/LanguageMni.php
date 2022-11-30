@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageMai - Representation of the Meitei language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageMni extends AbstractLanguage implements LanguageInterface

@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
+use Macroactive\Cldr\Language\LanguageLu;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageLu;
 
 class LanguageLuTest extends TestCase
 {

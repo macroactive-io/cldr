@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLv;
-use Macroactive\Cldr\PluralRule\PluralRule3;
+use Macroactive\Cldr\Locale\LocaleLv;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryLv;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleLv;
 
 class LocaleLvTest extends TestCase
 {

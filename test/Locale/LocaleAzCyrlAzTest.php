@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAz;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleAzCyrlAz;
 use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryAz;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleAzCyrlAz;
 
 class LocaleAzCyrlAzTest extends TestCase
 {

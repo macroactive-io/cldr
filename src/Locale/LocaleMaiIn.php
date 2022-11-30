@@ -10,7 +10,7 @@ use Macroactive\Cldr\Script\ScriptDeva;
 /**
  * Class LocaleMaiIn - Maithili
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleMaiIn extends AbstractLocale implements LocaleInterface
 {
@@ -24,7 +24,7 @@ class LocaleMaiIn extends AbstractLocale implements LocaleInterface
         return 'मैथिली';
     }
 
-    public function language(): LanguageMai 
+    public function language(): LanguageMai
     {
         return new LanguageMai();
     }

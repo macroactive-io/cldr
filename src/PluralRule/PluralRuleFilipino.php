@@ -7,6 +7,7 @@ namespace Macroactive\Cldr\PluralRule;
 /**
  * Class PluralRuleFilipino - Select a plural form for a specified number.
  * nplurals=2; plural=n % 10 != 4 && n%10 != 6 && n%10 != 9;
+ *
  * @psalm-immutable
  */
 class PluralRuleFilipino implements PluralRuleInterface

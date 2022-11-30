@@ -9,6 +9,7 @@ use Macroactive\Cldr\Territory\TerritoryNg;
 
 /**
  * Class LanguagePcm - Representation of the Nigerian Pidgin language.
+ *
  * @psalm-immutable
  */
 class LanguagePcm extends AbstractLanguage implements LanguageInterface

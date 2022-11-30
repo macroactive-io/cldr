@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHy;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleHy;
 use Macroactive\Cldr\Script\ScriptArmn;
 use Macroactive\Cldr\Territory\TerritoryAm;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleHy;
 
 class LocaleHyTest extends TestCase
 {

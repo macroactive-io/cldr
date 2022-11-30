@@ -17,7 +17,7 @@ class CldrPluralRulesTest extends TestCase
      *
      * @large
      */
-    public function testPluralRules()
+    public function testPluralRules(): void
     {
         $cldr = simplexml_load_string(self::getPluralsData());
 
@@ -34,7 +34,7 @@ class CldrPluralRulesTest extends TestCase
                 }
                 $locale = Locale::create($locale_code);
 
-                $exampleForms = array_keys($locale->pluralRule()->pluralExamples());
+                $exampleForms       = array_keys($locale->pluralRule()->pluralExamples());
                 $pluralRulePosition = 0;
 
                 $treatManyAsOther = false;
@@ -42,6 +42,7 @@ class CldrPluralRulesTest extends TestCase
                 foreach ($plurals as $pluralExamples) {
                     if ('other' === (string) $pluralExamples->attributes()['count'] && !str_contains((string) $pluralExamples, '@integer')) {
                         $treatManyAsOther = true;
+
                         break;
                     }
                 }
@@ -75,13 +76,13 @@ class CldrPluralRulesTest extends TestCase
                         $low  = (int) $low;
                         $high = (int) $high;
 
-                        for ($number = $low; $number <= $high; $number++) {
+                        for ($number = $low; $number <= $high; ++$number) {
                             $debug = implode('|', [
                                 $locale_code,
                                 $pluralRulePosition,
                                 $pluralForm,
                                 $rule,
-                                $low, $high
+                                $low, $high,
                             ]);
 
                             self::assertSame($pluralForm, $exampleForms[$locale->pluralRule()->plural($number)], $debug);

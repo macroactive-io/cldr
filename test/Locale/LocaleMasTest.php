@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMas;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleMas;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleMas;
 
 class LocaleMasTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleMasTest extends TestCase
         self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mas_KE', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="mas"', $locale->htmlAttributes());
         self::assertSame('mas', $locale->languageTag());

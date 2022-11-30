@@ -34,8 +34,8 @@ class PluralRule5 implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [1,],
-            'few' => [0, 2, 15, 101],
+            'one'   => [1],
+            'few'   => [0, 2, 15, 101],
             'other' => [21, 100],
         ];
     }

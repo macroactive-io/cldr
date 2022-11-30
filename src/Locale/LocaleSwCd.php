@@ -11,16 +11,16 @@ use Macroactive\Cldr\Territory\TerritoryCd;
  */
 class LocaleSwCd extends LocaleSw
 {
+    public function territory(): TerritoryCd
+    {
+        return new TerritoryCd();
+    }
+
     protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryCd
-    {
-        return new TerritoryCd();
     }
 }

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKsh;
-use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
+use Macroactive\Cldr\Locale\LocaleKshDe;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleKshDe;
 
 class LocaleKshDeTest extends TestCase
 {

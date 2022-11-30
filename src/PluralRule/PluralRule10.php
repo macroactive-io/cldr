@@ -38,10 +38,10 @@ class PluralRule10 implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [1,101, ],
-            'two' => [2, 102],
-            'few' => [3, 4, 104],
-            'other' => [5, 17, 100]
+            'one'   => [1, 101],
+            'two'   => [2, 102],
+            'few'   => [3, 4, 104],
+            'other' => [5, 17, 100],
         ];
     }
 }

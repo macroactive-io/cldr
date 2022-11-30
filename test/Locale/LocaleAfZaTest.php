@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAf;
+use Macroactive\Cldr\Locale\LocaleAfZa;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZa;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleAfZa;
 
 class LocaleAfZaTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleAfZaTest extends TestCase
         self::assertSame(TerritoryZa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('af_ZA', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="af"', $locale->htmlAttributes());
         self::assertSame('af', $locale->languageTag());

@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageQu;
+use Macroactive\Cldr\Locale\LocaleQuBo;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBo;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleQuBo;
 
 class LocaleQuBoTest extends TestCase
 {
@@ -22,7 +21,7 @@ class LocaleQuBoTest extends TestCase
         self::assertSame(TerritoryBo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('qu_BO', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="qu-BO"', $locale->htmlAttributes());
         self::assertSame('qu-BO', $locale->languageTag());

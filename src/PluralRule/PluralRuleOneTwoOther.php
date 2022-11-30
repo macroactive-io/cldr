@@ -17,8 +17,8 @@ class PluralRuleOneTwoOther implements PluralRuleInterface
     public function plural(int $number): int
     {
         return match (abs($number)) {
-            1 => 0,
-            2 => 1,
+            1       => 0,
+            2       => 1,
             default => 2,
         };
     }
@@ -26,8 +26,8 @@ class PluralRuleOneTwoOther implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one'   => [1,],
-            'two'   => [2,],
+            'one'   => [1],
+            'two'   => [2],
             'other' => [3, 9, 12],
         ];
     }

@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageFr;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleFrSn;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleFrSn;
 
 class LocaleFrSnTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleFrSnTest extends TestCase
         self::assertSame(TerritorySn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('fr_SN', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="fr-SN"', $locale->htmlAttributes());
         self::assertSame('fr-SN', $locale->languageTag());

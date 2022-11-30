@@ -8,7 +8,8 @@ use Macroactive\Cldr\Territory\TerritoryBr;
 
 /**
  * Class LanguageYrl - Representation of the Kaingang language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageYrl extends AbstractLanguage implements LanguageInterface

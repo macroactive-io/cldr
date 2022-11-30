@@ -6,6 +6,7 @@ namespace Macroactive\Cldr\Locale;
 
 /**
  * Class LocaleDoiIn - Dogri
+ *
  * @psalm-immutable
  */
 class LocaleDoiIn extends LocaleDoi

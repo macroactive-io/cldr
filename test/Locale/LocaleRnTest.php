@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageRn;
+use Macroactive\Cldr\Locale\LocaleRn;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBi;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleRn;
 
 class LocaleRnTest extends TestCase
 {

@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests\Language;
 
+use Macroactive\Cldr\Language\LanguageAgq;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Language\LanguageAgq;
 
 class LanguageAgqTest extends TestCase
 {

@@ -10,7 +10,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageBho - Representation of the Bhojpuri language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageBho extends AbstractLanguage implements LanguageInterface

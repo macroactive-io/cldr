@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryRu;
 
 /**
  * Class LanguageCv - Representation of the Chuvash language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageMdf extends AbstractLanguage implements LanguageInterface

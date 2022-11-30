@@ -28,7 +28,7 @@ class PluralRuleCentralAtlasTamazight implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one' => [0, 1, 11, 24],
+            'one'   => [0, 1, 11, 24],
             'other' => [2, 9, 10, 106],
         ];
     }

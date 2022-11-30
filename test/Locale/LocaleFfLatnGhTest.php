@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageFf;
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\Locale\LocaleFfLatnGh;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGh;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleFfLatnGh;
 
 class LocaleFfLatnGhTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleFfLatnGhTest extends TestCase
         self::assertSame(TerritoryGh::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ff_GH', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ff-GH"', $locale->htmlAttributes());
         self::assertSame('ff-GH', $locale->languageTag());

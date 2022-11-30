@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEu;
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\Locale\LocaleEu;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEs;
 use PHPUnit\Framework\TestCase;
-
-use Macroactive\Cldr\Locale\LocaleEu;
 
 class LocaleEuTest extends TestCase
 {
@@ -23,7 +21,7 @@ class LocaleEuTest extends TestCase
         self::assertSame(TerritoryEs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('eu_ES', $locale->code());
-        
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="eu"', $locale->htmlAttributes());
         self::assertSame('eu', $locale->languageTag());

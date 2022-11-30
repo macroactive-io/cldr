@@ -32,7 +32,7 @@ class PluralRuleTachelhit implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'one'   => [0, 1,],
+            'one'   => [0, 1],
             'few'   => [2, 7, 10],
             'other' => [11, 26, 100, 101],
         ];

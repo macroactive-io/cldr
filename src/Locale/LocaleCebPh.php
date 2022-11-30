@@ -6,7 +6,8 @@ namespace Macroactive\Cldr\Locale;
 
 /**
  * Class LocaleCebPh - Cebuano
- 
+
+ *
  * @psalm-immutable
  */
 class LocaleCebPh extends LocaleCeb

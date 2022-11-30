@@ -16,11 +16,11 @@ class PluralRuleWelsh implements PluralRuleInterface
         $n = abs($number);
 
         return match ($n) {
-            0 => 0,
-            1 => 1,
-            2 => 2,
-            3 => 3,
-            6 => 4,
+            0       => 0,
+            1       => 1,
+            2       => 2,
+            3       => 3,
+            6       => 4,
             default => 5
         };
     }
@@ -28,12 +28,12 @@ class PluralRuleWelsh implements PluralRuleInterface
     public function pluralExamples(): array
     {
         return [
-            'zero' => [0],
-            'one' => [1],
-            'two' => [2],
-            'few' => [3],
-            'many' => [6],
-            'other' => [4, 5, 7, 19]
+            'zero'  => [0],
+            'one'   => [1],
+            'two'   => [2],
+            'few'   => [3],
+            'many'  => [6],
+            'other' => [4, 5, 7, 19],
         ];
     }
 }

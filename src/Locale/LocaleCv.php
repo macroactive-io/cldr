@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageCv;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageCv;
 /**
  * Class LocaleCv - Chuvash
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleCv extends AbstractLocale implements LocaleInterface
 {
@@ -21,17 +23,17 @@ class LocaleCv extends AbstractLocale implements LocaleInterface
         return 'ЧӐВАШ';
     }
 
-    public function language(): LanguageCv 
+    public function language(): LanguageCv
     {
         return new LanguageCv();
     }
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::GROUP   => self::NBSP,
             self::DECIMAL => self::COMMA,
-        );
+        ];
     }
 
     protected function percentFormat(): string

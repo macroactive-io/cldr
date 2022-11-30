@@ -9,7 +9,8 @@ use Macroactive\Cldr\Territory\TerritoryIn;
 
 /**
  * Class LanguageMai - Representation of the Maithili language.
- 
+
+ *
  * @psalm-immutable
  */
 class LanguageMai extends AbstractLanguage implements LanguageInterface

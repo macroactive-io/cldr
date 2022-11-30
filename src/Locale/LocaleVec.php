@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Macroactive\Cldr\Locale;
 
 use Macroactive\Cldr\Language\LanguageVec;
@@ -7,7 +9,7 @@ use Macroactive\Cldr\Language\LanguageVec;
 /**
  * Class LocaleVec - Venetian
  *
-* @psalm-immutable
+ * @psalm-immutable
  */
 class LocaleVec extends AbstractLocale implements LocaleInterface
 {
@@ -21,16 +23,16 @@ class LocaleVec extends AbstractLocale implements LocaleInterface
         return 'VENETO';
     }
 
-    public function language(): LanguageVec 
+    public function language(): LanguageVec
     {
         return new LanguageVec();
     }
 
     protected function numberSymbols(): array
     {
-        return array(
+        return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
-        );
+        ];
     }
 }
