@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
 use Macroactive\Cldr\Script\ScriptTfng;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageShi;
 
 class LanguageShiTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageShiTest extends TestCase
         $language = new LanguageShi();
 
         self::assertSame(ScriptTfng::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleTachelhit::class, $language->pluralRule()::class);
         self::assertSame('shi', $language->code());
     }
 }

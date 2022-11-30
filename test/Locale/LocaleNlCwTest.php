@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNl;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCw;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNlCw;
 
 class LocaleNlCwTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleNlCwTest extends TestCase
         $locale = new LocaleNlCw();
 
         self::assertSame(LanguageNl::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCw::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nl_CW', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="nl-CW"', $locale->htmlAttributes());
         self::assertSame('nl-CW', $locale->languageTag());

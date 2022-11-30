@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMua;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMua;
 
 class LocaleMuaTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleMuaTest extends TestCase
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mua_CM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('MUNDAŊ', $locale->endonym());
         self::assertSame('lang="mua"', $locale->htmlAttributes());
         self::assertSame('mua', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

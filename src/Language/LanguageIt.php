@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\PluralRule\PluralRule1WithMillions;
 use Macroactive\Cldr\Territory\TerritoryIt;
 
 /**
@@ -24,8 +24,8 @@ class LanguageIt extends AbstractLanguage implements LanguageInterface
         return new TerritoryIt();
     }
 
-    public function pluralRule(): PluralRule1
+    public function pluralRule(): PluralRule1WithMillions
     {
-        return new PluralRule1();
+        return new PluralRule1WithMillions();
     }
 }

@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageZgh;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleZghMa;
 
 class LocaleZghMaTest extends TestCase
 {
@@ -19,7 +21,7 @@ class LocaleZghMaTest extends TestCase
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="zgh"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

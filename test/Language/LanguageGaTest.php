@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule11;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageGa;
 
 class LanguageGaTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageGaTest extends TestCase
         $language = new LanguageGa();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule11::class, $language->pluralRule()::class);
         self::assertSame('ga', $language->code());
     }
 }

@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageOc;
 
 class LanguageOcTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageOcTest extends TestCase
         $language = new LanguageOc();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule2::class, $language->pluralRule()::class);
         self::assertSame('oc', $language->code());
     }
 }

@@ -2,19 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
 use DomainException;
+use Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Locale\LocaleEnAu;
 use Macroactive\Cldr\Locale\LocaleEnGb;
 use Macroactive\Cldr\Locale\LocaleEnUs;
 use PHPUnit\Framework\TestCase;
 
-/**
- * Tests for the AbstractLocale class
- *
- * @coversNothing
- */
 class LocaleTest extends TestCase
 {
     /**
@@ -44,12 +40,12 @@ class LocaleTest extends TestCase
     public function testCompareAll(): void
     {
         $array = array_map(static function ($x) {
-            $class = __NAMESPACE__ . '\Locale\\' . basename($x, '.php');
+            $class = 'Macroactive\Cldr\Locale\\' . basename($x, '.php');
 
             return new $class();
         }, preg_grep('/Abstract|Interface/', glob(__DIR__ . '/../src/Locale/Locale??*.php'), PREG_GREP_INVERT));
 
-        usort($array, __NAMESPACE__ . '\Locale::compare');
+        usort($array, 'Macroactive\Cldr\Locale::compare');
         self::assertNotEmpty($array);
         self::assertTrue(is_array($array));
     }

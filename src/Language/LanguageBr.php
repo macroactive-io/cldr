@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\PluralRule\PluralRule16;
 use Macroactive\Cldr\Territory\TerritoryFr;
 
 /**
@@ -24,8 +24,8 @@ class LanguageBr extends AbstractLanguage implements LanguageInterface
         return new TerritoryFr();
     }
 
-    public function pluralRule(): PluralRule2
+    public function pluralRule(): PluralRule16
     {
-        return new PluralRule2();
+        return new PluralRule16();
     }
 }

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMn;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMn;
 
 class LocaleMnTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleMnTest extends TestCase
         $locale = new LocaleMn();
 
         self::assertSame(LanguageMn::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mn_MN', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('монгол', $locale->endonym());
         self::assertSame('lang="mn"', $locale->htmlAttributes());
         self::assertSame('mn', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

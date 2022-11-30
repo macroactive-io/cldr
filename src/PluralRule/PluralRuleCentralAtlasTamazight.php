@@ -24,4 +24,12 @@ class PluralRuleCentralAtlasTamazight implements PluralRuleInterface
 
         return 0;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'one' => [0, 1, 11, 24],
+            'other' => [2, 9, 10, 106],
+        ];
+    }
 }

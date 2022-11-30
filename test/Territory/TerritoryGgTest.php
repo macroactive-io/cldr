@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Territory;
+namespace Macroactive\Cldr\Tests\Territory;
 
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Territory\TerritoryGg;
 
 class TerritoryGgTest extends TestCase
 {

@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAgq;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleAgqCm;
 
 class LocaleAgqCmTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleAgqCmTest extends TestCase
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('agq_CM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="agq"', $locale->htmlAttributes());
         self::assertSame('agq', $locale->languageTag());

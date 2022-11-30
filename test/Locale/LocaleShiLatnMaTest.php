@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageShi;
 use Macroactive\Cldr\PluralRule\PluralRuleTachelhit;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleShiLatnMa;
 
 class LocaleShiLatnMaTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleShiLatnMaTest extends TestCase
         $locale = new LocaleShiLatnMa();
 
         self::assertSame(LanguageShi::class, $locale->language()::class);
-        self::assertSame(PluralRuleTachelhit::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('shi_MA@latin', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('tamazight', $locale->endonym());
         self::assertSame('lang="shi-Latn"', $locale->htmlAttributes());
         self::assertSame('shi-Latn', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

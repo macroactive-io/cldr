@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageBh;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleBh;
 
 class LocaleBhTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleBhTest extends TestCase
         $locale = new LocaleBh();
 
         self::assertSame(LanguageBh::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptDeva::class, $locale->script()::class);
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('bh_IN', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('०१२३४५६७८९', $locale->digits('0123456789'));
-        self::assertSame('Bihari', $locale->endonym());
         self::assertSame('lang="bh"', $locale->htmlAttributes());
         self::assertSame('bh', $locale->languageTag());
         self::assertSame('-१२३', $locale->number(-123));

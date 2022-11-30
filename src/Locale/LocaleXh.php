@@ -16,7 +16,7 @@ class LocaleXh extends AbstractLocale implements LocaleInterface
 {
     public function endonym(): string
     {
-        return 'isiXhosa';
+        return 'IsiXhosa';
     }
 
     public function endonymSortable(): string
@@ -29,7 +29,7 @@ class LocaleXh extends AbstractLocale implements LocaleInterface
         return new LanguageXh();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => self::NBSP,

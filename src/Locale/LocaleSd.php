@@ -24,7 +24,7 @@ class LocaleSd extends AbstractLocale implements LocaleInterface
         return new LanguageSd();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

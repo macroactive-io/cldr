@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSv;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSvSe;
 
 class LocaleSvSeTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleSvSeTest extends TestCase
         $locale = new LocaleSvSe();
 
         self::assertSame(LanguageSv::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritorySe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sv_SE', $locale->code());
-        self::assertSame('swedish_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="sv"', $locale->htmlAttributes());
         self::assertSame('sv', $locale->languageTag());

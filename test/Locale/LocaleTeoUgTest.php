@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageTeo;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryUg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleTeoUg;
 
 class LocaleTeoUgTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleTeoUgTest extends TestCase
         $locale = new LocaleTeoUg();
 
         self::assertSame(LanguageTeo::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryUg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('teo_UG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="teo"', $locale->htmlAttributes());
         self::assertSame('teo', $locale->languageTag());

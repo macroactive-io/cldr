@@ -11,7 +11,7 @@ use Macroactive\Cldr\Variant\VariantPosix;
  */
 class LocaleEnUsPosix extends LocaleEnUs
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => '',

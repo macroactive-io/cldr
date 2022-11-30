@@ -15,9 +15,4 @@ class TerritoryCn extends AbstractTerritory implements TerritoryInterface
     {
         return 'CN';
     }
-
-    public function firstDay(): int
-    {
-        return 0;
-    }
 }

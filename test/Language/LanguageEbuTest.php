@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageEbu;
 
 class LanguageEbuTest extends TestCase
 {

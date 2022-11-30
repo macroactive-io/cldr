@@ -30,4 +30,13 @@ class PluralRule8 implements PluralRuleInterface
 
         return 2;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'one' => [1,],
+            'few' => [2, 3, 4],
+            'other' => [5, 17, 19]
+        ];
+    }
 }

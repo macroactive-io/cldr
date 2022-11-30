@@ -22,4 +22,9 @@ class PluralRuleUnknown implements PluralRuleInterface
     {
         throw new DomainException('No plural rule defined for this language');
     }
+
+    public function pluralExamples(): array
+    {
+        throw new DomainException('No plural rule defined for this language');
+    }
 }

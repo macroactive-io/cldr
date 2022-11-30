@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageFr;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGq;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleFrGq;
 
 class LocaleFrGqTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleFrGqTest extends TestCase
         $locale = new LocaleFrGq();
 
         self::assertSame(LanguageFr::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryGq::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('fr_GQ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="fr-GQ"', $locale->htmlAttributes());
         self::assertSame('fr-GQ', $locale->languageTag());

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMfe;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMu;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMfeMu;
 
 class LocaleMfeMuTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleMfeMuTest extends TestCase
         $locale = new LocaleMfeMu();
 
         self::assertSame(LanguageMfe::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMu::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mfe_MU', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="mfe"', $locale->htmlAttributes());
         self::assertSame('mfe', $locale->languageTag());

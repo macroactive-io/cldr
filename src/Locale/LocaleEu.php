@@ -29,7 +29,7 @@ class LocaleEu extends AbstractLocale implements LocaleInterface
         return new LanguageEu();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,

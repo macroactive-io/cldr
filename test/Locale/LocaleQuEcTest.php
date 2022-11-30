@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageQu;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEc;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleQuEc;
 
 class LocaleQuEcTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleQuEcTest extends TestCase
         self::assertSame(TerritoryEc::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('qu_EC', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="qu-EC"', $locale->htmlAttributes());
         self::assertSame('qu-EC', $locale->languageTag());

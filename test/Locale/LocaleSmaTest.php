@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSma;
 use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryFi;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSma;
 
 class LocaleSmaTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleSmaTest extends TestCase
         $locale = new LocaleSma();
 
         self::assertSame(LanguageSma::class, $locale->language()::class);
-        self::assertSame(PluralRuleOneTwoOther::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryFi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sma_FI', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Åarjelsaemien gïele', $locale->endonym());
         self::assertSame('lang="sma"', $locale->htmlAttributes());
         self::assertSame('sma', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

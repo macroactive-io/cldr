@@ -12,7 +12,7 @@ use Macroactive\Cldr\Territory\TerritoryTn;
  */
 class LocaleArTn extends LocaleAr
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHa;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleHa;
 
 class LocaleHaTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleHaTest extends TestCase
         $locale = new LocaleHa();
 
         self::assertSame(LanguageHa::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryNg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ha_NG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Hausa', $locale->endonym());
         self::assertSame('lang="ha"', $locale->htmlAttributes());
         self::assertSame('ha', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

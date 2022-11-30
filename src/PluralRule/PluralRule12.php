@@ -42,4 +42,16 @@ class PluralRule12 implements PluralRuleInterface
 
         return 5;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'zero' => [0,],
+            'one' => [1,],
+            'two' => [2],
+            'few' => [3,10, 107],
+            'many' => [11, 26, 111],
+            'other' => [100, 102]
+        ];
+    }
 }

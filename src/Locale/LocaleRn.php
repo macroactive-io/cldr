@@ -29,7 +29,7 @@ class LocaleRn extends AbstractLocale implements LocaleInterface
         return new LanguageRn();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

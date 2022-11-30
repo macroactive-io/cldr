@@ -29,7 +29,7 @@ class LocaleTwq extends AbstractLocale implements LocaleInterface
         return new LanguageTwq();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => self::NBSP,

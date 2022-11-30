@@ -16,16 +16,19 @@ class PluralRuleOneTwoOther implements PluralRuleInterface
 
     public function plural(int $number): int
     {
-        $number = abs($number);
+        return match (abs($number)) {
+            1 => 0,
+            2 => 1,
+            default => 2,
+        };
+    }
 
-        if ($number === 1) {
-            return 0;
-        }
-
-        if ($number === 2) {
-            return 1;
-        }
-
-        return 2;
+    public function pluralExamples(): array
+    {
+        return [
+            'one'   => [1,],
+            'two'   => [2,],
+            'other' => [3, 9, 12],
+        ];
     }
 }

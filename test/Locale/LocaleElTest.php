@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEl;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptGrek;
 use Macroactive\Cldr\Territory\TerritoryGr;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEl;
 
 class LocaleElTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleElTest extends TestCase
         $locale = new LocaleEl();
 
         self::assertSame(LanguageEl::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptGrek::class, $locale->script()::class);
         self::assertSame(TerritoryGr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('el_GR', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Ελληνικά', $locale->endonym());
         self::assertSame('lang="el"', $locale->htmlAttributes());
         self::assertSame('el', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptCans;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageIu;
 
 class LanguageIuTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageIuTest extends TestCase
         $language = new LanguageIu();
 
         self::assertSame(ScriptCans::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleOneTwoOther::class, $language->pluralRule()::class);
         self::assertSame('iu', $language->code());
     }
 }

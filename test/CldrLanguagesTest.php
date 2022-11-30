@@ -2,15 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Macroactive\Cldr\Locale;
 
-/**
- * Tests for the CLDR
- *
- * @coversNothing
- */
 class CldrLanguagesTest extends TestCase
 {
     /**
@@ -20,7 +15,7 @@ class CldrLanguagesTest extends TestCase
      */
     public function testLanguages(): void
     {
-        foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $xml) {
+        foreach (self::getMainCldrFiles() as $xml) {
             if (!str_contains($xml, '/root.xml')) {
                 $cldr         = simplexml_load_string(file_get_contents($xml));
                 $locale       = Locale::create(basename($xml, '.xml'));
@@ -30,7 +25,7 @@ class CldrLanguagesTest extends TestCase
                 foreach ($endonyms as $endonym) {
                     $debug = implode('|', [
                         basename($xml),
-                        $endonym,
+                        'endonym:' . $endonym,
                     ]);
 
                     self::assertSame((string) $endonym, $locale->endonym(), $debug);

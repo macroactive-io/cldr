@@ -16,7 +16,7 @@ class LocaleOc extends AbstractLocale implements LocaleInterface
 {
     public function endonym(): string
     {
-        return 'lenga d’òc';
+        return 'occitan';
     }
 
     public function language(): LanguageInterface

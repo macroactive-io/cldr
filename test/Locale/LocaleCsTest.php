@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageCs;
 use Macroactive\Cldr\PluralRule\PluralRule8;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleCs;
 
 class LocaleCsTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleCsTest extends TestCase
         $locale = new LocaleCs();
 
         self::assertSame(LanguageCs::class, $locale->language()::class);
-        self::assertSame(PluralRule8::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('cs_CZ', $locale->code());
-        self::assertSame('czech_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('čeština', $locale->endonym());
         self::assertSame('lang="cs"', $locale->htmlAttributes());
         self::assertSame('cs', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

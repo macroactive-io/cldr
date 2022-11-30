@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageLag;
 
 class LanguageLagTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageLagTest extends TestCase
         $language = new LanguageLag();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleZeroOneOther::class, $language->pluralRule()::class);
         self::assertSame('lag', $language->code());
     }
 }

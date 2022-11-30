@@ -1,4 +1,4 @@
-File-Date: 2022-06-28
+File-Date: 2022-03-02
 %%
 Type: language
 Subtag: aa
@@ -47766,13 +47766,6 @@ Comments: The dialect of Lipovaz/Lipovec is one of the minor local
   dialects of Resian
 %%
 Type: variant
-Subtag: ltg2007
-Description: The Latgalian language orthography codified in the language
-  law in 2007
-Added: 2022-06-23
-Prefix: ltg
-%%
-Type: variant
 Subtag: luna1918
 Description: Post-1917 Russian orthography
 Added: 2010-10-10
@@ -48701,3 +48694,4 @@ Description: Cantonese
 Added: 1999-12-18
 Deprecated: 2009-07-29
 Preferred-Value: yue
+

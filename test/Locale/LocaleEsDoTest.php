@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEs;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDo;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEsDo;
 
 class LocaleEsDoTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleEsDoTest extends TestCase
         $locale = new LocaleEsDo();
 
         self::assertSame(LanguageEs::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryDo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('es_DO', $locale->code());
-        self::assertSame('spanish_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="es-DO"', $locale->htmlAttributes());
         self::assertSame('es-DO', $locale->languageTag());

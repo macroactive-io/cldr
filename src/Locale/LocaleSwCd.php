@@ -11,7 +11,7 @@ use Macroactive\Cldr\Territory\TerritoryCd;
  */
 class LocaleSwCd extends LocaleSw
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

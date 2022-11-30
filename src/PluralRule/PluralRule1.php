@@ -31,4 +31,9 @@ class PluralRule1 implements PluralRuleInterface
 
         return 1;
     }
+
+    public function pluralExamples(): array
+    {
+        return ['one' => [1], 'other' => [0, 2, 15]];
+    }
 }

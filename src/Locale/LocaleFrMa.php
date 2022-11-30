@@ -11,16 +11,16 @@ use Macroactive\Cldr\Territory\TerritoryMa;
  */
 class LocaleFrMa extends LocaleFr
 {
-    public function numberSymbols(): array
+    public function territory(): TerritoryMa
+    {
+        return new TerritoryMa();
+    }
+
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
         ];
-    }
-
-    public function territory(): TerritoryMa
-    {
-        return new TerritoryMa();
     }
 }

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMt;
 use Macroactive\Cldr\PluralRule\PluralRule13;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMt;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMt;
 
 class LocaleMtTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleMtTest extends TestCase
         $locale = new LocaleMt();
 
         self::assertSame(LanguageMt::class, $locale->language()::class);
-        self::assertSame(PluralRule13::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mt_MT', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Malti', $locale->endonym());
         self::assertSame('lang="mt"', $locale->htmlAttributes());
         self::assertSame('mt', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

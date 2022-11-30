@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMgh;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMgh;
 
 class LocaleMghTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleMghTest extends TestCase
         self::assertSame(TerritoryMz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mgh_MZ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Makua', $locale->endonym());
         self::assertSame('lang="mgh"', $locale->htmlAttributes());
         self::assertSame('mgh', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

@@ -33,18 +33,4 @@ class LocaleNb extends AbstractLocale implements LocaleInterface
     {
         return new LanguageNb();
     }
-
-    public function numberSymbols(): array
-    {
-        return [
-            self::GROUP    => self::NBSP,
-            self::DECIMAL  => self::COMMA,
-            self::NEGATIVE => self::MINUS_SIGN,
-        ];
-    }
-
-    protected function percentFormat(): string
-    {
-        return self::PLACEHOLDER . self::NBSP . self::PERCENT;
-    }
 }

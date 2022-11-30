@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Script;
+namespace Macroactive\Cldr\Tests\Script;
 
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Script\ScriptUgar;
+
+use Macroactive\Cldr\Script\ScriptDirection;
 
 class ScriptUgarTest extends TestCase
 {

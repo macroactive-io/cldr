@@ -29,11 +29,16 @@ class LocaleMk extends AbstractLocale implements LocaleInterface
         return new LanguageMk();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
             self::DECIMAL => self::COMMA,
         ];
+    }
+
+    protected function percentFormat(): string
+    {
+        return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }
 }

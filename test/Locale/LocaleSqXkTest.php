@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSq;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryXk;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSqXk;
 
 class LocaleSqXkTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleSqXkTest extends TestCase
         self::assertSame(TerritoryXk::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sq_XK', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="sq-XK"', $locale->htmlAttributes());
         self::assertSame('sq-XK', $locale->languageTag());

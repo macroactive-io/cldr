@@ -15,4 +15,9 @@ class LocaleEnCh extends LocaleEn
     {
         return new TerritoryCh();
     }
+
+    protected function numberSymbols(): array
+    {
+        return [self::GROUP => self::APOSTROPHE,];
+    }
 }

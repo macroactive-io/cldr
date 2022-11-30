@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageNaq;
 
 class LanguageNaqTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageNaqTest extends TestCase
         $language = new LanguageNaq();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleOneTwoOther::class, $language->pluralRule()::class);
         self::assertSame('naq', $language->code());
     }
 }

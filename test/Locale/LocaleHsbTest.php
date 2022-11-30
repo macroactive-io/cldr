@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHsb;
 use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleHsb;
 
 class LocaleHsbTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleHsbTest extends TestCase
         $locale = new LocaleHsb();
 
         self::assertSame(LanguageHsb::class, $locale->language()::class);
-        self::assertSame(PluralRule10::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('hsb_DE', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('hornjoserbšćina', $locale->endonym());
         self::assertSame('lang="hsb"', $locale->htmlAttributes());
         self::assertSame('hsb', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

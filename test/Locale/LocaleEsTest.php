@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEs;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEs;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEs;
 
 class LocaleEsTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleEsTest extends TestCase
         $locale = new LocaleEs();
 
         self::assertSame(LanguageEs::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryEs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('es_ES', $locale->code());
-        self::assertSame('spanish_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('español', $locale->endonym());
         self::assertSame('lang="es"', $locale->htmlAttributes());
         self::assertSame('es', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

@@ -23,7 +23,7 @@ class LocaleDeCh extends LocaleDe
         return 'SCHWEIZER HOCHDEUTSCH';
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,

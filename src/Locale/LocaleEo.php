@@ -34,12 +34,11 @@ class LocaleEo extends AbstractLocale implements LocaleInterface
         return new LanguageEo();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,
             self::DECIMAL  => self::COMMA,
-            self::NEGATIVE => self::MINUS_SIGN,
         ];
     }
 }

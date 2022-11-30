@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Territory;
+namespace Macroactive\Cldr\Tests\Territory;
 
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Territory\TerritoryLy;
 
 class TerritoryLyTest extends TestCase
 {
@@ -13,8 +15,6 @@ class TerritoryLyTest extends TestCase
         $territory = new TerritoryLy();
 
         self::assertSame('LY', $territory->code());
-        self::assertSame(6, $territory->firstDay());
-        self::assertSame(5, $territory->weekendStart());
         self::assertSame(6, $territory->weekendEnd());
         self::assertSame('metric', $territory->measurementSystem());
         self::assertSame('A4', $territory->paperSize());

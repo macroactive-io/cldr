@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageMi;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleMi;
 
 class LocaleMiTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleMiTest extends TestCase
         $locale = new LocaleMi();
 
         self::assertSame(LanguageMi::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryNz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('mi_NZ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Māori', $locale->endonym());
         self::assertSame('lang="mi"', $locale->htmlAttributes());
         self::assertSame('mi', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

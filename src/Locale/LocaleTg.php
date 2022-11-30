@@ -24,7 +24,7 @@ class LocaleTg extends AbstractLocale implements LocaleInterface
         return new LanguageTg();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

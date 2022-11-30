@@ -29,7 +29,7 @@ class LocaleNah extends AbstractLocale implements LocaleInterface
         return new LanguageNah();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::COMMA,

@@ -34,7 +34,7 @@ class LocaleFa extends AbstractLocale implements LocaleInterface
         return ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

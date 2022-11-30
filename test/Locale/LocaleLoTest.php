@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLo;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLaoo;
 use Macroactive\Cldr\Territory\TerritoryLa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleLo;
 
 class LocaleLoTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleLoTest extends TestCase
         $locale = new LocaleLo();
 
         self::assertSame(LanguageLo::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLaoo::class, $locale->script()::class);
         self::assertSame(TerritoryLa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('lo_LA', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('໐໑໒໓໔໕໖໗໘໙', $locale->digits('0123456789'));
-        self::assertSame('ລາວ', $locale->endonym());
         self::assertSame('lang="lo"', $locale->htmlAttributes());
         self::assertSame('lo', $locale->languageTag());
         self::assertSame('-໑໒໓', $locale->number(-123));

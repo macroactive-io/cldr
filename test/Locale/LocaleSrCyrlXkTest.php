@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSr;
 use Macroactive\Cldr\PluralRule\PluralRule7;
 use Macroactive\Cldr\Script\ScriptCyrl;
 use Macroactive\Cldr\Territory\TerritoryXk;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSrCyrlXk;
 
 class LocaleSrCyrlXkTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleSrCyrlXkTest extends TestCase
         $locale = new LocaleSrCyrlXk();
 
         self::assertSame(LanguageSr::class, $locale->language()::class);
-        self::assertSame(PluralRule7::class, $locale->pluralRule()::class);
         self::assertSame(ScriptCyrl::class, $locale->script()::class);
         self::assertSame(TerritoryXk::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sr_XK', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="sr-XK"', $locale->htmlAttributes());
         self::assertSame('sr-XK', $locale->languageTag());

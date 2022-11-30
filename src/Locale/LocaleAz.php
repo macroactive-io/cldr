@@ -29,7 +29,7 @@ class LocaleAz extends AbstractLocale implements LocaleInterface
         return new LanguageAz();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

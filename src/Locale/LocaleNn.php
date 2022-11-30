@@ -21,7 +21,7 @@ class LocaleNn extends AbstractLocale implements LocaleInterface
 
     public function endonym(): string
     {
-        return 'nynorsk';
+        return 'norsk nynorsk';
     }
 
     public function endonymSortable(): string
@@ -34,7 +34,7 @@ class LocaleNn extends AbstractLocale implements LocaleInterface
         return new LanguageNn();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,

@@ -30,7 +30,7 @@ class LocaleShi extends AbstractLocale implements LocaleInterface
         return new LanguageShi();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

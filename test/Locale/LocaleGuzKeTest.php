@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGuz;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryKe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleGuzKe;
 
 class LocaleGuzKeTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleGuzKeTest extends TestCase
         self::assertSame(TerritoryKe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('guz_KE', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="guz"', $locale->htmlAttributes());
         self::assertSame('guz', $locale->languageTag());

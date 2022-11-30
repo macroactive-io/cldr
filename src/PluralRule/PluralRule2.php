@@ -18,12 +18,11 @@ class PluralRule2 implements PluralRuleInterface
 
     public function plural(int $number): int
     {
-        $number = abs($number);
+        return abs($number) > 1 ? 1 : 0;
+    }
 
-        if ($number > 1) {
-            return 1;
-        }
-
-        return 0;
+    public function pluralExamples(): array
+    {
+        return ['one' => [0, 1], 'other' => [2, 3, 9]];
     }
 }

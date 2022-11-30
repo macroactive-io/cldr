@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNr;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNr;
 
 class LocaleNrTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleNrTest extends TestCase
         $locale = new LocaleNr();
 
         self::assertSame(LanguageNr::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryZa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nr_ZA', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('isiNdebele', $locale->endonym());
         self::assertSame('lang="nr"', $locale->htmlAttributes());
         self::assertSame('nr', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

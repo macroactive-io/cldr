@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRuleWelsh;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageCy;
 
 class LanguageCyTest extends TestCase
 {
@@ -15,7 +16,6 @@ class LanguageCyTest extends TestCase
         $language = new LanguageCy();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleWelsh::class, $language->pluralRule()::class);
         self::assertSame('cy', $language->code());
     }
 }

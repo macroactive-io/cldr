@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEn;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEnDm;
 
 class LocaleEnDmTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleEnDmTest extends TestCase
         $locale = new LocaleEnDm();
 
         self::assertSame(LanguageEn::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryDm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('en_DM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="en-DM"', $locale->htmlAttributes());
         self::assertSame('en-DM', $locale->languageTag());

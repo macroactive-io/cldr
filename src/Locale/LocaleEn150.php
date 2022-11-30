@@ -11,14 +11,6 @@ use Macroactive\Cldr\Territory\Territory150;
  */
 class LocaleEn150 extends LocaleEn
 {
-    public function numberSymbols(): array
-    {
-        return [
-            self::GROUP   => self::DOT,
-            self::DECIMAL => self::COMMA,
-        ];
-    }
-
     public function territory(): Territory150
     {
         return new Territory150();

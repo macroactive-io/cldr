@@ -24,7 +24,7 @@ class LocaleUr extends AbstractLocale implements LocaleInterface
         return new LanguageUr();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::NEGATIVE => self::LTR_MARK . self::HYPHEN,

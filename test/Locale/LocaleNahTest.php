@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNah;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMx;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNah;
 
 class LocaleNahTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleNahTest extends TestCase
         $locale = new LocaleNah();
 
         self::assertSame(LanguageNah::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMx::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nah_MX', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Nahuatlahtolli', $locale->endonym());
         self::assertSame('lang="nah"', $locale->htmlAttributes());
         self::assertSame('nah', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

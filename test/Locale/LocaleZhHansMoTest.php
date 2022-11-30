@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageZh;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptHans;
 use Macroactive\Cldr\Territory\TerritoryMo;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleZhHansMo;
 
 class LocaleZhHansMoTest extends TestCase
 {
@@ -17,11 +19,10 @@ class LocaleZhHansMoTest extends TestCase
         $locale = new LocaleZhHansMo();
 
         self::assertSame(LanguageZh::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptHans::class, $locale->script()::class);
         self::assertSame(TerritoryMo::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="zh-MO"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

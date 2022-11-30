@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKo;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptKore;
 use Macroactive\Cldr\Territory\TerritoryKr;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleKo;
 
 class LocaleKoTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleKoTest extends TestCase
         $locale = new LocaleKo();
 
         self::assertSame(LanguageKo::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptKore::class, $locale->script()::class);
         self::assertSame(TerritoryKr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ko_KR', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('한국어', $locale->endonym());
         self::assertSame('lang="ko"', $locale->htmlAttributes());
         self::assertSame('ko', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

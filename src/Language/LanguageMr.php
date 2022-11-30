@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 
@@ -30,8 +30,8 @@ class LanguageMr extends AbstractLanguage implements LanguageInterface
         return new TerritoryIn();
     }
 
-    public function pluralRule(): PluralRule2
+    public function pluralRule(): PluralRule1
     {
-        return new PluralRule2();
+        return new PluralRule1();
     }
 }

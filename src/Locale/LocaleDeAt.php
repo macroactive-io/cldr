@@ -23,7 +23,12 @@ class LocaleDeAt extends LocaleDe
         return 'OSTERREICHISCHES DEUTSCH';
     }
 
-    public function numberSymbols(): array
+    public function territory(): TerritoryAt
+    {
+        return new TerritoryAt();
+    }
+
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -31,8 +36,4 @@ class LocaleDeAt extends LocaleDe
         ];
     }
 
-    public function territory(): TerritoryAt
-    {
-        return new TerritoryAt();
-    }
 }

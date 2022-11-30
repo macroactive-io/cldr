@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\PluralRule;
 
-/**
- * nplurals=4; plural=(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : ((n % 20 == 0) ? 2 : 3));
- */
 class PluralRuleManx implements PluralRuleInterface
 {
     public function plurals(): int
@@ -16,20 +13,23 @@ class PluralRuleManx implements PluralRuleInterface
 
     public function plural(int $number): int
     {
-        $number = abs($number);
+        $n = abs($number);
 
-        if ($number % 10 === 1) {
-            return 0;
-        }
+        return match (true) {
+            $n % 10 === 1 => 0,
+            $n % 10 === 2 => 1,
+            $n % 100 === 0 || $n % 100 === 20 || $n % 100 === 40 || $n % 100 === 60 || $n % 100 === 80 => 2,
+            default => 3,
+        };
+    }
 
-        if ($number % 10 === 2) {
-            return 1;
-        }
-
-        if ($number % 20 === 0) {
-            return 2;
-        }
-
-        return 3;
+    public function pluralExamples(): array
+    {
+        return [
+            'one'   => [1, 11, 71],
+            'two'   => [2, 12, 1002,],
+            'few'   => [0, 20, 40, 180],
+            'other' => [3, 10, 13, 19],
+        ];
     }
 }

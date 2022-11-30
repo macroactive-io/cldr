@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageWo;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleWoSn;
 
 class LocaleWoSnTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleWoSnTest extends TestCase
         $locale = new LocaleWoSn();
 
         self::assertSame(LanguageWo::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritorySn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('wo_SN', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="wo"', $locale->htmlAttributes());
         self::assertSame('wo', $locale->languageTag());

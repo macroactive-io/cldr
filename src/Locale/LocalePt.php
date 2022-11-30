@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Locale;
 
-use Macroactive\Cldr\Language\LanguageInterface;
 use Macroactive\Cldr\Language\LanguagePt;
 
 /**
@@ -24,12 +23,12 @@ class LocalePt extends AbstractLocale implements LocaleInterface
         return 'PORTUGUES';
     }
 
-    public function language(): LanguageInterface
+    public function language(): LanguagePt
     {
         return new LanguagePt();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

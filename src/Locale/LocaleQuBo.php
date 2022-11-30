@@ -11,7 +11,7 @@ use Macroactive\Cldr\Territory\TerritoryBo;
  */
 class LocaleQuBo extends LocaleQu
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

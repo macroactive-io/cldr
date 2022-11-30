@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHy;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptArmn;
 use Macroactive\Cldr\Territory\TerritoryAm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleHy;
 
 class LocaleHyTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleHyTest extends TestCase
         $locale = new LocaleHy();
 
         self::assertSame(LanguageHy::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptArmn::class, $locale->script()::class);
         self::assertSame(TerritoryAm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('hy_AM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('հայերեն', $locale->endonym());
         self::assertSame('lang="hy"', $locale->htmlAttributes());
         self::assertSame('hy', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

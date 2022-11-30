@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageHe;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\TerritoryIl;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleHeIl;
 
 class LocaleHeIlTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleHeIlTest extends TestCase
         $locale = new LocaleHeIl();
 
         self::assertSame(LanguageHe::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptHebr::class, $locale->script()::class);
         self::assertSame(TerritoryIl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('he_IL', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="he" dir="rtl"', $locale->htmlAttributes());
         self::assertSame('he', $locale->languageTag());

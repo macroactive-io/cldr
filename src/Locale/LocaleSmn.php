@@ -29,7 +29,7 @@ class LocaleSmn extends AbstractLocale implements LocaleInterface
         return new LanguageSmn();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,
@@ -37,7 +37,7 @@ class LocaleSmn extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    public function percentFormat(): string
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

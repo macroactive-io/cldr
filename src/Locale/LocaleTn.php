@@ -29,7 +29,7 @@ class LocaleTn extends AbstractLocale implements LocaleInterface
         return new LanguageTn();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => self::NBSP,

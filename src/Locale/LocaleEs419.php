@@ -23,7 +23,7 @@ class LocaleEs419 extends LocaleEs
         return 'ESPANOL LATINOAMERICANO';
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::COMMA,

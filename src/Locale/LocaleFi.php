@@ -34,7 +34,7 @@ class LocaleFi extends AbstractLocale implements LocaleInterface
         return new LanguageFi();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,

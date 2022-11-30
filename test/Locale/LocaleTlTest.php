@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageTl;
 use Macroactive\Cldr\PluralRule\PluralRuleTagalog;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPh;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleTl;
 
 class LocaleTlTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleTlTest extends TestCase
         $locale = new LocaleTl();
 
         self::assertSame(LanguageTl::class, $locale->language()::class);
-        self::assertSame(PluralRuleTagalog::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryPh::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('tl_PH', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Tagalog', $locale->endonym());
         self::assertSame('lang="tl"', $locale->htmlAttributes());
         self::assertSame('tl', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

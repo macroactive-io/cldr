@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEn;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySb;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEnSb;
 
 class LocaleEnSbTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleEnSbTest extends TestCase
         $locale = new LocaleEnSb();
 
         self::assertSame(LanguageEn::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritorySb::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('en_SB', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="en-SB"', $locale->htmlAttributes());
         self::assertSame('en-SB', $locale->languageTag());

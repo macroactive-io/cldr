@@ -2,15 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
-use PHPUnit\Framework\TestCase;
-
-/**
- * Tests for the CLDR
- *
- * @coversNothing
- */
 class CldrMeasurementDataTest extends TestCase
 {
     /**
@@ -20,16 +13,16 @@ class CldrMeasurementDataTest extends TestCase
      */
     public function testMeasurementData(): void
     {
-        $cldr = simplexml_load_string(file_get_contents(__DIR__ . '/data/cldr-34/supplemental/supplementalData.xml'));
+        $cldr = simplexml_load_string(self::getSupplementalData());
 
         foreach ($cldr->measurementData->measurementSystem as $xml) {
             if ('temperature' !== (string) $xml->attributes()->category) {
                 $type        = (string) $xml->attributes()->type;
                 $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
                 foreach ($territories as $code) {
-                    $class     = __NAMESPACE__ . '\Territory\Territory' . ucfirst(strtolower($code));
+                    $class     = 'Macroactive\Cldr\Territory\Territory' . ucfirst(strtolower($code));
                     $territory = new $class();
-                    self::assertSame($type, $territory->measurementSystem());
+                    self::assertSame($type, $territory->measurementSystem(), $code);
                 }
             }
         }
@@ -38,7 +31,7 @@ class CldrMeasurementDataTest extends TestCase
             $type        = (string) $xml->attributes()->type;
             $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
             foreach ($territories as $code) {
-                $class     = __NAMESPACE__ . '\Territory\Territory' . ucfirst(strtolower($code));
+                $class     = '\Macroactive\Cldr\Territory\Territory' . ucfirst(strtolower($code));
                 $territory = new $class();
                 self::assertSame($type, $territory->paperSize());
             }

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguagePrg;
-use Macroactive\Cldr\PluralRule\PluralRule3;
+use Macroactive\Cldr\Locale\LocalePrg;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\Territory001;
 use PHPUnit\Framework\TestCase;
@@ -17,14 +17,12 @@ class LocalePrg001Test extends TestCase
         $locale = new LocalePrg();
 
         self::assertSame(LanguagePrg::class, $locale->language()::class);
-        self::assertSame(PluralRule3::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(Territory001::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('prg_001', $locale->code());
-        self::assertSame('latvian_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('prūsiskan', $locale->endonym());
         self::assertSame('lang="prg"', $locale->htmlAttributes());
         self::assertSame('prg', $locale->languageTag());
         self::assertSame("12345\u{a0}678,09", $locale->number(12345678.09));

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEt;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEtEe;
 
 class LocaleEtEeTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleEtEeTest extends TestCase
         $locale = new LocaleEtEe();
 
         self::assertSame(LanguageEt::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryEe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('et_EE', $locale->code());
-        self::assertSame('estonian_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="et"', $locale->htmlAttributes());
         self::assertSame('et', $locale->languageTag());

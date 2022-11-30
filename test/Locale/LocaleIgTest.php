@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageIg;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleIg;
 
 class LocaleIgTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleIgTest extends TestCase
         $locale = new LocaleIg();
 
         self::assertSame(LanguageIg::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryNg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ig_NG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Igbo', $locale->endonym());
         self::assertSame('lang="ig"', $locale->htmlAttributes());
         self::assertSame('ig', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

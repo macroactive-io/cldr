@@ -12,7 +12,7 @@ use Macroactive\Cldr\Territory\TerritoryEh;
  */
 class LocaleArEh extends LocaleAr
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::NEGATIVE => self::LTR_MARK . '-',

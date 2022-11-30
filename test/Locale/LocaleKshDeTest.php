@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKsh;
 use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleKshDe;
 
 class LocaleKshDeTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleKshDeTest extends TestCase
         $locale = new LocaleKshDe();
 
         self::assertSame(LanguageKsh::class, $locale->language()::class);
-        self::assertSame(PluralRuleZeroOneOther::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ksh_DE', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ksh"', $locale->htmlAttributes());
         self::assertSame('ksh', $locale->languageTag());

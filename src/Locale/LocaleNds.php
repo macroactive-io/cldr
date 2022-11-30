@@ -12,7 +12,7 @@ use Macroactive\Cldr\Language\LanguageNds;
  *
  * @psalm-immutable
  */
-class LocaleNds extends LocaleDe
+class LocaleNds extends AbstractLocale implements LocaleInterface
 {
     public function endonym(): string
     {

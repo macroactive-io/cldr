@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEo;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\Territory001;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEo001;
 
 class LocaleEo001Test extends TestCase
 {
@@ -17,7 +19,6 @@ class LocaleEo001Test extends TestCase
         $locale = new LocaleEo001();
 
         self::assertSame(LanguageEo::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(Territory001::class, $locale->territory()::class);
         self::assertNull($locale->variant());
@@ -26,7 +27,7 @@ class LocaleEo001Test extends TestCase
         self::assertSame('lang="eo"', $locale->htmlAttributes());
         self::assertSame('eo', $locale->languageTag());
         self::assertSame("12\u{a0}345\u{a0}678,09", $locale->number(12345678.09));
-        self::assertSame('−123', $locale->number(-123));
+        self::assertSame('-123', $locale->number(-123));
         self::assertSame("1\u{a0}234,56%", $locale->percent(12.3456));
     }
 }

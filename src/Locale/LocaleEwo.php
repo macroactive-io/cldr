@@ -29,7 +29,7 @@ class LocaleEwo extends AbstractLocale implements LocaleInterface
         return new LanguageEwo();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

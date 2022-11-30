@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageFur;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIt;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleFurIt;
 
 class LocaleFurItTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleFurItTest extends TestCase
         self::assertSame(TerritoryIt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('fur_IT', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="fur"', $locale->htmlAttributes());
         self::assertSame('fur', $locale->languageTag());

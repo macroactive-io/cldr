@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\TerritoryIl;
 
@@ -30,8 +30,8 @@ class LanguageHe extends AbstractLanguage implements LanguageInterface
         return new TerritoryIl();
     }
 
-    public function pluralRule(): PluralRule1
+    public function pluralRule(): PluralRuleOneTwoOther
     {
-        return new PluralRule1();
+        return new PluralRuleOneTwoOther();
     }
 }

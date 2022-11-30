@@ -29,7 +29,7 @@ class LocaleFr extends AbstractLocale implements LocaleInterface
         return new LanguageFr();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NARROW_NBSP,

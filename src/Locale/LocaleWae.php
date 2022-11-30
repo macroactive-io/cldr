@@ -29,7 +29,7 @@ class LocaleWae extends AbstractLocale implements LocaleInterface
         return new LanguageWae();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,

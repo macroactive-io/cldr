@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDz;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptTibt;
 use Macroactive\Cldr\Territory\TerritoryBt;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleDz;
 
 class LocaleDzTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleDzTest extends TestCase
         $locale = new LocaleDz();
 
         self::assertSame(LanguageDz::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptTibt::class, $locale->script()::class);
         self::assertSame(TerritoryBt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dz_BT', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('༠༡༢༣༤༥༦༧༨༩', $locale->digits('0123456789'));
-        self::assertSame('རྫོང་ཁ', $locale->endonym());
         self::assertSame('lang="dz"', $locale->htmlAttributes());
         self::assertSame('dz', $locale->languageTag());
         self::assertSame('-༡༢༣', $locale->number(-123));

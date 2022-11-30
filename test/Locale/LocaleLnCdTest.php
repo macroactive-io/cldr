@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLn;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCd;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleLnCd;
 
 class LocaleLnCdTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleLnCdTest extends TestCase
         $locale = new LocaleLnCd();
 
         self::assertSame(LanguageLn::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCd::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ln_CD', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ln"', $locale->htmlAttributes());
         self::assertSame('ln', $locale->languageTag());

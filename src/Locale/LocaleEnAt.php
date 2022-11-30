@@ -18,6 +18,14 @@ class LocaleEnAt extends LocaleEn
         return new TerritoryAt();
     }
 
+    protected function numberSymbols(): array
+    {
+        return [
+            self::GROUP   => self::DOT,
+            self::DECIMAL => self::COMMA,
+        ];
+    }
+
     protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;

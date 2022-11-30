@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageDsb;
 
 class LanguageDsbTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageDsbTest extends TestCase
         $language = new LanguageDsb();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule10::class, $language->pluralRule()::class);
         self::assertSame('dsb', $language->code());
     }
 }

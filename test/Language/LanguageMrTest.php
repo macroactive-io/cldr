@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptDeva;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageMr;
 
 class LanguageMrTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageMrTest extends TestCase
         $language = new LanguageMr();
 
         self::assertSame(ScriptDeva::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule2::class, $language->pluralRule()::class);
         self::assertSame('mr', $language->code());
     }
 }

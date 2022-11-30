@@ -23,7 +23,7 @@ class LocaleFrCa extends LocaleFr
         return 'FRANCAIS CANADIEN';
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

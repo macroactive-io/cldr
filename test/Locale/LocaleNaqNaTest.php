@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNaq;
 use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNaqNa;
 
 class LocaleNaqNaTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleNaqNaTest extends TestCase
         $locale = new LocaleNaqNa();
 
         self::assertSame(LanguageNaq::class, $locale->language()::class);
-        self::assertSame(PluralRuleOneTwoOther::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryNa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('naq_NA', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="naq"', $locale->htmlAttributes());
         self::assertSame('naq', $locale->languageTag());

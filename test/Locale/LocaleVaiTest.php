@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageVai;
 use Macroactive\Cldr\Script\ScriptVaii;
 use Macroactive\Cldr\Territory\TerritoryLr;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleVai;
 
 class LocaleVaiTest extends TestCase
 {
@@ -19,9 +21,8 @@ class LocaleVaiTest extends TestCase
         self::assertSame(ScriptVaii::class, $locale->script()::class);
         self::assertSame(TerritoryLr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('꘠꘡꘢꘣꘤꘥꘦꘧꘨꘩', $locale->digits('0123456789'));
-        self::assertSame('ꕙꔤ', $locale->endonym());
         self::assertSame('lang="vai"', $locale->htmlAttributes());
         self::assertSame('-꘡꘢꘣', $locale->number(-123));
         self::assertSame('꘡꘢,꘣꘤꘥,꘦꘧꘨.꘠꘩', $locale->number(12345678.09));

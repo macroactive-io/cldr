@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageYav;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleYavCm;
 
 class LocaleYavCmTest extends TestCase
 {
@@ -19,7 +21,7 @@ class LocaleYavCmTest extends TestCase
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="yav"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));

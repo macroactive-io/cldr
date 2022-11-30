@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageFf;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGw;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleFfLatnGw;
 
 class LocaleFfLatnGwTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleFfLatnGwTest extends TestCase
         $locale = new LocaleFfLatnGw();
 
         self::assertSame(LanguageFf::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryGw::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ff_GW', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Pulaar', $locale->endonym());
         self::assertSame('lang="ff-GW"', $locale->htmlAttributes());
         self::assertSame('ff-GW', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

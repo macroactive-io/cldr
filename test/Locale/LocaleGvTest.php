@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGv;
 use Macroactive\Cldr\PluralRule\PluralRuleManx;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleGv;
 
 class LocaleGvTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleGvTest extends TestCase
         $locale = new LocaleGv();
 
         self::assertSame(LanguageGv::class, $locale->language()::class);
-        self::assertSame(PluralRuleManx::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryIm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('gv_IM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Gaelg', $locale->endonym());
         self::assertSame('lang="gv"', $locale->htmlAttributes());
         self::assertSame('gv', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

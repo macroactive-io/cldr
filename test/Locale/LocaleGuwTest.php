@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageGuw;
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBj;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleGuw;
 
 class LocaleGuwTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleGuwTest extends TestCase
         $locale = new LocaleGuw();
 
         self::assertSame(LanguageGuw::class, $locale->language()::class);
-        self::assertSame(PluralRule2::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryBj::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('guw_BJ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Gun', $locale->endonym());
         self::assertSame('lang="guw"', $locale->htmlAttributes());
         self::assertSame('guw', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

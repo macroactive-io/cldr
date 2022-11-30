@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRuleCornish;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageKw;
 
 class LanguageKwTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageKwTest extends TestCase
         $language = new LanguageKw();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRuleCornish::class, $language->pluralRule()::class);
         self::assertSame('kw', $language->code());
     }
 }

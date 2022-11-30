@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNyn;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryUg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNyn;
 
 class LocaleNynTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleNynTest extends TestCase
         $locale = new LocaleNyn();
 
         self::assertSame(LanguageNyn::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryUg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nyn_UG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Runyankore', $locale->endonym());
         self::assertSame('lang="nyn"', $locale->htmlAttributes());
         self::assertSame('nyn', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

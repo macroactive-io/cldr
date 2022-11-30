@@ -11,7 +11,7 @@ use Macroactive\Cldr\Territory\TerritoryCr;
  */
 class LocaleEsCr extends LocaleEs
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

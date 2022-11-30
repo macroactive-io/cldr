@@ -11,7 +11,7 @@ use Macroactive\Cldr\Script\ScriptArab;
  */
 class LocalePaArab extends LocalePa
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::ARAB_DECIMAL,

@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptThaa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageDv;
 
 class LanguageDvTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageDvTest extends TestCase
         $language = new LanguageDv();
 
         self::assertSame(ScriptThaa::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule1::class, $language->pluralRule()::class);
         self::assertSame('dv', $language->code());
     }
 }

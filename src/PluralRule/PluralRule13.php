@@ -13,7 +13,7 @@ class PluralRule13 implements PluralRuleInterface
 {
     public function plurals(): int
     {
-        return 4;
+        return 5;
     }
 
     public function plural(int $number): int
@@ -24,14 +24,29 @@ class PluralRule13 implements PluralRuleInterface
             return 0;
         }
 
-        if ($number === 0 || ($number % 100 > 1 && $number % 100 < 11)) {
+        if ($number === 2) {
             return 1;
         }
 
-        if ($number % 100 > 10 && $number % 100 < 20) {
+        if ($number === 0 || ($number % 100 > 1 && $number % 100 < 11)) {
             return 2;
         }
 
-        return 3;
+        if ($number % 100 > 10 && $number % 100 < 20) {
+            return 3;
+        }
+
+        return 4;
+    }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'one' => [1,],
+            'two' => [2],
+            'few' => [0, 7, 10, 110],
+            'many' => [11, 19, 119],
+            'other' => [20, 35, 100, 120]
+        ];
     }
 }

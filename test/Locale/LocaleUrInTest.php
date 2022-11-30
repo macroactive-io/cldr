@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageUr;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptArab;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleUrIn;
 
 class LocaleUrInTest extends TestCase
 {
@@ -17,11 +19,10 @@ class LocaleUrInTest extends TestCase
         $locale = new LocaleUrIn();
 
         self::assertSame(LanguageUr::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptArab::class, $locale->script()::class);
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('٠١٢٣٤٥٦٧٨٩', $locale->digits('0123456789'));
         self::assertSame('lang="ur-IN" dir="rtl"', $locale->htmlAttributes());
         self::assertSame('١٬٢٣٬٤٥٬٦٧٨٫٠٩', $locale->number(12345678.09));

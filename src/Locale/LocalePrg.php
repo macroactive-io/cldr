@@ -34,7 +34,7 @@ class LocalePrg extends AbstractLocale implements LocaleInterface
         return new LanguagePrg();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

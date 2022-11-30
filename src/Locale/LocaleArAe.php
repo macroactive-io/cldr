@@ -15,4 +15,18 @@ class LocaleArAe extends LocaleAr
     {
         return new TerritoryAe();
     }
+
+    protected function numberSymbols(): array
+    {
+        return array(
+            self::GROUP    => self::COMMA,
+            self::DECIMAL  => self::DOT,
+            self::NEGATIVE => self::LTR_MARK . self::HYPHEN,
+        );
+    }
+
+    protected function percentFormat(): string
+    {
+        return self::PLACEHOLDER . self::LTR_MARK . self::PERCENT . self::LTR_MARK;
+    }
 }

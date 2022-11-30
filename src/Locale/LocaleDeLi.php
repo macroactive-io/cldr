@@ -16,7 +16,7 @@ class LocaleDeLi extends LocaleDe
         return new TerritoryLi();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::APOSTROPHE,

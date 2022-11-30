@@ -29,7 +29,7 @@ class LocaleGsw extends AbstractLocale implements LocaleInterface
         return new LanguageGsw();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::APOSTROPHE,

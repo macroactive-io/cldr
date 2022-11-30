@@ -29,7 +29,7 @@ class LocaleKsh extends AbstractLocale implements LocaleInterface
         return new LanguageKsh();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::NBSP,

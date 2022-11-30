@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEu;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEs;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleEu;
 
 class LocaleEuTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleEuTest extends TestCase
         $locale = new LocaleEu();
 
         self::assertSame(LanguageEu::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryEs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('eu_ES', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('euskara', $locale->endonym());
         self::assertSame('lang="eu"', $locale->htmlAttributes());
         self::assertSame('eu', $locale->languageTag());
         self::assertSame('−123', $locale->number(-123));

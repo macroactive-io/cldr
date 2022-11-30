@@ -24,7 +24,7 @@ class LocaleLrc extends AbstractLocale implements LocaleInterface
         return new LanguageLrc();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

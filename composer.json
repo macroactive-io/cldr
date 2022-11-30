@@ -24,6 +24,7 @@
 	},
 	"require-dev": {
 		"ext-simplexml": "*",
+		"ext-zip": "*",
 		"phpstan/phpstan": "*",
 		"phpstan/extension-installer": "*",
 		"phpstan/phpstan-deprecation-rules": "*",
@@ -38,6 +39,11 @@
 	"autoload": {
 		"psr-4": {
 			"Macroactive\\Cldr\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Macroactive\\Cldr\\Tests\\": "test/"
 		}
 	},
 	"config": {

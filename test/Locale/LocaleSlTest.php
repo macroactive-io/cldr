@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSl;
 use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySi;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSl;
 
 class LocaleSlTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleSlTest extends TestCase
         $locale = new LocaleSl();
 
         self::assertSame(LanguageSl::class, $locale->language()::class);
-        self::assertSame(PluralRule10::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritorySi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sl_SI', $locale->code());
-        self::assertSame('slovenian_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('slovenščina', $locale->endonym());
         self::assertSame('lang="sl"', $locale->htmlAttributes());
         self::assertSame('sl', $locale->languageTag());
         self::assertSame('−123', $locale->number(-123));

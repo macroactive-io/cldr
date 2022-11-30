@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageCy;
 use Macroactive\Cldr\PluralRule\PluralRuleWelsh;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryGb;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleCyGb;
 
 class LocaleCyGbTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleCyGbTest extends TestCase
         $locale = new LocaleCyGb();
 
         self::assertSame(LanguageCy::class, $locale->language()::class);
-        self::assertSame(PluralRuleWelsh::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryGb::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('cy_GB', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="cy"', $locale->htmlAttributes());
         self::assertSame('cy', $locale->languageTag());

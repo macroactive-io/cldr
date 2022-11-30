@@ -24,4 +24,12 @@ class PluralRuleTagalog implements PluralRuleInterface
 
         return 0;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'one'   => [0, 1, 5, 7, 8],
+            'other' => [4, 6, 9, 26],
+        ];
+    }
 }

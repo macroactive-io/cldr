@@ -24,4 +24,9 @@ class PluralRule0 implements PluralRuleInterface
     {
         return 0;
     }
+
+    public function pluralExamples(): array
+    {
+        return ['other' => [0, 1, 2]];
+    }
 }

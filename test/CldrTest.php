@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
 use Exception;
+use Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptDirection;
-use PHPUnit\Framework\TestCase;
 use SimpleXMLElement;
 
 use function array_slice;
@@ -31,6 +31,8 @@ use function strtr;
  */
 class CldrTest extends TestCase
 {
+    private const INHERITED_CHARS = '↑↑↑';
+
     /** @var array<string, array<string, SimpleXMLElement>> */
     private static array $cachedXmls = [];
 
@@ -46,7 +48,7 @@ class CldrTest extends TestCase
             'right-to-left' => ScriptDirection::RTL,
         ];
 
-        foreach (glob(__DIR__ . '/data/cldr-34/main/*.xml') as $cldr) {
+        foreach (self::getMainCldrFiles() as $cldr) {
             if (str_ends_with($cldr, '/root.xml')) {
                 continue;
             }
@@ -55,33 +57,36 @@ class CldrTest extends TestCase
             $dir    = self::cldrValue($cldr, '/ldml/layout/orientation/characterOrder');
             self::assertSame($direction[$dir], $locale->direction());
 
-            $def_num_system = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
+            $numberSystem = $originalNumberSystem = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem[not(@draft=\'unconfirmed\')]');
 
-            try {
-                $alias = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/alias/@path");
-
-                if ($alias === "../symbols[@numberSystem='latn']") {
-                    $def_num_system = 'latn';
-                }
-            } catch (Exception $ex) {
+            if ('latn' !== $originalNumberSystem) {
+                try {
+                    $alias = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $numberSystem = str_replace("']", '', str_replace("../symbols[@numberSystem='", '', $alias));
+                } catch (CannotFindXpathException $ex) {}
             }
-            $decimal      = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/decimal");
-            $group        = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/group");
-            $percent_sign = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/percentSign");
-            $minus_sign   = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $def_num_system . "']/minusSign");
 
-            $def_num_system = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem');
+            $decimal      = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/decimal[not(@draft='unconfirmed')]");
+            $group        = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/group[not(@draft='unconfirmed')]");
+            $percent_sign = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/percentSign[not(@draft='unconfirmed')]");
+            $minus_sign   = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/minusSign[not(@draft='unconfirmed')]");
 
-            try {
-                $alias = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/alias/@path");
-
-                if ($alias === "../decimalFormats[@numberSystem='latn']") {
-                    $def_num_system = 'latn';
-                }
-            } catch (Exception $ex) {
+            if ('latn' !== $originalNumberSystem) {
+                try {
+                    $alias = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $numberSystem = str_replace("']", '', str_replace("../decimalFormats[@numberSystem='", '', $alias));
+                } catch (CannotFindXpathException $ex) {}
             }
-            $standard = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $def_num_system . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern");
-            $percent  = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $def_num_system . "']/percentFormatLength[not(@type)]/percentFormat/pattern");
+
+            $standard = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $numberSystem . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern[not(@draft='unconfirmed')]");
+
+            if ('latn' !== $originalNumberSystem) {
+                try {
+                    $alias = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
+                    $numberSystem = str_replace("']", '', str_replace("../percentFormats[@numberSystem='", '', $alias));
+                } catch (CannotFindXpathException $ex) {}
+            }
+            $percent = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $numberSystem . "']/percentFormatLength[not(@type)]/percentFormat/pattern[not(@draft='unconfirmed')]");
 
             // The CLDR example doesn't demonstrate the lack of group separators.
             if ($standard === '0.######' && $locale->languageTag() === 'en-US-posix') {
@@ -100,12 +105,14 @@ class CldrTest extends TestCase
 
             $debug = implode('|', [
                 basename($cldr),
+                $numberSystem,
+                $group,
                 'regex=' . $regex . '=' . bin2hex($regex),
                 'number=' . $number . '=' . bin2hex($number),
                 'standard=' . $standard . '=' . bin2hex($standard),
             ]);
 
-            self::assertTrue(preg_match($regex, $number) === 1, $debug);
+            self::assertSame(1, preg_match($regex, $number), $debug);
 
             // Check the percentage matches the pattern.
             $number = $locale->percent(12345.67);
@@ -120,13 +127,14 @@ class CldrTest extends TestCase
 
             $debug = implode('|', [
                 basename($cldr),
+                $numberSystem,
                 'percentSign=' . $percent_sign . '=' . bin2hex($percent_sign),
                 'regex=' . $regex . '=' . bin2hex($regex),
                 'number=' . $number . '=' . bin2hex($number),
                 'percent=' . $percent,
             ]);
 
-            self::assertTrue(preg_match($regex, $number) === 1, $debug);
+            self::assertSame(1, preg_match($regex, $number), $debug);
 
             // Check the minus sign is correct
             $number = $locale->number(-1);
@@ -159,7 +167,7 @@ class CldrTest extends TestCase
     }
 
     /**
-     * @throws Exception
+     * @throws CannotFindXpathException
      */
     private static function cldrValue(string $file, string $xpath): string
     {
@@ -167,9 +175,9 @@ class CldrTest extends TestCase
 
         $data = self::xpathCached($locale, $file, $xpath);
 
-        while (in_array($data, [false, null, []], true)) {
+        while (in_array($data, [false, null, []], true) || self::INHERITED_CHARS === (string) $data[0]) {
             if (str_ends_with($file, 'root.xml')) {
-                throw new Exception(sprintf('Cannot find xpath "%s" in file "%s" for locale "%s"', $xpath, $file, $locale));
+                throw new CannotFindXpathException($xpath, $file, $locale);
             }
 
             $file = self::parentCldr($file);

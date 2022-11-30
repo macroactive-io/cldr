@@ -24,7 +24,7 @@ class LocaleArs extends AbstractLocale implements LocaleInterface
         return new LanguageArs();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

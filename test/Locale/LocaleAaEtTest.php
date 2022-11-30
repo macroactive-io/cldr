@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAa;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryEt;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleAaEt;
 
 class LocaleAaEtTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleAaEtTest extends TestCase
         self::assertSame(TerritoryEt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('aa_ET', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="aa"', $locale->htmlAttributes());
         self::assertSame('aa', $locale->languageTag());

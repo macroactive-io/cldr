@@ -18,16 +18,21 @@ class PluralRule6 implements PluralRuleInterface
 
     public function plural(int $number): int
     {
-        $number = abs($number);
+        $n = abs($number);
 
-        if ($number % 10 === 1 && $number % 100 !== 11) {
-            return 0;
-        }
+        return match (true) {
+            $n % 10 == 1 && ($n % 100 < 11 || $n % 100 > 19) => 0,
+            $n % 10 >= 2 && $n % 10 <= 9 && ($n % 100 < 11 || $n % 100 > 19) => 1,
+            default => 2
+        };
+    }
 
-        if ($number % 10 >= 2 && ($number % 100 < 10 || $number % 100 >= 20)) {
-            return 1;
-        }
-
-        return 2;
+    public function pluralExamples(): array
+    {
+        return [
+            'one' => [1, 21,],
+            'few' => [2, 9, 28],
+            'other' => [0, 11, 19, 100],
+        ];
     }
 }

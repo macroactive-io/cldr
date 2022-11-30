@@ -53,7 +53,7 @@ final class Locale
     {
         $class = __NAMESPACE__ . '\Locale\Locale' . implode(
             '',
-            array_map(
+            \array_map(
                 static fn (string $x): string => ucfirst(strtolower($x)),
                 preg_split('/[^a-zA-Z0-9]+/', $code)
             )
@@ -63,7 +63,7 @@ final class Locale
             return new $class();
         }
 
-        throw new DomainException($code);
+        throw new DomainException(sprintf('Cannot find locale for code "%s"', $code));
     }
 
     /**

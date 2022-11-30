@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKcg;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleKcg;
 
 class LocaleKcgTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleKcgTest extends TestCase
         $locale = new LocaleKcg();
 
         self::assertSame(LanguageKcg::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryNg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kcg_NG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Tyap', $locale->endonym());
         self::assertSame('lang="kcg"', $locale->htmlAttributes());
         self::assertSame('kcg', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

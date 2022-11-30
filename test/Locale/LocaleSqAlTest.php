@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSq;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryAl;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSqAl;
 
 class LocaleSqAlTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleSqAlTest extends TestCase
         $locale = new LocaleSqAl();
 
         self::assertSame(LanguageSq::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryAl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sq_AL', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="sq"', $locale->htmlAttributes());
         self::assertSame('sq', $locale->languageTag());

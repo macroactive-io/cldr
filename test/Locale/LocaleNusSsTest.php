@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageNus;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritorySs;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleNusSs;
 
 class LocaleNusSsTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleNusSsTest extends TestCase
         self::assertSame(TerritorySs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('nus_SS', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Thok Nath', $locale->endonym());
         self::assertSame('lang="nus-SS"', $locale->htmlAttributes());
         self::assertSame('nus-SS', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

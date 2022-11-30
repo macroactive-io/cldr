@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDe;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCh;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleDeCh;
 
 class LocaleDeChTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleDeChTest extends TestCase
         $locale = new LocaleDeCh();
 
         self::assertSame(LanguageDe::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCh::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('de_CH', $locale->code());
-        self::assertSame('german2_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Schweizer Hochdeutsch', $locale->endonym());
         self::assertSame('lang="de-CH"', $locale->htmlAttributes());
         self::assertSame('de-CH', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

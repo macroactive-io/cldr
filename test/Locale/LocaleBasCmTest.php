@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageBas;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleBasCm;
 
 class LocaleBasCmTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleBasCmTest extends TestCase
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('bas_CM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="bas"', $locale->htmlAttributes());
         self::assertSame('bas', $locale->languageTag());

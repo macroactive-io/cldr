@@ -29,7 +29,7 @@ class LocaleAgq extends AbstractLocale implements LocaleInterface
         return new LanguageAgq();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule1;
+use Macroactive\Cldr\PluralRule\PluralRule2WithMillions;
+use Macroactive\Cldr\PluralRule\PluralRuleInterface;
 use Macroactive\Cldr\Territory\TerritoryPt;
 
 /**
@@ -24,8 +25,8 @@ class LanguagePt extends AbstractLanguage implements LanguageInterface
         return new TerritoryPt();
     }
 
-    public function pluralRule(): PluralRule1
+    public function pluralRule(): PluralRuleInterface
     {
-        return new PluralRule1();
+        return new PluralRule2WithMillions();
     }
 }

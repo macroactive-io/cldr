@@ -29,12 +29,11 @@ class LocaleKl extends AbstractLocale implements LocaleInterface
         return new LanguageKl();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,
             self::DECIMAL  => self::COMMA,
-            self::NEGATIVE => self::MINUS_SIGN,
         ];
     }
 

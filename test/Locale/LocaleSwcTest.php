@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSwc;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCd;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSwc;
 
 class LocaleSwcTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleSwcTest extends TestCase
         self::assertSame(TerritoryCd::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('swc_CD', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Kiswahili ya Kongo', $locale->endonym());
         self::assertSame('lang="swc"', $locale->htmlAttributes());
         self::assertSame('swc', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

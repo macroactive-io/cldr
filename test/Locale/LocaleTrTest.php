@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageTr;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryTr;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleTr;
 
 class LocaleTrTest extends TestCase
 {
@@ -17,13 +19,11 @@ class LocaleTrTest extends TestCase
         $locale = new LocaleTr();
 
         self::assertSame(LanguageTr::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryTr::class, $locale->territory()::class);
         self::assertNull($locale->variant());
-        self::assertSame('turkish_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Türkçe', $locale->endonym());
         self::assertSame('lang="tr"', $locale->htmlAttributes());
         self::assertSame('-123', $locale->number(-123));
         self::assertSame('12.345.678,09', $locale->number(12345678.09));

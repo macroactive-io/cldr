@@ -16,7 +16,7 @@ class LocaleItCh extends LocaleIt
         return new TerritoryCh();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => self::APOSTROPHE,

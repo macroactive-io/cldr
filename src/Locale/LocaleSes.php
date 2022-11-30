@@ -29,7 +29,7 @@ class LocaleSes extends AbstractLocale implements LocaleInterface
         return new LanguageSes();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP => self::NBSP,

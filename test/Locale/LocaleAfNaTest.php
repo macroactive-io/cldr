@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageAf;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryNa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleAfNa;
 
 class LocaleAfNaTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleAfNaTest extends TestCase
         self::assertSame(TerritoryNa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('af_NA', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="af-NA"', $locale->htmlAttributes());
         self::assertSame('af-NA', $locale->languageTag());

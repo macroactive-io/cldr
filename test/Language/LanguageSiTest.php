@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule2;
 use Macroactive\Cldr\Script\ScriptSinh;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageSi;
 
 class LanguageSiTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageSiTest extends TestCase
         $language = new LanguageSi();
 
         self::assertSame(ScriptSinh::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule2::class, $language->pluralRule()::class);
         self::assertSame('si', $language->code());
     }
 }

@@ -16,7 +16,7 @@ class LocaleUzArab extends LocaleUz
         return new ScriptArab();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

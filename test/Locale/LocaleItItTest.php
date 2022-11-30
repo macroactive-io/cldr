@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageIt;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIt;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleItIt;
 
 class LocaleItItTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleItItTest extends TestCase
         $locale = new LocaleItIt();
 
         self::assertSame(LanguageIt::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryIt::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('it_IT', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="it"', $locale->htmlAttributes());
         self::assertSame('it', $locale->languageTag());

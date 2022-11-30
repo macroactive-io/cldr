@@ -16,7 +16,7 @@ class LocaleFrLu extends LocaleFr
         return new TerritoryLu();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::DECIMAL => self::COMMA,

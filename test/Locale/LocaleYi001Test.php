@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageYi;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptHebr;
 use Macroactive\Cldr\Territory\Territory001;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleYi001;
 
 class LocaleYi001Test extends TestCase
 {
@@ -17,7 +19,6 @@ class LocaleYi001Test extends TestCase
         $locale = new LocaleYi001();
 
         self::assertSame(LanguageYi::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptHebr::class, $locale->script()::class);
         self::assertSame(Territory001::class, $locale->territory()::class);
         self::assertNull($locale->variant());

@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLaoo;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageLo;
 
 class LanguageLoTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageLoTest extends TestCase
         $language = new LanguageLo();
 
         self::assertSame(ScriptLaoo::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule0::class, $language->pluralRule()::class);
         self::assertSame('lo', $language->code());
     }
 }

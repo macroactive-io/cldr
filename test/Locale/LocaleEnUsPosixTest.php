@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageEn;
 use Macroactive\Cldr\PluralRule\PluralRule1;
@@ -11,6 +11,8 @@ use Macroactive\Cldr\Territory\TerritoryUs;
 use Macroactive\Cldr\Variant\VariantPosix;
 use PHPUnit\Framework\TestCase;
 
+use Macroactive\Cldr\Locale\LocaleEnUsPosix;
+
 class LocaleEnUsPosixTest extends TestCase
 {
     public function testProperties(): void
@@ -18,12 +20,11 @@ class LocaleEnUsPosixTest extends TestCase
         $locale = new LocaleEnUsPosix();
 
         self::assertSame(LanguageEn::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryUs::class, $locale->territory()::class);
         self::assertSame(VariantPosix::class, $locale->variant()::class);
         self::assertSame('POSIX', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="en-US-posix"', $locale->htmlAttributes());
         self::assertSame('en-US-posix', $locale->languageTag());

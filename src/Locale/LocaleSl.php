@@ -34,7 +34,7 @@ class LocaleSl extends AbstractLocale implements LocaleInterface
         return new LanguageSl();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::DOT,
@@ -43,7 +43,7 @@ class LocaleSl extends AbstractLocale implements LocaleInterface
         ];
     }
 
-    public function percentFormat(): string
+    protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }

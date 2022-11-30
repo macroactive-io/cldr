@@ -18,6 +18,6 @@ class TerritoryAr extends AbstractTerritory implements TerritoryInterface
 
     public function firstDay(): int
     {
-        return 0;
+        return 1;
     }
 }

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageBem;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleBem;
 
 class LocaleBemTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleBemTest extends TestCase
         $locale = new LocaleBem();
 
         self::assertSame(LanguageBem::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryZm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('bem_ZM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Ichibemba', $locale->endonym());
         self::assertSame('lang="bem"', $locale->htmlAttributes());
         self::assertSame('bem', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

@@ -29,7 +29,7 @@ class LocaleYav extends AbstractLocale implements LocaleInterface
         return new LanguageYav();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

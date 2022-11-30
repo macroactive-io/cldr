@@ -28,4 +28,13 @@ class PluralRuleZeroOneOther implements PluralRuleInterface
 
         return 2;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'zero' => [0],
+            'one' => [1],
+            'other' => [2, 3, 19]
+        ];
+    }
 }

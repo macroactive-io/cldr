@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Script;
+namespace Macroactive\Cldr\Tests\Script;
 
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Script\ScriptThai;
+
+use Macroactive\Cldr\Script\ScriptDirection;
 
 class ScriptThaiTest extends TestCase
 {

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageChr;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryUs;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleChrUs;
 
 class LocaleChrUsTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleChrUsTest extends TestCase
         $locale = new LocaleChrUs();
 
         self::assertSame(LanguageChr::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryUs::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('chr_US', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="chr"', $locale->htmlAttributes());
         self::assertSame('chr', $locale->languageTag());

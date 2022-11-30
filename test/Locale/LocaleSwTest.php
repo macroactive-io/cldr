@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSw;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryTz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSw;
 
 class LocaleSwTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleSwTest extends TestCase
         $locale = new LocaleSw();
 
         self::assertSame(LanguageSw::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryTz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sw_TZ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Kiswahili', $locale->endonym());
         self::assertSame('lang="sw"', $locale->htmlAttributes());
         self::assertSame('sw', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

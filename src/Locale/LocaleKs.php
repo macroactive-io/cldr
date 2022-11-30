@@ -24,7 +24,7 @@ class LocaleKs extends AbstractLocale implements LocaleInterface
         return new LanguageKs();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP    => self::ARAB_GROUP,

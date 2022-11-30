@@ -22,4 +22,12 @@ class LocaleEnDk extends LocaleEn
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
     }
+
+    protected function numberSymbols(): array
+    {
+        return [
+            self::GROUP   => self::DOT,
+            self::DECIMAL => self::COMMA,
+        ];
+    }
 }

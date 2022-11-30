@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDua;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleDua;
 
 class LocaleDuaTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleDuaTest extends TestCase
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dua_CM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('duálá', $locale->endonym());
         self::assertSame('lang="dua"', $locale->htmlAttributes());
         self::assertSame('dua', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

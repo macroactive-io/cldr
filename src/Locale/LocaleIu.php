@@ -29,7 +29,7 @@ class LocaleIu extends AbstractLocale implements LocaleInterface
         return new LanguageIu();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

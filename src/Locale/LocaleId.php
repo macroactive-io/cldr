@@ -29,7 +29,7 @@ class LocaleId extends AbstractLocale implements LocaleInterface
         return new LanguageId();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguagePl;
 use Macroactive\Cldr\PluralRule\PluralRule9;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryPl;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocalePlPl;
 
 class LocalePlPlTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocalePlPlTest extends TestCase
         $locale = new LocalePlPl();
 
         self::assertSame(LanguagePl::class, $locale->language()::class);
-        self::assertSame(PluralRule9::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryPl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('pl_PL', $locale->code());
-        self::assertSame('polish_ci', $locale->collation());
+        
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="pl"', $locale->htmlAttributes());
         self::assertSame('pl', $locale->languageTag());

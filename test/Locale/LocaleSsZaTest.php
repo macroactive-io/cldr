@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSs;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryZa;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSsZa;
 
 class LocaleSsZaTest extends TestCase
 {
@@ -20,7 +22,7 @@ class LocaleSsZaTest extends TestCase
         self::assertSame(TerritoryZa::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ss_ZA', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ss-ZA"', $locale->htmlAttributes());
         self::assertSame('ss-ZA', $locale->languageTag());

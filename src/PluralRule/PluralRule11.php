@@ -38,4 +38,15 @@ class PluralRule11 implements PluralRuleInterface
 
         return 4;
     }
+
+    public function pluralExamples(): array
+    {
+        return [
+            'one' => [1,],
+            'two' => [2,],
+            'few' => [3, 4, 6],
+            'many' => [7, 10],
+            'other' => [11, 25, 100]
+        ];
+    }
 }

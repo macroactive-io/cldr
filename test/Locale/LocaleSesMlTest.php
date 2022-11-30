@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSes;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMl;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSesMl;
 
 class LocaleSesMlTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleSesMlTest extends TestCase
         $locale = new LocaleSesMl();
 
         self::assertSame(LanguageSes::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMl::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('ses_ML', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="ses"', $locale->htmlAttributes());
         self::assertSame('ses', $locale->languageTag());

@@ -11,7 +11,7 @@ use Macroactive\Cldr\Territory\TerritoryBe;
  */
 class LocaleEnBe extends LocaleEn
 {
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

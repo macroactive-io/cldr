@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Language;
 
-use Macroactive\Cldr\PluralRule\PluralRule2;
+use Macroactive\Cldr\PluralRule\PluralRuleFilipino;
 use Macroactive\Cldr\Territory\TerritoryPh;
 
 /**
@@ -24,8 +24,8 @@ class LanguageFil extends AbstractLanguage implements LanguageInterface
         return new TerritoryPh();
     }
 
-    public function pluralRule(): PluralRule2
+    public function pluralRule(): PluralRuleFilipino
     {
-        return new PluralRule2();
+        return new PluralRuleFilipino();
     }
 }

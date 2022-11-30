@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSms;
 use Macroactive\Cldr\PluralRule\PluralRuleOneTwoOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryFi;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSms;
 
 class LocaleSmsTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleSmsTest extends TestCase
         $locale = new LocaleSms();
 
         self::assertSame(LanguageSms::class, $locale->language()::class);
-        self::assertSame(PluralRuleOneTwoOther::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryFi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('sms_FI', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('sääʹmǩiõll', $locale->endonym());
         self::assertSame('lang="sms"', $locale->htmlAttributes());
         self::assertSame('sms', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Macroactive\Cldr\Locale;
 
-/**
- * Tests for the CLDR
- *
- * @coversNothing
- */
+use function explode;
+use function implode;
+use function preg_match;
+
 class CldrPluralRulesTest extends TestCase
 {
     /**
@@ -18,9 +17,9 @@ class CldrPluralRulesTest extends TestCase
      *
      * @large
      */
-    public function testPluralRules(): void
+    public function testPluralRules()
     {
-        $cldr = simplexml_load_string(file_get_contents(__DIR__ . '/data/cldr-34/supplemental/plurals.xml'));
+        $cldr = simplexml_load_string(self::getPluralsData());
 
         foreach ($cldr->xpath("/supplementalData/plurals[@type='cardinal']/pluralRules") as $plural_rule) {
             $locale_codes = explode(' ', (string) $plural_rule->attributes()->locales);
@@ -28,69 +27,70 @@ class CldrPluralRulesTest extends TestCase
             foreach ($locale_codes as $locale_code) {
                 // The following CLDR definitions/examples are incompatible with the accepted gettext ones.
                 switch ($locale_code) {
-                    case 'root': // This isn't a locale
-                    case 'br':   // CLDR has 5 rules, whereas gettext has (0,1) (other)
-                    case 'cy':   // CLDR has 5 rules, whereas gettext has (1), (2), (other), (8,11)
-                    case 'fil':  // CLDR has a different rule from gettext
-                    case 'he':   // CLDR has (1) (2) (many) (other), whereas gettext has (1) (other)
-                    case 'in':   // This code (Indonesian) is deprecated. Use id.
-                    case 'iw':   // This code (Hebrew) is deprecated. Use he.
-                    case 'ji':   // This code (Javanese) is deprecated,  Use yi.
-                    case 'jw':   // This code (Javanese) is deprecated.  Use jv.
-                    case 'kw':   // CLDR has 3 rules, whereas gettext has (1), (2), (3), (other)
-                    case 'lv':   // CLDR has (0) (1) (other), whereas gettext has (1) (other) (0)
-                    case 'mk':   // There are lots of conflicting definitions.
-                    case 'no':   // This code (Norwegian) is deprecated. Use nb or nn.
-                    case 'prg':  // Same as lv
-                    case 'pt':   // CLDR has the rule for pt_BR, whereas gettext has the rule for pt_PT
-                    case 'se':   // CLDR has (1) (2) (other), whereas gettext has (0,1) (other)
-                    case 'sh':   // This code (Serbo-croat) is deprecated
-                        continue 2;
-                    case 'sdh':  // TO BE IMPLEMENTED
-                    case 'cs':   // 4/3
-                    case 'sk':   // 4/3
-                    case 'pl':   // 4/3
-                    case 'be':   // 4/3
-                    case 'lt':   // 4/3
-                    case 'ru':   // 4/3
-                    case 'uk':   // 4/3
-                    case 'gv':   // 5/4
-                        continue 2;
-                    case 'sc':   // CLDR has rules for this language, but no definitions
+                    case 'root':  // This isn't a locale
+                    case 'se':    // CLDR has (1) (2) (other), whereas gettext has (0,1) (other)
+                    case 'sh':    // This code (Serbo-croat) is deprecated
                         continue 2;
                 }
                 $locale = Locale::create($locale_code);
 
-                self::assertSame($locale->pluralRule()->plurals(), count($plurals));
+                $exampleForms = array_keys($locale->pluralRule()->pluralExamples());
+                $pluralRulePosition = 0;
 
-                $plural_rule = 0;
+                $treatManyAsOther = false;
+
+                foreach ($plurals as $pluralExamples) {
+                    if ('other' === (string) $pluralExamples->attributes()['count'] && !str_contains((string) $pluralExamples, '@integer')) {
+                        $treatManyAsOther = true;
+                        break;
+                    }
+                }
                 foreach ($plurals as $plural_examples) {
-                    if (preg_match('/@integer ([^@]+)/', (string) $plural_examples, $match)) {
-                        $rules = preg_split('/[^0-9~]+/', $match[1], -1, PREG_SPLIT_NO_EMPTY);
-                        foreach ($rules as $rule) {
-                            if (str_contains($rule, '~')) {
-                                [$low, $high] = explode('~', (string) $rule);
-                            } else {
-                                $low  = $rule;
-                                $high = $rule;
-                            }
+                    if (preg_match('/@integer ([^@]+)/', (string) $plural_examples, $match) !== 1) {
+                        continue;
+                    }
 
-                            $low  = (int) $low;
-                            $high = (int) $high;
+                    $pluralForm = (string) $plural_examples->attributes()['count'];
 
-                            for ($number = $low; $number <= $high; ++$number) {
-                                $debug = implode('|', [
-                                    $locale_code,
-                                    $plural_rule,
-                                    $rule,
-                                ]);
+                    if ($treatManyAsOther && 'many' === $pluralForm) {
+                        // pl, be, ru… have no @integer in 'other', but icu/MessageFormatter requires 'other' and fails on 'many'
+                        $pluralForm = 'other';
+                    }
 
-                                self::assertSame($plural_rule, $locale->pluralRule()->plural($number), $debug);
-                            }
+                    $rules = explode(', ', $match[1]);
+
+                    foreach ($rules as $rule) {
+                        $rule = trim($rule);
+
+                        if ('…' === $rule) {
+                            continue;
+                        }
+
+                        if (str_contains($rule, '~')) {
+                            [$low, $high] = explode('~', $rule);
+                        } else {
+                            $low = $high = str_replace(['c3', 'c6'], ['000', '000000'], $rule);
+                        }
+
+                        $low  = (int) $low;
+                        $high = (int) $high;
+
+                        for ($number = $low; $number <= $high; $number++) {
+                            $debug = implode('|', [
+                                $locale_code,
+                                $pluralRulePosition,
+                                $pluralForm,
+                                $rule,
+                                $low, $high
+                            ]);
+
+                            self::assertSame($pluralForm, $exampleForms[$locale->pluralRule()->plural($number)], $debug);
                         }
                     }
-                    ++$plural_rule;
+
+                    ++$pluralRulePosition;
                 }
+                self::assertSame($pluralRulePosition, $locale->pluralRule()->plurals(), $locale_code);
             }
         }
     }

@@ -7,7 +7,7 @@ namespace Macroactive\Cldr\Locale;
 use Macroactive\Cldr\Script\ScriptCyrl;
 
 /**
- * Italian
+ * Moldovan cyrilic
  *
  * @psalm-immutable
  */

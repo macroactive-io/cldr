@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKok;
 use Macroactive\Cldr\Script\ScriptDeva;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleKok;
 
 class LocaleKokTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleKokTest extends TestCase
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kok_IN', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('०१२३४५६७८९', $locale->digits('0123456789'));
-        self::assertSame('कोंकणी', $locale->endonym());
         self::assertSame('lang="kok"', $locale->htmlAttributes());
         self::assertSame('kok', $locale->languageTag());
         self::assertSame('-१२३', $locale->number(-123));

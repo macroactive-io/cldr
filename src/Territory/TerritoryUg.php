@@ -15,4 +15,14 @@ class TerritoryUg extends AbstractTerritory implements TerritoryInterface
     {
         return 'UG';
     }
+
+    public function weekendStart(): int
+    {
+        return 0;
+    }
+
+    public function weekendEnd(): int
+    {
+        return 1;
+    }
 }

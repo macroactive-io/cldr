@@ -16,6 +16,7 @@ use function count;
 use function explode;
 use function sprintf;
 use function strlen;
+use function strtoupper;
 use function substr;
 
 /**
@@ -31,6 +32,7 @@ abstract class AbstractLocale implements LocaleInterface
     public const NEGATIVE = '-'; // Negative numbers
 
     // "Target" strings, when translating numbers
+    public const ADLM_GROUP   = '⹁';
     public const ALM          = "\xD8\x9C"; // Arabic Letter Mark
     public const APOSTROPHE   = '’';
     public const ARAB_DECIMAL = "\xD9\xAB";
@@ -93,7 +95,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     public function endonymSortable(): string
     {
-        return $this->endonym();
+        return strtoupper($this->endonym());
     }
 
     public function htmlAttributes(): string
@@ -209,6 +211,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     /**
      * When using grouping digits in numbers, keep this many of digits together.
+     * @psalm-immutable
      */
     protected function minimumGroupingDigits(): int
     {

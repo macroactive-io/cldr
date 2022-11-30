@@ -29,7 +29,7 @@ class LocaleKsf extends AbstractLocale implements LocaleInterface
         return new LanguageKsf();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Language;
+namespace Macroactive\Cldr\Tests\Language;
 
 use Macroactive\Cldr\PluralRule\PluralRule4;
 use Macroactive\Cldr\Script\ScriptLatn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Language\LanguageGd;
 
 class LanguageGdTest extends TestCase
 {
@@ -15,7 +17,6 @@ class LanguageGdTest extends TestCase
         $language = new LanguageGd();
 
         self::assertSame(ScriptLatn::class, $language->defaultScript()::class);
-        self::assertSame(PluralRule4::class, $language->pluralRule()::class);
         self::assertSame('gd', $language->code());
     }
 }

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageSeh;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryMz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleSeh;
 
 class LocaleSehTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleSehTest extends TestCase
         $locale = new LocaleSeh();
 
         self::assertSame(LanguageSeh::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryMz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('seh_MZ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('sena', $locale->endonym());
         self::assertSame('lang="seh"', $locale->htmlAttributes());
         self::assertSame('seh', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

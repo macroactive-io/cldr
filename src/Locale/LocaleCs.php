@@ -34,7 +34,7 @@ class LocaleCs extends AbstractLocale implements LocaleInterface
         return new LanguageCs();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::NBSP,

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageCgg;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryUg;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleCgg;
 
 class LocaleCggTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleCggTest extends TestCase
         $locale = new LocaleCgg();
 
         self::assertSame(LanguageCgg::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryUg::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('cgg_UG', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Rukiga', $locale->endonym());
         self::assertSame('lang="cgg"', $locale->htmlAttributes());
         self::assertSame('cgg', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

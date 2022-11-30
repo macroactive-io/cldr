@@ -27,4 +27,9 @@ class LocaleEsMx extends LocaleEs
     {
         return new TerritoryMx();
     }
+
+    protected function percentFormat(): string
+    {
+        return self::PLACEHOLDER . self::PERCENT;
+    }
 }

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageBo;
 use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryIn;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleBoIn;
 
 class LocaleBoInTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleBoInTest extends TestCase
         $locale = new LocaleBoIn();
 
         self::assertSame(LanguageBo::class, $locale->language()::class);
-        self::assertSame(PluralRule0::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryIn::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('bo_IN', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="bo-IN"', $locale->htmlAttributes());
         self::assertSame('bo-IN', $locale->languageTag());

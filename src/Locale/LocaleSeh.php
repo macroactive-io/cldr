@@ -29,7 +29,7 @@ class LocaleSeh extends AbstractLocale implements LocaleInterface
         return new LanguageSeh();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

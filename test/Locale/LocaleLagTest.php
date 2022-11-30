@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageLag;
 use Macroactive\Cldr\PluralRule\PluralRuleZeroOneOther;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryTz;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleLag;
 
 class LocaleLagTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleLagTest extends TestCase
         $locale = new LocaleLag();
 
         self::assertSame(LanguageLag::class, $locale->language()::class);
-        self::assertSame(PluralRuleZeroOneOther::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryTz::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('lag_TZ', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Kɨlaangi', $locale->endonym());
         self::assertSame('lang="lag"', $locale->htmlAttributes());
         self::assertSame('lag', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

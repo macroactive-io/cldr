@@ -23,4 +23,9 @@ class LocaleNe extends AbstractLocale implements LocaleInterface
     {
         return new LanguageNe();
     }
+
+    protected function digitsGroup(): int
+    {
+        return 2;
+    }
 }

@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageRn;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryBi;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleRn;
 
 class LocaleRnTest extends TestCase
 {
@@ -20,9 +22,8 @@ class LocaleRnTest extends TestCase
         self::assertSame(TerritoryBi::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('rn_BI', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('Ikirundi', $locale->endonym());
         self::assertSame('lang="rn"', $locale->htmlAttributes());
         self::assertSame('rn', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

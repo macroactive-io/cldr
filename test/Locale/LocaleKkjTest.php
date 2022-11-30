@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageKkj;
 use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryCm;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleKkj;
 
 class LocaleKkjTest extends TestCase
 {
@@ -17,14 +19,12 @@ class LocaleKkjTest extends TestCase
         $locale = new LocaleKkj();
 
         self::assertSame(LanguageKkj::class, $locale->language()::class);
-        self::assertSame(PluralRule1::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryCm::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('kkj_CM', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
-        self::assertSame('kakɔ', $locale->endonym());
         self::assertSame('lang="kkj"', $locale->htmlAttributes());
         self::assertSame('kkj', $locale->languageTag());
         self::assertSame('-123', $locale->number(-123));

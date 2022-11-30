@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr;
+namespace Macroactive\Cldr\Tests;
 
 use Macroactive\Cldr\Script\ScriptInterface;
 use PHPUnit\Framework\TestCase;
@@ -28,7 +28,7 @@ class Iso15924Test extends TestCase
         foreach ($iso15924 as $data) {
             $fields = explode(';', $data);
 
-            $class = __NAMESPACE__ . '\Script\Script' . $fields[0];
+            $class = 'Macroactive\Cldr\Script\Script' . $fields[0];
             self::assertTrue(class_exists($class), $data);
 
             /** @var ScriptInterface $script */

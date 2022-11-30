@@ -13,13 +13,6 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LocaleEnFi extends LocaleEn
 {
-    public function numberSymbols(): array
-    {
-        return [
-            self::GROUP => self::NBSP,
-        ];
-    }
-
     public function territory(): TerritoryFi
     {
         return new TerritoryFi();
@@ -28,5 +21,13 @@ class LocaleEnFi extends LocaleEn
     protected function percentFormat(): string
     {
         return self::PLACEHOLDER . self::NBSP . self::PERCENT;
+    }
+
+    protected function numberSymbols(): array
+    {
+        return [
+            self::GROUP => self::NBSP,
+            self::DECIMAL => self::COMMA,
+        ];
     }
 }

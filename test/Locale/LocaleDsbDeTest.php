@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Macroactive\Cldr\Locale;
+namespace Macroactive\Cldr\Tests\Locale;
 
 use Macroactive\Cldr\Language\LanguageDsb;
 use Macroactive\Cldr\PluralRule\PluralRule10;
 use Macroactive\Cldr\Script\ScriptLatn;
 use Macroactive\Cldr\Territory\TerritoryDe;
 use PHPUnit\Framework\TestCase;
+
+use Macroactive\Cldr\Locale\LocaleDsbDe;
 
 class LocaleDsbDeTest extends TestCase
 {
@@ -17,12 +19,11 @@ class LocaleDsbDeTest extends TestCase
         $locale = new LocaleDsbDe();
 
         self::assertSame(LanguageDsb::class, $locale->language()::class);
-        self::assertSame(PluralRule10::class, $locale->pluralRule()::class);
         self::assertSame(ScriptLatn::class, $locale->script()::class);
         self::assertSame(TerritoryDe::class, $locale->territory()::class);
         self::assertNull($locale->variant());
         self::assertSame('dsb_DE', $locale->code());
-        self::assertSame('unicode_ci', $locale->collation());
+
         self::assertSame('0123456789', $locale->digits('0123456789'));
         self::assertSame('lang="dsb"', $locale->htmlAttributes());
         self::assertSame('dsb', $locale->languageTag());

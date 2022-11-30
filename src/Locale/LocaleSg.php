@@ -29,7 +29,7 @@ class LocaleSg extends AbstractLocale implements LocaleInterface
         return new LanguageSg();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,

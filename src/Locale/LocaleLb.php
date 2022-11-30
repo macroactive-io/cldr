@@ -29,7 +29,7 @@ class LocaleLb extends AbstractLocale implements LocaleInterface
         return new LanguageLb();
     }
 
-    public function numberSymbols(): array
+    protected function numberSymbols(): array
     {
         return [
             self::GROUP   => self::DOT,
