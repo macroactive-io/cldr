@@ -33,6 +33,9 @@ class CldrTest extends TestCase
     /** @var array<string, array<string, SimpleXMLElement>> */
     private static array $cachedXmls = [];
 
+    /** @var array<string, array<string, string>> */
+    private static array $aliases = [];
+
     /**
      * Test numbers
      *
@@ -57,10 +60,9 @@ class CldrTest extends TestCase
             $numberSystem = $originalNumberSystem = self::cldrValue($cldr, '/ldml/numbers/defaultNumberingSystem[not(@draft=\'unconfirmed\')]');
 
             if ('latn' !== $originalNumberSystem) {
-                try {
-                    $alias        = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
-                    $numberSystem = str_replace("']", '', str_replace("../symbols[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {
+                $alias = self::getAlias('symbols', $originalNumberSystem);
+                if ($alias !== null) {
+                    $numberSystem = $alias;
                 }
             }
 
@@ -70,22 +72,21 @@ class CldrTest extends TestCase
             $minus_sign   = self::cldrValue($cldr, "/ldml/numbers/symbols[@numberSystem='" . $numberSystem . "']/minusSign[not(@draft='unconfirmed')]");
 
             if ('latn' !== $originalNumberSystem) {
-                try {
-                    $alias        = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
-                    $numberSystem = str_replace("']", '', str_replace("../decimalFormats[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {
+                $alias = self::getAlias('decimalFormats', $originalNumberSystem);
+                if ($alias !== null) {
+                    $numberSystem = $alias;
                 }
             }
 
             $standard = self::cldrValue($cldr, "/ldml/numbers/decimalFormats[@numberSystem='" . $numberSystem . "']/decimalFormatLength[not(@type)]/decimalFormat/pattern[not(@draft='unconfirmed')]");
 
             if ('latn' !== $originalNumberSystem) {
-                try {
-                    $alias        = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $originalNumberSystem . "']/alias/@path");
-                    $numberSystem = str_replace("']", '', str_replace("../percentFormats[@numberSystem='", '', $alias));
-                } catch (CannotFindXpathException $ex) {
+                $alias = self::getAlias('percentFormats', $originalNumberSystem);
+                if ($alias !== null) {
+                    $numberSystem = $alias;
                 }
             }
+
             $percent = self::cldrValue($cldr, "/ldml/numbers/percentFormats[@numberSystem='" . $numberSystem . "']/percentFormatLength[not(@type)]/percentFormat/pattern[not(@draft='unconfirmed')]");
 
             // The CLDR example doesn't demonstrate the lack of group separators.
@@ -188,19 +189,48 @@ class CldrTest extends TestCase
         return (string) $data[0];
     }
 
+    /**
+     * @return null|bool|array<SimpleXMLElement>
+     */
     private static function xpathCached(string $locale, string $file, string $xpath): null|bool|array
     {
         if (!isset(self::$cachedXmls[$locale])) {
             self::$cachedXmls = [$locale => []];
         }
 
-        $xml = self::$cachedXmls[$locale][$file] ?? null;
+        if (basename($file) === 'root.xml') {
+            if (!isset(self::$cachedXmls['root'])) {
+                self::$cachedXmls['root'] = simplexml_load_file($file);
+            }
 
-        if (null === $xml) {
-            self::$cachedXmls[$locale][$file] = simplexml_load_file($file);
-            $xml                              = self::$cachedXmls[$locale][$file];
+            $xml = self::$cachedXmls['root'];
+        } else {
+            $xml = self::$cachedXmls[$locale][$file] ?? null;
+
+            if (null === $xml) {
+                self::$cachedXmls[$locale][$file] = simplexml_load_file($file);
+                $xml                              = self::$cachedXmls[$locale][$file];
+            }
         }
 
         return $xml->xpath($xpath);
+    }
+
+    private static function getAlias(string $node, string $originalNumberSystem): ?string
+    {
+        if (count(self::$aliases) === 0) {
+            $data = self::xpathCached('en', __DIR__ . '/data/main/root.xml' , "/ldml/*/*[@numberSystem][alias]");
+
+            if (!is_array($data) || count($data) === 0) {
+                throw new \RuntimeException('Cannot obtain aliases from root.xml');
+            }
+
+            foreach ($data as $datum) {
+                $value = str_replace("']", '', str_replace("../symbols[@numberSystem='", '', (string) $data[0]->alias['path']));
+                self::$aliases[$datum->getName()][(string) $datum->attributes()['numberSystem']] = $value;
+            }
+        }
+
+        return self::$aliases[$node][$originalNumberSystem] ?? null;
     }
 }
