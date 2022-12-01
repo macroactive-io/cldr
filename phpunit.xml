@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit
-	beStrictAboutOutputDuringTests="true"
-	beStrictAboutTestsThatDoNotTestAnything="true"
-	bootstrap="vendor/autoload.php"
-	colors="true"
-	stopOnError="false"
-	stopOnFailure="false"
-	stopOnIncomplete="false"
-	stopOnSkipped="false"
-	timeoutForSmallTests="10"
-	timeoutForMediumTests="60"
-	timeoutForLargeTests="300"
-	xmlns=""
->
-	<testsuites>
-		<testsuite name="Default test suite">
-			<directory>test</directory>
-		</testsuite>
-	</testsuites>
-	<filter>
-		<whitelist>
-			<directory suffix=".php">src</directory>
-		</whitelist>
-	</filter>
+<phpunit xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" beStrictAboutOutputDuringTests="true" beStrictAboutTestsThatDoNotTestAnything="true" bootstrap="vendor/autoload.php" colors="true" stopOnError="false" stopOnFailure="false" stopOnIncomplete="false" stopOnSkipped="false" timeoutForSmallTests="10" timeoutForMediumTests="60" timeoutForLargeTests="300" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="Default test suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
 </phpunit>

@@ -43,7 +43,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Macroactive\\Cldr\\Tests\\": "test/"
+			"Macroactive\\Cldr\\Tests\\": "tests/"
 		}
 	},
 	"config": {
