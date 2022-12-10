@@ -111,6 +111,26 @@ final class Locale
         return $default;
     }
 
+    /** @return iterable<LocaleInterface> */
+    public static function all(): iterable
+    {
+        $all = glob(__DIR__ . '/Locale/Locale*.php');
+
+        if (false === $all || count($all) === 0) {
+            throw new \RuntimeException('By some reason the list of locales cannot be obtained');
+        }
+
+        foreach ($all as $filename) {
+            $localeName = basename($filename, '.php');
+
+            if ('LocaleInterface' === $localeName) {
+                continue;
+            }
+
+            yield new ('\\Macroactive\\Cldr\\Locale\\' . $localeName);
+        }
+    }
+
     /**
      * If a client requests "de-DE" (but not "de"), then add "de" as a lower-priority fallback.
      *

@@ -218,4 +218,17 @@ class LocaleTest extends TestCase
 
         self::assertEquals($default, $locale);
     }
+
+    public function testAll(): void
+    {
+        $iterator = Locale::all();
+        self::assertIsIterable($iterator);
+
+        $count = 0;
+        foreach ($iterator as $item) {
+            self::assertTrue($item instanceof Locale\LocaleInterface);
+            $count++;
+        }
+        self::assertSame(911, $count);
+    }
 }
