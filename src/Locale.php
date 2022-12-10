@@ -127,7 +127,13 @@ final class Locale
                 continue;
             }
 
-            yield new ('\\Macroactive\\Cldr\\Locale\\' . $localeName);
+            $classname = '\\Macroactive\\Cldr\\Locale\\' . $localeName;
+
+            if (!class_exists($classname)) {
+                throw new DomainException(sprintf('File for locale %s exists but class cannot be found. Missed autoloading?', $classname));
+            }
+
+            yield new $classname;
         }
     }
 
