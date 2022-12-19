@@ -30,4 +30,15 @@
       <code>iterable&lt;LocaleInterface&gt;</code>
     </MoreSpecificReturnType>
   </file>
+  <file src="src/Territory.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>new $className</code>
+    </LessSpecificReturnStatement>
+    <MixedMethodCall occurrences="1">
+      <code>new $className</code>
+    </MixedMethodCall>
+    <MoreSpecificReturnType occurrences="1">
+      <code>TerritoryInterface</code>
+    </MoreSpecificReturnType>
+  </file>
 </files>

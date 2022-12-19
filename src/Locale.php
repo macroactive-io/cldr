@@ -6,6 +6,7 @@ namespace Macroactive\Cldr;
 
 use DomainException;
 use Macroactive\Cldr\Locale\LocaleInterface;
+use RuntimeException;
 
 use function array_combine;
 use function array_key_exists;
@@ -111,13 +112,15 @@ final class Locale
         return $default;
     }
 
-    /** @return iterable<LocaleInterface> */
+    /**
+     * @return iterable<LocaleInterface>
+     */
     public static function all(): iterable
     {
         $all = glob(__DIR__ . '/Locale/Locale*.php');
 
         if (false === $all || count($all) === 0) {
-            throw new \RuntimeException('By some reason the list of locales cannot be obtained');
+            throw new RuntimeException('By some reason the list of locales cannot be obtained');
         }
 
         foreach ($all as $filename) {
@@ -133,7 +136,7 @@ final class Locale
                 throw new DomainException(sprintf('File for locale %s exists but class cannot be found. Missed autoloading?', $classname));
             }
 
-            yield new $classname;
+            yield new $classname();
         }
     }
 

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Tests;
 
+use Macroactive\Cldr\Territory;
+
 /**
  * Tests for the CLDR
  *
@@ -35,8 +37,7 @@ class CldrWeekDataTest extends TestCase
                 $day         = $days[(string) $xml->attributes()->day];
                 $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
                 foreach ($territories as $code) {
-                    $class     = '\Macroactive\Cldr\Territory\Territory' . ucfirst(strtolower($code));
-                    $territory = new $class();
+                    $territory = Territory::create($code);
                     self::assertSame($day, $territory->firstDay(), 'Territory code: ' . $code);
                 }
             }
@@ -46,8 +47,7 @@ class CldrWeekDataTest extends TestCase
             $day         = $days[(string) $xml->attributes()->day];
             $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
             foreach ($territories as $code) {
-                $class     = '\Macroactive\Cldr\Territory\Territory' . ucfirst(strtolower($code));
-                $territory = new $class();
+                $territory = Territory::create($code);
                 self::assertSame($day, $territory->weekendStart(), $code);
             }
         }
@@ -56,8 +56,7 @@ class CldrWeekDataTest extends TestCase
             $day         = $days[(string) $xml->attributes()->day];
             $territories = preg_split('/\s/', (string) $xml->attributes()->territories, -1, PREG_SPLIT_NO_EMPTY);
             foreach ($territories as $code) {
-                $class     = '\Macroactive\Cldr\Territory\Territory' . ucfirst(strtolower($code));
-                $territory = new $class();
+                $territory = Territory::create($code);
                 self::assertSame($day, $territory->weekendEnd());
             }
         }
