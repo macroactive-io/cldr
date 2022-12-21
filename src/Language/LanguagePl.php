@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryPl;
  */
 class LanguagePl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Polish';
+    }
+
     public function code(): string
     {
         return 'pl';

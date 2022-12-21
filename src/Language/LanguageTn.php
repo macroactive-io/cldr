@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBw;
  */
 class LanguageTn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tswana';
+    }
+
     public function code(): string
     {
         return 'tn';

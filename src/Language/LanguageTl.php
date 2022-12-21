@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryPh;
  */
 class LanguageTl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tagalog';
+    }
+
     public function code(): string
     {
         return 'tl';

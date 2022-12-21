@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDe;
  */
 class LanguageNds extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Low German';
+    }
+
     public function code(): string
     {
         return 'nds';

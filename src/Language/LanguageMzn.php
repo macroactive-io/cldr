@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIr;
  */
 class LanguageMzn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Mazanderani';
+    }
+
     public function code(): string
     {
         return 'mzn';

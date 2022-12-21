@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PW - Palau
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPw extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Palau';
+    }
+
     public function code(): string
     {
         return 'PW';

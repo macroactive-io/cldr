@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFr;
  */
 class LanguageOc extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Occitan (post 1500)';
+    }
+
     public function code(): string
     {
         return 'oc';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * DE - Germany
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryDe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Germany';
+    }
+
     public function code(): string
     {
         return 'DE';

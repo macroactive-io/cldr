@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryId;
  */
 class LanguageJv extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Javanese';
+    }
+
     public function code(): string
     {
         return 'jv';

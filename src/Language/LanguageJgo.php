@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageJgo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ngomba';
+    }
+
     public function code(): string
     {
         return 'jgo';

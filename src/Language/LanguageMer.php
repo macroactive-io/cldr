@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageMer extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Meru';
+    }
+
     public function code(): string
     {
         return 'mer';

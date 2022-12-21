@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PY - Paraguay
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPy extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Paraguay';
+    }
+
     public function code(): string
     {
         return 'PY';

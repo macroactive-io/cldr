@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUg;
  */
 class LanguageCgg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Chiga';
+    }
+
     public function code(): string
     {
         return 'cgg';

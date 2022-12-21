@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageCu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Church Slavic';
+    }
+
     public function code(): string
     {
         return 'cu';

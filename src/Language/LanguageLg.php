@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUg;
  */
 class LanguageLg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ganda';
+    }
+
     public function code(): string
     {
         return 'lg';

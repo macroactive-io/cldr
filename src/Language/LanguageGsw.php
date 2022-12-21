@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCh;
  */
 class LanguageGsw extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Swiss German';
+    }
+
     public function code(): string
     {
         return 'gsw';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCv;
  */
 class LanguageKea extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kabuverdianu';
+    }
+
     public function code(): string
     {
         return 'kea';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNz;
  */
 class LanguageMi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Maori';
+    }
+
     public function code(): string
     {
         return 'mi';

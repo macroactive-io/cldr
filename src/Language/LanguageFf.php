@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySn;
  */
 class LanguageFf extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Fulah';
+    }
+
     public function code(): string
     {
         return 'ff';

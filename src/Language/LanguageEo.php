@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
  */
 class LanguageEo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Esperanto';
+    }
+
     public function code(): string
     {
         return 'eo';

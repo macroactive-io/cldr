@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * IR - Islamic Republic of Iran
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryIr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Iran (Islamic Republic of)';
+    }
+
     public function code(): string
     {
         return 'IR';

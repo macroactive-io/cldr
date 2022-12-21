@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryNe;
  */
 class LanguageTwq extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tasawaq';
+    }
+
     public function code(): string
     {
         return 'twq';

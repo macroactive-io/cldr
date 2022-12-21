@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageKok extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Konkani';
+    }
+
     public function code(): string
     {
         return 'kok';

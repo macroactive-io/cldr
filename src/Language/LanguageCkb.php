@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIq;
  */
 class LanguageCkb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Central Kurdish';
+    }
+
     public function code(): string
     {
         return 'ckb';

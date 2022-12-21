@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMg;
  */
 class LanguageMg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Malagasy';
+    }
+
     public function code(): string
     {
         return 'mg';

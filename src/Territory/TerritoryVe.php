@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * VE - Venezuela
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryVe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Venezuela (Bolivarian Republic of)';
+    }
+
     public function code(): string
     {
         return 'VE';

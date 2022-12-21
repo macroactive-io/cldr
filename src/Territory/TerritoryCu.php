@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CU - Cuba
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCu extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Cuba';
+    }
+
     public function code(): string
     {
         return 'CU';

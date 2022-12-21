@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 030 - Eastern Asia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory030 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Eastern Asia';
+    }
+
     public function code(): string
     {
         return '030';

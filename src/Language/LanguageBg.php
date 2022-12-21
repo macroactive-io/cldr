@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryBg;
  */
 class LanguageBg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bulgarian';
+    }
+
     public function code(): string
     {
         return 'bg';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageMdf extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Moksha';
+    }
+
     public function code(): string
     {
         return 'mdf';

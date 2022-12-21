@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageSa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sanskrit';
+    }
+
     public function code(): string
     {
         return 'sa';

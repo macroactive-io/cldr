@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LanguageSms extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Skolt Sami';
+    }
+
     public function code(): string
     {
         return 'sms';

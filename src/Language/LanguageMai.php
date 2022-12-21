@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageMai extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Maithili';
+    }
+
     public function code(): string
     {
         return 'mai';

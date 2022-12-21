@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\Territory419;
  */
 class LocaleEs419 extends LocaleEs
 {
+    public function exonym(): string
+    {
+        return 'Latin American Spanish';
+    }
+
     public function endonym(): string
     {
         return 'español latinoamericano';

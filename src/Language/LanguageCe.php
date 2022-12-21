@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageCe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Chechen';
+    }
+
     public function code(): string
     {
         return 'ce';

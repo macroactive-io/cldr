@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryId;
  */
 class LanguageId extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Indonesian';
+    }
+
     public function code(): string
     {
         return 'id';

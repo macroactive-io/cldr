@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryNe;
  */
 class LanguageDje extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Zarma';
+    }
+
     public function code(): string
     {
         return 'dje';

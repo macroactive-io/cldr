@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PR - Puerto Rico
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Puerto Rico';
+    }
+
     public function code(): string
     {
         return 'PR';

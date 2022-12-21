@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 001 - World
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory001 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'World';
+    }
+
     public function code(): string
     {
         return '001';

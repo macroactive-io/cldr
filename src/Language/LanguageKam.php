@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageKam extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kamba';
+    }
+
     public function code(): string
     {
         return 'kam';

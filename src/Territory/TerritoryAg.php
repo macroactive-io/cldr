@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * AG - Antigua and Barbuda
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryAg extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Antigua and Barbuda';
+    }
+
     public function code(): string
     {
         return 'AG';

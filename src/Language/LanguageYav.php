@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageYav extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Yangben';
+    }
+
     public function code(): string
     {
         return 'yav';

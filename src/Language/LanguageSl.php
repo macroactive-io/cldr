@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySi;
  */
 class LanguageSl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Slovenian';
+    }
+
     public function code(): string
     {
         return 'sl';

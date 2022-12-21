@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PA - Panama
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Panama';
+    }
+
     public function code(): string
     {
         return 'PA';

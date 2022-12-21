@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PH - Philippines
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPh extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Philippines';
+    }
+
     public function code(): string
     {
         return 'PH';

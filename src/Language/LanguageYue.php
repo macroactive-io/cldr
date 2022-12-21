@@ -9,12 +9,17 @@ use Macroactive\Cldr\Script\ScriptHans;
 use Macroactive\Cldr\Territory\TerritoryCn;
 
 /**
- * Chinese
+ * Chinese / Cantonese
  *
  * @psalm-immutable
  */
 class LanguageYue extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Yue Chinese';
+    }
+
     public function code(): string
     {
         return 'yue';

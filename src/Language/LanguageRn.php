@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryBi;
  */
 class LanguageRn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Rundi';
+    }
+
     public function code(): string
     {
         return 'rn';

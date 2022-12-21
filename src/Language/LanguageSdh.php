@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryTr;
  */
 class LanguageSdh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Southern Kurdish';
+    }
+
     public function code(): string
     {
         return 'sdh';

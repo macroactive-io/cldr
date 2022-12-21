@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryZa;
  */
 class LanguageNso extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Pedi';
+    }
+
     public function code(): string
     {
         return 'nso';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageTt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tatar';
+    }
+
     public function code(): string
     {
         return 'tt';

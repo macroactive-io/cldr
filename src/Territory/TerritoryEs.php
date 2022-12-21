@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ES - Spain
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryEs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Spain';
+    }
+
     public function code(): string
     {
         return 'ES';

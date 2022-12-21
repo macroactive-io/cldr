@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageAsa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Asu';
+    }
+
     public function code(): string
     {
         return 'asa';

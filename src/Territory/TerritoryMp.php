@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * MP - Northern Mariana Islands
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryMp extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Northern Mariana Islands';
+    }
+
     public function code(): string
     {
         return 'MP';

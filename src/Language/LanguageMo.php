@@ -11,4 +11,8 @@ namespace Macroactive\Cldr\Language;
  */
 class LanguageMo extends LanguageRo
 {
+    public function exonym(): string
+    {
+        return 'Moldavian';
+    }
 }

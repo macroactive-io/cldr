@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFo;
  */
 class LanguageFo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Faroese';
+    }
+
     public function code(): string
     {
         return 'fo';

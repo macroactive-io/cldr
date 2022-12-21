@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * FO - Faroe Islands
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryFo extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Faroe Islands';
+    }
+
     public function code(): string
     {
         return 'FO';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryPk;
  */
 class LanguageSd extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sindhi';
+    }
+
     public function code(): string
     {
         return 'sd';

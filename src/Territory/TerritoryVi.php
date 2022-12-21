@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * VI - US. Virgin Islands.
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryVi extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Virgin Islands (U.S.)';
+    }
+
     public function code(): string
     {
         return 'VI';

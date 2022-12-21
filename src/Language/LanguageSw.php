@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageSw extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Swahili';
+    }
+
     public function code(): string
     {
         return 'sw';

@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageEwo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ewondo';
+    }
+
     public function code(): string
     {
         return 'ewo';

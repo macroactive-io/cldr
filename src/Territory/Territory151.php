@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 151 - Eastern Europe
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory151 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Eastern Europe';
+    }
+
     public function code(): string
     {
         return '151';

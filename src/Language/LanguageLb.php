@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryLu;
  */
 class LanguageLb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Luxembourgish';
+    }
+
     public function code(): string
     {
         return 'lb';

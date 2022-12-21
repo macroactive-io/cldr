@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ID - Indonesia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryId extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Indonesia';
+    }
+
     public function code(): string
     {
         return 'ID';

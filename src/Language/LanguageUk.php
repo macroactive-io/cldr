@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryUa;
  */
 class LanguageUk extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ukrainian';
+    }
+
     public function code(): string
     {
         return 'uk';

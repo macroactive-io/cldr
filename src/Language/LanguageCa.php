@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEs;
  */
 class LanguageCa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Catalan';
+    }
+
     public function code(): string
     {
         return 'ca';

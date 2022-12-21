@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDz;
  */
 class LanguageKab extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kabyle';
+    }
+
     public function code(): string
     {
         return 'kab';

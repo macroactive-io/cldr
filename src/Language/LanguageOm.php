@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEt;
  */
 class LanguageOm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Oromo';
+    }
+
     public function code(): string
     {
         return 'om';

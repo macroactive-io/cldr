@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNo;
  */
 class LanguageSe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Northern Sami';
+    }
+
     public function code(): string
     {
         return 'se';

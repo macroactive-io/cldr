@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIt;
  */
 class LanguageSc extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sardinian';
+    }
+
     public function code(): string
     {
         return 'sc';

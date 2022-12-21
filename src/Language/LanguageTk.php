@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTm;
  */
 class LanguageTk extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Turkmen';
+    }
+
     public function code(): string
     {
         return 'tk';

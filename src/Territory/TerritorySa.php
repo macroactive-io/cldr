@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * SA - Saudi Arabia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritorySa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Saudi Arabia';
+    }
+
     public function code(): string
     {
         return 'SA';

@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
  */
 class LanguageEn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'English';
+    }
+
     public function code(): string
     {
         return 'en';

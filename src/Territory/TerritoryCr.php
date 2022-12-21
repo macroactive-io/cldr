@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CR - Costa Rica
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Costa Rica';
+    }
+
     public function code(): string
     {
         return 'CR';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * SM - San Marino
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritorySm extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'San Marino';
+    }
+
     public function code(): string
     {
         return 'SM';

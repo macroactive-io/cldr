@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GT - Guatemala
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGt extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Guatemala';
+    }
+
     public function code(): string
     {
         return 'GT';

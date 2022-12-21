@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCh;
  */
 class LanguageWae extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Walser';
+    }
+
     public function code(): string
     {
         return 'wae';

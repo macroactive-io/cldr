@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryRo;
  */
 class LanguageRo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Romanian';
+    }
+
     public function code(): string
     {
         return 'ro';

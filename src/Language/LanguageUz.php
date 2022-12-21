@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUz;
  */
 class LanguageUz extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Uzbek';
+    }
+
     public function code(): string
     {
         return 'uz';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUg;
  */
 class LanguageNyn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nyankole';
+    }
+
     public function code(): string
     {
         return 'nyn';

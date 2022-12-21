@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LanguageSma extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Southern Sami';
+    }
+
     public function code(): string
     {
         return 'sma';

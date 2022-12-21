@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * MS - Montserrat
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryMs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Montserrat';
+    }
+
     public function code(): string
     {
         return 'MS';

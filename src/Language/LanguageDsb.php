@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDe;
  */
 class LanguageDsb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Lower Sorbian';
+    }
+
     public function code(): string
     {
         return 'dsb';

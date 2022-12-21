@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * MK - The Former Yugoslav Republic of Macedonia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryMk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'North Macedonia';
+    }
+
     public function code(): string
     {
         return 'MK';

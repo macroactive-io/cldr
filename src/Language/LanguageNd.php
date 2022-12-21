@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryZw;
  */
 class LanguageNd extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'North Ndebele';
+    }
+
     public function code(): string
     {
         return 'nd';

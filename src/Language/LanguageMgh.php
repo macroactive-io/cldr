@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryMz;
  */
 class LanguageMgh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Makhuwa-Meetto';
+    }
+
     public function code(): string
     {
         return 'mgh';

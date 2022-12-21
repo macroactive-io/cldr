@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PE - Peru
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Peru';
+    }
+
     public function code(): string
     {
         return 'PE';

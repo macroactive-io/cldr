@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryMv;
  */
 class LanguageDv extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Dhivehi';
+    }
+
     public function code(): string
     {
         return 'dv';

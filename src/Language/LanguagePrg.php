@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule3;
  */
 class LanguagePrg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Prussian';
+    }
+
     public function code(): string
     {
         return 'prg';

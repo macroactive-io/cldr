@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GF - French Guiana
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGf extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'French Guiana';
+    }
+
     public function code(): string
     {
         return 'GF';

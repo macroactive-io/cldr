@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * YE - Yemen
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryYe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Yemen';
+    }
+
     public function code(): string
     {
         return 'YE';

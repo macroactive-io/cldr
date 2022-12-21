@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageMgo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Meta\'';
+    }
+
     public function code(): string
     {
         return 'mgo';

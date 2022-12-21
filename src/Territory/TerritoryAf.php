@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * AF - Afghanistan
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryAf extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Afghanistan';
+    }
+
     public function code(): string
     {
         return 'AF';

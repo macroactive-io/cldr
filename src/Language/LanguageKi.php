@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageKi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kikuyu';
+    }
+
     public function code(): string
     {
         return 'ki';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageTe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Telugu';
+    }
+
     public function code(): string
     {
         return 'te';

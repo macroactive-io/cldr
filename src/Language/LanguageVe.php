@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryZa;
  */
 class LanguageVe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Venda';
+    }
+
     public function code(): string
     {
         return 've';

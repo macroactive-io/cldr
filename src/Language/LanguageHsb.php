@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDe;
  */
 class LanguageHsb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Upper Sorbian';
+    }
+
     public function code(): string
     {
         return 'hsb';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCn;
  */
 class LanguageIi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sichuan Yi';
+    }
+
     public function code(): string
     {
         return 'ii';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryVn;
  */
 class LanguageVi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Vietnamese';
+    }
+
     public function code(): string
     {
         return 'vi';

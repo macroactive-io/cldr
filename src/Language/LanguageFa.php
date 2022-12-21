@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIr;
  */
 class LanguageFa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Persian';
+    }
+
     public function code(): string
     {
         return 'fa';

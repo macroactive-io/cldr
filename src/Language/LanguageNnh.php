@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageNnh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ngiemboon';
+    }
+
     public function code(): string
     {
         return 'nnh';

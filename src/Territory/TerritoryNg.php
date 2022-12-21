@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * NG - Nigeria
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryNg extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Nigeria';
+    }
+
     public function code(): string
     {
         return 'NG';

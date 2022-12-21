@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryJp;
  */
 class LanguageJa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Japanese';
+    }
+
     public function code(): string
     {
         return 'ja';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * VN - Viet Nam
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryVn extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Viet Nam';
+    }
+
     public function code(): string
     {
         return 'VN';

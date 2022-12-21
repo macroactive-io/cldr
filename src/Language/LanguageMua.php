@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageMua extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Mundang';
+    }
+
     public function code(): string
     {
         return 'mua';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryTj;
  */
 class LanguageTg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tajik';
+    }
+
     public function code(): string
     {
         return 'tg';

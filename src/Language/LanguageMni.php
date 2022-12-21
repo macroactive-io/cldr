@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageMni extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Manipuri';
+    }
+
     public function code(): string
     {
         return 'mni';

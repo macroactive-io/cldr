@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNg;
  */
 class LanguagePcm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nigerian Pidgin';
+    }
+
     public function code(): string
     {
         return 'pcm';

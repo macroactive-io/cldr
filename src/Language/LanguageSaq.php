@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageSaq extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Samburu';
+    }
+
     public function code(): string
     {
         return 'saq';

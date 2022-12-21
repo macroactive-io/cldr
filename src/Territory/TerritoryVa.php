@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * VA - Holy See (Vatican City State)
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryVa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Holy See';
+    }
+
     public function code(): string
     {
         return 'VA';

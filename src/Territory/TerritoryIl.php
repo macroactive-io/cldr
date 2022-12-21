@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * IL - Israel
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryIl extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Israel';
+    }
+
     public function code(): string
     {
         return 'IL';

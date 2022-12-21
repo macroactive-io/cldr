@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryEt;
  */
 class LanguageAa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Afar';
+    }
+
     public function code(): string
     {
         return 'aa';

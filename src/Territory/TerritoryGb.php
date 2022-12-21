@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GB - United Kingdom
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGb extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'United Kingdom of Great Britain and Northern Ireland';
+    }
+
     public function code(): string
     {
         return 'GB';

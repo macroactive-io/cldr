@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * LK - Sri Lanka
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryLk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Sri Lanka';
+    }
+
     public function code(): string
     {
         return 'LK';

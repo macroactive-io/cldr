@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryPk;
  */
 class LanguagePs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Pushto';
+    }
+
     public function code(): string
     {
         return 'ps';

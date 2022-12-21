@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageBh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bihari languages';
+    }
+
     public function code(): string
     {
         return 'bh';

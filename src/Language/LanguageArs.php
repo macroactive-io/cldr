@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritorySa;
  */
 class LanguageArs extends LanguageAr
 {
+    public function exonym(): string
+    {
+        return 'Najdi Arabic';
+    }
+
     public function code(): string
     {
         return 'ars';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryZa;
  */
 class LanguageZu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Zulu';
+    }
+
     public function code(): string
     {
         return 'zu';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryGe;
  */
 class LanguageKa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Georgian';
+    }
+
     public function code(): string
     {
         return 'ka';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCz;
  */
 class LanguageCs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Czech';
+    }
+
     public function code(): string
     {
         return 'cs';

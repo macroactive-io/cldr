@@ -43,4 +43,12 @@ interface LanguageInterface
      * @psalm-immutable
      */
     public function pluralRule(): PluralRuleInterface;
+
+    /**
+     * An external name as oppose to endonym.
+     * Example: `Moscow` is the exonym, while `Moskva` is the endonym
+     *
+     * @return non-empty-string
+     */
+    public function exonym(): string;
 }

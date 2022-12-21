@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySb;
  */
 class LanguagePis extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Pijin';
+    }
+
     public function code(): string
     {
         return 'pis';

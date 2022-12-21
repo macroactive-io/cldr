@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNl;
  */
 class LanguageNl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Dutch';
+    }
+
     public function code(): string
     {
         return 'nl';

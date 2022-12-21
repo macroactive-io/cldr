@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIe;
  */
 class LanguageGa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Irish';
+    }
+
     public function code(): string
     {
         return 'ga';

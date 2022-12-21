@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageVun extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Vunjo';
+    }
+
     public function code(): string
     {
         return 'vun';

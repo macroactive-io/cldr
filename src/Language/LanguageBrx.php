@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageBrx extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bodo';
+    }
+
     public function code(): string
     {
         return 'brx';

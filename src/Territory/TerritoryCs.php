@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CS - Serbia and Montenegro
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Serbia and Montenegro';
+    }
+
     public function code(): string
     {
         return 'CS';

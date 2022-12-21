@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryKg;
  */
 class LanguageKy extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kirghiz';
+    }
+
     public function code(): string
     {
         return 'ky';

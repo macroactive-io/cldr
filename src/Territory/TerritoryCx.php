@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CX - Christmas Island
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCx extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Christmas Island';
+    }
+
     public function code(): string
     {
         return 'CX';

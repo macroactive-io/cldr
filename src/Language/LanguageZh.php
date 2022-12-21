@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryCn;
  */
 class LanguageZh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Chinese';
+    }
+
     public function code(): string
     {
         return 'zh';

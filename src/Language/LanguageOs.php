@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageOs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ossetian';
+    }
+
     public function code(): string
     {
         return 'os';

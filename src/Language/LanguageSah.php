@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryRu;
  */
 class LanguageSah extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Yakut';
+    }
+
     public function code(): string
     {
         return 'sah';

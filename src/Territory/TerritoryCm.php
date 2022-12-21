@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CM - Cameroon
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCm extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Cameroon';
+    }
+
     public function code(): string
     {
         return 'CM';

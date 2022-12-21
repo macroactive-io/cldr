@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * TG - Togo
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryTg extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Togo';
+    }
+
     public function code(): string
     {
         return 'TG';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\Territory029;
  */
 class LanguagePap extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Papiamento';
+    }
+
     public function code(): string
     {
         return 'pap';

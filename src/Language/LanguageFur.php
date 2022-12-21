@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIt;
  */
 class LanguageFur extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Friulian';
+    }
+
     public function code(): string
     {
         return 'fur';

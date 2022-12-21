@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIm;
  */
 class LanguageGv extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Manx';
+    }
+
     public function code(): string
     {
         return 'gv';

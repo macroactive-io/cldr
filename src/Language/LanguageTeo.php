@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUg;
  */
 class LanguageTeo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Teso';
+    }
+
     public function code(): string
     {
         return 'teo';

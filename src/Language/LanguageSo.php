@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySo;
  */
 class LanguageSo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Somali';
+    }
+
     public function code(): string
     {
         return 'so';

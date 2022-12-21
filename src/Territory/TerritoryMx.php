@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * MX - Mexico
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryMx extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Mexico';
+    }
+
     public function code(): string
     {
         return 'MX';

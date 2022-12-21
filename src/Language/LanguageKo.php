@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryKr;
  */
 class LanguageKo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Korean';
+    }
+
     public function code(): string
     {
         return 'ko';

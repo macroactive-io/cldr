@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * SJ - Svalbard and Jan Mayen
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritorySj extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Svalbard and Jan Mayen';
+    }
+
     public function code(): string
     {
         return 'SJ';

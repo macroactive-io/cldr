@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTr;
  */
 class LanguageKu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kurdish';
+    }
+
     public function code(): string
     {
         return 'ku';

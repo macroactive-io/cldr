@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageKsb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Shambala';
+    }
+
     public function code(): string
     {
         return 'ksb';

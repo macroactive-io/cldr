@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTo;
  */
 class LanguageTo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tonga (Tonga Islands)';
+    }
+
     public function code(): string
     {
         return 'to';

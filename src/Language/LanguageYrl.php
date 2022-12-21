@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBr;
  */
 class LanguageYrl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nhengatu';
+    }
+
     public function code(): string
     {
         return 'yrl';

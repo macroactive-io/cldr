@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageDoi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Dogri';
+    }
+
     public function code(): string
     {
         return 'doi';

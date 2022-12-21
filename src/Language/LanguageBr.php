@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFr;
  */
 class LanguageBr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Breton';
+    }
+
     public function code(): string
     {
         return 'br';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageLag extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Langi';
+    }
+
     public function code(): string
     {
         return 'lag';

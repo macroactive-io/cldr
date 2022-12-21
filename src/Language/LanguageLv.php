@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryLv;
  */
 class LanguageLv extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Latvian';
+    }
+
     public function code(): string
     {
         return 'lv';

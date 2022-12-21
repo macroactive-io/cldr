@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGb;
  */
 class LanguageCy extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Welsh';
+    }
+
     public function code(): string
     {
         return 'cy';

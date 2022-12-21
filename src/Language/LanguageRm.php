@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCh;
  */
 class LanguageRm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Romansh';
+    }
+
     public function code(): string
     {
         return 'rm';

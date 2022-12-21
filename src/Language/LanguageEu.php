@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEs;
  */
 class LanguageEu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Basque';
+    }
+
     public function code(): string
     {
         return 'eu';

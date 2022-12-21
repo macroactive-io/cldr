@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIq;
  */
 class LanguageSyr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Syriac';
+    }
+
     public function code(): string
     {
         return 'syr';

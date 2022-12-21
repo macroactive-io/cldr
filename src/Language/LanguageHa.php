@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNg;
  */
 class LanguageHa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Hausa';
+    }
+
     public function code(): string
     {
         return 'ha';

@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritorySn;
  */
 class LanguageDyo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Jola-Fonyi';
+    }
+
     public function code(): string
     {
         return 'dyo';

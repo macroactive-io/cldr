@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUs;
  */
 class LanguageHaw extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Hawaiian';
+    }
+
     public function code(): string
     {
         return 'haw';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryLa;
  */
 class LanguageLo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Lao';
+    }
+
     public function code(): string
     {
         return 'lo';

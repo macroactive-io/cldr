@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryGr;
  */
 class LanguageEl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Modern Greek (1453-)';
+    }
+
     public function code(): string
     {
         return 'el';

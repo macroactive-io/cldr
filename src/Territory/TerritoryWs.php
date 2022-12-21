@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * WS - Samoa
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryWs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Samoa';
+    }
+
     public function code(): string
     {
         return 'WS';

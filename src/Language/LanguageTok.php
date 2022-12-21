@@ -11,6 +11,11 @@ namespace Macroactive\Cldr\Language;
  */
 class LanguageTok extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Toki Pona';
+    }
+
     public function code(): string
     {
         return 'tok';

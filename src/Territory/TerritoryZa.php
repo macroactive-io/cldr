@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ZA - South Africa
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryZa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'South Africa';
+    }
+
     public function code(): string
     {
         return 'ZA';

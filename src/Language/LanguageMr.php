@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageMr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Marathi';
+    }
+
     public function code(): string
     {
         return 'mr';

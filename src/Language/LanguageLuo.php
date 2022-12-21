@@ -7,12 +7,15 @@ namespace Macroactive\Cldr\Language;
 use Macroactive\Cldr\Territory\TerritoryKe;
 
 /**
- * Luo (Kenya and Tanzania)
- *
  * @psalm-immutable
  */
 class LanguageLuo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Luo (Kenya and Tanzania)';
+    }
+
     public function code(): string
     {
         return 'luo';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * NI - Nicaragua
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryNi extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Nicaragua';
+    }
+
     public function code(): string
     {
         return 'NI';

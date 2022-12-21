@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNa;
  */
 class LanguageNaq extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Khoekhoe';
+    }
+
     public function code(): string
     {
         return 'naq';

@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryPk;
  */
 class LanguageUr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Urdu';
+    }
+
     public function code(): string
     {
         return 'ur';

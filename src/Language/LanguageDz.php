@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryBt;
  */
 class LanguageDz extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Dzongkha';
+    }
+
     public function code(): string
     {
         return 'dz';

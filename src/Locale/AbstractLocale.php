@@ -55,11 +55,11 @@ abstract class AbstractLocale implements LocaleInterface
 
     public function code(): string
     {
-        $code = $this->language()->code() . '_' . $this->territory()->code();
+        $code   = $this->language()->code() . '_' . $this->territory()->code();
+        $script = $this->script()->unicodeName();
 
-        if ($this->script()->code() !== $this->language()->defaultScript()->code()) {
-            assert(null !== $this->script()->unicodeName());
-            $code .= '@' . strtolower($this->script()->unicodeName());
+        if ($script !== null && $this->script()->code() !== $this->language()->defaultScript()->code()) {
+            $code .= '@' . strtolower($script);
         }
 
         if ($this->variant() !== null) {
@@ -71,6 +71,11 @@ abstract class AbstractLocale implements LocaleInterface
         }
 
         return $code;
+    }
+
+    public function exonym(): string
+    {
+        return $this->language()->exonym();
     }
 
     public function collation(): string

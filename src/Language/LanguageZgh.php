@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryMa;
  */
 class LanguageZgh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Standard Moroccan Tamazight';
+    }
+
     public function code(): string
     {
         return 'zgh';

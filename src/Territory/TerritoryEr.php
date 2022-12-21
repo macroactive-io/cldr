@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ER - Eritrea
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryEr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Eritrea';
+    }
+
     public function code(): string
     {
         return 'ER';

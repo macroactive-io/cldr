@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * EE - Estonia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryEe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Estonia';
+    }
+
     public function code(): string
     {
         return 'EE';

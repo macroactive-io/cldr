@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageMas extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Masai';
+    }
+
     public function code(): string
     {
         return 'mas';

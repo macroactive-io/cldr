@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGb;
  */
 class LanguageKw extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Cornish';
+    }
+
     public function code(): string
     {
         return 'kw';

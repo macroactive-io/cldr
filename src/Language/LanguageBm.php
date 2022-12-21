@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMl;
  */
 class LanguageBm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bambara';
+    }
+
     public function code(): string
     {
         return 'bm';

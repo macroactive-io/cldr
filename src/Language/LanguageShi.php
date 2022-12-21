@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryMa;
  */
 class LanguageShi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tachelhit';
+    }
+
     public function code(): string
     {
         return 'shi';

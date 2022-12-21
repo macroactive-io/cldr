@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryNg;
  */
 class LanguageAnn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Obolo';
+    }
+
     public function code(): string
     {
         return 'ann';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryPh;
  */
 class LanguageFil extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Filipino';
+    }
+
     public function code(): string
     {
         return 'fil';

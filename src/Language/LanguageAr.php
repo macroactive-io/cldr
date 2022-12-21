@@ -14,6 +14,11 @@ use Macroactive\Cldr\Script\ScriptArab;
  */
 class LanguageAr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Arabic';
+    }
+
     public function code(): string
     {
         return 'ar';

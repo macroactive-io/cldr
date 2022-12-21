@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryLs;
  */
 class LanguageSt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Southern Sotho';
+    }
+
     public function code(): string
     {
         return 'st';

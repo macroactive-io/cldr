@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryGn;
  */
 class LanguageNqo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'N\'Ko';
+    }
+
     public function code(): string
     {
         return 'nqo';

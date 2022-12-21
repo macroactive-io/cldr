@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryEr;
  */
 class LanguageTig extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tigre';
+    }
+
     public function code(): string
     {
         return 'tig';

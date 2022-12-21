@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GA - Gabon
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Gabon';
+    }
+
     public function code(): string
     {
         return 'GA';

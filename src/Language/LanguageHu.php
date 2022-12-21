@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryHu;
  */
 class LanguageHu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Hungarian';
+    }
+
     public function code(): string
     {
         return 'hu';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * AN - Netherlands Antilles
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryAn extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Netherlands Antilles';
+    }
+
     public function code(): string
     {
         return 'AN';

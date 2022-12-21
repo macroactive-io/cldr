@@ -13,6 +13,11 @@ use Macroactive\Cldr\Script\ScriptLatn;
  */
 class LanguageTpi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Tok Pisin';
+    }
+
     public function code(): string
     {
         return 'tpi';

@@ -17,6 +17,11 @@ use Macroactive\Cldr\Territory\TerritoryBd;
  */
 class LanguageCcp extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Chakma';
+    }
+
     public function code(): string
     {
         return 'ccp';

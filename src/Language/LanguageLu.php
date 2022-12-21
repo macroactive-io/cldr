@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCd;
  */
 class LanguageLu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Luba-Katanga';
+    }
+
     public function code(): string
     {
         return 'lu';

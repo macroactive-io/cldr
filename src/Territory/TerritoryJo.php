@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * JO - Jordan
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryJo extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Jordan';
+    }
+
     public function code(): string
     {
         return 'JO';

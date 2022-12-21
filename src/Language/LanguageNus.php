@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritorySd;
  */
 class LanguageNus extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nuer';
+    }
+
     public function code(): string
     {
         return 'nus';

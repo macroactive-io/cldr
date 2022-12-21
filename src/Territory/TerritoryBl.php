@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * BL - Saint Barthélemy
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryBl extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Saint Barthélemy';
+    }
+
     public function code(): string
     {
         return 'BL';

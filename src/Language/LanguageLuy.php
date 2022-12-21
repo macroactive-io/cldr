@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageLuy extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Luyia';
+    }
+
     public function code(): string
     {
         return 'luy';

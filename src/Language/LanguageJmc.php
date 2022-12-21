@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageJmc extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Machame';
+    }
+
     public function code(): string
     {
         return 'jmc';

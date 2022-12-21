@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryBy;
  */
 class LanguageBe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Belarusian';
+    }
+
     public function code(): string
     {
         return 'be';

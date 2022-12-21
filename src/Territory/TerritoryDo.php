@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * DO - Dominican Republic
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryDo extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Dominican Republic';
+    }
+
     public function code(): string
     {
         return 'DO';

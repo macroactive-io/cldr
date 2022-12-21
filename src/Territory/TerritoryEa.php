@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * EA - Ceuta, Melilla
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryEa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Ceuta, Melilla';
+    }
+
     public function code(): string
     {
         return 'EA';

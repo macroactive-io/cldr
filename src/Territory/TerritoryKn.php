@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * KN - Saint Kitts and Nevis
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryKn extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Saint Kitts and Nevis';
+    }
+
     public function code(): string
     {
         return 'KN';

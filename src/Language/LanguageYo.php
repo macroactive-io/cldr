@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNg;
  */
 class LanguageYo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Yoruba';
+    }
+
     public function code(): string
     {
         return 'yo';

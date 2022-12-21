@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTr;
  */
 class LanguageTr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Turkish';
+    }
+
     public function code(): string
     {
         return 'tr';

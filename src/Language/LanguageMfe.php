@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMu;
  */
 class LanguageMfe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Morisyen';
+    }
+
     public function code(): string
     {
         return 'mfe';

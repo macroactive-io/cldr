@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * DZ - Algeria
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryDz extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Algeria';
+    }
+
     public function code(): string
     {
         return 'DZ';

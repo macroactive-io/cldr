@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LanguageFi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Finnish';
+    }
+
     public function code(): string
     {
         return 'fi';

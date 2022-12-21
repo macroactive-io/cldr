@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageRof extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Rombo';
+    }
+
     public function code(): string
     {
         return 'rof';

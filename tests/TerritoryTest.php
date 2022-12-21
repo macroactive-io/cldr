@@ -6,7 +6,7 @@ namespace Macroactive\Cldr\Tests;
 
 use Macroactive\Cldr\Territory;
 
-final class TerritoryTest extends \PHPUnit\Framework\TestCase
+final class TerritoryTest extends TestCase
 {
     public function testAll(): void
     {
@@ -35,5 +35,18 @@ final class TerritoryTest extends \PHPUnit\Framework\TestCase
         }
 
         self::assertSame(302, $count);
+    }
+
+    public function testAgainstIso3166(): void
+    {
+        foreach (self::getIso3166Array() as $code => $country) {
+            $territory = Territory::create($code);
+            self::assertSame($code, $territory->code());
+            $name = $country['name'] ?? '';
+            $name = str_replace([', United Republic of'], [''], $name);
+            self::assertNotEmpty($name);
+
+            self::assertSame($name, $territory->exonym());
+        }
     }
 }

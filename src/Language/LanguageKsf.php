@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageKsf extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bafia';
+    }
+
     public function code(): string
     {
         return 'ksf';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIt;
  */
 class LanguageLij extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ligurian';
+    }
+
     public function code(): string
     {
         return 'lij';

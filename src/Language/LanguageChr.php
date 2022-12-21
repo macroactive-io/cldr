@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUs;
  */
 class LanguageChr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Cherokee';
+    }
+
     public function code(): string
     {
         return 'chr';

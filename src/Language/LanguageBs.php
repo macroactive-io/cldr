@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBa;
  */
 class LanguageBs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bosnian';
+    }
+
     public function code(): string
     {
         return 'bs';

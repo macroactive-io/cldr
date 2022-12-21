@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryHr;
  */
 class LanguageHr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Croatian';
+    }
+
     public function code(): string
     {
         return 'hr';

@@ -33,6 +33,11 @@ class LocalePtPt extends AbstractLocale implements LocaleInterface
         return new LanguagePtPt();
     }
 
+    public function languageTag(): string
+    {
+        return 'pt_PT';
+    }
+
     protected function numberSymbols(): array
     {
         return [

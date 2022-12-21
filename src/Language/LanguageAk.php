@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGh;
  */
 class LanguageAk extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Akan';
+    }
+
     public function code(): string
     {
         return 'ak';

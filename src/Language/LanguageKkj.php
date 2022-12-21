@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageKkj extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kako';
+    }
+
     public function code(): string
     {
         return 'kkj';

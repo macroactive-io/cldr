@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryRs;
  */
 class LanguageSr extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Serbian';
+    }
+
     public function code(): string
     {
         return 'sr';

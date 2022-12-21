@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * LA - Lao People's Democratic Republic
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryLa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Lao People\'s Democratic Republic';
+    }
+
     public function code(): string
     {
         return 'LA';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * TT - Trinidad and Tobago
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryTt extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Trinidad and Tobago';
+    }
+
     public function code(): string
     {
         return 'TT';

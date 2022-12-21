@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * TA - Tristan da Cunha
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryTa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Tristan da Cunha';
+    }
+
     public function code(): string
     {
         return 'TA';

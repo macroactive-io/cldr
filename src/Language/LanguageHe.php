@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIl;
  */
 class LanguageHe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Hebrew';
+    }
+
     public function code(): string
     {
         return 'he';

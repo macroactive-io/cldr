@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryPh;
  */
 class LanguageCeb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Cebuano';
+    }
+
     public function code(): string
     {
         return 'ceb';

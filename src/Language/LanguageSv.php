@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySe;
  */
 class LanguageSv extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Swedish';
+    }
+
     public function code(): string
     {
         return 'sv';

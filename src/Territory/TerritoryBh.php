@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * BH - Bahrain
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryBh extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Bahrain';
+    }
+
     public function code(): string
     {
         return 'BH';

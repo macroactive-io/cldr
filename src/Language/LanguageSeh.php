@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMz;
  */
 class LanguageSeh extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sena';
+    }
+
     public function code(): string
     {
         return 'seh';

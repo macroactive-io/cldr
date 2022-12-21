@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySn;
  */
 class LanguageWo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Wolof';
+    }
+
     public function code(): string
     {
         return 'wo';

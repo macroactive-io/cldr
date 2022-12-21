@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
  */
 class LanguageVo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Volapük';
+    }
+
     public function code(): string
     {
         return 'vo';

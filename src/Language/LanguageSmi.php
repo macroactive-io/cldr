@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LanguageSmi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sami languages';
+    }
+
     public function code(): string
     {
         return 'smi';

@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * HN - Honduras
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryHn extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Honduras';
+    }
+
     public function code(): string
     {
         return 'HN';

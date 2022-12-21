@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEe;
  */
 class LanguageEt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Estonian';
+    }
+
     public function code(): string
     {
         return 'et';

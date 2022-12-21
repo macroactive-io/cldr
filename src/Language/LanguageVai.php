@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryLr;
  */
 class LanguageVai extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Vai';
+    }
+
     public function code(): string
     {
         return 'vai';

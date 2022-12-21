@@ -11,6 +11,11 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
  */
 class LanguageOsa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Osage';
+    }
+
     public function code(): string
     {
         return 'osa';

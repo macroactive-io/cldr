@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIt;
  */
 class LanguageVec extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Venetian';
+    }
+
     public function code(): string
     {
         return 'vec';

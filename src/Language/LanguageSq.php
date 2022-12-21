@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryAl;
  */
 class LanguageSq extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Albanian';
+    }
+
     public function code(): string
     {
         return 'sq';

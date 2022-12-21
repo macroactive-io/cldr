@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEs;
  */
 class LanguageGl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Galician';
+    }
+
     public function code(): string
     {
         return 'gl';

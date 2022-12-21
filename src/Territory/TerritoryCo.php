@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CO - Colombia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCo extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Colombia';
+    }
+
     public function code(): string
     {
         return 'CO';

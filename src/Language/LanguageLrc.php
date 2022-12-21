@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIr;
  */
 class LanguageLrc extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Northern Luri';
+    }
+
     public function code(): string
     {
         return 'lrc';

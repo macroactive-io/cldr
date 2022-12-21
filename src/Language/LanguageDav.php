@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageDav extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Taita';
+    }
+
     public function code(): string
     {
         return 'dav';

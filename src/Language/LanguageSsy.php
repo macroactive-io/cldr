@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEr;
  */
 class LanguageSsy extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Saho';
+    }
+
     public function code(): string
     {
         return 'ssy';

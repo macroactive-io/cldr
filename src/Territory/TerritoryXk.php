@@ -12,6 +12,11 @@ namespace Macroactive\Cldr\Territory;
  */
 class TerritoryXk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Kosovo';
+    }
+
     public function code(): string
     {
         return 'XK';

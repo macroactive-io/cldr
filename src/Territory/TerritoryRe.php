@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * RE - Réunion
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryRe extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Réunion';
+    }
+
     public function code(): string
     {
         return 'RE';

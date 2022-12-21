@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySz;
  */
 class LanguageSs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Swati';
+    }
+
     public function code(): string
     {
         return 'ss';

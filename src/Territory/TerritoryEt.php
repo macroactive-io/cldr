@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ET - Ethiopia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryEt extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Ethiopia';
+    }
+
     public function code(): string
     {
         return 'ET';

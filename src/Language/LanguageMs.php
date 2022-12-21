@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMy;
  */
 class LanguageMs extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Malay';
+    }
+
     public function code(): string
     {
         return 'ms';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryPk;
  */
 class LanguageBal extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Baluchi';
+    }
+
     public function code(): string
     {
         return 'bal';

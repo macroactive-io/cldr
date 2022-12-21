@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBj;
  */
 class LanguageGuw extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Gun';
+    }
+
     public function code(): string
     {
         return 'guw';

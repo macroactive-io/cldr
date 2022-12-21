@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageRaj extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Rajasthani';
+    }
+
     public function code(): string
     {
         return 'raj';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryEs;
  */
 class LanguageAst extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Asturian';
+    }
+
     public function code(): string
     {
         return 'ast';

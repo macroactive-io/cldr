@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDe;
  */
 class LanguageDe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'German';
+    }
+
     public function code(): string
     {
         return 'de';

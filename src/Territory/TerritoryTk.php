@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * TK - Tokelau
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryTk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Tokelau';
+    }
+
     public function code(): string
     {
         return 'TK';

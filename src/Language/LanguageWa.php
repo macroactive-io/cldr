@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBe;
  */
 class LanguageWa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Walloon';
+    }
+
     public function code(): string
     {
         return 'wa';

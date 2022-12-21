@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIt;
  */
 class LanguageScn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sicilian';
+    }
+
     public function code(): string
     {
         return 'scn';

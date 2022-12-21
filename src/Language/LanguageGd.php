@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGb;
  */
 class LanguageGd extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Scottish Gaelic';
+    }
+
     public function code(): string
     {
         return 'gd';

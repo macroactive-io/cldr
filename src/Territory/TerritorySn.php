@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * SN - Senegal
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritorySn extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Senegal';
+    }
+
     public function code(): string
     {
         return 'SN';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGb;
  */
 class LanguageAng extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Old English (ca. 450-1100)';
+    }
+
     public function code(): string
     {
         return 'ang';

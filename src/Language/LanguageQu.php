@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryPe;
  */
 class LanguageQu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Quechua';
+    }
+
     public function code(): string
     {
         return 'qu';

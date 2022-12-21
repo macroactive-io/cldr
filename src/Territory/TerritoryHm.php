@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * HM - Heard Island and McDonald Islands
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryHm extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Heard Island and McDonald Islands';
+    }
+
     public function code(): string
     {
         return 'HM';

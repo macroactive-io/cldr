@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMx;
  */
 class LanguageNah extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nahuatl languages';
+    }
+
     public function code(): string
     {
         return 'nah';

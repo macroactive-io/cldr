@@ -13,8 +13,6 @@ class IanaSubtagRegistryTest extends TestCase
     /**
      * Test the language tags against the IANA subtag registry
      *
-     * @group ab
-     *
      * @large
      */
     public function testLanguageTags(): void
@@ -28,19 +26,29 @@ class IanaSubtagRegistryTest extends TestCase
             preg_match('/Subtag: (.+)/', $data, $match);
             $subtag = $match[1];
             $class  = '\\Macroactive\\Cldr\\Language\\Language' . ucfirst(strtolower($match[1]));
+
             // The registry contains 8000 languages, and we aren't interested in most of them.
-            if (class_exists($class)) {
-                /** @var LanguageInterface $language */
-                $language = new $class();
-
-                // Deprecated tags should use their new, preferred value.
-                if (preg_match('/Preferred-Value: ([a-z]+)/', $data, $match2)) {
-                    $subtag = $match2[1];
-                }
-                $debug = implode(' | ', [$subtag, $match[1], $match2[1] ?? '']);
-
-                self::assertSame($subtag, $language->code(), $debug);
+            if (!class_exists($class)) {
+                continue;
             }
+
+            /** @var LanguageInterface $language */
+            $language = new $class();
+
+            // Deprecated tags should use their new, preferred value.
+            if (preg_match('/Preferred-Value: ([a-z]+)/', $data, $match2)) {
+                $subtag = $match2[1];
+            }
+            $debug = implode(' | ', [$subtag, $match[1], $match2[1] ?? '']);
+
+            self::assertSame($subtag, $language->code(), $debug);
+
+            preg_match('/\nDescription: ([^\n]+)\n/', $data, $match);
+
+            // replace useless suffixes
+            $name = str_replace(' (macrolanguage)', '', $match[1]);
+            $name = str_replace(" ({$language->defaultTerritory()->exonym()})", '', $name);
+            self::assertSame($name, $language->exonym(), $debug);
         }
     }
 

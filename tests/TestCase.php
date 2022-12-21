@@ -43,6 +43,32 @@ class TestCase extends \PHPUnit\Framework\TestCase
         return self::getCachedFile('plurals.xml');
     }
 
+    /** @return array<string, array{name: string, code: string}> */
+    protected function getIso3166Array(): array
+    {
+        $filepath = __DIR__  . '/data/iso3166.json';
+
+        if (!file_exists($filepath)) {
+            $data = file_get_contents('https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/slim-2/slim-2.json');
+            self::assertIsString($data);
+            file_put_contents($filepath, $data);
+        } else {
+            $data = file_get_contents($filepath);
+            self::assertIsString($data);
+        }
+
+        $result = [];
+
+        foreach (json_decode($data, true, JSON_THROW_ON_ERROR) as $item) {
+            $result[$item['alpha-2']] = [
+                'name' => $item['name'],
+                'code' => $item['country-code'],
+            ];
+        }
+
+        return $result;
+    }
+
     /**
      * @return string[]
      */

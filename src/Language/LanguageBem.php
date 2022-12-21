@@ -8,12 +8,15 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
 use Macroactive\Cldr\Territory\TerritoryZm;
 
 /**
- * Bemba (Zambia)
- *
  * @psalm-immutable
  */
 class LanguageBem extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Bemba';
+    }
+
     public function code(): string
     {
         return 'bem';

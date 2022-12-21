@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMt;
  */
 class LanguageMt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Maltese';
+    }
+
     public function code(): string
     {
         return 'mt';

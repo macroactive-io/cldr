@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySk;
  */
 class LanguageSk extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Slovak';
+    }
+
     public function code(): string
     {
         return 'sk';

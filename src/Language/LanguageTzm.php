@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryMa;
  */
 class LanguageTzm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Central Atlas Tamazight';
+    }
+
     public function code(): string
     {
         return 'tzm';

@@ -59,6 +59,7 @@ interface LocaleInterface
      * The name of this locale, in its own language/script, and with the
      * customary capitalization of the locale.
      * Can be obtained by xpath ldml/localeDisplayNames/languages/language[type=$localeName] in $localeName.xml file
+     * Example: `Moscow` is the exonym, while `Moskva` is the endonym
      *
      * @return non-empty-string
      */
@@ -136,4 +137,12 @@ interface LocaleInterface
      * @psalm-immutable
      */
     public function variant(): ?VariantInterface;
+
+    /**
+     * An external name as oppose to endonym.
+     * Example: `Moscow` is the exonym, while `Moskva` is the endonym
+     *
+     * @return non-empty-string
+     */
+    public function exonym(): string;
 }

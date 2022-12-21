@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryCf;
  */
 class LanguageSg extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sango';
+    }
+
     public function code(): string
     {
         return 'sg';

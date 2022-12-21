@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageSbp extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sangu';
+    }
+
     public function code(): string
     {
         return 'sbp';

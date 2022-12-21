@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryDk;
  */
 class LanguageDa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Danish';
+    }
+
     public function code(): string
     {
         return 'da';

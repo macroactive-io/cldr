@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNg;
  */
 class LanguageKaj extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Jju';
+    }
+
     public function code(): string
     {
         return 'kaj';

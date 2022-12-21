@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * LR - Liberia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryLr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Liberia';
+    }
+
     public function code(): string
     {
         return 'LR';

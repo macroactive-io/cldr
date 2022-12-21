@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageDua extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Duala';
+    }
+
     public function code(): string
     {
         return 'dua';

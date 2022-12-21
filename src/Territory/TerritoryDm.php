@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * DM - Dominica
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryDm extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Dominica';
+    }
+
     public function code(): string
     {
         return 'DM';

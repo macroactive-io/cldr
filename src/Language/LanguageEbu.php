@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageEbu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Embu';
+    }
+
     public function code(): string
     {
         return 'ebu';

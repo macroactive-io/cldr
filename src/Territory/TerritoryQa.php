@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * QA - Qatar
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryQa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Qatar';
+    }
+
     public function code(): string
     {
         return 'QA';

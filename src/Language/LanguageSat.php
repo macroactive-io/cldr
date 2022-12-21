@@ -16,6 +16,11 @@ use Macroactive\Cldr\Territory\TerritoryIn;
  */
 class LanguageSat extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Santali';
+    }
+
     public function code(): string
     {
         return 'sat';

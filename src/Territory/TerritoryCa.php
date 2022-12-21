@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * CA - Canada
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryCa extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Canada';
+    }
+
     public function code(): string
     {
         return 'CA';

@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageBas extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Basa';
+    }
+
     public function code(): string
     {
         return 'bas';

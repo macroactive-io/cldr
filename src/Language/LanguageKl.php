@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryGl;
  */
 class LanguageKl extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kalaallisut';
+    }
+
     public function code(): string
     {
         return 'kl';

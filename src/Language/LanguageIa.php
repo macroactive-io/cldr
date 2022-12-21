@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
  */
 class LanguageIa extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Interlingua (International Auxiliary Language Association)';
+    }
+
     public function code(): string
     {
         return 'ia';

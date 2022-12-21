@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCm;
  */
 class LanguageAgq extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Aghem';
+    }
+
     public function code(): string
     {
         return 'agq';

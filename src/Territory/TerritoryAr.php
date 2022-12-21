@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * AR - Argentina
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryAr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Argentina';
+    }
+
     public function code(): string
     {
         return 'AR';

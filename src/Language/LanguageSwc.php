@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryCd;
  */
 class LanguageSwc extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Congo Swahili';
+    }
+
     public function code(): string
     {
         return 'swc';

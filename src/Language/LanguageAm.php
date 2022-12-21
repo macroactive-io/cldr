@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryEt;
  */
 class LanguageAm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Amharic';
+    }
+
     public function code(): string
     {
         return 'am';

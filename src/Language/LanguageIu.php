@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryCa;
  */
 class LanguageIu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Inuktitut';
+    }
+
     public function code(): string
     {
         return 'iu';

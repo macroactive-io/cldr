@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 039 - Southern Europe
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory039 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Southern Europe';
+    }
+
     public function code(): string
     {
         return '039';

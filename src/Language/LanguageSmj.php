@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritorySe;
  */
 class LanguageSmj extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Lule Sami';
+    }
+
     public function code(): string
     {
         return 'smj';

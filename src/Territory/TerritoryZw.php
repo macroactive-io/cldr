@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ZW - Zimbabwe
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryZw extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Zimbabwe';
+    }
+
     public function code(): string
     {
         return 'ZW';

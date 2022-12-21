@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
  */
 class LanguageJbo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Lojban';
+    }
+
     public function code(): string
     {
         return 'jbo';

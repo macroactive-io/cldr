@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * LS - Lesotho
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryLs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Lesotho';
+    }
+
     public function code(): string
     {
         return 'LS';

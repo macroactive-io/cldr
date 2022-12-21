@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GH - Ghana
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGh extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Ghana';
+    }
+
     public function code(): string
     {
         return 'GH';

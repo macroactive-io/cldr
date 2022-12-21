@@ -8,12 +8,15 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
 use Macroactive\Cldr\Territory\TerritoryMl;
 
 /**
- * Koyraboro Senni Songhai
- *
  * @psalm-immutable
  */
 class LanguageSes extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Koyraboro Senni Songhai';
+    }
+
     public function code(): string
     {
         return 'ses';

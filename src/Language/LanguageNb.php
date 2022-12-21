@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNo;
  */
 class LanguageNb extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Norwegian Bokmål';
+    }
+
     public function code(): string
     {
         return 'nb';

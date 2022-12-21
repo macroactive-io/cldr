@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryNl;
  */
 class LanguageFy extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Western Frisian';
+    }
+
     public function code(): string
     {
         return 'fy';

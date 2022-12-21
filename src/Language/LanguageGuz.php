@@ -13,6 +13,11 @@ use Macroactive\Cldr\Territory\TerritoryKe;
  */
 class LanguageGuz extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Gusii';
+    }
+
     public function code(): string
     {
         return 'guz';

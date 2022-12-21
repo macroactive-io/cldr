@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryFi;
  */
 class LanguageSmn extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Inari Sami';
+    }
+
     public function code(): string
     {
         return 'smn';

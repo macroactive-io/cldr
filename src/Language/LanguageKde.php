@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryTz;
  */
 class LanguageKde extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Makonde';
+    }
+
     public function code(): string
     {
         return 'kde';

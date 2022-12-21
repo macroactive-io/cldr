@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * AM - Armenia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryAm extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Armenia';
+    }
+
     public function code(): string
     {
         return 'AM';

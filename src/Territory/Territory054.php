@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 054 - Melanesia
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory054 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Melanesia';
+    }
+
     public function code(): string
     {
         return '054';

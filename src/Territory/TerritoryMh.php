@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * MH - Marshall Islands
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryMh extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Marshall Islands';
+    }
+
     public function code(): string
     {
         return 'MH';

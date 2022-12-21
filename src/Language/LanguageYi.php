@@ -14,6 +14,11 @@ use Macroactive\Cldr\Script\ScriptHebr;
  */
 class LanguageYi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Yiddish';
+    }
+
     public function code(): string
     {
         return 'yi';

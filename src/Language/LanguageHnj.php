@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule0;
  */
 class LanguageHnj extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Hmong Njua';
+    }
+
     public function code(): string
     {
         return 'hnj';

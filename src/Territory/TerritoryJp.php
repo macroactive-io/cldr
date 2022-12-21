@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * JP - Japan
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryJp extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Japan';
+    }
+
     public function code(): string
     {
         return 'JP';

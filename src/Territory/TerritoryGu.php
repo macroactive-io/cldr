@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * GU - Guam
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryGu extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Guam';
+    }
+
     public function code(): string
     {
         return 'GU';

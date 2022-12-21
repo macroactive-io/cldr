@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * 154 - Northern Europe
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class Territory154 extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Northern Europe';
+    }
+
     public function code(): string
     {
         return '154';

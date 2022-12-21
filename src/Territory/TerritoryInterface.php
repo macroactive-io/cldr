@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * Interface TerritoryInterface - Representation of a geographic area.
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 interface TerritoryInterface
 {
+    /**
+     * @return non-empty-string
+     */
+    public function exonym(): string;
+
     /**
      * The ISO639 or M.49 code for this territory.
      */

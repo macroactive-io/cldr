@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryId;
  */
 class LanguageSu extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sundanese';
+    }
+
     public function code(): string
     {
         return 'su';

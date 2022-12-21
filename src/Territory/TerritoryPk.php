@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * PK - Pakistan
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryPk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Pakistan';
+    }
+
     public function code(): string
     {
         return 'PK';

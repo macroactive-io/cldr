@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryIr;
  */
 class LanguageAz extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Azerbaijani';
+    }
+
     public function code(): string
     {
         return 'az';

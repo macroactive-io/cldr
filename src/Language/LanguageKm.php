@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryKh;
  */
 class LanguageKm extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Khmer';
+    }
+
     public function code(): string
     {
         return 'km';

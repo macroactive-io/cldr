@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryPt;
  */
 class LanguagePt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Portuguese';
+    }
+
     public function code(): string
     {
         return 'pt';

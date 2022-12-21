@@ -13,6 +13,11 @@ use Macroactive\Cldr\PluralRule\PluralRule1;
  */
 class LanguageIo extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Ido';
+    }
+
     public function code(): string
     {
         return 'io';

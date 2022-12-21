@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * SS - South Sudan
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritorySs extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'South Sudan';
+    }
+
     public function code(): string
     {
         return 'SS';

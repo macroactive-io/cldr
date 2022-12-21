@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUg;
  */
 class LanguageXog extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Soga';
+    }
+
     public function code(): string
     {
         return 'xog';

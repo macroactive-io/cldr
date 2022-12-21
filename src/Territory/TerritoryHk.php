@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * HK - Hong Kong
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryHk extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Hong Kong';
+    }
+
     public function code(): string
     {
         return 'HK';

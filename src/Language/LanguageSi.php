@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryLk;
  */
 class LanguageSi extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Sinhala';
+    }
+
     public function code(): string
     {
         return 'si';

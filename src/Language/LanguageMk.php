@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryMk;
  */
 class LanguageMk extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Macedonian';
+    }
+
     public function code(): string
     {
         return 'mk';

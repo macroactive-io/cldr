@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Macroactive\Cldr\Territory;
 
-/**
- * ZR - Zaire
- *
- * @psalm-immutable
- */
+/** @psalm-immutable */
 class TerritoryZr extends AbstractTerritory implements TerritoryInterface
 {
+    public function exonym(): string
+    {
+        return 'Zaire';
+    }
+
     public function code(): string
     {
         return 'ZR';

@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryBr;
  */
 class LanguageKgp extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Kaingang';
+    }
+
     public function code(): string
     {
         return 'kgp';

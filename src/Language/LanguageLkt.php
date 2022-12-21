@@ -14,6 +14,11 @@ use Macroactive\Cldr\Territory\TerritoryUs;
  */
 class LanguageLkt extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Lakota';
+    }
+
     public function code(): string
     {
         return 'lkt';

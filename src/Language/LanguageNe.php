@@ -15,6 +15,11 @@ use Macroactive\Cldr\Territory\TerritoryNp;
  */
 class LanguageNe extends AbstractLanguage implements LanguageInterface
 {
+    public function exonym(): string
+    {
+        return 'Nepali';
+    }
+
     public function code(): string
     {
         return 'ne';
