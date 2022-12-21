@@ -130,7 +130,7 @@ final class Locale
                 continue;
             }
 
-            $classname = '\\Macroactive\\Cldr\\Locale\\' . $localeName;
+            $classname = __NAMESPACE__ . '\\Locale\\' . $localeName;
 
             if (!class_exists($classname)) {
                 throw new DomainException(sprintf('File for locale %s exists but class cannot be found. Missed autoloading?', $classname));

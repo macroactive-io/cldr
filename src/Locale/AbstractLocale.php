@@ -170,10 +170,7 @@ abstract class AbstractLocale implements LocaleInterface
 
     public function percent(int|float $number): string
     {
-        $result = sprintf($this->percentFormat(), $this->number($number * 100.0));
-        assert('' !== $result);
-
-        return $result;
+        return sprintf($this->percentFormat(), $this->number($number * 100.0));
     }
 
     public function pluralRule(): PluralRuleInterface
