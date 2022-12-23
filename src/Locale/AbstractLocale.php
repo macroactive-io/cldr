@@ -234,7 +234,7 @@ abstract class AbstractLocale implements LocaleInterface
     /**
      * The numerals (0123456789) used by this locale.
      *
-     * @return string[]
+     * @return non-empty-string[]
      */
     protected function numerals(): array
     {

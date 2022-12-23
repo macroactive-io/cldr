@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="dev-master@91081f77fdd47a35d12bd87b31291c95f98be8ae">
   <file src="src/Locale.php">
-    <LessSpecificReturnStatement occurrences="1">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$preferences</code>
+    </ArgumentTypeCoercion>
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$preferences</code>
       <code>new $class()</code>
     </LessSpecificReturnStatement>
     <MixedArgument occurrences="1">
@@ -23,10 +27,11 @@
     </MixedOperand>
     <MixedReturnTypeCoercion occurrences="2">
       <code>$preferences</code>
-      <code>array&lt;string, int|float&gt;</code>
+      <code>array&lt;non-empty-string, int|float&gt;</code>
     </MixedReturnTypeCoercion>
-    <MoreSpecificReturnType occurrences="2">
+    <MoreSpecificReturnType occurrences="3">
       <code>LocaleInterface</code>
+      <code>array&lt;non-empty-string, int|float&gt;</code>
       <code>iterable&lt;LocaleInterface&gt;</code>
     </MoreSpecificReturnType>
   </file>

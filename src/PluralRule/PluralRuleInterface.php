@@ -26,7 +26,7 @@ interface PluralRuleInterface
     public function plural(int $number): int;
 
     /**
-     * @return non-empty-array<string, non-empty-list<int|float>>
+     * @return non-empty-array<non-empty-string, non-empty-list<int|float>>
      */
     public function pluralExamples(): array;
 }

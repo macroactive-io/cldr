@@ -14,6 +14,7 @@ interface TerritoryInterface
 
     /**
      * The ISO639 or M.49 code for this territory.
+     * @return non-empty-string
      */
     public function code(): string;
 

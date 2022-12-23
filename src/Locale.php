@@ -81,7 +81,14 @@ final class Locale
         }
 
         $http_accept_language = strtolower(str_replace(' ', '', $server['HTTP_ACCEPT_LANGUAGE']));
+        /** @var array{1: array, 2: array} $match */
+        $match = [];
         preg_match_all('/(?:([a-z][a-z0-9_-]+)(?:;q=([0-9.]+))?)/', $http_accept_language, $match);
+
+        if (count($match[1]) === 0 || count($match[2]) === 0) {
+            return $default;
+        }
+
         $preferences = array_map(static fn ($x): float => $x === '' ? 1.0 : (float) $x, array_combine($match[1], $match[2]));
 
         // "Common sense" logic for badly configured clients.
@@ -143,9 +150,9 @@ final class Locale
     /**
      * If a client requests "de-DE" (but not "de"), then add "de" as a lower-priority fallback.
      *
-     * @param array<string, int|float> $preferences
+     * @param array<non-empty-string, int|float> $preferences
      *
-     * @return array<string, int|float>
+     * @return array<non-empty-string, int|float>
      */
     private static function httpAcceptDowngrade(array $preferences): array
     {
@@ -173,9 +180,9 @@ final class Locale
      * Some browsers allow the user to select "Chinese (simplified)", but then use zh-CN instead of zh-Hans.
      * This goes against the advice of w3.org.
      *
-     * @param array<string, int|float> $preferences
+     * @param array<non-empty-string, int|float> $preferences
      *
-     * @return array<string, int|float>
+     * @return array<non-empty-string, int|float>
      */
     private static function httpAcceptChinese(array $preferences): array
     {
